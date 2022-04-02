@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    
+    <!----======== CSS ======== -->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Kreon:300,regular,500,600,700);
+
+          *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+:root{
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #5246db;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
+body{
+    min-height: 70vh;
+    transition: var(--tran-05);
+    scroll-behavior: smooth;
+    overflow-x:hidden ;
+}
+body::-webkit-scrollbar
+{
+   width: 10px;
+}
+body::-webkit-scrollbar-thumb
+{
+   height: 80px;
+   background: #375666;
+   border: 8px solid transparent;
+   border-radius: 12px;
+}
+body::-webkit-scrollbar-thumb:active
+{
+    background: rgb(9, 164, 154);
+}
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #292727;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+}
+
+/* ===== Sidebar ===== */
+ .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+.sidebar.close {
+  width: 88px;
+}
+
+/* ===== Reusable code - Here ===== */
+.sidebar li{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar header .image,
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+.sidebar .icon{
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.sidebar .text,
+.sidebar .icon{
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+.sidebar .text{
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+}
+.sidebar.close .text{
+    opacity: 0;
+}
+/* =========================== */
+
+.sidebar header{
+    position: relative;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+.sidebar header .logo-text{
+    display: flex;
+    flex-direction: column;
+}
+header .image-text .name {
+    margin-top: 2px;
+    font-size: 25px;
+    font-weight: 730;
+    color: #707070;
+
+}
+
+header .image-text .profession{
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+    font-weight: 300;
+    margin-left: 5.3vh; 
+}
+
+.sidebar header .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar header .image img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+body.dark .sidebar header .toggle{
+    color: var(--text-color);
+}
+
+.sidebar.close .toggle{
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.sidebar .menu{
+    margin-top: 40px;
+}
+
+.sidebar li.search-box{
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.sidebar li.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--tran-05);
+}
+.sidebar li a{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+
+.sidebar li a:hover{
+    background-color: var(--primary-color);
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--sidebar-color);
+}
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text{
+    color: var(--text-color);
+}
+
+.sidebar .menu-bar{
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+.menu-bar::-webkit-scrollbar{
+    display: none;
+}
+.sidebar .menu-bar .mode{
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    position: relative;
+    transition: var(--tran-05);
+}
+
+.menu-bar .mode .sun-moon{
+    height: 50px;
+    width: 60px;
+}
+
+.mode .sun-moon i{
+    position: absolute;
+}
+.mode .sun-moon i.sun{
+    opacity: 0;
+}
+body.dark .mode .sun-moon i.sun{
+    opacity: 1;
+}
+body.dark .mode .sun-moon i.moon{
+    opacity: 0;
+}
+
+.menu-bar .bottom-content .toggle-switch{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.toggle-switch .switch{
+    position: relative;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: var(--toggle-color);
+    transition: var(--tran-05);
+}
+
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: var(--sidebar-color);
+    transition: var(--tran-04);
+}
+
+body.dark .switch::before{
+    left: 20px;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 250px;
+    height: 110vh;
+    width: calc(100% - 250px);
+    transition: var(--tran-05);
+}
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+.sidebar.close ~ .home{
+    left: 78px;
+    height: 100vh;
+    width: calc(100% - 78px);
+}
+body.dark .home .text{
+    color: var(--text-color);
+}
+#crown{
+  margin-left: 3.2vh;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  
+}
+#crown:hover{
+color: var(--sidebar-color);
+}
+#pro{
+  margin-left: 1.3rem; 
+}
+#learn{
+    margin-left: 3.2vh;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+#learn:hover{
+  color: var(--sidebar-color);
+
+}
+#le{
+    margin-left: 1.3rem; 
+}
+#to-do{
+      margin-left: 3.2vh;
+      color: var(--text-color);
+      font-size: 1.2rem;
+}#to{
+      margin-left: 1.3rem; 
+
+}
+#to-do:hover {
+  color: var(--sidebar-color);
+}
+#t{
+       margin-left: 3.2vh;
+       color: var(--text-color);
+       font-size: 1.2rem;
+}
+#t:hover{
+      color: var(--sidebar-color);
+
+}
+#c{
+       margin-left: 1.3rem; 
+}
+.svg{
+  width: 490px;
+  height: 540x;
+  margin-left: 52rem;
+  margin-top: -28.5rem;
+}
+
+.div
+{
+margin-top: 15rem;
+margin-left: 5rem;
+
+}
+.fir {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: 'Kreon', serif;
+  color: #091e42;
+  cursor: grab;
+}
+
+.b  
+{
+    margin-top: 3rem;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    background-color: var(--primary-color);
+    height: 55px;
+    width: 168px;
+    border-radius: 9px;
+    color: white;
+    transition: 0.3s;
+
+}
+.b:hover{
+    background-color: #4133d4;
+}
+#sec-1{
+    text-align: center;
+    width: 400px;
+    margin-left: 28rem;
+    margin-top: 1rem;
+    color: rgb(43, 29, 29);
+    font-size: 2.6rem;
+    border-top: 2px solid #53d7ee;
+    border-bottom: 2px solid #53d7ee;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card{
+    background-color:white;
+    height: 440px;
+    width: 330px;
+    margin-left: 4.5rem;
+    margin-top: 3.6rem;
+    border-radius: 14px;
+    box-shadow: 7px 9px 14px 0 rgba(0, 0, 0, 0.2),-6px -5px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card-2{
+    margin-top: 33rem;
+    border-radius: 14px;
+    box-shadow: 7px 9px 14px 0 rgba(0, 0, 0, 0.2),-6px -5px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color:white;
+    height: 440px;
+    width: 330px;
+    margin-left: -70.8rem;
+
+}
+.boxs{
+    display: flex;
+
+}
+.you{
+        border-radius: 14px;
+
+    width: 330px;
+    height: 200px;
+    margin-left: -1.25rem;
+    margin-top: -1.3rem;
+}
+.free{
+    margin-top: 10px;
+    color: rgb(128, 128, 128);
+    margin-bottom: 15px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.dom{
+    color:rgba(32, 27, 27, 0.856);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.45rem;
+    margin-top: -1vh;
+    font-weight: 600;
+}
+.a{
+    color: #333;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 3vh;
+}
+.start{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 0.8rem;
+    background-color: var(--primary-color);
+    height: 42px;
+    width: 130px;
+    border-radius: 9px;
+    color: white;
+    transition: 0.3s;
+    margin-top: 2rem;
+}
+.start:hover
+{
+    background-color: #4133d4;
+}
+.more{
+    margin-left: 38rem;
+    
+}
+
+.m{
+    text-decoration: none;
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#mo    
+{
+    font-size: 50px;
+    margin-top: -0.4rem;
+    margin-left: -0.56rem;
+    color: #4133d4;
+    font-weight: 900;
+    transition: 0.3s;
+    margin-left: 1rem;
+}
+.ch
+{
+    border-radius: 14px;
+    width: 1000px;
+    height: 600px;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+.cha{
+    margin-top: 15rem;
+}
+#sec-2
+{
+    text-align: center;
+    width: 400px;
+
+    margin-left: 28.2rem;
+    margin-top: 1rem;
+    color: rgb(22, 15, 15);
+    font-size: 2.6rem;
+    font-weight: 700;
+      font-family: 'Kreon', serif;
+}
+.chann{
+    height: 450px;
+    width: 330px;
+    margin-top: 6rem;
+    margin-left: 4.5rem;
+    border-radius: 14px;
+    box-shadow: 7px 9px 14px 0 rgba(0, 0, 0, 0.2),-6px -5px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin-bottom:1.4rem;
+  
+}
+.angela{
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+
+    width: 330px;
+height: 200px;
+width: 330px;
+margin-top: -1.24rem;
+margin-left: -1.24rem;
+
+}
+.ch{
+    margin-top: 90rem;
+    margin-bottom: 1px;
+}
+.fr{
+    margin-top: 10px;
+    color: grey;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+.web{
+    margin-top: -1vh;
+    color:rgba(22, 16, 16, 0.856);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+
+
+}
+.t{
+    color: #333;
+    font-size: 0.9rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 3vh;
+}
+.best{
+    color: white;
+    background-color: var(--primary-color);
+    width: 90px;
+    height: 30px;
+    margin-top: 2vh;
+    border-radius: 6px;
+
+    
+}
+.in{
+    margin-top: -1.48rem;
+    color: whitesmoke;
+    margin-left: 0.5rem;
+}
+.mart{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 0.8rem;
+    background-color: rgb(9, 165 , 154);
+    height: 42px;
+    width: 130px;
+    border-radius: 9px;
+    color: white;
+    transition: 0.3s;
+    margin-top: 2rem;
+    float:center;
+}
+.ch0{
+    display: flex;
+}
+.ed
+{
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+.Full-Stack
+{
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+.instructor{
+    margin-top: -1.7rem;
+    margin-left: 2.4rem;
+    font-size: 0.9rem;
+    color:#333;
+    font-family: 200;
+}
+.price
+{
+    margin-top: -1rem;
+    margin-left: 15.6rem;
+    color: rgb(9, 165 , 154);
+}
+.morea{
+    margin-left: 38rem;
+}
+.mo{
+    text-decoration: none;
+    margin-top: 1rem;
+}
+#moe
+{
+    font-size: 50px;
+    margin-left: -0.56rem;
+    color: rgb(9, 165 , 154);
+    font-weight: 900;
+    transition: 0.3s;
+    margin-left: 1rem;
+    transform: translateY(-100px
+    );
+}
+a{
+    text-decoration: none;
+}
+.en{
+    color: white;
+}
+.dd
+{
+    font-family: 'Kreon', sans-serif;
+}
+.ok
+{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #091e42;
+    font-family: 'Kreon', sans-serif;
+    margin-top: 1rem;
+}
+.hell
+{
+    appearance: none;
+	outline: none;
+    border: none;
+    background-color:#5246db;
+    height: 40px;
+    width: 150px;
+    margin-left: 67rem;
+    font-size: 1.55rem;
+    font-family: 'kreon', sans-serif;
+    color: #FFF;
+    border-radius: 9px;
+    transform: translateY(-730px);
+ 
+}
+.te{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #091e42;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: 'kreon', sans-serif;
+    margin-top: 0.8rem;
+
+}
+
+.footer-area {
+  margin-top: 115rem;
+  padding: 100px 0;
+  background: #2749c4;
+  background: -moz-linear-gradient(left,  #2749c4 0%, #6085b2 100%);
+  background: -webkit-linear-gradient(left,  #2749c4 0%,#6085b2 100%);
+  background: linear-gradient(to right,  #2749c4 0%,#6085b2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2749c4', endColorstr='#6085b2',GradientType=1 );
+  color:#fff;
+  position:relative;
+  margin-left:5rem;
+  width: 81rem
+}
+.main {
+  width: 1280px;
+  margin: 0 auto;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.single-footer {
+  width: 230px;
+}
+.single-footer:first-child {
+  width: 400px;
+}
+.single-footer h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.footer-social a {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.footer-social {
+  margin-top: 20px;
+}
+.single-footer ul {
+  list-style: none;
+}
+.single-footer ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+.single-footer ul li a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.single-footer ul li a i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.copy {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+.footer-wave-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  right: 0;
+  width: 100%;
+  overflow:hidden;
+}
+.footer-wave {
+  background-image: url('footer-shape.png');
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 232%;
+  background-size:50%;
+  background-position:bottom;
+  background-repeat:repeat-x;
+}
+.footer-animation{
+  left:auto;
+  right:0;
+  -moz-animation: footer_wave 5s linear infinite;
+  -o-animation: footer_wave 5s linear infinite;
+  animation: footer_wave 5s linear infinite;
+
+}
+@-moz-keyframes footer_wave{
+0%{
+    -moz-transform:translateX(0%);
+}
+50%{
+  -moz-transform:translateX(25%);
+}
+100%{
+  -moz-transform:translateX(50%);
+}
+}
+@-moz-keyframes footer_wave{
+0%{
+    -moz-transform:translateX(0%);
+}
+50%{
+  -moz-transform:translateX(25%);
+}
+100%{
+  -moz-transform:translateX(50%);
+}
+}
+
+@-o-keyframes footer_wave{
+0%{
+    -o-transform:translateX(0%);
+}
+50%{
+  -o-transform:translateX(25%);
+}
+100%{
+  -o-transform:translateX(50%);
+}
+}
+
+
+
+@media only screen and (max-width:600px){
+.main{
+  width:320px;
+}
+.footer-wave-box {
+  display: none;
+}
+.single-footer:first-child, .single-footer {
+  width: 100%;
+  margin-bottom:30px;
+}
+}
+
+@keyframes footer_wave{
+0%{
+    -webkit-transform:translateX(0%);
+}
+50%{
+  -webkit-transform:translateX(25%);
+}
+100%{
+  -webkit-transform:translateX(50%);
+}
+}
+
+</style>
+    <!----===== Boxicons CSS !-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+
+
+    <title>Apna Collage</title> 
+</head>
+<body>
+  <div class="body" id="big body">
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="ing/y.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Apni Kaksha</span>
+                    <span class="profession">developer</span>
+                </div>
+            </div>
+            <i onclick="toggle()" id="open" class='bx bx-chevron-right toggle'></i>
+
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="website.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="my learning .html">
+                           <i id="learn" class='bx bx-book' ></i>
+                            <span id="le" class="text nav-text">Learn</span>
+                        </a>
+                    </li>
+
+               <li class="nav-link">
+                 <a href="#">
+                   <i id="t" class='bx bx-info-circle'></i>
+                   <span id="c" class="text nav-text">About Us</span>
+                 </a>
+               </li>
+
+                    <li class="nav-link">
+                        <a href=index.html">
+                            <i id="to-do" class='bx bx-check-square' ></i>
+                            <span id="to" class="text nav-text">To-Do List</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                          <i id="crown" class='bx bx-crown bx-tada bx-rotate-90' ></i>
+                            <span id="pro" class="text nav-text">Get Pro</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>  
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+      <div class="div">
+              <p  data-aos="fade-down-right" data-aos-duration="1000" class="fir">Code Your Dream In Your Own</p>
+              <p  data-aos="fade-down-right"  data-aos-duration="2000" class="fir">Way.</p>
+              <p class="te">
+                Collaborate, manage projects, and reach new productivity peaks.
+            <br>From high rises to the home office, the way your team works is<br>
+                 unique—accomplish it all with Trello.
+              </p>
+
+
+              		<button class="b">
+                          Get stated
+                      </button>
+      </div>
+      <img class="svg" src="ing/hero.png" alt="">
+
+  
+
+      <div class="vi">
+    </div>
+    
+      <div class="cha">
+        <h3 id="sec-2"><p class="dd" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="2500">Featured Courses</p></h3>
+        <div class="ch0">
+            <div data-aos="zoom-in" data-aos-duration="2300" class="chann">
+               <img src="ing/0_0W3dH5eJ8f2M_bFh.jpg" class="angela" alt="">
+               <h4 class="free">Paid course</h4>
+               <h3 class="dom">Web Devolepment Courses</h3>
+               <p class="t">Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, build real projects
+               </p>
+             <img class="Full-Stack" src="ing/0_0W3dH5eJ8f2M_bFh.jpg" alt="">
+             <p class="instructor">DevolepedByAngela</p>
+             <p class="price">$39.99</p>
+             <!--<button class="mart"><a class="en" href="angela course.html">Enroll now</a></button> --->
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2300" class="chann">
+                <img src="ing/product_324593_product_shots1.jpg" class="angela" alt="">
+                <h4 class="free">Paid course</h4>
+                <h3 class="dom">The Creative Javascript</h3>
+                <p class="t">Master javascript by building 100 projects in 100 days. Learn DOM, React, build websites, games and apps!
+                </p>
+                <img class="ed" src="ing/deved.jpg" alt="">
+                <p class="instructor">DevolepedByEd</p>
+                <p class="price">$59.99</p>
+                <!--<button class="mart"><a class="en" href="ed course .html">Enroll now</a></button> --->          
+             </div>
+             <div data-aos="zoom-in" data-aos-duration="2300" class="chann">
+                <img src="ing/css-animations-using-sprite-sheets-nocdn.png" class="angela" alt="">
+                <h4 class="free">Paid course</h4>
+                <h3 class="dom">CSS Animation Courses</h3>
+                <p class="t">Master Advanced CSS Animations, Transitions and Transforms And Practice with 100 Creative Projects
+                </p>
+                <img class="Full-Stack" src="ing/css-animations-using-sprite-sheets-nocdn.png" alt="">
+                <p class="instructor">DevolepedByMosh</p>
+                <p class="price">$29.99</p>
+            <!----<button class="mart">Enroll now</button> --->
+             </div>
+        </div>
+        <div  class="morea">
+            <a  class="mo" href="my learning .html">
+                <i id="moe" class='bx bx-chevron-down bx-tada' ></i>      
+        
+              </a>
+          </div>
+      </div>
+      </div>
+      <footer class="footer-area">
+        <div class="footer-wave-box">
+            <div class="footer-wave footer-animation"></div>
+        </div>
+        <div class="main">
+            <div class="footer">
+                <div class="single-footer">
+                    <h4>about us</h4>
+                    <p>Lorem ipsum dolor sit amet, di dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint qui officia deserunt Excepteur.</p>
+                    <div class="footer-social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="single-footer">
+                    <h4>main menu</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> home</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> about us</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> services</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> gallery</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> contact us</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>quick links</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>contact us</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i> North Street, Sydney, Australia</a></li>
+                        <li><a href=""><i class="fas fa-mobile-alt"></i> +88 0123 456 789</a></li>
+                        <li><a href=""><i class="far fa-envelope"></i> info@demo.com</a></li>
+                        <li><a href=""><i class="fas fa-globe-europe"></i> www.demo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; 2020 all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+</div>
+
+<script>
+const body = document.querySelector('body'),
+          sidebar = body.querySelector('nav'),
+          toggle = body.querySelector(".toggle"),
+          searchBtn = body.querySelector(".search-box"),
+          modeSwitch = body.querySelector(".toggle-switch"),
+          modeText = body.querySelector(".mode-text");
+  
+  toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+  })
+  
+  searchBtn.addEventListener("click", () => {
+    sidebar.classList.remove("close");
+  })
+  
+  modeSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark");
+  
+    if (body.classList.contains("dark")) {
+      modeText.innerText = "Light mode";
+    } else {
+      modeText.innerText = "Dark mode";
+  
+    }
+  });
+</script>       
+<script src="
+https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>

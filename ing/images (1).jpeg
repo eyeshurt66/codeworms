@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my learning</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Kreon:300,regular,500,600,700);
+                    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: white;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #18191a;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+.in{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.in{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+.s{
+    text-decoration: none;
+    color: black;
+    margin-top: -2.7rem;
+    margin-left: 4rem;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.home{
+    background-color: #E4E9F7;
+    height: 490px;
+}
+.main
+{
+    background-color: #E4E9F7;
+    height: 600px;
+}
+.heading
+{
+    color: #091e42;
+    font-family:Kreon, sans-serif;
+    font-size: 2.45rem;
+    padding-top: 2rem;
+    margin-left: 4rem;
+}
+.box
+{
+    background-color:black;
+    width: 200px;
+    margin-left: 4rem;
+    height: 190px;
+    margin-top: 3rem;
+    border-radius: 16px;
+}
+.thumbnail
+{
+    height: 110px;
+    width: 110px;
+    margin-top: 1.44rem;
+    margin-left: 2.5rem;
+}
+.text
+{
+    font-family:Kreon, sans-serif;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    color: #fff;
+}
+
+.bigbox
+{
+    display: flex;
+}
+.down-box
+{
+    background-color: #fff;
+    width: 200px;
+    margin-left: 8.3rem;
+    height: 190px;
+    margin-top: 18rem;
+    border-radius: 16px;
+}
+.do-text
+{
+    font-family:Kreon, sans-serif;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;   
+}
+.down-boxx
+{
+    background-color: #fff;
+    width: 200px;
+    margin-left: 3.8rem;
+    height: 190px;
+    margin-top: 18rem;
+    border-radius: 16px;
+}
+.sv
+{
+    height: 100px;
+    width: 100px;
+    
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <a class="logo" href="/"><img class="in" src="ing/Logo.40905f46.jpeg" alt="logo"><p class="s">Apna Collage</p></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">To-Do List</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Contact</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    <section class="main">
+        <div class="top content">
+            <div class="he">
+            <h3 class="heading">
+                My learning
+            </h3>
+        </div>
+        <div class="bigbox">
+            <div class="box">
+                <a href="angela course.html"><img src="ing/web de photo.png" alt="" class="thumbnail"></a>
+                <p class="text">web develepment </p>
+            </div>
+            <div class="box">
+                <a href="angela course.html"><img src="ing/javascript photo.png" alt="" class="thumbnail"></a>
+                <p class="text">Javascript</p>
+            </div>
+            <div class="box">
+                <a href="angela course.html"><img src="ing/d50117e2-6058-444c-8f94-8c5d68359f28.png" alt="" class="thumbnail"></a>
+                <p class="text">Cryptograpy</p>
+            </div>
+            <div class="box">
+              <a href="angela course.html"><img src="ing/freelancer.svg" class="thumbnail"></a>
+              <p class="text">Information theory</p>
+          </div>
+        
+
+        </div>
+        <img src="ing/UnitTestNotStarted.svg" alt="" class="sv">
+        </div>
+    </section>
+</body>
+</html>
