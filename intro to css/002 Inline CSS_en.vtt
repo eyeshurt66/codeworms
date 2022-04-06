@@ -1,0 +1,489 @@
+WEBVTT
+
+0
+00:00.650 --> 00:07.700
+Now, even in its current state, a Web site already compares pretty favourably with our computer science
+
+1
+00:07.700 --> 00:09.050
+professor's website.
+
+2
+00:09.320 --> 00:15.080
+So we're definitely doing something right here. But we can make it even better. If you take a look at
+
+3
+00:15.080 --> 00:18.950
+the personal website of Sean Halpin, who's a web designer,
+
+4
+00:19.460 --> 00:23.750
+this is one of the most beautiful personal web sites I've ever come across.
+
+5
+00:23.810 --> 00:29.030
+It's incredibly simple, but it's also really beautiful and really well-designed.
+
+6
+00:29.690 --> 00:34.020
+So this is going to be our inspiration for this CSS module.
+
+7
+00:34.430 --> 00:40.610
+And I'm going to show you how by using the powers of CSS and everything that you're going to learn
+
+8
+00:40.610 --> 00:47.480
+in this module, we're going to elevate the design of our personal site to look something like this
+
+9
+00:47.810 --> 00:50.240
+and bring it right into the 21st century.
+
+10
+00:50.840 --> 00:58.190
+So the first thing that would already make our website look a little bit nicer is changing this pretty
+
+11
+00:58.190 --> 01:02.630
+bland white background to a colored background.
+
+12
+01:02.900 --> 01:09.980
+So if you head of us your code file and open up index.html, we can inject a little bit of access
+
+13
+01:10.400 --> 01:14.300
+right into the HTML tag that we want to effect.
+
+14
+01:14.840 --> 01:22.010
+And the tag that we're interested in is the body tag because we know that most, if not all, of our
+
+15
+01:22.010 --> 01:27.260
+displayed content on our website is enclosed inside this body tag.
+
+16
+01:27.650 --> 01:33.620
+So if we change its background, then the entire website's background will change, too.
+
+17
+01:33.980 --> 01:44.540
+So inside this body tag, we're going to tap into an attribute called style, and style takes CSS code
+
+18
+01:44.690 --> 01:46.520
+inside the quotation marks.
+
+19
+01:46.730 --> 01:51.290
+So the style that we want to change is the background color.
+
+20
+01:51.440 --> 01:56.900
+So I'm going to write background-color and I'm going to write a colon.
+
+21
+01:57.290 --> 02:04.340
+And after that colon, I'm going to specify the color that I want for the body. And let's just start
+
+22
+02:04.340 --> 02:06.140
+off with a blue color.
+
+23
+02:06.740 --> 02:11.630
+And then we're going to close off this line of CSS code using a semicolon.
+
+24
+02:12.260 --> 02:18.500
+Now, if at this point you find that Atom is highlighting your code in a slightly different color scheme
+
+25
+02:18.710 --> 02:19.340
+to mine,
+
+26
+02:19.640 --> 02:26.090
+so for example, the part which says background color blue, instead of the green text I've got you've
+
+27
+02:26.090 --> 02:28.370
+got white and yellow like this,
+
+28
+02:28.760 --> 02:29.620
+don't worry about it.
+
+29
+02:29.690 --> 02:34.490
+That's just something specific to your computer, and it doesn't mean that you've done anything wrong.
+
+30
+02:34.850 --> 02:42.260
+Just make sure that you've got the semicolon that closes off that background color blue, and then you've
+
+31
+02:42.260 --> 02:45.740
+got the double quotes around that entire style.
+
+32
+02:46.160 --> 02:49.640
+And once you've checked those things, then you can continue on.
+
+33
+02:50.960 --> 03:00.320
+And now if I hit save and if I go back to my browser, then if you hit refresh, you'll see our CSS code
+
+34
+03:00.320 --> 03:05.630
+being implemented, changing the entire background of our web page.
+
+35
+03:06.410 --> 03:11.690
+Now, if the background color is not changing for you, make sure that you're actually looking at the
+
+36
+03:11.690 --> 03:15.170
+copy of the website that you're working on and not the GitHub version.
+
+37
+03:15.650 --> 03:17.870
+This is where our development is going to happen.
+
+38
+03:17.900 --> 03:24.320
+So if you don't have it up, remember you can simply right click and go to copy full path and paste it
+
+39
+03:24.320 --> 03:28.100
+in here in order to get to that website under development.
+
+40
+03:28.130 --> 03:33.800
+Now the question you might have at this stage beside the question of "how did we manage to get our website
+
+41
+03:33.800 --> 03:35.600
+looking even uglier than before?"
+
+42
+03:36.230 --> 03:37.820
+Just bear with me on that.
+
+43
+03:37.970 --> 03:44.900
+But the question that most students have is, well, how did you know to use background-color and how
+
+44
+03:44.900 --> 03:48.380
+did you know that blue as a color would work?
+
+45
+03:48.500 --> 03:50.870
+Let's see how we can find out how to do this.
+
+46
+03:50.960 --> 04:02.570
+So if I head over to Google and we search for change background color using CSS and we're going to tag
+
+47
+04:02.570 --> 04:08.330
+on MDN at the end because that's our preferred documentation, and you can see that the first link
+
+48
+04:08.330 --> 04:14.610
+that shows up already takes us to the documentation on the background color.
+
+49
+04:14.900 --> 04:21.680
+And this page explains that the background color is a CSS property, which sets the background color
+
+50
+04:21.680 --> 04:23.450
+of a particular element.
+
+51
+04:24.110 --> 04:34.430
+So we've used this particular line to change the background color of our body HTML element to blue.
+
+52
+04:34.550 --> 04:43.370
+Now, as it shows, we can also do this using hex values or hexadecimal values. So we can replace this
+
+53
+04:43.370 --> 04:51.920
+really ugly looking blue with something that is custom. And a really good tool for finding beautiful
+
+54
+04:51.920 --> 04:57.080
+colors and beautiful color palettes is a website called colorhunt.co.
+
+55
+04:57.800 --> 05:00.130
+And here you've got professional designers
+
+56
+05:00.400 --> 05:07.900
+who've curated some of their favorite color palettes, and they provided the Hex codes to implement
+
+57
+05:07.900 --> 05:12.580
+them in your own designs. So you can search by hot or popular.
+
+58
+05:13.060 --> 05:17.950
+And we're going to look for a nice color palette that is going to work for our particular project.
+
+59
+05:18.250 --> 05:25.960
+So I'm going to choose this one and I'm just going to go ahead and copy the hex value of this nice sort
+
+60
+05:25.960 --> 05:29.200
+of light pastel green bluey color.
+
+61
+05:29.740 --> 05:34.150
+And I'm going to replace the word blue with that hex value.
+
+62
+05:34.240 --> 05:40.180
+And remember, whenever you're using hex values, it needs to have the pound sign, or you might see
+
+63
+05:40.180 --> 05:42.160
+it as the hashtag sign in front.
+
+64
+05:42.550 --> 05:49.690
+Now, as soon as we add that hex code, you'll notice that one of our plugins that we installed in the
+
+65
+05:49.690 --> 05:56.470
+beginning, the one called Pigments, is highlighting that color to us to show us what it'll look like
+
+66
+05:56.770 --> 05:57.880
+when it's implemented.
+
+67
+05:58.180 --> 06:00.730
+But we're going to verify that on our website as well.
+
+68
+06:01.030 --> 06:06.580
+So let's go ahead and hit save and go back to our website and hit refresh.
+
+69
+06:06.970 --> 06:13.240
+And you can see that beautiful light green color is now showing across our web page.
+
+70
+06:13.600 --> 06:20.890
+So the other question that you might have is how can I figure out which colors I can use just by specifying
+
+71
+06:20.890 --> 06:25.360
+the name of it and which ones I have to use as a hex value?
+
+72
+06:25.810 --> 06:31.630
+Well, again, let's head over to Google, and we're going to look for an answer to our query.
+
+73
+06:31.900 --> 06:37.330
+And I know that I've been banging on about this point, but it's really, really important because as
+
+74
+06:37.330 --> 06:44.680
+a fully-fledged web developer, one of the most important skills is finding and figuring out how to
+
+75
+06:44.680 --> 06:47.650
+do something that is specific to your needs.
+
+76
+06:48.010 --> 06:55.150
+So inevitably, at some point in your future career, you will need to build features or implement things
+
+77
+06:55.330 --> 06:56.920
+that we haven't ever talked about.
+
+78
+06:57.280 --> 07:03.460
+And it's important that you really start building up this skill of figuring out what are the best keywords
+
+79
+07:03.460 --> 07:04.150
+to search for,
+
+80
+07:04.420 --> 07:06.270
+how do I structure my searches,
+
+81
+07:06.610 --> 07:11.170
+which sources am I going to go to, be it Google, StackOverflow,
+
+82
+07:11.510 --> 07:17.590
+MDN, in order to figure out how I can do this specific thing that I want to do, and that's why I want
+
+83
+07:17.590 --> 07:22.690
+to show you my thought process in order to guide you on how you can start doing this for yourself as
+
+84
+07:22.690 --> 07:23.110
+well.
+
+85
+07:23.500 --> 07:28.960
+So whenever you come across something that you want to figure out or you want to do that isn't covered
+
+86
+07:28.960 --> 07:35.110
+in the tutorials, I want you to first give it a go looking and seeing if you can figure it out for
+
+87
+07:35.110 --> 07:41.530
+yourself because this is one of the most important skills that you need to learn as a developer.
+
+88
+07:42.280 --> 07:46.750
+So let's go ahead and search for CSS colors.
+
+89
+07:46.750 --> 07:54.190
+And if we hit enter, you'll see that Google has picked out this particular table on the MDN website
+
+90
+07:54.550 --> 07:58.570
+and it has keywords and RGB hex values.
+
+91
+07:58.870 --> 08:01.420
+So let's go and take a look at it in more detail.
+
+92
+08:01.630 --> 08:08.270
+So this is a page that I recommend you bookmarking even because it describes the color
+
+93
+08:08.390 --> 08:11.950
+CSS data type that's available to you when you use the CSS.
+
+94
+08:12.310 --> 08:19.510
+And if you scroll down, there's this really useful table that shows you the colors and the keywords
+
+95
+08:19.510 --> 08:27.010
+that you can use in order to implement these colors in your code without ever having to dive into the
+
+96
+08:27.010 --> 08:27.580
+Hex code.
+
+97
+08:28.090 --> 08:34.450
+So, for example, maybe you want the background to be this powder blue, right?
+
+98
+08:34.600 --> 08:37.540
+So you can go ahead and simply copy this keyword.
+
+99
+08:37.900 --> 08:43.360
+And instead of using the Hex code, we can simply use the word powder blue.
+
+100
+08:43.900 --> 08:51.280
+And if we refresh our website, you can see that that color is automatically rendered because it's recognized
+
+101
+08:51.610 --> 08:53.770
+as a valid CSS color.
+
+102
+08:54.010 --> 08:58.540
+So this is a quick and easy way of implementing colors using CSS.
+
+103
+08:58.600 --> 09:04.090
+Now there's a whole range of other ways that you can change the color using CSS, and I'll leave
+
+104
+09:04.090 --> 09:09.160
+you to read through this documentation and take a look at some of the other ways or some of the other
+
+105
+09:09.160 --> 09:10.990
+palettes that you can tap into.
+
+106
+09:11.410 --> 09:18.400
+Now, heading back to our personal site, the next thing that I want to change is the style of these
+
+107
+09:18.400 --> 09:26.620
+horizontal rules. And you might realize that there's a little bit of difficulty involved in doing this
+
+108
+09:26.620 --> 09:34.750
+because as nice as it is, modifying the style of a particular HTML element by simply going into the
+
+109
+09:34.750 --> 09:42.220
+tag and changing the style attribute, it's a little bit cumbersome when you want to do that to many
+
+110
+09:42.220 --> 09:43.510
+repeated elements,
+
+111
+09:43.810 --> 09:50.140
+for example, our horizontal rules because I have a total of about four of them, and I would have to
+
+112
+09:50.140 --> 09:56.200
+write up the CSS code and copy and paste into each and every one of these tags.
+
+113
+09:56.620 --> 09:59.680
+Now, if at some point I decided to change one of these
+
+114
+09:59.970 --> 10:07.530
+CSS values say, you know, I actually prefer this light color over this powder blue, and I'm going
+
+115
+10:07.530 --> 10:15.480
+to change it back to that particular hex code, then I would have to remember to change it in all four
+
+116
+10:15.480 --> 10:18.240
+places and this is very, very error prone.
+
+117
+10:18.540 --> 10:25.020
+So in the next lesson, I'm going to show you another way that you can implement CSS code that will
+
+118
+10:25.020 --> 10:28.080
+apply across the entire web page.
+
+119
+10:28.530 --> 10:31.180
+And it's by using internal CSS.
+
+120
+10:31.380 --> 10:33.690
+You can look forward to that in the next lesson.
+
+121
+10:33.840 --> 10:34.380
+See you there.

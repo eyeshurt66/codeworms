@@ -1,0 +1,685 @@
+WEBVTT
+
+0
+00:00.760 --> 00:06.250
+All right, so now that we've seen all the places where we can include CSS in order to change the
+
+1
+00:06.250 --> 00:12.490
+style of our website, then now is a good time to review the CSS syntax.
+
+2
+00:12.760 --> 00:18.130
+And you hear this word syntax a lot when you're dealing with programmers or programming, and all that
+
+3
+00:18.130 --> 00:21.460
+it refers to is just the grammar of the CSS language.
+
+4
+00:21.820 --> 00:26.920
+Just as in English, we have grammatical rules which state where you should put commas, where you should
+
+5
+00:26.920 --> 00:30.760
+have full stops, which words need to be capitalized, et cetera, et cetera.
+
+6
+00:30.970 --> 00:34.900
+All programming languages also have their own particular syntax.
+
+7
+00:35.290 --> 00:37.960
+So let's take a look at what CSSes looks like.
+
+8
+00:39.250 --> 00:42.850
+Now, the first thing that you'll see is the selector.
+
+9
+00:43.090 --> 00:45.970
+And this comes at the beginning of the CSS rule.
+
+10
+00:46.270 --> 00:53.020
+And then comes a pair of curly braces inside, which is where your CSS rules are going to reside.
+
+11
+00:53.290 --> 00:58.870
+And the rule will change the appearance of some property and give it a new value.
+
+12
+00:59.140 --> 01:02.810
+And each rule has to end with a semicolon at the end.
+
+13
+01:03.340 --> 01:08.320
+And that is kind of equivalent to the full stops that we see in our English sentences.
+
+14
+01:08.500 --> 01:12.730
+Essentially, the selector is basically just the who,
+
+15
+01:13.150 --> 01:17.020
+so who is it that you want to modify in your web page?
+
+16
+01:17.050 --> 01:18.160
+Is it the H1?
+
+17
+01:18.430 --> 01:20.290
+Is it the paragraph tags?
+
+18
+01:20.530 --> 01:22.040
+Is it the image tags?
+
+19
+01:22.060 --> 01:24.190
+Whose style do you want to change?
+
+20
+01:25.030 --> 01:27.970
+And the next part is the property.
+
+21
+01:28.150 --> 01:29.530
+And this is the what.
+
+22
+01:30.160 --> 01:32.830
+What about that H1
+
+23
+01:32.860 --> 01:33.940
+do you want to change?
+
+24
+01:33.970 --> 01:35.410
+Is it the background color?
+
+25
+01:35.440 --> 01:36.730
+Is it the text color?
+
+26
+01:37.030 --> 01:38.170
+Is it its position?
+
+27
+01:38.950 --> 01:41.380
+And finally, we've got the value.
+
+28
+01:41.710 --> 01:48.400
+And that is the how. So how do you want to change the background color of H1?
+
+29
+01:48.700 --> 01:50.350
+Do you want it to be blue?
+
+30
+01:50.380 --> 01:51.760
+Do you want it to be red?
+
+31
+01:52.180 --> 01:55.390
+And that's the value that you're going to give in order to change it.
+
+32
+01:55.540 --> 02:00.490
+So whenever you get stuck thinking about CSS, this is a good time point in the video to come back
+
+33
+02:00.490 --> 02:07.540
+to you just to remind yourself what are each of the parts inside the CSS code that you are changing
+
+34
+02:07.840 --> 02:09.310
+in order to affect the style.
+
+35
+02:10.210 --> 02:13.000
+So let's look at a real life example. Here
+
+36
+02:13.000 --> 02:18.730
+I have a website that is dedicated to the true love of my life, which is bacon.
+
+37
+02:19.150 --> 02:27.880
+And all that I've got in this website is an H1 for the 'I Love Bacon' heading, and I've got three separate
+
+38
+02:27.880 --> 02:33.790
+paragraphs that just say bacon, bacon, bacon, bacon, bacon, which is what I hear in my head most
+
+39
+02:33.790 --> 02:38.050
+of the time, especially around lunchtime, which is right now.
+
+40
+02:38.620 --> 02:39.340
+So,
+
+41
+02:39.430 --> 02:47.650
+and finally, I've got an image of a piece of bacon. So if I decide to apply some CSS to my website
+
+42
+02:47.770 --> 02:52.420
+say let's change the H1's color to the color red.
+
+43
+02:53.050 --> 02:58.360
+Now, in this case, the who is, of course, the H1, that's what I'm trying to select, and that's
+
+44
+02:58.360 --> 02:59.560
+why it's called the selector.
+
+45
+02:59.830 --> 03:01.840
+And the color, of course, is the what,
+
+46
+03:02.200 --> 03:08.200
+and finally, the how I'm going to change that color is the value, which in this case is red.
+
+47
+03:08.470 --> 03:14.650
+And by applying CSS rule, I end up changing the h1's color property to red.
+
+48
+03:14.920 --> 03:22.300
+Now let's take a look at that in real life. If you look inside the resources of this lesson, you will
+
+49
+03:22.300 --> 03:26.770
+find a zip file called Bacon Fansite that you will be able to download.
+
+50
+03:27.130 --> 03:35.470
+And once you unzip it and extract the files inside, you should find a folder called CSS - Bacon Fansite.
+
+51
+03:36.130 --> 03:38.710
+Now, go ahead and take this folder
+
+52
+03:38.870 --> 03:46.780
+CSS - Bacon fansite and drag it into your project sidebar right here below the other project.
+
+53
+03:47.650 --> 03:53.440
+Now, if you want to get rid of the previous project, just click on the top, HTML project file
+
+54
+03:53.710 --> 03:57.820
+and then remove Project Folder and ignore this DS_Store.
+
+55
+03:57.820 --> 04:01.230
+This is something that just gets created automatically on macOS.
+
+56
+04:01.240 --> 04:04.690
+You can delete it if you want to, but it doesn't actually do anything.
+
+57
+04:05.080 --> 04:10.330
+So now you should have this index.html file in your Atom Project folder.
+
+58
+04:10.810 --> 04:18.430
+And here I've already written a little bit of code in order to create the bare HTML bones of our bacon
+
+59
+04:18.430 --> 04:19.150
+fansite.
+
+60
+04:19.510 --> 04:27.310
+Now I know that some of you guys might be vegan or vegetarian or pescatarian or whatever it may be.
+
+61
+04:27.640 --> 04:35.620
+If my love of bacon offends you in any way, then I am deeply apologetic and you can feel free to change
+
+62
+04:35.620 --> 04:43.040
+or update this website to whatever it is that you worship like broccoli or spinach.
+
+63
+04:43.060 --> 04:43.450
+But,
+
+64
+04:44.320 --> 04:46.300
+my thing is bacon, so here we go.
+
+65
+04:46.930 --> 04:49.000
+So here's the base website.
+
+66
+04:49.390 --> 04:57.400
+And as the first challenge, I want you to pause this video and create a new folder called css
+
+67
+04:57.820 --> 05:02.230
+inside which you will create a new file called styles.css,
+
+68
+05:02.800 --> 05:09.520
+and then you're going to link that file to this current HTML file using an external link.
+
+69
+05:09.580 --> 05:14.650
+So we're using external CSS. So pause the video and give it a go.
+
+70
+05:18.210 --> 05:18.540
+All right.
+
+71
+05:18.570 --> 05:20.880
+That shouldn't have been too hard. If it was,
+
+72
+05:20.910 --> 05:26.520
+make sure you look at some of the previous videos where we spoke about inline, internal and external
+
+73
+05:26.520 --> 05:27.180
+CSS.
+
+74
+05:28.290 --> 05:35.700
+So the first thing I'm going to do is I'm going to create a new folder inside our CSS - Bacon fan
+
+75
+05:35.700 --> 05:40.610
+site, and I'm going to call it cs. Inside the css folder
+
+76
+05:40.620 --> 05:43.950
+I'm going to create a new file called styles.css.
+
+77
+05:43.950 --> 05:47.450
+And now styles.css
+
+78
+05:47.450 --> 05:54.150
+is inside a folder called css and the same hierarchical level at index.css.
+
+79
+05:54.570 --> 06:03.150
+So I can go inside the head of this website and I can insert a link that has a relationship of stylesheet
+
+80
+06:03.570 --> 06:08.080
+and the href is css/styles.css.
+
+81
+06:08.190 --> 06:08.650
+.
+
+82
+06:09.360 --> 06:15.840
+So now if I hit save and I can just check to make sure that it's actually been linked up by tapping
+
+83
+06:15.840 --> 06:21.060
+into the body, changing the background color, which we've done before. And let's just change it to
+
+84
+06:21.570 --> 06:22.020
+red.
+
+85
+06:23.010 --> 06:28.320
+Let's go ahead and save everything, hit refresh and we can verify that it's all linked up and it's all
+
+86
+06:28.320 --> 06:28.890
+working.
+
+87
+06:29.160 --> 06:32.190
+Now, I don't really actually want to have a red
+
+88
+06:33.370 --> 06:36.970
+background for my bacon website. Seems a little bit too fanatical.
+
+89
+06:37.300 --> 06:42.880
+But instead, we're going to add that CSS rule that we saw earlier on when we changed the text color
+
+90
+06:43.210 --> 06:45.250
+of the h1 to a red color.
+
+91
+06:45.610 --> 06:46.750
+So first things first.
+
+92
+06:46.780 --> 06:48.010
+Who am I trying to change?
+
+93
+06:48.550 --> 06:53.360
+So of course, it's going to be the h1 in this case. I'm going to open a set of curly brackets,
+
+94
+06:53.590 --> 06:57.190
+and then I'm going to add the property or the what.
+
+95
+06:57.520 --> 07:04.210
+And in this case, it's of course the color property, and I'm going to change its value to red.
+
+96
+07:04.420 --> 07:11.890
+And of course, remember that the CSS syntax requires that you close off the line with a semicolon.
+
+97
+07:13.150 --> 07:19.540
+Now, all the paths that we've mentioned in the CSS syntax slides are really, really important.
+
+98
+07:19.930 --> 07:25.630
+And sometimes you might forget or you might accidentally remove something and it will break the code.
+
+99
+07:25.870 --> 07:28.090
+So let me show you what I mean.
+
+100
+07:28.750 --> 07:36.550
+For example, if we forgot to put in that, then we can't differentiate between the what and the how.
+
+101
+07:36.550 --> 07:41.470
+And it'll think that all of this is the what or the properties we want to change.
+
+102
+07:41.710 --> 07:43.870
+So that doesn't work.
+
+103
+07:44.410 --> 07:53.110
+And if you hit save, then the linter inside Atom will actually give you this error, saying it expected
+
+104
+07:53.110 --> 07:55.840
+a colon on line 1 column 12.
+
+105
+07:56.230 --> 08:02.800
+So you can see your lines and columns down here, and you can see that currently we're on line 1 column
+
+106
+08:02.800 --> 08:03.450
+11.
+
+107
+08:03.460 --> 08:09.220
+So this is line 1, column 12, and this is where it expected a colon.
+
+108
+08:10.150 --> 08:18.130
+Now with the colon, if we refresh our website, you can see that it changed our h1 to have a red
+
+109
+08:18.160 --> 08:18.860
+text color.
+
+110
+08:19.330 --> 08:21.190
+But without that colo
+
+111
+08:22.660 --> 08:26.210
+then you can see that it doesn't affect the style at all.
+
+112
+08:26.230 --> 08:28.510
+It's not a valid CSS rule.
+
+113
+08:29.560 --> 08:36.940
+So let's put that colon back in, and let's go ahead and add another rule to modify our h1.
+
+114
+08:37.240 --> 08:41.440
+Let's change the font size to something really, really huge.
+
+115
+08:41.440 --> 08:43.630
+Let's say 200 pixels.
+
+116
+08:44.350 --> 08:46.270
+So let's hit save.
+
+117
+08:46.300 --> 08:47.450
+Let's refresh.
+
+118
+08:47.470 --> 08:55.060
+You can see we've got this massive title saying, I love bacon. So you can have more than one rule
+
+119
+08:55.330 --> 08:57.400
+that's applied to the same selector.
+
+120
+08:58.060 --> 09:04.660
+And very often you'll actually apply many, many rules to the same selector, and you can either have
+
+121
+09:04.660 --> 09:05.530
+them in line.
+
+122
+09:05.680 --> 09:10.270
+But as you can imagine, as you get more and more rules, you're going to run out of space pretty quickly.
+
+123
+09:10.600 --> 09:17.020
+So by convention, most people will write CSS with the selector, the open curly bracket,
+
+124
+09:17.230 --> 09:21.520
+then each CSS rule will go onto a new line
+
+125
+09:21.910 --> 09:27.160
+and this way, you can clearly see and make sure that each line ends with the semicolon and each of
+
+126
+09:27.160 --> 09:31.630
+the properties are separated from the values by a colon.
+
+127
+09:31.930 --> 09:38.350
+Now there's another sort of best practice is that once you start getting a lot of these rules, say
+
+128
+09:38.350 --> 09:43.930
+you know, 20 all in one paragraph, then it starts getting hard finding them.
+
+129
+09:44.380 --> 09:52.150
+So usually the best practice is to keep all of these rules in alphabetical order.
+
+130
+09:52.330 --> 09:59.530
+And in fact, if you put font size before color and you hit save, Atom will actually give you a
+
+131
+09:59.530 --> 10:07.840
+warning telling you that the linter advises that the best practice is have all of your properties in
+
+132
+10:07.840 --> 10:09.040
+alphabetical order.
+
+133
+10:09.370 --> 10:14.680
+That way, when you come to debugging or trying to figure out what's going wrong, then it'll be much,
+
+134
+10:14.680 --> 10:18.670
+much easier to find each and every property that you're looking for.
+
+135
+10:19.120 --> 10:27.310
+Now, as you might have seen, it's quite easy to find the who because we're just looking at the HTML
+
+136
+10:27.310 --> 10:27.880
+element,
+
+137
+10:27.940 --> 10:34.420
+for example, the h1 tag, and we're simply ignoring the angle brackets of the tag, and we're just
+
+138
+10:34.420 --> 10:39.820
+picking up on the name of the HTML element to use as our selector.
+
+139
+10:40.090 --> 10:48.190
+Now, as a challenge, I want you to change the background of this bacon image to read as well.
+
+140
+10:48.850 --> 10:55.150
+So take a look at the index.html and implement your CSS code inside style.css.
+
+141
+10:55.390 --> 10:57.730
+So pause the video and give that a go.
+
+142
+11:00.320 --> 11:02.120
+All right, so how did that go?
+
+143
+11:02.540 --> 11:11.210
+Now, of course, the easy part is the who in this case, which is the image tag, and we're not including
+
+144
+11:11.210 --> 11:14.870
+any of the other attributes like source or alt text, et cetera.
+
+145
+11:14.880 --> 11:20.420
+We're just interested in that red part, which is the name of the HTML element.
+
+146
+11:20.930 --> 11:27.740
+So we're going to go into our styles.css and we're going to target our selector,
+
+147
+11:28.160 --> 11:31.820
+which is, of course, the image tag.
+
+148
+11:32.750 --> 11:37.190
+Then we're going to open a set of curly braces and inside we're going to define our rule.
+
+149
+11:37.610 --> 11:40.280
+And the property that I wanted you to change for
+
+150
+11:40.280 --> 11:42.920
+the image was its background color.
+
+151
+11:43.100 --> 11:46.220
+And we want to change it to red as well.
+
+152
+11:46.490 --> 11:49.370
+So let's hit save and let's hit refresh.
+
+153
+11:49.460 --> 11:55.010
+And you can see we've now got a bacon image that has a red background.
+
+154
+11:55.340 --> 12:01.670
+Now, at this point, it seems easy to see how to find the who, right?
+
+155
+12:01.700 --> 12:04.910
+The image or the P tag or the h1,
+
+156
+12:05.300 --> 12:12.320
+whatever it is that you want to change, you simply use it as the selector inside your CSS code.
+
+157
+12:12.860 --> 12:17.090
+Now what about the what or the properties?
+
+158
+12:17.390 --> 12:22.460
+How do we know what keywords we can and can't use and what they will affect?
+
+159
+12:23.480 --> 12:28.340
+Well, you guessed it, this is where we go back to the web docs.
+
+160
+12:28.880 --> 12:35.630
+So if you have a look and on the MDN home page and you go to technologies and you go to CSS and
+
+161
+12:35.630 --> 12:41.780
+then you go to their CSS reference, you can see that it talks about the syntax.
+
+162
+12:42.140 --> 12:50.300
+But more importantly, it has this entire directory of keywords, which are effectively our properties.
+
+163
+12:50.540 --> 12:57.080
+So these are the 'whats' that we can change. A and you'll find everything that we've used so far,
+
+164
+12:57.290 --> 13:02.810
+for example, background color or font size or whatever it is that you're looking for.
+
+165
+13:03.140 --> 13:08.990
+And these are all of the generic properties that you can change using CSS rules.
+
+166
+13:09.170 --> 13:15.890
+And if you click on each of them, then it'll take you to a more detailed page where it shows you how
+
+167
+13:15.890 --> 13:22.130
+you can implement the code and what different types of code will do for your styling.
+
+168
+13:22.400 --> 13:29.540
+So have a play around with all of these different properties and see what other things you can do to
+
+169
+13:29.540 --> 13:34.280
+make this Bacon fansite look more the way that you want it to.
+
+170
+13:34.790 --> 13:37.220
+And once you're done, I'll see you on the next lesson.

@@ -1,0 +1,641 @@
+WEBVTT
+
+0
+00:00.940 --> 00:09.310
+Now, in the last few lessons, we looked at why CSS is useful and how you can implement it using 
+
+1
+00:09.310 --> 00:12.790
+inline internal or external success.
+
+2
+00:13.450 --> 00:19.870
+Now in this lesson, we're going to start to develop a really important skill and that is debugging
+
+3
+00:19.870 --> 00:20.480
+your code.
+
+4
+00:20.890 --> 00:23.900
+Inevitably, as a developer of any sort,
+
+5
+00:23.920 --> 00:33.850
+Web, mobile, backend, you will write code that have logical flaws or that have typos because we are all
+
+6
+00:33.850 --> 00:35.620
+human and we make mistakes.
+
+7
+00:35.980 --> 00:41.350
+And it's really important to learn the skill of diagnosing your bugs.
+
+8
+00:41.800 --> 00:45.720
+So when something doesn't work the way you expect it to,
+
+9
+00:46.210 --> 00:51.190
+how can you figure out what is the cause and how do you go about fixing it?
+
+10
+00:51.730 --> 01:00.310
+And so in this lesson, in the resources, you'll find two text files one called debugging problem 1,
+
+11
+01:00.550 --> 01:03.040
+and the other one called debugging problem 2.
+
+12
+01:03.520 --> 01:13.330
+And what I want you to do is to go inside your index.html and hit Command +a or Control +a a to select everything.
+
+13
+01:13.600 --> 01:20.260
+Now we're going to replace the code that's inside your index.html with each of the debugging problems.
+
+14
+01:20.620 --> 01:27.370
+Now, if you've made notes in your index.html, or if you want to keep a copy of the actual working
+
+15
+01:27.370 --> 01:33.100
+code that you've already written, make sure that after you've selected everything inside a HTML,
+
+16
+01:33.400 --> 01:42.340
+go ahead and paste this into a notepad or into another file that you save as the working index.html
+
+17
+01:42.340 --> 01:44.080
+or give it some sort of name.
+
+18
+01:44.650 --> 01:51.150
+Now, after we replace this with the debugging problem, if you wanted to go back to your original index.html
+
+19
+01:51.300 --> 01:57.400
+you can always hit undo in Atom, and the shortcut for that is Command + Z
+
+20
+01:57.760 --> 02:05.320
+in Mac and its Control + Z on Windows and you can undo for as far back as you want to.
+
+21
+02:05.530 --> 02:12.340
+So once you've saved a copy of your original index.html and then hit Backspace to delete everything
+
+22
+02:12.670 --> 02:15.540
+next, you're going to go to the course resources,
+
+23
+02:15.550 --> 02:17.920
+and again, if you don't remember how to find that
+
+24
+02:18.220 --> 02:22.690
+have a look at the beginning of Lesson 3 where I talked about this now.
+
+25
+02:22.690 --> 02:27.280
+Inside the course resources, you'll find a section that says Download the debugging problems
+
+26
+02:27.280 --> 02:28.150
+Starting files.
+
+27
+02:28.540 --> 02:34.870
+Once you've downloaded that, you'll need to unzip that zipped folder and you should have a folder called
+
+28
+02:34.870 --> 02:36.730
+CSS Debugging Problems.
+
+29
+02:37.240 --> 02:44.020
+Now you're going to go to Atom, you're going to go to file, open, and you go to navigate to that folder
+
+30
+02:44.290 --> 02:49.180
+in your downloads and make sure that you haven't selected the zip version.
+
+31
+02:49.600 --> 02:53.050
+Select the file and then open up debugging problem 1.
+
+32
+02:54.060 --> 03:00.540
+And you're going to hit Command + a or Control + a to select everything, and then you're going to hit Command
+
+33
+03:00.540 --> 03:07.710
+or Control + C and then you're going to copy all of this code over to your index.html.
+
+34
+03:09.080 --> 03:16.280
+And then you're going to hit save and you're going to refresh your page to see that, oh, what happened?
+
+35
+03:16.520 --> 03:19.730
+Where did all of our beautiful CSS styling go?
+
+36
+03:20.240 --> 03:28.940
+And this is your first challenge to debug and fix the code and try to figure out what's going on here.
+
+37
+03:29.540 --> 03:31.640
+So pause the video and give it a go.
+
+38
+03:34.460 --> 03:34.900
+All right.
+
+39
+03:34.940 --> 03:42.560
+So you might have found out the issue by painstakingly going through the code line by line.
+
+40
+03:42.950 --> 03:45.320
+Now you might have also not found the bug.
+
+41
+03:45.470 --> 03:52.040
+So let me walk you through a workflow of how you can approach debugging now and also in the future.
+
+42
+03:52.670 --> 03:57.640
+So the first thing that we're going to use is we're going to pull up the Chrome developer tools.
+
+43
+03:57.650 --> 04:05.780
+And this is one of the reasons why we're using Chrome to develop our website and web apps, even though
+
+44
+04:05.900 --> 04:10.370
+perhaps there are other browsers that you might prefer using on a day to day basis.
+
+45
+04:10.970 --> 04:15.500
+And one of the reasons is because of something called the Chrome developer tools.
+
+46
+04:15.980 --> 04:21.410
+So if you head over to the three dots in the top right of your Chrome browser, click on it and then
+
+47
+04:21.410 --> 04:22.480
+go to more tools,
+
+48
+04:22.490 --> 04:24.650
+you should find the developer tools over there.
+
+49
+04:24.920 --> 04:29.180
+And if you click on it, it brings up this console.
+
+50
+04:29.540 --> 04:35.030
+So there's a whole bunch of tabs here, including network, performance, sources, elements, and we've
+
+51
+04:35.030 --> 04:39.650
+checked out elements before when we right-clicked on something and we said, Inspect.
+
+52
+04:39.980 --> 04:41.270
+That's what we were bringing up.
+
+53
+04:41.270 --> 04:43.100
+We're bringing up the Chrome developer tools.
+
+54
+04:43.340 --> 04:49.790
+So if we head over to console, then you can see that Chrome is actually reporting an error here to
+
+55
+04:49.790 --> 04:55.310
+you. And it's telling you that it failed to load the resource.
+
+56
+04:55.490 --> 05:02.810
+And there's an error where the file that you're trying to pull up is not found and it tells you what
+
+57
+05:02.810 --> 05:11.630
+file it's trying to look for. It's trying to look for something at /css/styles.css.
+
+58
+05:11.870 --> 05:18.650
+So if we go over to our code and we look at the part where we asked the browser to load this particular
+
+59
+05:18.650 --> 05:26.300
+file /css/styles.css, then we will find it over here on line 6.
+
+60
+05:27.170 --> 05:35.870
+And this shows you the problem that I spoke about earlier, whereby I said that the hrRef or the URL
+
+61
+05:35.870 --> 05:46.880
+location of our styles.css exists in the CSS folder at the same hierarchical level as our index.
+
+62
+05:47.120 --> 05:47.530
+html.
+
+63
+05:48.080 --> 05:58.550
+But I've very sneakily added this leading forward slash and that makes this link relative to the root.
+
+64
+05:59.120 --> 06:07.190
+Whereas without that leading slash, it makes this link relative to the subdirectory that the index.html
+
+65
+06:07.520 --> 06:08.880
+exists in.
+
+66
+06:09.320 --> 06:18.470
+So without the link, we're looking inside HTML personal site for a folder called css/styles.css.
+
+67
+06:19.040 --> 06:24.650
+With the leading slash, we're looking for the root of the website, which we currently don't actually
+
+68
+06:24.650 --> 06:24.980
+have.
+
+69
+06:25.340 --> 06:33.800
+So we need to do to fix this bug is to delete that leading slash, hit, save and refresh our website.
+
+70
+06:34.250 --> 06:41.090
+You'll see that error in the console now disappears and our styles are restored to our page.
+
+71
+06:42.140 --> 06:45.290
+So that's the solution for the first debugging problem.
+
+72
+06:45.440 --> 06:46.760
+Did you manage to get it right?
+
+73
+06:47.240 --> 06:50.010
+Now, let's move on to the second debugging problem.
+
+74
+06:50.030 --> 06:56.000
+So again, similarly, we're going to hit Command + a or Control + a and delete everything inside our index.
+
+75
+06:56.330 --> 06:56.750
+html.
+
+76
+06:57.080 --> 07:03.020
+We're going to go to debugging problem 2 and we're going to copy everything over.
+
+77
+07:04.330 --> 07:08.170
+Gonna hit Save and we're going to refresh our website.
+
+78
+07:08.410 --> 07:14.410
+And again, something has broken, but it hasn't broken as dramatically as previously.
+
+79
+07:14.740 --> 07:21.060
+Now I want you to pause the video and figure out how we can restore it to the previous look and feel
+
+80
+07:21.340 --> 07:23.110
+by fixing our code.
+
+81
+07:23.470 --> 07:25.840
+So pause the video now and give it a go.
+
+82
+07:28.400 --> 07:33.500
+So the first step of debugging always starts with identifying the problem.
+
+83
+07:34.100 --> 07:35.900
+What is the problem here?
+
+84
+07:36.020 --> 07:41.150
+Well, our background used to be a light green colour and now it's white.
+
+85
+07:41.720 --> 07:44.750
+But the other parts of our CSS hasn't broken.
+
+86
+07:44.780 --> 07:48.260
+So, for example, our horizontal rule is still correctly formatted,
+
+87
+07:48.620 --> 07:53.380
+our H1 and H3 are also formatted using are external
+
+88
+07:53.490 --> 07:54.050
+CSS.
+
+89
+07:54.200 --> 07:59.510
+So it's probably not to do with the location of the stylesheet.
+
+90
+07:59.780 --> 08:06.350
+So the only issue that we need to fix is why is it that the background is white
+
+91
+08:06.830 --> 08:13.910
+but in our stylesheet, we said that the body's background should be our light green colour?
+
+92
+08:14.150 --> 08:16.190
+Why is that not happening?
+
+93
+08:17.060 --> 08:21.830
+Well, let's go ahead and pull up our Chrome developer tools again.
+
+94
+08:21.980 --> 08:31.910
+And if we look inside elements and we select the body here and we go over to this styles section over
+
+95
+08:31.910 --> 08:41.090
+here, then you can see that it's showing us all of the CSS that's being applied to the body of our
+
+96
+08:41.090 --> 08:48.500
+webpage, and that includes setting the background color to white, as well as setting the background
+
+97
+08:48.500 --> 08:55.940
+color to our specified hex code that light green color, as well as changing the display and the margin.
+
+98
+08:56.330 --> 09:03.530
+And we're seeing that the color that we desire, which we set inside our stylesheet, is being crossed
+
+99
+09:03.530 --> 09:07.220
+out and overridden by this white color.
+
+100
+09:08.800 --> 09:15.790
+And if you look carefully inside our new buggy index.html,
+
+101
+09:16.240 --> 09:25.960
+then the keen-eyed amongst you might have spotted that I set an inline CSS rule inside the body tag to
+
+102
+09:25.960 --> 09:33.460
+turn the body's background color to white, which explains why our page looks like this.
+
+103
+09:33.910 --> 09:39.520
+But what it doesn't explain is why is it that this one is being used
+
+104
+09:39.880 --> 09:48.250
+but this one is not? If we specify six rules for the same property in different places,
+
+105
+09:49.360 --> 09:51.280
+which one is more important?
+
+106
+09:51.820 --> 09:56.080
+Well, we can use the Chrome developer tools to help us answer that question.
+
+107
+09:56.230 --> 10:02.170
+So I'm going to keep the body's background color in the inline CSS as white,
+
+108
+10:02.830 --> 10:06.640
+I'm also going to add a style tag here.
+
+109
+10:08.260 --> 10:17.080
+And inside the style tag, I'm going to change the body's background color to, let's say, red.
+
+110
+10:18.610 --> 10:27.580
+And I'm going to make this color a little bit more obvious, so let's change this to blue, hit save and
+
+111
+10:27.580 --> 10:31.060
+refresh our page and you'll see that it stays white.
+
+112
+10:31.180 --> 10:36.070
+But now if we select this line and we select our body element,
+
+113
+10:37.140 --> 10:40.890
+you can see that this is the elements tab for viewing the elements.
+
+114
+10:41.430 --> 10:45.630
+Then you can see that there's three colors that are being applied to our body.
+
+115
+10:46.140 --> 10:55.530
+And two of them are crossed out the red color, which comes from index.html on line 10, which is,
+
+116
+10:55.530 --> 10:58.940
+of course, our internal CSS.
+
+117
+11:00.450 --> 11:08.190
+And then we've got the white color, which is being applied on the style attribute of the actual body
+
+118
+11:08.190 --> 11:10.530
+element, as you can see here.
+
+119
+11:11.400 --> 11:19.380
+And finally, we've got some CSS rule being applied inside our file called styles.css on line
+
+120
+11:19.380 --> 11:19.770
+2.
+
+121
+11:20.370 --> 11:27.000
+So styles.css on line 2 is the rule where we're setting the background color to blue.
+
+122
+11:27.720 --> 11:36.840
+Now inside Chrome, you can untick that top-level background color and it goes down to the next most
+
+123
+11:36.840 --> 11:37.650
+important thing.
+
+124
+11:37.860 --> 11:45.300
+And this is the equivalent of deleting this inline CSS rule from the body tag.
+
+125
+11:46.050 --> 11:54.100
+And that means that it defaults to the next most important CSS rule, which is the one on our index
+
+126
+11:54.100 --> 11:55.500
+.html on line
+
+127
+11:55.500 --> 11:55.980
+10.
+
+128
+11:56.490 --> 11:59.730
+That is an internal CSS.
+
+129
+12:01.590 --> 12:08.700
+And if you untick that one, which is the equivalent of deleting this part here, then and only then
+
+130
+12:08.700 --> 12:15.120
+does it go to our styles.css applying the background color to be blue.
+
+131
+12:16.560 --> 12:22.890
+Now, remember that when you're ticking and unticking these things inside Chrome, it affects how the
+
+132
+12:22.890 --> 12:24.420
+web page gets displayed,
+
+133
+12:24.660 --> 12:27.060
+but it does not change your code.
+
+134
+12:27.420 --> 12:34.920
+So if I hit refresh right now, then it goes back to how it will be displayed across all the browsers
+
+135
+12:35.070 --> 12:43.470
+if this website was live. So the Chrome tool is only for you to mess around with it locally and see
+
+136
+12:43.470 --> 12:44.860
+what those changes,
+
+137
+12:44.880 --> 12:51.480
+for example, removing this line here. Do you see how by ticking an unticking that it just commented
+
+138
+12:51.480 --> 12:54.210
+out that particular CSS rule?
+
+139
+12:55.590 --> 13:00.090
+And it shows you what the effects are without affecting the code behind it.
+
+140
+13:00.480 --> 13:08.130
+So let's go ahead and affect the code because what we've learned is that by having
+
+141
+13:09.060 --> 13:19.320
+inline CSS, internal CSS, as well as external CSS all affecting the same property of the same
+
+142
+13:19.320 --> 13:19.980
+element,
+
+143
+13:20.670 --> 13:27.420
+the priority is given to the inline element, so that's what's making our background white.
+
+144
+13:28.170 --> 13:38.640
+Now, if I delete the CSS rule from here, save and refresh, then it goes to the next most important
+
+145
+13:38.670 --> 13:45.450
+CSC rule, which is the one inside our internal CSS over here.
+
+146
+13:46.440 --> 13:54.780
+And if I delete this internal CSS and hit save and refresh, then and only then does it go to the
+
+147
+13:54.780 --> 13:59.340
+next most important rule, which is external CSS.
+
+148
+14:00.030 --> 14:06.510
+So this describes the hierarchy of these three different ways of implementing CSS.
+
+149
+14:07.050 --> 14:12.870
+And what it means is that you can apply a global CSS rule to all of your web pages,
+
+150
+14:13.230 --> 14:19.920
+but on the individual web pages, you can apply more specific rules through using internal or inline
+
+151
+14:19.920 --> 14:28.260
+CSS as more or less one-off changes for that specific page or that specific element on that page.
+
+152
+14:28.950 --> 14:36.060
+So let's restore our website to the way that it was before, and you can mess around with implementing
+
+153
+14:36.060 --> 14:44.160
+your CSS in those three different ways and see how the importance of those rules depend on where
+
+154
+14:44.160 --> 14:45.900
+you write it. Now
+
+155
+14:45.900 --> 14:53.880
+in terms of best practice as a web designer, it's usually suggested that you implement all of your
+
+156
+14:53.880 --> 14:57.380
+styles inside your external CSS.
+
+157
+14:57.510 --> 15:06.210
+Now, in the next lesson, we're going to look more closely at the CSS syntax and what a CSS rule is
+
+158
+15:06.210 --> 15:06.960
+composed of.
+
+159
+15:07.320 --> 15:10.770
+So for all of that and more, I'll see you on the next lesson.

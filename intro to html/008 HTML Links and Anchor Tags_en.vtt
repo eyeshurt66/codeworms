@@ -1,0 +1,681 @@
+WEBVTT
+
+0
+00:00.420 --> 00:04.410
+Now, if we compare our current site against Jon Kleinbergs,
+
+1
+00:04.410 --> 00:09.410
+the only major difference that you will see now is that his has a whole bunch
+
+2
+00:09.990 --> 00:13.260
+of hyperlinks interspersed in the homepage
+
+3
+00:13.500 --> 00:16.980
+whereas ours is completely devoid of any hyperlinks.
+
+4
+00:17.370 --> 00:20.700
+If we think back to what HTML stands for,
+
+5
+00:20.790 --> 00:23.460
+we've talked about the markup language part already
+
+6
+00:23.700 --> 00:27.900
+but we haven't yet talked about the hypertext part of HTML.
+
+7
+00:28.230 --> 00:32.820
+So hypertext is basically just a bunch of text documents that can be linked
+
+8
+00:32.820 --> 00:37.020
+together using these hyperlinks. So when you click on one of them,
+
+9
+00:37.260 --> 00:39.540
+it takes you to a different text document,
+
+10
+00:39.900 --> 00:44.250
+and then you click on the link there and it takes you to another different text
+
+11
+00:44.250 --> 00:48.660
+document. And that's where the HT part of HTML comes from.
+
+12
+00:48.960 --> 00:53.610
+And in fact, if you're interested, there is even a game called the Wiki game
+
+13
+00:53.910 --> 00:54.060
+where
+
+14
+00:54.060 --> 00:59.060
+you have a starting Wikipedia article and a goal Wikipedia article
+
+15
+00:59.520 --> 01:04.520
+and you have to click through the links on Wikipedia to try and navigate to the
+
+16
+01:05.490 --> 01:06.720
+goal article.
+
+17
+01:06.960 --> 01:11.430
+And it's basically an association game that's played using hyperlinks. Now,
+
+18
+01:11.430 --> 01:13.710
+what are these links made of?
+
+19
+01:14.040 --> 01:17.010
+If you have a look at each and every one of these links,
+
+20
+01:17.280 --> 01:20.850
+if you right click on it and click inspect, you know
+
+21
+01:20.850 --> 01:25.470
+that you can bring up the Google Chrome developer tools. And if we have a look,
+
+22
+01:25.530 --> 01:28.800
+you can see that it's actually pointing towards a
+
+23
+01:29.070 --> 01:34.070
+a-tag with a hyperlink reference to the destination that this link is going to
+
+24
+01:34.740 --> 01:39.720
+take you to. And before the a tag gets closed, that's the link text
+
+25
+01:39.750 --> 01:44.130
+so in this case it's the word computer science that gets underlined.
+
+26
+01:44.160 --> 01:47.640
+And when you click on it, it takes you to cs.cornell.edu.
+
+27
+01:48.390 --> 01:51.720
+Let's go ahead and implement this for our website.
+
+28
+01:52.200 --> 01:56.220
+So there's many places where maybe you'd want to direct people away.
+
+29
+01:56.520 --> 01:59.910
+So maybe I can link them to the App Brewery's website here,
+
+30
+02:00.390 --> 02:05.390
+or I could show them examples of me brewing beer or me riding motorcycles.
+
+31
+02:07.260 --> 02:09.300
+Let's go ahead and try that in code.
+
+32
+02:09.570 --> 02:14.570
+So the first place that I want to add a link to is this part where it says the
+
+33
+02:14.880 --> 02:16.860
+App Brewery. So I'm going to put an
+
+34
+02:16.890 --> 02:20.820
+a tag or an anchor tag just in front and close the
+
+35
+02:20.820 --> 02:22.350
+a tag just behind.
+
+36
+02:22.710 --> 02:26.010
+And if you want to have a look at the structure of the anchor tag,
+
+37
+02:26.250 --> 02:30.270
+then as you remember, you can always go to the MDN web docs
+
+38
+02:30.720 --> 02:35.130
+and you can read all about the anchor element and all of its attributes.
+
+39
+02:35.790 --> 02:39.930
+Now, the main attribute that we're going to be concerned with is the href.
+
+40
+02:40.260 --> 02:44.280
+And this is a URL that the hyperlink is going to point to,
+
+41
+02:44.580 --> 02:47.790
+or the destination of that hyperlink. In my case,
+
+42
+02:47.820 --> 02:51.360
+the destination is going to be appbrewery.co.
+
+43
+02:52.320 --> 02:53.760
+And if I just copy that,
+
+44
+02:54.360 --> 02:57.540
+then I can head over here and add an
+
+45
+02:57.750 --> 03:02.750
+a tag or an anchor tag just before where it says the App Brewery and this is
+
+46
+03:04.240 --> 03:07.320
+what the autofill is going to write for me.
+
+47
+03:07.530 --> 03:11.940
+So let's have a look at the structure in a bit more detail. As with the other
+
+48
+03:11.940 --> 03:12.840
+HTML elements
+
+49
+03:12.840 --> 03:17.250
+we've seen, the anchor tag has the a as the element name,
+
+50
+03:17.640 --> 03:20.940
+and then the most important attribute that you're going to find yourself using
+
+51
+03:20.970 --> 03:22.170
+is the href
+
+52
+03:22.560 --> 03:27.150
+and this is set to equal the link destination.
+
+53
+03:27.390 --> 03:31.680
+So where are you going to take your user when they click on this link?
+
+54
+03:32.130 --> 03:35.250
+And the anchor tag is not a self-closing tag.
+
+55
+03:35.520 --> 03:40.520
+So it has a closing tag at the end and between the open tag and the closing tag
+
+56
+03:42.060 --> 03:44.130
+is our link text.
+
+57
+03:44.550 --> 03:48.750
+So that's the bit of text that's going to be underlined and highlighted in blue
+
+58
+03:49.140 --> 03:52.200
+so that the user knows that when they click on this word,
+
+59
+03:52.470 --> 03:56.610
+this is going to take them to that link. So in our case,
+
+60
+03:56.640 --> 04:01.640
+our href is going there to be this URL and between the open anchor tag and
+
+61
+04:04.770 --> 04:08.790
+the closing anchor tag, we're going to put the link text,
+
+62
+04:08.820 --> 04:12.690
+so the bit of text that's going to be underlined. And in my case,
+
+63
+04:12.720 --> 04:17.720
+I'm just going to cut this phrase here and put it inside the anchor tag.
+
+64
+04:21.150 --> 04:26.150
+So now you can see there's actually two sets of HTML elements that enclose this
+
+65
+04:26.910 --> 04:31.890
+line of text. It is simultaneously going to be strong,
+
+66
+04:31.950 --> 04:33.060
+i.e. bolded.
+
+67
+04:33.540 --> 04:38.540
+And it's also going to act as a link to the appbrewery.co website.
+
+68
+04:39.840 --> 04:44.840
+So if we hit save and let's go back over here and hit refresh,
+
+69
+04:45.180 --> 04:50.180
+you can see that this has now been underlined and it's highlighted in a
+
+70
+04:50.550 --> 04:53.190
+different color. Now by convention,
+
+71
+04:53.250 --> 04:58.250
+the highlight is going to be blue if its a link that we've never clicked on and
+
+72
+04:58.380 --> 05:02.400
+it's going to be purple if we have clicked on it in the past.
+
+73
+05:02.580 --> 05:04.950
+And just to confirm, if we click on it,
+
+74
+05:05.220 --> 05:08.550
+it takes us to appbrewery.co. Brilliant.
+
+75
+05:08.700 --> 05:11.700
+So that is working as expected. Now,
+
+76
+05:11.730 --> 05:16.350
+why don't you go ahead and add some links to your hobbies?
+
+77
+05:16.680 --> 05:18.780
+So you know how they say in interviews,
+
+78
+05:18.780 --> 05:22.830
+you should always prove that you've done what you say you've done.
+
+79
+05:22.920 --> 05:24.450
+Go ahead and add some links
+
+80
+05:24.480 --> 05:28.260
+maybe to images on the internet or to YouTube videos,
+
+81
+05:28.440 --> 05:31.890
+anything that you like. Um, and it doesn't have to be in your hobbies.
+
+82
+05:31.920 --> 05:35.880
+It could be in your books and teaching or education or any part of your
+
+83
+05:35.880 --> 05:40.500
+website basically. So go ahead and the video and add some more links.
+
+84
+05:44.010 --> 05:47.190
+So adding links to the ordered list
+
+85
+05:47.310 --> 05:51.690
+or the unordered list is exactly the same as what we've done up here.
+
+86
+05:52.110 --> 05:56.310
+So I'm going to go ahead and add an anchor tag to beer brewing.
+
+87
+05:56.730 --> 06:00.440
+Then I'm going to hit enter to create my anchor tag.
+
+88
+06:00.830 --> 06:05.690
+I'm going to put the words beer brewing in between my anchor tag so that
+
+89
+06:05.690 --> 06:07.670
+that will act as the link text.
+
+90
+06:08.060 --> 06:13.060
+And my href is going to be a YouTube video that I've got where I show people my
+
+91
+06:15.260 --> 06:16.093
+beer brewing.
+
+92
+06:16.700 --> 06:20.960
+So let's go ahead and copy that and paste it into here.
+
+93
+06:21.680 --> 06:26.680
+And then I'm going to add another anchor tag here just to fill up the motorcycle
+
+94
+06:28.280 --> 06:28.660
+part.
+
+95
+06:28.660 --> 06:29.493
+<v 1>All right.</v>
+
+96
+06:33.850 --> 06:35.950
+<v 0>All right. So now I've added two links,</v>
+
+97
+06:35.980 --> 06:40.980
+one for beer brewing and one for the word motorcycles,
+
+98
+06:41.590 --> 06:43.810
+both inside my ordered list.
+
+99
+06:44.050 --> 06:47.650
+So if we hit save and we hit refresh then you'll see
+
+100
+06:47.650 --> 06:52.060
+we've now got two links and they are blue because we've never clicked on it
+
+101
+06:52.060 --> 06:52.840
+before.
+
+102
+06:52.840 --> 06:57.840
+So if I hold down the command button on my keyboard or control on Windows and
+
+103
+06:58.270 --> 07:00.280
+click on each of these links,
+
+104
+07:00.610 --> 07:05.610
+then they'll open up in new tabs and we can have a look at my evidence that I
+
+105
+07:06.460 --> 07:10.780
+have indeed done some beer brewing or motorcycling.
+
+106
+07:11.500 --> 07:14.020
+Now that we've seen how to create some anchor tags
+
+107
+07:14.020 --> 07:16.600
+that point to links on the internet,
+
+108
+07:17.230 --> 07:20.980
+what if I wanted to create a separate page for the
+
+109
+07:20.980 --> 07:25.980
+my hobbies section and I wanted to create a link that linked to my own page?
+
+110
+07:27.190 --> 07:32.190
+Let's head back into Atom and inside this HTML personal site folder where we've
+
+111
+07:35.020 --> 07:36.580
+got our index.html,
+
+112
+07:36.580 --> 07:40.720
+so this file, I'm going to right-click and I'm going to click new file.
+
+113
+07:41.140 --> 07:44.560
+And the new file is going to be called hobbies.html
+
+114
+07:45.490 --> 07:50.200
+and it's going to be created inside the same folder as index.
+
+115
+07:50.200 --> 07:54.940
+So you can see they're the same hierarchical level. Now for hobbies.html
+
+116
+07:54.940 --> 07:59.940
+I'm first gonna add the HTML boilerplate code and the title is going to be My
+
+117
+08:00.250 --> 08:03.580
+hobbies. In the body
+
+118
+08:03.610 --> 08:08.610
+I'm just going to copy all of this and I'm going to hit command + X or control + X
+
+119
+08:10.120 --> 08:13.660
+to cut, and then I'm going to paste it over here.
+
+120
+08:13.810 --> 08:18.810
+So now if I hit save for hobbies and I go back to the index.html and I create
+
+121
+08:19.240 --> 08:24.240
+a new anchor tag and it's going to have the link text of my hobbies.
+
+122
+08:28.480 --> 08:31.870
+And the href is going to be the file name.
+
+123
+08:32.080 --> 08:35.770
+So in this case it will be hobbies.html. Now,
+
+124
+08:35.770 --> 08:39.460
+if I hit save and I go back to my website,
+
+125
+08:39.550 --> 08:44.550
+hit refresh that ordered list has disappeared and is now replaced by this
+
+126
+08:44.650 --> 08:46.720
+hyperlink. And if I click on it,
+
+127
+08:46.960 --> 08:51.960
+it takes me to this brand new page that I've created called my hobbies.
+
+128
+08:53.350 --> 08:54.970
+So now you can see how
+
+129
+08:55.140 --> 08:59.910
+you can really easily start to create multiple pages of your website.
+
+130
+09:00.300 --> 09:04.410
+And as long as you've got it inside the same folder
+
+131
+09:04.680 --> 09:09.540
+or you can specify a path for the browser to get to it,
+
+132
+09:10.020 --> 09:15.020
+then you can start linking up your homepage with all of these different
+
+133
+09:15.150 --> 09:16.350
+satellite pages
+
+134
+09:16.620 --> 09:21.620
+and you start to build up a website rather than just a web page. As a challenge
+
+135
+09:23.190 --> 09:28.190
+I want you to create another page that is going to contain your contact details.
+
+136
+09:29.400 --> 09:30.750
+So how do you get in touch?
+
+137
+09:30.780 --> 09:35.580
+So say if somebody came across your personal site and they wanted to hire you or
+
+138
+09:35.580 --> 09:37.650
+they wanted to message you, now
+
+139
+09:37.680 --> 09:40.830
+it's probably quite cluttering to have it on the homepage.
+
+140
+09:41.040 --> 09:45.930
+So we want to create another link down here that says, contact me
+
+141
+09:46.500 --> 09:50.310
+and it's going to link to another page, just like my hobbies,
+
+142
+09:50.610 --> 09:53.970
+but it's going to contain, maybe your address, maybe your email,
+
+143
+09:53.970 --> 09:54.990
+maybe your telephone,
+
+144
+09:55.260 --> 09:59.070
+whatever you're comfortable with giving to the internet. Go ahead,
+
+145
+09:59.280 --> 10:00.960
+pause the video and give it a go.
+
+146
+10:05.340 --> 10:09.450
+All right. So it's going to be exactly the same as what we did for my hobbies.
+
+147
+10:09.750 --> 10:13.050
+So we're going to go to our HTML personal site folder,
+
+148
+10:13.050 --> 10:14.400
+we're gonna right-click on it,
+
+149
+10:14.730 --> 10:19.730
+we're going to create a new file and this is going to be called contact-me.
+
+150
+10:20.910 --> 10:24.240
+html. And here we're going to, again,
+
+151
+10:24.240 --> 10:29.240
+start with the HTML boilerplate and the title is going to be contact me. And in
+
+152
+10:30.930 --> 10:34.470
+the body, we're going to have an h1 that's, uh,
+
+153
+10:34.530 --> 10:36.900
+my contact details.
+
+154
+10:37.470 --> 10:42.470
+And then below that, maybe a paragraph that's going to be my fictional address
+
+155
+10:46.290 --> 10:51.000
+and maybe another one that's going to be some fictional number,
+
+156
+10:52.830 --> 10:56.100
+telephone number to contact me with. Um,
+
+157
+10:56.190 --> 11:01.190
+and then it will be myemail@gmail.com.
+
+158
+11:04.290 --> 11:07.500
+OK. So that looks pretty good. Let's go ahead and hit save,
+
+159
+11:07.590 --> 11:12.590
+go back to index.html and add another anchor tag where we'd link to this page
+
+160
+11:14.100 --> 11:17.790
+called contact-me.html.
+
+161
+11:18.480 --> 11:23.480
+And the link text will just be contact me and we're going to hit save and
+
+162
+11:25.230 --> 11:30.150
+refresh. And now we can click on here to this brand new page.
+
+163
+11:31.110 --> 11:31.440
+All right.
+
+164
+11:31.440 --> 11:36.270
+So today's lesson was all about the anchor tag and be sure to check out the
+
+165
+11:36.270 --> 11:38.820
+anchor tag reference on MDN web docs.
+
+166
+11:39.090 --> 11:42.660
+And there's a whole bunch of other attributes that you can read about.
+
+167
+11:43.050 --> 11:46.830
+And there's really good examples that can show you some of the other
+
+168
+11:46.830 --> 11:50.760
+functionality that you can have by simply including the anchor tag.
+
+169
+11:51.180 --> 11:55.710
+So that's all from me for today. Um, I'll see you on the next lesson.

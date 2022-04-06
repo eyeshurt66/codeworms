@@ -1,0 +1,321 @@
+WEBVTT
+
+0
+00:00.590 --> 00:06.530
+Now in order to continue styling our text and to change the text properties and learn about different
+
+1
+00:06.530 --> 00:13.400
+ways of styling our text then we actually need a little bit more content than just these two lines of
+
+2
+00:13.400 --> 00:14.240
+text.
+
+3
+00:14.480 --> 00:18.550
+So let's add the rest of the content to our web site.
+
+4
+00:19.840 --> 00:26.590
+Now if you look inside the resources for this lesson then you will find a download link where you can
+
+5
+00:26.590 --> 00:29.810
+get the stub code that I've created for you.
+
+6
+00:29.890 --> 00:39.750
+Now once you download it then you can right click and open it using Atom. Now this is what I've created
+
+7
+00:39.750 --> 00:40.550
+for you.
+
+8
+00:40.770 --> 00:45.910
+And it's basically just the structure of the rest of our web site.
+
+9
+00:46.050 --> 00:54.560
+Now what I want you to do is just to copy the entire file and then paste it into your index.html,
+
+10
+00:54.600 --> 01:02.080
+and you're going to replace your middle and your bottom container but nothing else.
+
+11
+01:02.100 --> 01:10.230
+So as you can see the stub code includes the middle container as well as the bottom container.
+
+12
+01:10.500 --> 01:17.790
+So we're just going to wholesale put that into your current index.html and you're going to replace
+
+13
+01:18.030 --> 01:22.380
+these bits of stub code which I've placed in here.
+
+14
+01:22.380 --> 01:28.680
+Now for those you guys who might be interested in what all of this means or what it is that I've put
+
+15
+01:28.680 --> 01:29.300
+in here,
+
+16
+01:29.430 --> 01:31.650
+what is all this mumbo jumbo,
+
+17
+01:31.650 --> 01:37.510
+it might be good to explain to you - this is something that is used quite frequently in web design.
+
+18
+01:37.590 --> 01:44.170
+It's used to place text paragraphs in a web site before you have any content.
+
+19
+01:44.280 --> 01:49.980
+And if you go to loremipsumgenerator.com, you can actually find a little bit of history about
+
+20
+01:49.980 --> 01:58.500
+what all of this is, where it comes from, and how it came to be used in a lot of web site styling and
+
+21
+01:58.560 --> 02:00.160
+web design.
+
+22
+02:00.180 --> 02:03.500
+So take a look here if you're interested.
+
+23
+02:03.510 --> 02:10.770
+But basically you can generate these bits of text that don't really mean anything other than to look
+
+24
+02:10.770 --> 02:18.660
+like normal English words of different lengths, and you can use that in your web site to take up space
+
+25
+02:18.750 --> 02:21.380
+that your text content is going to go.
+
+26
+02:21.450 --> 02:28.770
+So you can generate say one paragraph or five paragraphs and there's even other generators where you
+
+27
+02:28.770 --> 02:30.360
+can get more specific than that.
+
+28
+02:30.360 --> 02:35.970
+For example you can have four sentences, or specify the number of words, you can say if you want short,
+
+29
+02:35.970 --> 02:40.130
+medium, or long sentences, and it will generate it for you as well.
+
+30
+02:40.140 --> 02:46.680
+So that's pretty useful when you're creating web sites and you haven't yet got the content for the text
+
+31
+02:46.680 --> 02:47.450
+yet.
+
+32
+02:47.460 --> 02:53.800
+Now the other parts that you will have to update in here are the image sources and the image alt tags.
+
+33
+02:53.880 --> 03:00.300
+Now the first image here is for your profile photo, so a picture of yourself, or, you know, if you don't
+
+34
+03:00.300 --> 03:05.820
+want a picture of yourself, then put any picture you like. And these other images are for your skills
+
+35
+03:05.850 --> 03:12.330
+that you're going to describe in your skills section, so you can go ahead and add a source to those images
+
+36
+03:12.450 --> 03:13.320
+too.
+
+37
+03:13.440 --> 03:19.770
+And at the bottom here we've got a button that is going to open the default mail app to an e-mail address
+
+38
+03:19.830 --> 03:20.830
+of your choice.
+
+39
+03:20.940 --> 03:23.240
+So that could be your contact e-mail.
+
+40
+03:23.250 --> 03:30.480
+And finally in the last section we've got three links that go towards any site that you wish.
+
+41
+03:30.480 --> 03:35.280
+So that could be your Linked In profile, your Twitter profile, your web site...
+
+42
+03:35.280 --> 03:41.820
+So go ahead and change all of these links in there to whatever it is that you want and change this
+
+43
+03:41.910 --> 03:46.340
+to your name so that you have a copyright at the bottom of your page.
+
+44
+03:46.380 --> 03:53.910
+So go ahead and paste all of this stub code inside your index.html and update the Lorem Ipsum
+
+45
+03:54.000 --> 03:56.070
+and also change the images.
+
+46
+03:56.070 --> 04:02.820
+Now once you have done all that I want you to go ahead and delete all the code that's inside your middle
+
+47
+04:02.970 --> 04:06.990
+and your bottom container inside the CSS file.
+
+48
+04:06.990 --> 04:13.530
+And once you're happy with your content inside your index.html, including all of that stub code, and
+
+49
+04:13.530 --> 04:18.190
+you've gotten rid of those styles inside the middle and the bottom container in your styles.css,
+
+50
+04:18.190 --> 04:24.380
+then once you’ve refreshed your web site this is what you should roughly have.
+
+51
+04:24.390 --> 04:31.320
+So the top section stays unchanged because we haven't touched it at all, but you should have a profile
+
+52
+04:31.320 --> 04:34.110
+picture of yourself, a greeting word, it could be,
+
+53
+04:34.110 --> 04:37.680
+you can leave the Hello there or you can change it if you wish.
+
+54
+04:38.070 --> 04:41.350
+And you've got a little brief bio about yourself.
+
+55
+04:41.550 --> 04:48.420
+Then you've got the section called My Skills, which is going to have one image that is going to represent
+
+56
+04:48.420 --> 04:51.250
+your first skill, whatever that may be.
+
+57
+04:51.450 --> 04:56.850
+And then you're going to find another image that is going to represent your second skill, whatever that
+
+58
+04:56.970 --> 04:58.600
+may be as well.
+
+59
+04:58.600 --> 05:04.590
+Now if you're short on images for that section and you couldn't find any in Google that you liked then
+
+60
+05:04.650 --> 05:08.380
+take a look at this web site called flaticon.com.
+
+61
+05:08.610 --> 05:16.890
+Here they've got more than half a million vector icons which you can search and some of these are really
+
+62
+05:16.890 --> 05:17.960
+really cool.
+
+63
+05:17.970 --> 05:23.970
+For example these little profile ones or you can search for something like computer and you've got these
+
+64
+05:24.030 --> 05:31.250
+really nice packs that you can use free for commercial use as long as you give adequate attribution.
+
+65
+05:31.260 --> 05:37.690
+So then if you have a look at each of these icons, then you can download them as a png in whichever size
+
+66
+05:37.780 --> 05:39.290
+you would prefer.
+
+67
+05:39.850 --> 05:45.120
+And you can insert those into your web page as a relative URL.
+
+68
+05:45.200 --> 05:51.100
+Now if you happen to find a nice looking image on Google or you found an image of yourself then
+
+69
+05:51.100 --> 05:57.730
+you can simply get the URL by just right clicking and copying the image address and pasting that into
+
+70
+05:57.730 --> 05:59.970
+the source on your web site.
+
+71
+06:00.370 --> 06:07.030
+Now if you wanted an image that was an animated gif perhaps, then a good source is to head over to 
+
+72
+06:07.030 --> 06:14.410
+giphy.com, and you can search for something that you want to include, and if you select the sticker tab
+
+73
+06:14.590 --> 06:21.040
+then you will get these transparent gifs which will look a lot nicer on your page because your background
+
+74
+06:21.040 --> 06:27.560
+color will go all around it instead of it being just a square or a rectangle.
+
+75
+06:27.820 --> 06:34.180
+And finally at the bottom you've got a Contact Me link that takes you to whichever e-mail that you would
+
+76
+06:34.180 --> 06:35.860
+prefer to be contacted by.
+
+77
+06:35.920 --> 06:40.710
+And you've got your social links at the bottom that go towards wherever you want it to.
+
+78
+06:40.930 --> 06:48.010
+So this is the rest of the content for our web site, and for the remaining lessons we'll be styling this
+
+79
+06:48.010 --> 06:52.920
+content to make it look more and more like a professional personal site.

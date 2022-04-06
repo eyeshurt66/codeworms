@@ -1,0 +1,317 @@
+WEBVTT
+
+0
+00:00.360 --> 00:00.810
+All right.
+
+1
+00:00.810 --> 00:05.810
+So in the last lesson we created the start of our beautiful,
+
+2
+00:06.150 --> 00:10.740
+personal and website and we're modeling off Jon Kleinberg's homepage.
+
+3
+00:11.130 --> 00:14.220
+So the next step that we want to achieve is this.
+
+4
+00:14.430 --> 00:19.430
+How do we put in a bullet list into our website so that we can list maybe the
+
+5
+00:20.370 --> 00:23.220
+books and courses that we're teaching in my case,
+
+6
+00:23.460 --> 00:27.060
+or it could be your education background, which schools you attended,
+
+7
+00:27.180 --> 00:31.290
+what degrees you attained, what courses you've completed, et cetera?
+
+8
+00:31.410 --> 00:33.750
+So that's the next challenge. If you want,
+
+9
+00:33.780 --> 00:36.990
+you can pause the video here and try to work it out yourself,
+
+10
+00:37.200 --> 00:41.010
+using MDN and Google search. Alternatively,
+
+11
+00:41.010 --> 00:45.690
+you can follow along with me and we're going to go through the same process.
+
+12
+00:45.720 --> 00:49.200
+So we're looking for a bullet list maybe.
+
+13
+00:50.190 --> 00:54.750
+Um, and it's going to be in HTML. That's the language we want to write it in.
+
+14
+00:55.170 --> 00:59.190
+And I'm going to use MDN as my documentation source.
+
+15
+00:59.520 --> 01:00.720
+So if you hit enter,
+
+16
+01:01.230 --> 01:05.520
+you can see that the first one that comes up is the ul element
+
+17
+01:05.730 --> 01:07.950
+and that's exactly what we want.
+
+18
+01:08.400 --> 01:11.670
+UL stands for unordered list,
+
+19
+01:11.790 --> 01:16.790
+so essentially a bullet point list. Now ordered list would be something that has,
+
+20
+01:17.790 --> 01:22.320
+you know, a, b, c, or 1, 2, 3. But in our case,
+
+21
+01:22.380 --> 01:26.910
+this is exactly what we want. And you can see that this is a simple example
+
+22
+01:27.090 --> 01:31.950
+which will render like so where the ul tag encloses
+
+23
+01:31.980 --> 01:36.980
+all the parts that will be included in the bullet list and the li tag or the
+
+24
+01:38.310 --> 01:41.460
+list item tag encloses each
+
+25
+01:41.520 --> 01:45.450
+and every bullet point. Alternatively,
+
+26
+01:45.450 --> 01:49.080
+you have a slightly more complex, more nested unordered list.
+
+27
+01:49.470 --> 01:51.570
+And that looks more like this.
+
+28
+01:51.720 --> 01:54.660
+So let's go ahead and add this to our code.
+
+29
+01:55.830 --> 02:00.830
+So we've got this h3 that is the subtitle for the books and courses that
+
+30
+02:01.440 --> 02:02.273
+we're teaching.
+
+31
+02:02.370 --> 02:07.370
+So I'm going to go ahead and add a new ul, unordered list, and a new list item.
+
+32
+02:10.950 --> 02:15.950
+And I'll add something like The complete iOS App development
+
+33
+02:18.170 --> 02:19.003
+Bootcamp.
+
+34
+02:21.080 --> 02:25.820
+And then I'll go ahead and add another one, The complete--
+
+35
+02:30.890 --> 02:34.070
+And if we again hit save and check it out,
+
+36
+02:34.730 --> 02:39.730
+you can see that they are there as an unordered list or as bullet points.
+
+37
+02:40.790 --> 02:41.623
+All right, cool.
+
+38
+02:42.050 --> 02:46.550
+So the next thing that I want to add is outside of the unordered list.
+
+39
+02:46.850 --> 02:48.800
+I'm going to add another h3
+
+40
+02:48.920 --> 02:53.540
+and this is going to have the subtitle of, let's say, my hobbies.
+
+41
+02:55.760 --> 03:00.460
+And here, I want to have an ordered list that's 1, 2,
+
+42
+03:00.490 --> 03:03.970
+3, and it's going to list some of my hobbies.
+
+43
+03:04.270 --> 03:09.270
+So can you try and use MDN as well as search to figure out how to do that and
+
+44
+03:11.200 --> 03:14.470
+then list your hobbies in that ordered list?
+
+45
+03:17.700 --> 03:17.940
+<v 1>Right.</v>
+
+46
+03:17.940 --> 03:19.530
+<v 0>All right. So let's walk through it together.</v>
+
+47
+03:20.010 --> 03:23.550
+If we have a look at an unordered list, if you scroll to the bottom,
+
+48
+03:23.910 --> 03:27.120
+there's usually a part where it says, see also on MDN.
+
+49
+03:27.240 --> 03:30.600
+And this tells you these related HTML elements
+
+50
+03:30.900 --> 03:34.490
+which are list items and the ordered list,
+
+51
+03:34.500 --> 03:39.500
+the ol. So let's click on that and we can see how this works.
+
+52
+03:40.140 --> 03:43.530
+This is a simple example of an ordered list, and you've got the first,
+
+53
+03:43.530 --> 03:45.510
+second and third item as list items.
+
+54
+03:45.720 --> 03:49.710
+So the format is exactly the same as the unordered or the bullet list,
+
+55
+03:50.010 --> 03:53.250
+apart from the fact that this time replacing ul with ol.
+
+56
+03:53.310 --> 03:55.800
+And similarly you can nest these lists.
+
+57
+03:56.040 --> 04:01.040
+You can nest a ordered list inside an unordered list and also vice versa.
+
+58
+04:02.220 --> 04:05.850
+And there's a whole bunch of modifications that you can have with your ordered
+
+59
+04:05.850 --> 04:10.290
+list. For example, using Roman numerals instead of using numbers.
+
+60
+04:10.590 --> 04:13.650
+And let's go ahead and put it into practice on our website.
+
+61
+04:14.100 --> 04:18.960
+So I'm going to list a whole bunch of hobbies under a ordered list.
+
+62
+04:19.440 --> 04:23.760
+And the first list item is going to be, let's say beer brewing,
+
+63
+04:25.380 --> 04:29.070
+and the next one will be martial arts,
+
+64
+04:29.130 --> 04:29.963
+<v 1>yeah?</v>
+
+65
+04:31.440 --> 04:36.180
+<v 0>And the last one can be motorcycles.</v>
+
+66
+04:37.380 --> 04:38.250
+There we go. Cool.
+
+67
+04:38.340 --> 04:43.340
+So those are my hobbies and they're included under an ordered list inside list
+
+68
+04:43.950 --> 04:48.270
+items. And if we go ahead and hit save, and then hit refresh,
+
+69
+04:48.600 --> 04:53.100
+you can see that we've got our ordered list and our unordered list inside our
+
+70
+04:53.100 --> 04:57.690
+homepage. All right, cool. So this lesson was all about HTML list.
+
+71
+04:57.840 --> 04:58.980
+If you are interested,
+
+72
+04:59.040 --> 05:02.010
+you can have a look at some of these other types of lists,
+
+73
+05:02.190 --> 05:03.330
+such as the ordered list
+
+74
+05:03.330 --> 05:08.250
+which starts at a particular number or the list that use Roman numerals.
+
+75
+05:08.550 --> 05:13.050
+And you can mess around with that code inside your playbook or inside your
+
+76
+05:13.050 --> 05:16.560
+website. In the next lesson, we're going to be covering the image element,
+
+77
+05:16.680 --> 05:20.010
+and we're going to be brightening up a website with some pictures.
+
+78
+05:20.250 --> 05:23.280
+So for all of that and more, I'll see you on the next lesson.

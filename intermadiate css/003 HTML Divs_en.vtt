@@ -1,0 +1,661 @@
+WEBVTT
+
+0
+00:00.800 --> 00:07.610
+So in the last lesson, we've started this brand new project where we're going to recreate a professional
+
+1
+00:07.610 --> 00:09.590
+web designer's personal site
+
+2
+00:09.920 --> 00:15.110
+and we're going to make it look as beautiful, if not more beautiful than what we see here.
+
+3
+00:15.560 --> 00:20.000
+So we started off strong by adding a favicon to our website.
+
+4
+00:20.210 --> 00:27.350
+But our website is right now just a blue screen, which is not that professional and not that pretty.
+
+5
+00:27.620 --> 00:29.720
+So let's go ahead and change it.
+
+6
+00:30.350 --> 00:35.840
+So head over to Atom, and the first thing we're going to do is we're going to get rid of that awful
+
+7
+00:35.840 --> 00:36.680
+background color.
+
+8
+00:36.980 --> 00:42.140
+And I'm actually going to just delete this entire body section here, and I'm going to begin by having
+
+9
+00:42.140 --> 00:47.630
+no styles whatsoever, and I'm going to first specify the structure of our website.
+
+10
+00:48.050 --> 00:52.370
+Let's start off by recreating the content of this top part.
+
+11
+00:52.610 --> 00:58.460
+So there's what seems to be an h1 and something that's just a paragraph just below it.
+
+12
+00:58.820 --> 01:02.510
+And then there's a few images, and then we go on to the next part.
+
+13
+01:02.810 --> 01:04.880
+So let's do that for ours as well.
+
+14
+01:05.390 --> 01:12.230
+So let's go into the body and we're going to create an h1 that's going to say, I'm Angela.
+
+15
+01:13.490 --> 01:20.120
+And after that, we're going to create a paragraph that's just going to say 'a programmer' and let's hit
+
+16
+01:20.120 --> 01:22.670
+save and let's check it out.
+
+17
+01:23.870 --> 01:24.590
+So there we go.
+
+18
+01:24.620 --> 01:26.390
+Looks pretty boring, right?
+
+19
+01:26.570 --> 01:28.820
+And it looks nothing like this.
+
+20
+01:29.540 --> 01:38.180
+So the difference here is that, you see, these two parts are kind of grouped together in what might be
+
+21
+01:38.180 --> 01:38.930
+a box.
+
+22
+01:39.410 --> 01:45.830
+And if you look at ours, and if I turn on pesticide, which is a really, really useful tool when you're
+
+23
+01:45.830 --> 01:49.220
+debugging your CSS. Now, you don't need to download it,
+
+24
+01:49.400 --> 01:54.590
+but if you want to head over to the lesson where we covered internal CSS where I showed you step by
+
+25
+01:54.590 --> 02:01.970
+step how to install Pesticide for Chrome. So you can see that what it does is that it highlights all
+
+26
+02:01.970 --> 02:07.100
+of your HTML elements and essentially all of the boxes that are on-screen.
+
+27
+02:08.540 --> 02:14.750
+So as we mentioned before, essentially all that we're doing when we're using success is we're specifying
+
+28
+02:14.750 --> 02:19.400
+the style for how each of these HTML elements should be displayed.
+
+29
+02:19.850 --> 02:23.240
+And each HTML element is basically just a box.
+
+30
+02:23.750 --> 02:29.230
+So you can see that we've got a box up here, which is the h1 and a box down here, which is the paragraph.
+
+31
+02:29.510 --> 02:32.630
+And that the box that's all around them is actually the body.
+
+32
+02:33.020 --> 02:38.660
+And using Pesticide, you can confirm this by holding down the Control button and hovering over each
+
+33
+02:38.660 --> 02:39.920
+section that you're interested in.
+
+34
+02:40.220 --> 02:44.870
+So if I hover over here, you can see that this is showing me that it's a paragraph element,
+
+35
+02:45.380 --> 02:52.220
+and up here is an h1, and in between and all around is the body, and that's what the blue line is.
+
+36
+02:52.280 --> 02:53.720
+So this can be quite useful.
+
+37
+02:54.110 --> 03:02.360
+Now what you might realize now is that we might want to have a box that's around this heading and the
+
+38
+03:02.360 --> 03:09.950
+paragraph tag that we can expand its height and also push down our text to the center of it.
+
+39
+03:10.400 --> 03:12.580
+So we can do this in a number of ways,
+
+40
+03:12.590 --> 03:18.290
+but the way that I'm going to talk about here is an HTML element called the div.
+
+41
+03:18.740 --> 03:26.180
+So let's go back into our index.html and I'm going to create a new element called a div.
+
+42
+03:27.280 --> 03:30.070
+And we're just going to ignore the class for now.
+
+43
+03:30.340 --> 03:38.560
+This div is a special HTML element that allows us to divide our content up on our website so that we
+
+44
+03:38.560 --> 03:43.870
+can structure each div separately. Now by itself
+
+45
+03:44.200 --> 03:45.670
+it doesn't do anything.
+
+46
+03:45.670 --> 03:53.290
+So if I save this div here and I head back over to Chrome and I turn off Pesticide and refresh, you
+
+47
+03:53.290 --> 03:56.500
+can see that nothing, absolutely nothing, has changed.
+
+48
+03:56.920 --> 04:01.750
+And that's one of the reasons why we're talking about an HTML element inside our CSS module.
+
+49
+04:02.230 --> 04:09.160
+And it's because divs, amongst other things, don't do anything unless you use CSS with it.
+
+50
+04:09.670 --> 04:17.050
+So if we turn on Pesticide again, you can see that this top part of the body has now got a little bit
+
+51
+04:17.170 --> 04:18.400
+thicker of a line.
+
+52
+04:19.180 --> 04:26.860
+And if you right-click on it and try to inspect it, then we can select that div over here inside the
+
+53
+04:26.860 --> 04:27.790
+elements tab.
+
+54
+04:28.270 --> 04:36.400
+And if you scroll this graphic up, you can see that it's showing you that it has a width of 1,424 pixels
+
+55
+04:36.760 --> 04:41.940
+and a height of 0 pixels, which is why we can't see anything.
+
+56
+04:41.950 --> 04:47.090
+It's something that's 0 pixels high, even though it has a width, so it doesn't appear.
+
+57
+04:47.710 --> 04:50.920
+Now what you see up here, where it says the outline,
+
+58
+04:50.950 --> 04:56.710
+now this comes from Pesticide, and that's trying to show you where that div exists, even though it
+
+59
+04:56.710 --> 04:57.970
+has no dimensions.
+
+60
+04:58.840 --> 05:03.370
+Now, if we turn it off, then that goes away, and this is what our code actually looks like.
+
+61
+05:03.430 --> 05:10.060
+So in order for that div to have a function, or in order to do anything, we have to use CSS.
+
+62
+05:10.540 --> 05:18.970
+So let's select that div inside Chrome developer tools and let's specify some CSS for it inside our
+
+63
+05:18.970 --> 05:19.810
+developer tools.
+
+64
+05:20.230 --> 05:26.440
+So remember, anything that we specify here doesn't get saved, and its only purpose is for us to experiment
+
+65
+05:26.560 --> 05:28.000
+and see it live immediately.
+
+66
+05:28.390 --> 05:36.880
+So let's give it a background color of blue, my favorite color, and you can see nothing has changed.
+
+67
+05:37.180 --> 05:45.970
+But if I give it a height of, say 100 pixels, then immediately you can see it now appears, and here
+
+68
+05:45.970 --> 05:47.110
+is our div.
+
+69
+05:47.410 --> 05:48.580
+This is where it is.
+
+70
+05:49.420 --> 05:52.510
+And if you hover over it, that's what's going to be highlighted,
+
+71
+05:52.810 --> 05:58.870
+and if I turn on Pesticide again, you can see now if I hold down Control and hover over, you can see
+
+72
+05:58.870 --> 06:04.120
+that if I turn on Control and hover over this section, it's showing you this is the div, this is the
+
+73
+06:04.170 --> 06:05.520
+h1 and this is the P.
+
+74
+06:05.860 --> 06:10.780
+So the div is only there for you to structure and divide up your content.
+
+75
+06:10.990 --> 06:18.520
+So if we wanted our div to perform a similar function to what we've got up here, which is the top
+
+76
+06:18.520 --> 06:25.930
+part of the content where he's grouped together a title, a subtitle and an image, then we can do that
+
+77
+06:25.930 --> 06:26.740
+using a div.
+
+78
+06:27.700 --> 06:32.890
+Now remember what I said before about how the changes that you implement in the Chrome developer tools
+
+79
+06:33.100 --> 06:34.930
+don't persist in your code?
+
+80
+06:35.200 --> 06:39.280
+So if you check back in Atom, you won't see any extra code being added.
+
+81
+06:39.580 --> 06:45.400
+And if you refresh this site, then all of those things that you entered inside here will disappear.
+
+82
+06:45.610 --> 06:47.860
+So that's just for testing, basically.
+
+83
+06:48.520 --> 06:52.750
+So let's head back to Atom, and let's do something with this div.
+
+84
+06:53.200 --> 07:00.970
+So essentially, a div stands for a content division element, and it basically allows you to split
+
+85
+07:00.970 --> 07:07.510
+up or divide your content into separate containers or boxes so that you can affect the layout of each
+
+86
+07:07.510 --> 07:13.840
+box separately so that you can say that maybe these two things should be grouped together, and I'm
+
+87
+07:13.840 --> 07:19.900
+going to structure it and style it separately from other content in my website.
+
+88
+07:20.770 --> 07:28.630
+So divs, as we saw before, can have a height if you specified it using the styles, but it'll also
+
+89
+07:28.630 --> 07:30.790
+have a height if it has content.
+
+90
+07:31.210 --> 07:40.420
+So if we go ahead and move our heading and our paragraph inside our div here and hit save, then you'll
+
+91
+07:40.420 --> 07:43.390
+see that if we bring up the Chrome developer tools again,
+
+92
+07:45.060 --> 07:52.320
+that this div now has a height, it has a height of 76. something pixels and that's
+
+93
+07:52.320 --> 07:57.630
+just enough to fit all the content that's inside, which is the h1 and the paragraph.
+
+94
+07:58.410 --> 08:02.490
+Now let's give it a permanent background color so that we can see it more easily.
+
+95
+08:02.790 --> 08:06.060
+And to do that, we have to go into our stylesheet.
+
+96
+08:06.390 --> 08:13.410
+But before we do that, let's go to colorhunt.io and find a good color that we might want to use.
+
+97
+08:13.950 --> 08:16.980
+So I'm actually going to stick to the same color palette I had before,
+
+98
+08:16.980 --> 08:19.890
+and so maybe something like this.
+
+99
+08:20.960 --> 08:27.800
+And if we head back into Atom and go into our stylesheet, then we can select our div and we're going
+
+100
+08:27.800 --> 08:32.540
+to change its background color to that particular hex code.
+
+101
+08:33.650 --> 08:41.210
+Now if we hit Save and we go back to our website and we hit refresh, then you'll see that our div now
+
+102
+08:41.210 --> 08:46.220
+has a background color and we can see that box of the div more clearly.
+
+103
+08:46.790 --> 08:52.670
+Now the strange thing is, why does that div not go all the way to the end
+
+104
+08:52.970 --> 08:58.100
+on the left and on the top? It sort of stops just about here.
+
+105
+08:58.220 --> 08:59.120
+Why is that?
+
+106
+08:59.570 --> 09:04.390
+Well, remember how we said that the browser inserts their own default
+
+107
+09:04.430 --> 09:11.300
+CSS to style things? For example, how the horizontal rules should look like or how the h1a should
+
+108
+09:11.300 --> 09:11.870
+look like.
+
+109
+09:12.680 --> 09:19.850
+Well, if you take a look at the body element, then you'll see that there's this user agent stylesheet
+
+110
+09:19.880 --> 09:23.870
+which we know to be the default styles that are applied by the browser.
+
+111
+09:24.260 --> 09:29.630
+And you can see that it has a margin of 8 pixels from all the edges.
+
+112
+09:30.170 --> 09:37.580
+So if we change this and we can do that just down here by double-clicking on it and then let's enter
+
+113
+09:37.580 --> 09:38.210
+zero.
+
+114
+09:38.540 --> 09:43.880
+Now, if I hit enter, you'll see that that left margin now disappears.
+
+115
+09:44.570 --> 09:48.080
+Now you might think that we can do the same thing with the top margin.
+
+116
+09:48.080 --> 09:53.840
+So if I delete that and hit enter, then you would think that maybe our div would go all the way up
+
+117
+09:53.840 --> 09:54.530
+to the top,
+
+118
+09:54.680 --> 09:55.640
+but it doesn't.
+
+119
+09:55.880 --> 09:57.140
+Now why is that?
+
+120
+09:57.170 --> 10:02.600
+Well, because there's also default rules for our h1.
+
+121
+10:03.140 --> 10:09.800
+And as you can see, when I hover over the h1, it already shows you the entire space that it's
+
+122
+10:09.800 --> 10:10.550
+taking up.
+
+123
+10:11.060 --> 10:14.150
+And you can see that inside the user agent stylesheet,
+
+124
+10:14.420 --> 10:17.180
+it's got a whole bunch of default styles.
+
+125
+10:17.660 --> 10:25.850
+For example, it says that it should have a margin before, of this amount, and a margin after, of this
+
+126
+10:25.850 --> 10:26.170
+amount.
+
+127
+10:26.180 --> 10:31.670
+So margin before is at the top, margin after is at the bottom. Margin
+
+128
+10:31.670 --> 10:35.150
+start is on the left, margin end is on the right.
+
+129
+10:35.510 --> 10:41.420
+So this margin is what is responsible for that little gap that we still have.
+
+130
+10:41.780 --> 10:48.920
+So if I go ahead and change this to zero, then you can see now our div is now sticking right to the
+
+131
+10:48.920 --> 10:50.630
+top of the page.
+
+132
+10:50.810 --> 10:58.400
+Now, as you remember these changes, whether if I edit it here or if I edit it inside the style section
+
+133
+10:58.400 --> 11:01.460
+here, so I can say margin-
+
+134
+11:02.960 --> 11:03.800
+right
+
+135
+11:05.110 --> 11:07.930
+is zero pixels as well,
+
+136
+11:08.350 --> 11:11.200
+then I get rid of that right little space.
+
+137
+11:11.590 --> 11:13.840
+But remember, none of this is permanent.
+
+138
+11:14.170 --> 11:22.150
+So the challenge for you is to go and implement these styles in order to override the default browser
+
+139
+11:22.150 --> 11:29.950
+styles and make our div go all the way to all three edges; the left, the top and the right.
+
+140
+11:30.400 --> 11:33.190
+So pause the video and give that a go.
+
+141
+11:36.230 --> 11:43.160
+All right, so all we need to do is just to transplant these changes we made here over to our stylesheet.
+
+142
+11:43.610 --> 11:49.400
+So you'll notice that when I select, for example, the heading and I double click on the margin and
+
+143
+11:49.400 --> 11:56.900
+I hit zero, then you'll see that it inserts this line of CSS code here, where it says the margin-top
+
+144
+11:56.900 --> 11:58.190
+should be zero pixels.
+
+145
+11:58.340 --> 12:00.590
+So I'm just going to do that again from the bottom here.
+
+146
+12:01.070 --> 12:05.690
+I'm just going to hit zero, and I want you to watch over here what shows up.
+
+147
+12:07.340 --> 12:12.470
+It's written some more code telling us that the margin-bottom should be zero pixels as well.
+
+148
+12:12.860 --> 12:18.650
+So we now know what is the CSS that we have to write for our stylesheet in order for it to have
+
+149
+12:18.650 --> 12:19.850
+the same appearance.
+
+150
+12:20.390 --> 12:25.310
+So let's head over to our stylesheet and let's go ahead and select
+
+151
+12:25.640 --> 12:32.360
+firstly, the body element, and we're going to override that 8-pixel margin that it has.
+
+152
+12:32.630 --> 12:40.280
+And we're just going to say margin is zero, and this means that all four sides is going to be set to
+
+153
+12:40.280 --> 12:42.950
+zero pixels for its margin property.
+
+154
+12:44.180 --> 12:49.640
+The other one that we want to change was the h1, and this one, we don't really care so much about the
+
+155
+12:49.640 --> 12:50.600
+other three sides.
+
+156
+12:50.930 --> 12:57.110
+All we care is about the margin-top and we want to set this to zero pixels.
+
+157
+12:57.290 --> 13:04.010
+So when it's zero, you don't actually have to specify the unit, so pixels or whatever else it may
+
+158
+13:04.010 --> 13:04.340
+be.
+
+159
+13:04.460 --> 13:11.720
+So now go ahead and hit save and head back to our website, and let's close this down and refresh,
+
+160
+13:11.720 --> 13:15.920
+and you can see that our div now goes to all three edges.
+
+161
+13:16.550 --> 13:18.710
+Now what is this diagram all about?
+
+162
+13:18.740 --> 13:23.120
+It's got this margin, border, padding and all of these things.
+
+163
+13:23.270 --> 13:29.240
+Well, that's what we're going to dig into in the next lesson where we talk about the CSS box model.
+
+164
+13:29.510 --> 13:30.530
+So, I'll see you there.

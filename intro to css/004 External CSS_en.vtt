@@ -1,0 +1,357 @@
+WEBVTT
+
+0
+00:01.060 --> 00:09.820
+Now in the last lesson, we looked at how we can implement a CSS style and apply it to all instances of
+
+1
+00:09.820 --> 00:13.930
+a particular HTML element on a single page.
+
+2
+00:13.930 --> 00:23.710
+So we changed the style for our horizontal rule and by adding this internal CSS to our index.html page
+
+3
+00:24.130 --> 00:29.920
+we managed to affect the style of all the horizontal rules on the same page.
+
+4
+00:29.920 --> 00:37.780
+Now we're going to take it one step further and we're going to change our web site that uses internal
+
+5
+00:37.890 --> 00:47.040
+CSS to external CSS and to do that we first have to create a new folder in our personal site.
+
+6
+00:47.260 --> 00:51.510
+So I'm going to create a new folder that's called simply CSS.
+
+7
+00:51.790 --> 00:58.450
+And inside this folder I'm going to create a new file and that file is going to be called 
+
+8
+00:58.490 --> 00:59.570
+styles.css.
+
+9
+00:59.590 --> 01:06.460
+So with that extension the browser will recognize it as a CSS file.
+
+10
+01:06.460 --> 01:14.320
+So once you hit Enter you'll see that we have this brand new file called styles.css and we're
+
+11
+01:14.320 --> 01:22.740
+going to move our code for the body and the horizontal rule over to this page.
+
+12
+01:22.870 --> 01:28.270
+I'm going to hit save and we're going to remove the style tag.
+
+13
+01:28.510 --> 01:35.020
+So now if I hit save and I refresh our web site you can see that all the style that we've applied is now
+
+14
+01:35.140 --> 01:40.550
+gone because we've deleted it from the style tag in the header.
+
+15
+01:40.570 --> 01:46.250
+Now instead what we're going to do is we're going to create a new link.
+
+16
+01:46.480 --> 01:55.630
+And if you write link and you hit enter then it will autofill to say that this link has a relationship
+
+17
+01:56.020 --> 01:58.750
+of something called the stylesheet.
+
+18
+01:58.750 --> 02:07.000
+So when your browser reads your web page it'll go from the top to the bottom and once it hits this line
+
+19
+02:07.090 --> 02:12.540
+it’ll see that "oh this is where the stylesheet for this web page resides".
+
+20
+02:12.610 --> 02:16.090
+And I can go over here to fetch it.
+
+21
+02:16.090 --> 02:21.610
+Now we need to change this href to point towards our styles.css.
+
+22
+02:21.730 --> 02:24.050
+So the first thing we need to change is the file name.
+
+23
+02:24.070 --> 02:29.740
+Our file’s not called master.css, it’s called styles.css, and the other thing that we
+
+24
+02:29.740 --> 02:33.210
+have to change is this forward slash here.
+
+25
+02:33.210 --> 02:41.560
+Now if an href starts off with a forward slash then it's pointing towards the root of your web site.
+
+26
+02:41.820 --> 02:45.940
+It's saying that you'll find this file inside a folder called css
+
+27
+02:46.120 --> 02:52.330
+inside the root of your web site. Now we're going to talk about the root a little bit later on especially
+
+28
+02:52.330 --> 02:54.650
+once we start getting into Javascript.
+
+29
+02:54.910 --> 03:01.730
+But for now just know that when you have a static web site that's not yet hosted anywhere,
+
+30
+03:01.900 --> 03:04.770
+you can't tap into this file using the root.
+
+31
+03:04.780 --> 03:12.730
+So instead we're going to say that this file resides in a folder called css and it's on the same level
+
+32
+03:13.060 --> 03:14.860
+as this current file.
+
+33
+03:14.860 --> 03:23.680
+So index.html is here and on the same level as it there is a folder called css inside of which there
+
+34
+03:23.680 --> 03:29.380
+is a file called styles.css and that is going to be our stylesheet.
+
+35
+03:29.620 --> 03:37.840
+So your browser then takes this file here then applies all of these styles to the specified elements
+
+36
+03:38.260 --> 03:41.100
+inside your index.html.
+
+37
+03:41.470 --> 03:48.050
+So let's hit save and let's refresh our page to make sure that it worked.
+
+38
+03:48.190 --> 03:48.990
+And it has.
+
+39
+03:49.120 --> 03:53.360
+So this is what we call the external CSS.
+
+40
+03:53.500 --> 04:04.510
+And if we apply this style sheet to our Contact Me page as well as our Hobbies page then you'll see
+
+41
+04:04.510 --> 04:13.900
+that once we go to it then you'll see that all of our styles gets applied across all three pages and
+
+42
+04:13.930 --> 04:21.810
+all we have to do is just add this simple link that points towards this external stylesheet.
+
+43
+04:22.000 --> 04:29.340
+And anything that we change in this single location will affect all three web pages.
+
+44
+04:29.470 --> 04:35.310
+So we'll know that the style is consistent across all three pages.
+
+45
+04:35.320 --> 04:46.510
+Now as a challenge I want you to select the h1 and the h3 elements on all three pages and I
+
+46
+04:46.510 --> 04:52.280
+want you to change its color property to this particular color that we had on colorhunt.
+
+47
+04:52.300 --> 04:54.620
+So 66BFBF.
+
+48
+04:54.820 --> 05:02.130
+And by the end of it you should end up with your site looking similar to this where on all three pages
+
+49
+05:02.460 --> 05:08.800
+the h1s and the h3s are colored in this new shade.
+
+50
+05:08.940 --> 05:15.660
+Now remember if you don't know which CSS property to change or if the property that you're trying to
+
+51
+05:15.660 --> 05:26.790
+change isn't working you can always go to Google and say ‘change text color css’ and that will help you
+
+52
+05:26.790 --> 05:29.760
+figure out which property you need to change.
+
+53
+05:29.760 --> 05:33.340
+So go ahead, pause the video and give it a go.
+
+54
+05:38.510 --> 05:38.870
+All right.
+
+55
+05:38.870 --> 05:40.670
+So how did that go?
+
+56
+05:41.000 --> 05:46.820
+Well if you have any difficulty figuring out which property you need to change, because it's a property
+
+57
+05:46.820 --> 05:48.840
+that we haven't used before,
+
+58
+05:48.980 --> 05:54.340
+then you needed to look at some of the documentation.
+
+59
+05:54.710 --> 05:59.440
+And in this case, for example changing the text using CSS,
+
+60
+05:59.540 --> 06:05.440
+the first thing that it talks about is changing the text color, which is exactly what we want to do.
+
+61
+06:05.570 --> 06:12.470
+And it tells you that the property that you need is something called color and you can specify the color
+
+62
+06:12.530 --> 06:19.240
+just as we did before for the background color with a name or with a hex value or with an RGB value.
+
+63
+06:19.520 --> 06:24.430
+So our value that we had was here, which is 66BFBF,
+
+64
+06:24.650 --> 06:29.320
+we’re going to copy it and we're going to go into the styles.css,
+
+65
+06:29.390 --> 06:31.590
+so our external style sheet,
+
+66
+06:31.880 --> 06:40.650
+and we're going to select the element that we want to change which is the h1 as well as the h3.
+
+67
+06:41.270 --> 06:49.410
+And the property that we want to change was called color and the value that we're going to give it is the
+
+68
+06:49.410 --> 06:54.790
+hex code 66BFBF and we want that to be true
+
+69
+06:54.900 --> 06:56.420
+in both cases.
+
+70
+06:56.460 --> 07:04.110
+So now if you hit save and you go over to your site and you hit refresh then the black text becomes
+
+71
+07:04.110 --> 07:06.720
+that nice green turquoise color.
+
+72
+07:07.080 --> 07:12.670
+And the changes are also reflected in Hobbies and Contact Me.
+
+73
+07:14.240 --> 07:16.350
+So did you get that right?
+
+74
+07:16.370 --> 07:20.270
+Did you manage to figure out which property you needed to change?
+
+75
+07:20.270 --> 07:22.270
+If yes then great.
+
+76
+07:22.340 --> 07:29.120
+Perfect. If you want to take this challenge even further then you can style the text in more ways than
+
+77
+07:29.120 --> 07:30.490
+we've specified here
+
+78
+07:30.560 --> 07:35.330
+by looking through the documentation and changing anything that you want to change.
+
+79
+07:35.580 --> 07:40.380
+So, for example, it's a bit odd to have the h1 the same color as the h3.
+
+80
+07:40.580 --> 07:45.260
+So you could differentiate those two by making the styles of each of them different.
+
+81
+07:45.260 --> 07:52.160
+Now if you've created something wonderful, wacky, or completely different from what I have then it's a
+
+82
+07:52.160 --> 07:58.070
+good time to show off what you've done and head over to the Q&amp;A section and show all of your fellow
+
+83
+07:58.080 --> 08:05.600
+students and post a screenshot of what your web site looks like and which CSS properties you changed
+
+84
+08:05.660 --> 08:07.080
+in order to achieve it.
+
+85
+08:07.100 --> 08:13.640
+Now in the next lesson we're going to look at some potential bugs that you might come across and ways
+
+86
+08:13.700 --> 08:20.950
+in which you can help yourself by diagnosing what the problem is and how you can fix it yourself.
+
+87
+08:20.990 --> 08:25.010
+So we're starting to learn about the important skill of debugging.
+
+88
+08:25.040 --> 08:28.640
+So for all of that and more I'll see you on the next lesson.

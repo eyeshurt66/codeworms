@@ -1,0 +1,769 @@
+WEBVTT
+
+0
+00:00.420 --> 00:06.930
+Now we're getting really, really close to the end result now, and all we need to do is start getting
+
+1
+00:06.930 --> 00:12.870
+our skills section laid out in a way that looks a little bit better than this.
+
+2
+00:13.260 --> 00:18.420
+So the first thing to notice is that if I switch on Pesticide, you can see that we've got the skill
+
+3
+00:18.420 --> 00:18.930
+section,
+
+4
+00:19.260 --> 00:22.320
+and inside the skill section, there's two divs.
+
+5
+00:22.590 --> 00:26.880
+And if you look in the code, then you'll see exactly the same structure here.
+
+6
+00:27.150 --> 00:34.800
+So this div is the skills div which contains two further divs, which are the skill rows.
+
+7
+00:35.100 --> 00:42.720
+And if you prefer to visualize this a little bit easier by seeing which is the opening tag for the div
+
+8
+00:42.720 --> 00:44.250
+and which one is the closing one,
+
+9
+00:44.580 --> 00:53.280
+you can actually head into Atom and change your preferences in your editor section to show the indent guides.
+
+10
+00:53.640 --> 01:00.600
+So now you can see that you've got these lines that show you which div matches with which closing element.
+
+11
+01:00.990 --> 01:05.700
+Now, I actually prefer this off just because I find it to clustering.
+
+12
+01:05.940 --> 01:08.910
+But it all depends on how you wish to visualize it.
+
+13
+01:09.420 --> 01:15.450
+But the important thing is that we've got these two divs that represent two skill rows, and I want
+
+14
+01:15.450 --> 01:23.160
+you to make each skill row have only 50% the width of the screen.
+
+15
+01:23.430 --> 01:28.200
+So at the moment, it's 100%t because it's a block element,
+
+16
+01:28.650 --> 01:31.910
+but I want you to change that to make it only 50%.
+
+17
+01:31.920 --> 01:34.800
+So pause the video and complete the challenge.
+
+18
+01:37.190 --> 01:42.950
+All right, so this shouldn't be too hard. If we head into our styles.css and we go ahead and
+
+19
+01:42.950 --> 01:50.210
+add our skill row and just make sure that you check to see if you've got any typos between the way it's
+
+20
+01:50.210 --> 01:55.460
+named here in the class attribute and the way that you've targeted it over here.
+
+21
+01:55.880 --> 02:03.440
+So we want to change the width to 50% and we can hit save and refresh.
+
+22
+02:03.770 --> 02:10.670
+And you can see that even though our width for the div is now 50% because it's no longer 100
+
+23
+02:10.670 --> 02:15.320
+percent, it's no longer centered in the middle of our website.
+
+24
+02:15.740 --> 02:17.440
+So how can we fix this?
+
+25
+02:17.450 --> 02:18.600
+We've seen this before
+
+26
+02:18.620 --> 02:26.960
+and as a challenge, I want you to restore this skill row to the center of the web page.
+
+27
+02:27.140 --> 02:29.990
+So pause the video and see if you can figure out how to do that.
+
+28
+02:32.180 --> 02:38.840
+So as we've seen before, the way that we achieve this is by setting the margin to be auto on the left
+
+29
+02:38.840 --> 02:40.010
+and on the right.
+
+30
+02:40.490 --> 02:47.660
+So let's go ahead and do that. So we can set the margin for this skill row to be auto
+
+31
+02:47.830 --> 02:54.800
+and that just means auto on all four sides, which will center it if we refresh our web page.
+
+32
+02:55.040 --> 03:02.120
+Now, at the moment, that div is a little bit too close to the top heading and to the next div.
+
+33
+03:02.450 --> 03:10.040
+So how can you change the margin property so that we end up with 100px margin at the top and 100px
+
+34
+03:10.040 --> 03:11.450
+margin at the bottom
+
+35
+03:11.810 --> 03:18.620
+but keeping this margin auto on the left and right? Pause the video and see if you can complete this
+
+36
+03:18.620 --> 03:19.160
+challenge.
+
+37
+03:21.020 --> 03:27.650
+All right, so this goes back to the circle shorthand, so if we start from the top, as we always do,
+
+38
+03:27.920 --> 03:30.650
+we're going to add 100px margin at the top.
+
+39
+03:31.190 --> 03:35.450
+Next, we come clockwise to the right, which we want to keep as auto.
+
+40
+03:36.050 --> 03:41.580
+Next, we go down to the bottom, which we said again, we want 100px margin.
+
+41
+03:41.600 --> 03:45.590
+And finally, we have the left which we are going to set as auto.
+
+42
+03:45.890 --> 03:47.930
+So the left and the right are auto,
+
+43
+03:47.930 --> 03:50.090
+the top and the bottom are 100px.
+
+44
+03:50.540 --> 03:56.390
+Let's hit save and let's refresh, and we can see that margin now in action.
+
+45
+03:56.780 --> 04:02.810
+Now the next thing I want you to do is I want this text both the part for the design and development,
+
+46
+04:03.140 --> 04:07.230
+as well as the description text to be left-aligned.
+
+47
+04:07.550 --> 04:13.580
+So can you figure out which property you need to change and where in order to make that happen?
+
+48
+04:14.150 --> 04:16.490
+So pause the video and complete the challenge.
+
+49
+04:19.170 --> 04:19.630
+All right.
+
+50
+04:19.680 --> 04:25.710
+So all we need to do is to go into the skill row and change the text-alight property.
+
+51
+04:26.160 --> 04:32.820
+Remember, we changed this previously to make the text  center-aligned for most of the body, and that
+
+52
+04:32.820 --> 04:37.620
+in itself aligned the images to be centered as well as all of our text.
+
+53
+04:38.070 --> 04:44.440
+But in the skill row here, we want the tax to be left-aligned so we can change that value to the left.
+
+54
+04:44.760 --> 04:48.840
+And that will override the center text-align in the body.
+
+55
+04:49.410 --> 04:55.440
+So now if we hit refresh, you can see that our text inside the skill section is now left-aligned
+
+56
+04:55.710 --> 04:58.650
+but outside of it, it's still center-aligned.
+
+57
+04:58.980 --> 05:05.010
+Now, the next thing I want to do is to make the paragraphs, the text in here, a little bit more spaced
+
+58
+05:05.020 --> 05:07.680
+apart by changing the line height.
+
+59
+05:08.130 --> 05:14.880
+So can you double the line height by changing the line-height property? So pause the video and complete
+
+60
+05:14.880 --> 05:15.510
+the challenge?
+
+61
+05:18.120 --> 05:23.370
+All right, so in this case, we're again going to be inside the skill row and we're changing the line-
+
+62
+05:23.370 --> 05:30.030
+height property to 2, and remember, in this case, we don't actually have any units and we're simply
+
+63
+05:30.030 --> 05:31.440
+specifying a scale.
+
+64
+05:32.670 --> 05:38.430
+Let's hit refresh and you can see that our text is now a lot more spaced out and much easier to read.
+
+65
+05:38.700 --> 05:44.970
+Now, the last thing I want to do before we look into the positioning of our skill row is we need this
+
+66
+05:44.970 --> 05:46.740
+image to be a lot smaller.
+
+67
+05:46.890 --> 05:52.230
+So go ahead and change the width of the image to 25%.
+
+68
+05:57.360 --> 06:01.770
+All right, so in order to target the image, we need to specify their class names.
+
+69
+06:01.800 --> 06:05.700
+So one is called code-img and one is called chilli-img.
+
+70
+06:05.730 --> 06:10.470
+Now this is just the classes that I've added for my own images.
+
+71
+06:10.710 --> 06:14.760
+You might have name these classes differently because you might have different images.
+
+72
+06:15.150 --> 06:20.490
+Just check what you have as your class name before you start implementing this and make sure that it
+
+73
+06:20.490 --> 06:20.910
+works.
+
+74
+06:21.270 --> 06:27.780
+So I'm going to cluster that with the other images, and the first one is called code-img, and I
+
+75
+06:27.780 --> 06:31.230
+want to change the width to 25% of its parent.
+
+76
+06:31.830 --> 06:35.290
+And the next one is the chilli-img
+
+77
+06:35.790 --> 06:40.230
+and this, again, is going to have a width of 25%.
+
+78
+06:40.650 --> 06:42.960
+Let's hit save and let's refresh.
+
+79
+06:42.990 --> 06:48.510
+And you can see that they are now the same size, even though they weren't before because they're
+
+80
+06:48.510 --> 06:54.990
+now scaled down based on the width of their parent, which in this case is actually the skill row.
+
+81
+06:55.290 --> 07:02.220
+So it's now a quarter the width of the skill route, which itself is only 50% the width of the
+
+82
+07:02.220 --> 07:03.000
+entire page.
+
+83
+07:03.270 --> 07:06.030
+So now comes the really interesting thing.
+
+84
+07:06.270 --> 07:10.590
+How can I make my text wrap around my image?
+
+85
+07:10.950 --> 07:16.560
+So I want this skill row to be a lot stouter, so less in height,
+
+86
+07:16.710 --> 07:23.430
+and I want this image to be on the left, but I want my text to be on the right of the image and wrapping
+
+87
+07:23.430 --> 07:25.560
+around the image as necessary.
+
+88
+07:26.010 --> 07:32.220
+Well, this is where the topic of this lesson comes in, and that is, of course, floating.
+
+89
+07:33.540 --> 07:42.000
+So we can make the image float to the left of the text and make the text wrap around it by simply changing
+
+90
+07:42.000 --> 07:43.020
+one property.
+
+91
+07:43.380 --> 07:45.420
+And that is the float property.
+
+92
+07:45.660 --> 07:54.930
+So if we go into our code image and we change the float property to float: left and we hit save, once
+
+93
+07:54.930 --> 08:03.330
+we refresh, you'll see that our image is now on the left of our skill row and our text is now wrapping
+
+94
+08:03.330 --> 08:09.960
+around the image in order to display both of these on the same line.
+
+95
+08:10.110 --> 08:14.340
+Now it looks a little bit odd having the text right up next to the image.
+
+96
+08:14.760 --> 08:21.930
+So can you figure out a way of having 30px of space between this text and this image?
+
+97
+08:22.380 --> 08:25.620
+So pause the video and see if you can complete the challenge.
+
+98
+08:27.540 --> 08:29.770
+Now, there's a couple of ways that you can do this.
+
+99
+08:29.790 --> 08:36.720
+You can think about padding or margin. In this case in order to apply a margin to the text
+
+100
+08:36.750 --> 08:40.980
+it would be kind of difficult because they're completely separate at the moment.
+
+101
+08:40.980 --> 08:43.230
+We've got an h3 and we've got a paragraph.
+
+102
+08:43.620 --> 08:49.500
+Now you could add a div to wrap them together and add a left margin to that div.
+
+103
+08:49.920 --> 08:54.750
+But what's much easier is to simply add a margin-right to our image.
+
+104
+08:55.380 --> 09:05.130
+So let's head into our code and change the code-img margin-right property to 30px.
+
+105
+09:06.300 --> 09:13.320
+And once we refresh, you'll see that our image now has a bit of space between it and the text, and the
+
+106
+09:13.320 --> 09:15.450
+text because it's wrapping around
+
+107
+09:15.750 --> 09:18.870
+and now it has less width to be displayed
+
+108
+09:18.870 --> 09:26.220
+it's actually taking up the full width of that div, and this looks a lot better than previously.
+
+109
+09:26.820 --> 09:34.410
+Now, as a challenge, I want you to use the same principles of floating to make this image appear on
+
+110
+09:34.410 --> 09:42.110
+the right over here and for the text to wrap around that image and to have the same amounts of 30px
+
+111
+09:42.130 --> 09:44.670
+space between the image and the text.
+
+112
+09:44.970 --> 09:48.960
+So pause the video now and see if you can complete this challenge.
+
+113
+09:50.190 --> 09:56.430
+All right, so pretty much the same principles here, but in this case, we're not floating left anymore
+
+114
+09:56.460 --> 09:59.490
+because we want it to be on the right of the text.
+
+115
+09:59.670 --> 10:05.320
+So in that case, we have to change the float property to right instead of left.
+
+116
+10:05.760 --> 10:09.570
+And that will mean that the text will wrap around the image on the left.
+
+117
+10:10.140 --> 10:18.090
+And then we just have to add in that margin-left of 30px on the image in order to get it to have
+
+118
+10:18.090 --> 10:20.700
+the same amount of space as we had up here.
+
+119
+10:21.450 --> 10:29.490
+So this is looking pretty sweet and we're getting very, very close to our end result that we're looking
+
+120
+10:29.490 --> 10:29.790
+for.
+
+121
+10:30.030 --> 10:35.910
+Now, sometimes when you float an element, you might not want all of the text to be wrapped around
+
+122
+10:35.910 --> 10:36.090
+it.
+
+123
+10:36.480 --> 10:44.400
+So, for example, say, if we only wanted that title to wrap around this image and to be on the right
+
+124
+10:44.400 --> 10:51.900
+of the image, then we can actually use another property to make sure that this text does not wrap and
+
+125
+10:51.900 --> 10:57.570
+end up at the bottom over here below the image, and that property is called clear.
+
+126
+10:58.020 --> 11:02.130
+So if I target the paragraph here, let's give it a class.
+
+127
+11:02.130 --> 11:11.730
+Let's call it maybe code-skill-description, and I'm just going to copy and paste it down here.
+
+128
+11:12.950 --> 11:21.350
+And if I use the clear property to clear its left side, then that prevents it from wrapping anything
+
+129
+11:21.350 --> 11:22.220
+on the left.
+
+130
+11:22.880 --> 11:28.600
+So let's go ahead and try that clear: left, hit save, refresh.
+
+131
+11:28.910 --> 11:35.510
+You can see that that paragraph is now pushed to below the image, which is floating. But that heading,
+
+132
+11:35.510 --> 11:40.130
+that H3, is still wrapping around the image that's floated to the left.
+
+133
+11:40.520 --> 11:46.370
+If you think about clear as almost like the anti-float, then that starts to make a little bit more
+
+134
+11:46.370 --> 11:46.700
+sense.
+
+135
+11:47.120 --> 11:52.970
+So we're saying that float this image to the left and all text will wrap around it on the right.
+
+136
+11:53.360 --> 12:00.530
+But for this paragraph, we said to clear its left, which means make sure that that left margin is
+
+137
+12:00.530 --> 12:07.610
+clear and not wrapped around anything, then that basically prevents it from carrying out the default
+
+138
+12:07.610 --> 12:08.180
+behavior.
+
+139
+12:08.420 --> 12:15.890
+Now, as a challenge, can you make this paragraph appear below this image rather than wrapped around
+
+140
+12:15.890 --> 12:16.040
+it?
+
+141
+12:16.580 --> 12:19.970
+Pause the video and see if you can complete this challenge.
+
+142
+12:21.630 --> 12:24.390
+All right, so it's exactly the same concept here.
+
+143
+12:24.480 --> 12:28.350
+Now let's go ahead and just give that paragraph a class.
+
+144
+12:28.710 --> 12:33.300
+Let's call this chilli-skill-description.
+
+145
+12:33.630 --> 12:35.950
+And again, I'm going to copy it,
+
+146
+12:36.150 --> 12:39.690
+save the file and paste it down here.
+
+147
+12:40.800 --> 12:45.240
+And of course, remember that dot in front because it's a class.
+
+148
+12:45.690 --> 12:51.840
+And in this case, I still need to use clear, but I have to clear its right side in order to make sure
+
+149
+12:51.840 --> 12:53.490
+it doesn't wrap around the image.
+
+150
+12:53.790 --> 12:59.550
+Because you can see that if I tried the same thing and I cleared its left side, nothing changes because
+
+151
+12:59.550 --> 13:01.650
+it's not wrapping anything on its left.
+
+152
+13:02.100 --> 13:10.140
+But if I change this to right, then you'll see that it now appears below the image and it's prevented
+
+153
+13:10.260 --> 13:13.920
+from wrapping the image that's floated to the right.
+
+154
+13:14.460 --> 13:22.950
+Now I'm actually going to go ahead and clear both of these CSS rules because I actually prefer
+
+155
+13:22.950 --> 13:27.900
+the look that we had previously, and I'm going to get rid of these classes as well.
+
+156
+13:29.450 --> 13:37.580
+And this is the final result that we want to keep. Now, as they say, with great power comes great responsibility.
+
+157
+13:38.060 --> 13:42.890
+Float is one of the most commonly used and abused CSS properties.
+
+158
+13:43.280 --> 13:47.060
+The thing to remember is that it has a whole bunch of corner cases.
+
+159
+13:47.480 --> 13:57.530
+And I recommend to only use float when really, really necessary and only use it for what it's meant,
+
+160
+13:57.650 --> 14:03.620
+which is wrapping text around a certain element and don't use it for positioning.
+
+161
+14:03.950 --> 14:10.730
+Instead, use what we learned about positioning like relative or absolute positioning or using the margin and
+
+162
+14:10.760 --> 14:16.640
+the padding for the layout and the positioning of your website, and to leave the float property only
+
+163
+14:16.640 --> 14:18.650
+for the cases of wrapping text.
+
+164
+14:18.920 --> 14:26.180
+Then you will surely get into less trouble and less problems than if you try to use float just as
+
+165
+14:26.180 --> 14:33.470
+a sort of free-for-all layout property, which you see a lot of people mistakenly do. Now
+
+166
+14:33.470 --> 14:39.290
+looking through the Q&As, one of the issues that students often have is that their design is not being
+
+167
+14:39.290 --> 14:40.310
+laid out correctly
+
+168
+14:40.580 --> 14:46.460
+like what you see onscreen and one of the most common reasons is because they're using different text.
+
+169
+14:46.820 --> 14:49.970
+More specifically, a different length of text.
+
+170
+14:49.970 --> 14:56.330
+So here you can see there's quite a lot of text, and based on that, our CSS styling is making it
+
+171
+14:56.330 --> 14:57.230
+appear like this.
+
+172
+14:57.500 --> 15:03.110
+But if you had only one sentence or only a few words, then you might see the images being slightly
+
+173
+15:03.110 --> 15:03.800
+out of place.
+
+174
+15:04.340 --> 15:09.740
+Further, if you display this on a larger screen size, or if you actually just grab the corner of your
+
+175
+15:09.740 --> 15:15.500
+browser and you toggle it around, you'll see that as you shrink or expand the browser, your design
+
+176
+15:15.500 --> 15:20.150
+is going to break and it's not going to look like it should, as you see here.
+
+177
+15:20.810 --> 15:25.220
+Now, the reason for this is because our website is not yet responsive.
+
+178
+15:25.670 --> 15:30.500
+And I'm saying not yet, because in the coming lessons when we learn about Bootstrap,
+
+179
+15:30.980 --> 15:35.840
+when we learn about more advanced CSS, then we're going to be able to fix this problem and make our
+
+180
+15:35.840 --> 15:41.630
+designs look the way we want it to in all screen sizes and in all dimensions.
+
+181
+15:41.900 --> 15:46.010
+So don't worry too much about that if you're having trouble fixing the layout.
+
+182
+15:46.280 --> 15:53.210
+Just try to make sure that you're using the same content for your index.html as we have here in
+
+183
+15:53.210 --> 15:58.820
+the lessons, and try to make sure that you've got your CSS code matching and it should look right
+
+184
+15:58.820 --> 16:02.330
+on most screen sizes, only to toggle it a little bit.
+
+185
+16:02.900 --> 16:11.390
+So we are really, really close to the end of this module, and in the next section, I've got a challenge
+
+186
+16:11.420 --> 16:18.530
+for you to look at a specification of how we want the website to be finally laid out.
+
+187
+16:18.920 --> 16:23.840
+And instead of me guiding you step by step through all the little properties that you need to change,
+
+188
+16:24.140 --> 16:30.410
+I want you to figure out what you need to change in order to achieve the layout that I've specified.
+
+189
+16:30.710 --> 16:37.550
+So in the next lesson, you'll see text instructions for you to complete the final big challenge and
+
+190
+16:37.550 --> 16:39.680
+get this website looking beautiful.
+
+191
+16:40.040 --> 16:43.100
+So for all of that, I will see you on the next lesson.

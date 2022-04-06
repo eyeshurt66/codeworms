@@ -1,0 +1,385 @@
+WEBVTT
+
+0
+00:00.420 --> 00:02.400
+All right. So how did that go?
+
+1
+00:02.940 --> 00:05.610
+The first thing that we have to do is, of course,
+
+2
+00:05.730 --> 00:10.470
+add our h3 and we're going to do that right above the horizontal rule,
+
+3
+00:10.800 --> 00:15.450
+which is here and below our table. So right here.
+
+4
+00:16.680 --> 00:20.070
+And we're going to create something that's called skills,
+
+5
+00:20.970 --> 00:23.940
+and then we need to make a new table.
+
+6
+00:24.870 --> 00:29.280
+And this table is not going to have any headings because we don't have any
+
+7
+00:29.280 --> 00:33.900
+headings over here, but it is going to have some rows and some columns.
+
+8
+00:34.380 --> 00:39.380
+So let's make our first row using tr and let's list our first skill inside
+
+9
+00:40.050 --> 00:43.890
+a td. And let's say, uh,
+
+10
+00:43.920 --> 00:45.900
+iOS development.
+
+11
+00:46.800 --> 00:50.370
+And then we can put our stars in a second td
+
+12
+00:50.460 --> 00:55.460
+that's going to be right next to our first td in our second column.
+
+13
+00:56.430 --> 01:01.430
+And we're going to pull up the emoji inspector and we're just gonna add in a
+
+14
+01:02.160 --> 01:05.970
+star which I'm going to copy and paste.
+
+15
+01:06.510 --> 01:11.160
+And now to save time, I'm just going to copy the row. Now,
+
+16
+01:11.160 --> 01:14.670
+whenever you're Programming and you find yourself doing a lot of copying and
+
+17
+01:14.670 --> 01:19.200
+pasting, then you're probably doing something wrong. Now,
+
+18
+01:19.200 --> 01:22.260
+in order to save time, you'll see me do it quite a lot
+
+19
+01:22.560 --> 01:26.490
+and it's because it's not very fun for you to watch me writing tr and td all
+
+20
+01:26.490 --> 01:29.460
+day long. But when you're coding yourself,
+
+21
+01:29.730 --> 01:32.310
+ideally, try and avoid copying and pasting.
+
+22
+01:32.400 --> 01:35.820
+And when you do, always make sure that you understand what you're copying and
+
+23
+01:35.820 --> 01:36.600
+pasting,
+
+24
+01:36.600 --> 01:40.800
+and also make sure you check for any bugs and errors that you introduce.
+
+25
+01:40.920 --> 01:43.560
+So let's edit some of these things.
+
+26
+01:47.270 --> 01:52.220
+All right, cool. Let's hit save and let's check it out. Looks pretty neat,
+
+27
+01:52.220 --> 01:56.540
+right? All right. So now let's tackle bonus points.
+
+28
+01:56.930 --> 02:01.100
+If you've given it a go and you've managed to do it, then really well done.
+
+29
+02:01.310 --> 02:05.210
+It takes a little bit of researching around and a little bit of lateral thinking
+
+30
+02:05.240 --> 02:06.620
+in order to get it working.
+
+31
+02:06.860 --> 02:11.480
+But if you haven't or if you want to find out how one might do it, then take a
+
+32
+02:11.480 --> 02:15.080
+look now. Essentially what we're trying to achieve here
+
+33
+02:15.080 --> 02:17.990
+is very similar to what we've done at the top.
+
+34
+02:18.170 --> 02:21.500
+We're trying to affect the layout by using tables.
+
+35
+02:21.830 --> 02:26.830
+So essentially what we want is a table that has two columns or two table
+
+36
+02:29.060 --> 02:33.470
+data cells and in each cell we have a separate table
+
+37
+02:33.650 --> 02:37.340
+which itself has two rows and two columns.
+
+38
+02:37.490 --> 02:42.020
+So the solution is essentially going to be a nested table.
+
+39
+02:42.890 --> 02:45.770
+I'm going to make a little bit of space after the h3
+
+40
+02:46.220 --> 02:51.020
+and I'm going to create essentially the same structure as we've got up here,
+
+41
+02:51.290 --> 02:56.090
+a new table that has a single row and two table data cells,
+
+42
+02:56.900 --> 03:00.430
+this one, and this one. Down here,
+
+43
+03:00.430 --> 03:01.960
+I'm going to create a brand new table.
+
+44
+03:02.650 --> 03:05.890
+And then I'm going to create a tr or a table row.
+
+45
+03:06.310 --> 03:08.590
+And I'm going to create two table cells.
+
+46
+03:11.200 --> 03:15.190
+Now, inside that first table data cell,
+
+47
+03:15.730 --> 03:18.250
+I'm going to place our existing table.
+
+48
+03:18.310 --> 03:21.490
+So I'm going to cut it and then I'm going to paste it in here.
+
+49
+03:22.660 --> 03:26.230
+And then I'm going to grab another copy of this table
+
+50
+03:26.590 --> 03:31.590
+and then I'm going to paste it into the second table data cell of the first
+
+51
+03:32.200 --> 03:36.880
+level table. So right over here. Now,
+
+52
+03:36.910 --> 03:39.340
+the structure is a little bit confusing,
+
+53
+03:39.430 --> 03:44.430
+and this is one of the reasons why using HTML to affect the layout is not a
+
+54
+03:44.920 --> 03:48.430
+great idea. But, by doing this exercise,
+
+55
+03:48.490 --> 03:52.810
+you do get to grips with using tables, table rows, table datas.
+
+56
+03:53.230 --> 03:55.300
+And if you've managed to complete this challenge,
+
+57
+03:55.330 --> 04:00.330
+then you should understand the ins and outs of how to create tables using HTML.
+
+58
+04:01.390 --> 04:05.890
+So now if we hit save and let's take a look at our work,
+
+59
+04:06.700 --> 04:11.700
+you can see that we've got a single table with two tables nested inside,
+
+60
+04:13.150 --> 04:17.290
+and we've managed to achieve this kind of structure. Now,
+
+61
+04:17.290 --> 04:21.580
+feel free to keep this layout or revert to the previous layout before the bonus
+
+62
+04:21.580 --> 04:24.670
+challenge. It's completely up to you, or even design it
+
+63
+04:24.670 --> 04:27.370
+however you like with as many tables as you need.
+
+64
+04:27.490 --> 04:31.180
+But I'm going to get rid of this nested table because it makes it really,
+
+65
+04:31.180 --> 04:34.780
+really complicated to see at a glance what's going on.
+
+66
+04:34.930 --> 04:39.930
+So I'm going to remove this top-level table and everything below this closing
+
+67
+04:40.510 --> 04:42.760
+table tag, I'm going to delete.
+
+68
+04:43.240 --> 04:45.640
+And I'm going to get rid of some of that space.
+
+69
+04:46.150 --> 04:49.120
+And we're back at where we were before the challenge
+
+70
+04:49.210 --> 04:51.910
+and I'll hit save to continue from here.
+
+71
+04:52.450 --> 04:57.450
+Let's finish off by just giving our tables a little bit more spacing so that
+
+72
+04:57.520 --> 04:59.530
+everything looks a little bit more spread out.
+
+73
+04:59.770 --> 05:04.210
+So go ahead and add the cell spacing attribute to both of your tables and give
+
+74
+05:04.210 --> 05:06.130
+it a value of say 10 pixels.
+
+75
+05:10.380 --> 05:13.050
+All right. So that's easy enough. We've done it before here.
+
+76
+05:13.140 --> 05:18.140
+So we're going to add cell spacing equals 10 up here and also in this table as
+
+77
+05:22.110 --> 05:27.060
+well. Hit save. Let's check it out. Nice. It looks pretty good, right?
+
+78
+05:27.780 --> 05:31.230
+And finally, let's add a few more horizontal rules.
+
+79
+05:31.560 --> 05:35.790
+So let's add one between books and teaching and work experience and also one
+
+80
+05:35.790 --> 05:38.010
+between work experience and skills.
+
+81
+05:42.330 --> 05:42.750
+Okay.
+
+82
+05:42.750 --> 05:47.750
+So let's find the end of books and teaching and let's add a horizontal rule here.
+
+83
+05:48.960 --> 05:53.960
+Let's find the end of work experience and let's add a horizontal rule here.
+
+84
+05:56.610 --> 06:00.710
+Hit save, refresh. There we go. A bit more spacing,
+
+85
+06:00.950 --> 06:03.500
+everything looks a little bit more padded out. Alright.
+
+86
+06:03.560 --> 06:06.170
+So if any of that was confusing or difficult,
+
+87
+06:06.440 --> 06:11.240
+make sure that you watch the video again and also have a read of the MDN web
+
+88
+06:11.240 --> 06:13.130
+docs on not just tables,
+
+89
+06:13.430 --> 06:18.430
+but also thead or tbody or tfoot or th, th, et cetera.
+
+90
+06:20.210 --> 06:23.870
+So that you can have a look at the example code and see some other examples of
+
+91
+06:23.870 --> 06:27.620
+how you can use tables and rows and cells.
+
+92
+06:28.490 --> 06:29.570
+Now in the next lesson,
+
+93
+06:29.600 --> 06:34.600
+we're going to learn all about HTML forms and how you can add these to your
+
+94
+06:35.240 --> 06:38.300
+webpage to collect data from your users.
+
+95
+06:38.870 --> 06:42.170
+So all of that and more see you on the next lesson.

@@ -1,0 +1,665 @@
+WEBVTT
+
+0
+00:00.660 --> 00:06.090
+Now, one of the most important decisions that you will have to make when you're designing your website
+
+1
+00:06.360 --> 00:08.640
+is what are the fonts that you're going to choose?
+
+2
+00:09.090 --> 00:16.380
+And a lot of web designers will start off by figuring out a color palette as well as a font scheme.
+
+3
+00:17.340 --> 00:23.760
+So in this lesson, we're going to learn about how we can change the fonts for all of our text in our
+
+4
+00:23.760 --> 00:24.270
+website.
+
+5
+00:25.560 --> 00:32.430
+Now there are two major font families, and that is the serif and the sans serif fonts.
+
+6
+00:32.880 --> 00:40.410
+So you can tell serif and sans serif fonts apart from each other by looking for these little feet at
+
+7
+00:40.410 --> 00:46.250
+the edges of all of the letters, and these little feet are called serifs.
+
+8
+00:46.290 --> 00:54.510
+Now we can broadly define whether if we want a sans-serif or a serif typeface for any text on our website.
+
+9
+00:55.230 --> 01:02.970
+So let's go ahead and do that. If we go into our stylesheet and we change the font family
+
+10
+01:04.210 --> 01:12.430
+property for our body, then we actually affect all the text on our web page. And you can see that there's
+
+11
+01:12.520 --> 01:15.340
+five major families listed here
+
+12
+01:15.760 --> 01:19.180
+now only three of which are you actually going to use.
+
+13
+01:19.810 --> 01:22.600
+So we've seen serif and sans serif.
+
+14
+01:23.230 --> 01:30.290
+Now, monospace is when each of the characters inside the text take up the same amount of width.
+
+15
+01:30.520 --> 01:35.800
+And that's usually a typeface that we use for coding because it makes everything super easy to read.
+
+16
+01:36.190 --> 01:43.600
+For example, if this word align was styled in a serif or sans serif typeface, then the 'i' would
+
+17
+01:43.600 --> 01:46.240
+be squished right next to the 'L' and the 'g'.
+
+18
+01:46.750 --> 01:54.460
+But because all code is represented in a monospaced font, then you can more easily read each of the
+
+19
+01:54.460 --> 01:58.390
+letters. So you'll use these to your normal website styling.
+
+20
+01:58.720 --> 02:04.000
+And when you do have code on your web page, sometimes people like to style it using monospace.
+
+21
+02:04.720 --> 02:09.820
+Now, cursive and fantasy are two families that you're never really going to use.
+
+22
+02:10.420 --> 02:16.660
+Firstly, because they have low readability, and secondly, because they generally don't look that
+
+23
+02:16.660 --> 02:19.270
+great when used in the body of a website.
+
+24
+02:19.930 --> 02:22.810
+So cursive is meant to be handwritten
+
+25
+02:22.810 --> 02:28.480
+style of fonts and fantasy is meant to remind you of Avatar, basically.
+
+26
+02:29.850 --> 02:34.410
+So let's take a look at what each of these families look like.
+
+27
+02:34.680 --> 02:42.390
+So let's first define a font family of serif, and let's head back over to our website and we hit refresh.
+
+28
+02:42.420 --> 02:45.300
+You'll notice that nothing happens. By default
+
+29
+02:45.310 --> 02:47.370
+we already have a serif family.
+
+30
+02:47.430 --> 02:51.960
+You can see that at the end of the Is, we've already got these little feet.
+
+31
+02:53.070 --> 02:58.980
+Now, if we change that to sans-serif, however, we will get a noticeable change.
+
+32
+02:59.250 --> 03:05.160
+And those little feet or those little serifs now disappear, and we have a different style. Now
+
+33
+03:05.160 --> 03:11.280
+for most browsers, the default serif is the Times font, and the default sans serif is Arial.
+
+34
+03:11.460 --> 03:13.560
+And this is the Arial font.
+
+35
+03:13.590 --> 03:19.470
+Now, if we changed this to fantasy, then it will still work,
+
+36
+03:19.650 --> 03:23.310
+it just now looks like I'm producing the next avatar.
+
+37
+03:23.730 --> 03:27.180
+So let's head back to a sans serif typeface.
+
+38
+03:27.750 --> 03:32.430
+And I'm not really satisfied with just an Arial font.
+
+39
+03:32.460 --> 03:35.110
+What if I want a different sans serif font?
+
+40
+03:35.340 --> 03:40.680
+Let's say that instead of Arial, I would rather have Verdana as the font for my website.
+
+41
+03:41.040 --> 03:49.890
+Now what I can do is instead of specifying just the sans serif broad stroke family, I can add a specific
+
+42
+03:49.890 --> 03:51.900
+font or typeface in front.
+
+43
+03:52.440 --> 04:00.840
+For example, if I wanted the Verdana font, then I can simply type verdana and then have a comma and
+
+44
+04:00.840 --> 04:05.190
+then separate that from the sans serif family.
+
+45
+04:05.700 --> 04:11.730
+And now, if we head back over here and refresh, you can see I'm now using the Verdana font.
+
+46
+04:12.300 --> 04:18.240
+And what this line of code does is that it sets the font family for all the text inside the body,
+
+47
+04:18.840 --> 04:24.960
+but it first asks the browser to try and render all the text in the Verdana font.
+
+48
+04:25.560 --> 04:31.950
+Now, if for some reason the browser or the operating system that the user's using doesn't have this
+
+49
+04:31.950 --> 04:38.220
+font installed, then it will default to whatever is the sans serif font that is installed on their
+
+50
+04:38.220 --> 04:38.790
+system.
+
+51
+04:39.240 --> 04:44.730
+Now that's a little bit scary, because that kind of means that I might think that I've designed my
+
+52
+04:44.730 --> 04:48.780
+website to look like this, and I think it looks perfect just like this.
+
+53
+04:49.080 --> 04:56.190
+But on somebody else's system or browser, they might be getting a completely different style with different
+
+54
+04:56.190 --> 04:59.670
+font heights and just a different look and feel.
+
+55
+05:00.420 --> 05:03.870
+So there is such a thing called web safe fonts.
+
+56
+05:04.950 --> 05:13.470
+Now what this means is that there's a set of font families where most operating systems will be able
+
+57
+05:13.470 --> 05:15.360
+to render it correctly.
+
+58
+05:15.870 --> 05:22.830
+And for the serifs that includes Georgia, Times New Roman; for the sans serif that includes Arial, Comic
+
+59
+05:22.830 --> 05:29.640
+Sans, Impact, etc. Although these are called web safe fonts, and it's basically saying that if you
+
+60
+05:29.640 --> 05:37.380
+choose these sets of fonts, then you have the maximum chance of getting it rendered correctly as you're
+
+61
+05:37.380 --> 05:39.990
+seeing yourself when you're designing it.
+
+62
+05:40.410 --> 05:50.310
+But actually, no font is 100% web safe. And if you head over to cssfontstack.com, then somebody
+
+63
+05:50.310 --> 05:55.500
+has actually painstakingly listed all of the fonts that are in common usage
+
+64
+05:55.920 --> 06:02.190
+and what is the percentage of users who have installed, separated by their operating system.
+
+65
+06:02.640 --> 06:06.990
+So as you can see, the font that most people have is Arial.
+
+66
+06:06.990 --> 06:12.900
+So 99.8% installation on Windows, 98.7% on the Mac.
+
+67
+06:13.500 --> 06:15.470
+Now that is really, really high.
+
+68
+06:15.780 --> 06:22.380
+But for some other fonts, you'll see a difference between the Mac and the Windows operating systems,
+
+69
+06:22.680 --> 06:25.230
+and we're not even including Linux users here.
+
+70
+06:25.500 --> 06:31.440
+So, for example, if you look at something like Helvetica, which is a Apple-specific thing, then
+
+71
+06:31.440 --> 06:34.290
+on Windows installation rate is really, really low.
+
+72
+06:34.740 --> 06:40.780
+And on Mac, it's 100% because it comes pre-installed with all Mac OS.
+
+73
+06:40.800 --> 06:48.570
+So what can you do if you want to use a font, but you're not sure if everyone has it installed, right?
+
+74
+06:48.900 --> 06:54.630
+For example, if I want to use Helvetica, then there's only 7% of users on Windows who are
+
+75
+06:54.630 --> 06:57.840
+going to see it rendered in that font.
+
+76
+06:58.080 --> 07:00.510
+Well, then you would need fallbacks.
+
+77
+07:00.930 --> 07:08.520
+So if we click on this little icon here on fontstack, then we actually copy a set of fallbacks for
+
+78
+07:08.520 --> 07:09.660
+this Helvetica font.
+
+79
+07:10.230 --> 07:20.220
+And if I go ahead and paste that and replace our font family, then you can see that we have a stack
+
+80
+07:20.220 --> 07:21.120
+of fallbacks.
+
+81
+07:21.510 --> 07:28.890
+So I'm basically saying that I want the font family to be Helvetica Neue if they have it. And if they
+
+82
+07:28.890 --> 07:33.300
+have an Apple system, that's very likely that they will have this font installed.
+
+83
+07:33.900 --> 07:38.820
+If they don't have it, then default to the next best thing, which is Helvetica,
+
+84
+07:39.270 --> 07:42.600
+and if they don't have that, then default to Arial.
+
+85
+07:42.780 --> 07:46.290
+And finally, just go with whatever sans serif they've got installed
+
+86
+07:46.290 --> 07:51.810
+if they don't even have Arial, which is very unlikely, but you can see how we're going from specific
+
+87
+07:52.110 --> 07:52.530
+to
+
+88
+07:52.620 --> 07:59.970
+less specific and all the while ensuring that we're getting roughly a similar sort of typeface and similar
+
+89
+07:59.970 --> 08:05.370
+sort of feel, no matter which font the user have installed or not installed.
+
+90
+08:06.300 --> 08:11.880
+So if we hit save and we go back to our website, then you can see that on the Mac,
+
+91
+08:12.120 --> 08:14.490
+I do indeed have Helvetica Neue installed
+
+92
+08:14.870 --> 08:17.970
+and that's what's currently being rendered on screen.
+
+93
+08:18.090 --> 08:22.360
+But say, if I was on Windows, then I might be seeing Arial in this case.
+
+94
+08:22.380 --> 08:28.050
+And you can go ahead and give it a go and have a look at these font stacks and copy them over to your
+
+95
+08:28.050 --> 08:31.020
+web page and see what you're able to get.
+
+96
+08:31.290 --> 08:36.040
+Now, what if we were even more picky as designers?
+
+97
+08:36.060 --> 08:43.230
+What if I really want everybody who looks at my website to see exactly the same thing as I designed
+
+98
+08:43.230 --> 08:43.400
+it?
+
+99
+08:43.410 --> 08:49.440
+I want them to see the design that I intended instead of whatever font it is that they happen to have
+
+100
+08:49.440 --> 08:50.100
+installed.
+
+101
+08:50.850 --> 08:57.330
+And for example, if I was using Helvetica, then pretty much like 93% of Windows users are just
+
+102
+08:57.330 --> 08:58.410
+going to see Arial.
+
+103
+08:58.470 --> 08:59.970
+What if I really hate Arial?
+
+104
+09:00.330 --> 09:08.550
+What can I do to ensure that everybody has the same viewing experience with regards to the fonts on
+
+105
+09:08.550 --> 09:09.210
+my website?
+
+106
+09:09.420 --> 09:12.780
+Well, you could use something called a font embedding.
+
+107
+09:13.380 --> 09:20.640
+So if we head over to fonts.google.com, then you can see that they've got a whole bunch of font
+
+108
+09:20.640 --> 09:23.100
+families that you can choose from.
+
+109
+09:23.640 --> 09:31.590
+And these are all fonts that are free for commercial use that you can simply embed into your website
+
+110
+09:31.650 --> 09:34.930
+and there's a large choice of font families that you can pick through.
+
+111
+09:35.400 --> 09:41.340
+So you can choose whether if you want just serif fonts to look through or sans serif.
+
+112
+09:41.550 --> 09:48.300
+They have these cool articles about which fonts go well with which and a whole bunch of really, really
+
+113
+09:48.300 --> 09:49.500
+useful stuff, actually.
+
+114
+09:49.800 --> 09:52.890
+But in my case, I already know what it is that I want.
+
+115
+09:53.370 --> 09:56.510
+I want the font called Merriweather.
+
+116
+09:57.420 --> 10:02.310
+Now, before we search for that font here, we're going to make sure that if you did apply a filter
+
+117
+10:02.310 --> 10:07.950
+like here that I have looking only for the sans serif in the fonts, then you make sure that you just
+
+118
+10:07.950 --> 10:13.700
+click reset so that we can find all types of fonts and then we can search for Merriweather.
+
+119
+10:14.070 --> 10:17.490
+And we actually want this one, not the sans serif type.
+
+120
+10:17.670 --> 10:18.000
+That's.
+
+121
+10:18.810 --> 10:25.410
+So let's go ahead and click on it, and then you can take a look at what it looks like. It's got who
+
+122
+10:25.410 --> 10:29.490
+designed it, what the purpose of this typeface is,
+
+123
+10:29.820 --> 10:34.740
+and you can also see how your sentence would look like if you decided to change the text.
+
+124
+10:35.430 --> 10:43.200
+Now, while we here, we're going to go and find the regular 400 point size font, and then we're going
+
+125
+10:43.200 --> 10:49.650
+to go ahead and click Plus to select the style and add it to our list of selections.
+
+126
+10:50.490 --> 10:56.760
+Now I'm going to go ahead and add a few more different fonts before I show you how we're going to incorporate
+
+127
+10:56.760 --> 10:57.060
+this.
+
+128
+10:57.450 --> 11:00.660
+So the other one that I'm going to pick up is a handwriting font
+
+129
+11:00.660 --> 11:06.090
+actually, it's called Sacramento. And this I'm going to use as the font for my H1.
+
+130
+11:06.450 --> 11:12.000
+So a very stylish sort of font where we don't really need people to read it that clearly.
+
+131
+11:12.450 --> 11:17.490
+So it's not like a body font where it would be quite painful to try and read through, you know, 300
+
+132
+11:17.490 --> 11:18.990
+words are all styled like this.
+
+133
+11:19.530 --> 11:21.260
+So let's go ahead and add that too.
+
+134
+11:21.270 --> 11:23.070
+So we've got now two selected.
+
+135
+11:23.580 --> 11:30.780
+And the last thing that I want is my main heading font and that is going to be a sans serif.
+
+136
+11:31.170 --> 11:35.100
+And one that I'm quite partial to is the Monserrat.
+
+137
+11:35.250 --> 11:36.960
+So I'm going to go ahead and add that as well.
+
+138
+11:37.380 --> 11:46.140
+So now I've got three font families selected and I can embed it into my website as easily as copying this
+
+139
+11:46.140 --> 11:51.180
+link and pasting that at the top of my index.html.
+
+140
+11:51.540 --> 11:53.290
+Just going to paste that link in there.
+
+141
+11:53.700 --> 12:02.430
+And this specifies a location where if users don't have these fonts already installed or cached on their
+
+142
+12:02.430 --> 12:09.120
+system, then the browser will take them to this location and grab those fonts for them.
+
+143
+12:09.930 --> 12:16.320
+And then if we go into the style.css, then I can specify a font family that I want to use.
+
+144
+12:16.890 --> 12:24.870
+So the one that I want for my body is the Merriweather font, and I'm going to place that in here and
+
+145
+12:24.870 --> 12:30.030
+it will default to serif if something terrible happens, say the internet connection went down in the
+
+146
+12:30.030 --> 12:35.280
+middle of downloading the font, etc. But you can see it's not a large font stack because in pretty
+
+147
+12:35.280 --> 12:40.170
+99.9999% of the time, this is the font that everybody is going
+
+148
+12:40.170 --> 12:45.900
+to see because we are embedding it instead of presuming that people already have it.
+
+149
+12:47.070 --> 12:52.470
+Now, for my h1, I'm going to use the Sacramento and for my
+
+150
+12:52.620 --> 12:55.650
+H2 and also H3s
+
+151
+12:56.160 --> 12:58.720
+I'm going to use the Monserrat.
+
+152
+13:00.090 --> 13:06.400
+So let's go ahead and put those in there and just hit beautify to rearrange everything.
+
+153
+13:07.150 --> 13:11.310
+Let's hit, save, take ourselves, back over to our site,
+
+154
+13:11.610 --> 13:13.830
+hit refresh and voila.
+
+155
+13:13.980 --> 13:21.480
+Our text is now beautifully styled using the fonts that we chose from Google fonts. So feel free to
+
+156
+13:21.480 --> 13:27.000
+have a mess around with the different fonts that you might like or you might want to incorporate into
+
+157
+13:27.000 --> 13:30.630
+your website and then simply add them to your selection.
+
+158
+13:30.990 --> 13:38.640
+Include the link in your index.html and start using them in your CSS like
+
+159
+13:38.640 --> 13:45.420
+so. Now in the next lesson, I want to go and do a deep dive on different fonts and different typefaces.
+
+160
+13:45.780 --> 13:49.110
+What are the different families and how they came about?
+
+161
+13:49.200 --> 13:56.460
+So just a lesson on one of the most crucial parts of digital design, and that's of course, typography.
+
+162
+13:56.820 --> 14:00.780
+So if you're interested, then that is what you will get on the next lesson.
+
+163
+14:01.230 --> 14:06.730
+If you're not interested, then you can feel free and go ahead and skip ahead to the next lesson
+
+164
+14:06.750 --> 14:13.500
+where we explore some of the other font and text properties that we can use to style our text on our
+
+165
+14:13.500 --> 14:16.170
+website, so I'll see you on the next lesson.

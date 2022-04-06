@@ -1,0 +1,685 @@
+WEBVTT
+
+0
+00:00.390 --> 00:04.710
+So now that we understand how the HTML boilerplate works and what each line
+
+1
+00:04.710 --> 00:05.550
+does in it,
+
+2
+00:05.790 --> 00:09.840
+it's time to move into the body section and start giving our website some
+
+3
+00:09.840 --> 00:14.370
+content cause at the moment, our website is looking a little bit plain.
+
+4
+00:14.610 --> 00:16.740
+So if we have a look at Jon Kleinberg's website,
+
+5
+00:16.860 --> 00:21.860
+the first thing that we want right at the top here is a level one heading that
+
+6
+00:21.960 --> 00:26.550
+says our name. So let's hit back into Atom and as a challenge 
+
+7
+00:26.550 --> 00:31.260
+to you, add a level one heading inside the body section of your website that
+
+8
+00:31.290 --> 00:32.940
+contains your name.
+
+9
+00:38.090 --> 00:43.090
+So this one's easy and it's made even easier using the auto complete features
+
+10
+00:43.730 --> 00:47.990
+inside Atom. All have to write in order to create an h1 tag,
+
+11
+00:48.050 --> 00:51.710
+which is what's needed to create a level one heading, is I just have to write
+
+12
+00:51.770 --> 00:54.770
+h1 and it makes a suggestion asking me,
+
+13
+00:55.100 --> 00:59.780
+are you looking for heading level one? And now if I hit enter, or if I hit tab,
+
+14
+01:00.140 --> 01:05.140
+I get the h1 tag inserted automatically, opened and closed for me
+
+15
+01:06.020 --> 01:10.520
+and my cursor gets moved right in between exactly the place where I would need
+
+16
+01:10.520 --> 01:11.480
+to start typing.
+
+17
+01:12.260 --> 01:17.260
+So now if I hit save and I head back over to my personal site,
+
+18
+01:17.810 --> 01:19.700
+and remember if you close down this tab,
+
+19
+01:19.940 --> 01:23.600
+you can always go into your Finder or your Explorer to open it back up again
+
+20
+01:23.810 --> 01:28.810
+or you can select the full file path from Atom as well and paste it into here.
+
+21
+01:29.540 --> 01:32.360
+Now, if I hit enter, you can see my h1,
+
+22
+01:32.390 --> 01:35.990
+my level one heading gets shown up here just like John Kleinberg's
+
+23
+01:36.080 --> 01:38.450
+and we're ready to move on to the next thing.
+
+24
+01:38.870 --> 01:43.820
+Now we want to have a line that shows our title, so who it is that we are.
+
+25
+01:44.330 --> 01:46.730
+Let's head back to Atom. And firstly,
+
+26
+01:46.730 --> 01:49.760
+I'm going to get rid of this little heart because it doesn't look very
+
+27
+01:49.760 --> 01:50.593
+professional
+
+28
+01:51.020 --> 01:55.550
+and I'm going to add another HTML element under the h1.
+
+29
+01:56.180 --> 02:01.180
+And this is a good point to talk about how to keep your HTML file neat and tidy.
+
+30
+02:01.340 --> 02:01.940
+Now,
+
+31
+02:01.940 --> 02:06.940
+most programs are very serious about how to indent and structure their HTML
+
+32
+02:08.240 --> 02:09.073
+files.
+
+33
+02:09.110 --> 02:13.790
+And the reason for it is because having these indents makes it easy for us to
+
+34
+02:13.790 --> 02:18.260
+see at a glance, which tags are inside other ones.
+
+35
+02:18.290 --> 02:18.920
+So for example,
+
+36
+02:18.920 --> 02:23.360
+if we look at the top level here and we've got the HTML tag and because both the
+
+37
+02:23.360 --> 02:28.360
+head and the body tags are i dented inside these HTML tags,
+
+38
+02:29.930 --> 02:34.930
+it shows us at a glance that the head is inside the HTML element and as is
+
+39
+02:37.190 --> 02:42.080
+the body. But the body and the head they're at the same hierarchical level.
+
+40
+02:42.290 --> 02:44.630
+They're not inside of each other at all.
+
+41
+02:45.230 --> 02:49.580
+And this is a good structure for us to be able to see at a glance what's
+
+42
+02:49.580 --> 02:53.690
+happening in our code. And also when other programmers look at our code,
+
+43
+02:53.780 --> 02:56.060
+because we're used to working with the same structure,
+
+44
+02:56.480 --> 02:59.920
+it's easy to be able to understand what's going at a glance.
+
+45
+03:00.340 --> 03:05.340
+So you can see that there's one part of our code that breaks this rule.
+
+46
+03:05.950 --> 03:07.780
+And that's this line here.
+
+47
+03:08.320 --> 03:12.010
+Our h1 is contained inside our body element
+
+48
+03:12.280 --> 03:16.360
+and so it should be indented like so.
+
+49
+03:16.720 --> 03:21.720
+And you can clearly see that this is now a child or contained inside the body
+
+50
+03:21.880 --> 03:26.590
+tag. Now, if you didn't want to do that manually every single time,
+
+51
+03:26.680 --> 03:27.400
+well,
+
+52
+03:27.400 --> 03:31.720
+we actually installed a package right at the beginning that helps us with this
+
+53
+03:31.840 --> 03:34.690
+organization. It's our little housekeeper, if you will.
+
+54
+03:34.870 --> 03:38.410
+So if you go to packages and go to Atom Beautify
+
+55
+03:38.680 --> 03:40.120
+and click on beautify,
+
+56
+03:40.540 --> 03:45.540
+it will automatically beautify your entire code file to make all of the indents
+
+57
+03:45.610 --> 03:48.730
+for you and to make everything look neat and tidy.
+
+58
+03:49.210 --> 03:52.330
+So every so often, once your code starts getting messy,
+
+59
+03:52.510 --> 03:57.490
+either learn the shortcut or go through it in the menu and reorganize your code
+
+60
+03:57.490 --> 04:00.730
+file. It'll make it much easier on the eyes and much easier to read.
+
+61
+04:00.940 --> 04:05.680
+So now I want to add my title under my h1 tag.
+
+62
+04:06.100 --> 04:08.830
+And for this, I'm going to use the P tag,
+
+63
+04:09.160 --> 04:14.160
+which is a paragraph tag and the P tag formats text into a paragraph.
+
+64
+04:15.400 --> 04:20.230
+So they get a new line and the text inside gets grouped together into the same
+
+65
+04:20.230 --> 04:23.230
+paragraph. So let's add my title here,
+
+66
+04:23.880 --> 04:24.713
+<v 1>yeah.</v>
+
+67
+04:28.470 --> 04:32.340
+<v 0>And now let's see what our changes look like. So remember again,</v>
+
+68
+04:32.370 --> 04:37.370
+command +s or control + s to save and head back over to our site and command + r or
+
+69
+04:38.250 --> 04:43.170
+control + r to refresh or click this button to refresh. And there we go.
+
+70
+04:43.230 --> 04:47.400
+There's our brand new paragraph showing up. Now, if we look at Jon Kleinberg,
+
+71
+04:47.400 --> 04:52.400
+so you can see that his title is italicized and ours is not.
+
+72
+04:53.370 --> 04:57.870
+So how can we make ours italicized as well? Well, this is where our lessons
+
+73
+04:57.870 --> 04:59.880
+on documentation is going to come in handy.
+
+74
+05:00.360 --> 05:05.360
+Let's go ahead and go to Google and see if you can find out how do to italicize
+
+75
+05:05.910 --> 05:08.850
+your text using HTML.
+
+76
+05:12.480 --> 05:12.630
+<v 1>Go on.</v>
+
+77
+05:12.630 --> 05:16.680
+<v 0>Let's write italicize HTML MDN</v>
+
+78
+05:17.700 --> 05:18.690
+and let's hit enter.
+
+79
+05:19.530 --> 05:22.440
+And you can see that there's actually two tags that come up here
+
+80
+05:22.770 --> 05:26.310
+and the first one that comes up is this one. So let's have a look at it first.
+
+81
+05:27.090 --> 05:30.900
+Now this is the em or the emphasis element
+
+82
+05:31.200 --> 05:35.040
+and it marks text that has a stress emphasis.
+
+83
+05:35.160 --> 05:37.470
+Now it looks like this in practice
+
+84
+05:37.830 --> 05:41.070
+and the result is that it makes it look italicized.
+
+85
+05:41.790 --> 05:43.770
+Now you might have noticed back here,
+
+86
+05:43.770 --> 05:47.130
+we also had the i element or the i tag
+
+87
+05:47.340 --> 05:49.590
+and it does the same thing visually.
+
+88
+05:49.770 --> 05:54.420
+It also makes the text that's in between the i  tags italicized.
+
+89
+05:54.990 --> 05:59.000
+But there;s a little bit of a difference here and the difference is quite subtle.
+
+90
+05:59.150 --> 06:03.740
+The emphasis tag tells the browser the words that are enclosed between it
+
+91
+06:04.070 --> 06:07.010
+should be stressed or should be emphasized,
+
+92
+06:07.100 --> 06:11.060
+but the i tag only italicizes the text.
+
+93
+06:11.090 --> 06:14.810
+So it only styles the text to make it slanted
+
+94
+06:15.140 --> 06:18.920
+and it doesn't confer any of that emphasis. And for this reason,
+
+95
+06:19.130 --> 06:23.510
+it's good practice to always use emphasis instead of italic
+
+96
+06:23.720 --> 06:25.730
+because it conveys more information
+
+97
+06:26.240 --> 06:28.730
+and it isn't just about the style.
+
+98
+06:29.150 --> 06:33.320
+Remember when we're writing HTML code we're more concerned about structuring our
+
+99
+06:33.320 --> 06:38.320
+text rather than caring about how it looks or how it appears. Now a similar pair
+
+100
+06:39.710 --> 06:43.160
+is the B tag or the bold tag,
+
+101
+06:43.550 --> 06:45.380
+and this is equivalent to the i tag.
+
+102
+06:45.650 --> 06:49.760
+It makes any texts that's in between bolded like so.
+
+103
+06:50.240 --> 06:54.140
+But instead, what you should be using is the strong tag.
+
+104
+06:54.560 --> 06:57.440
+And that's because the strong tag, again, confers
+
+105
+06:57.500 --> 07:02.500
+meaning. It says that this text has strong importance and therefore it's
+
+106
+07:03.230 --> 07:08.090
+displayed in bold rather than merely saying that this should be styled so that
+
+107
+07:08.090 --> 07:12.560
+it's darker than the rest of the text. And if you're interested,
+
+108
+07:12.590 --> 07:17.330
+you can have a read between bold and strong, as well as emphasis and strong,
+
+109
+07:17.600 --> 07:19.280
+as well as emphasis and italic.
+
+110
+07:19.550 --> 07:22.880
+It makes for some interesting reading and gives you a bit more background
+
+111
+07:22.880 --> 07:25.580
+information on the different between these two tags.
+
+112
+07:25.820 --> 07:28.670
+But whenever you're looking to make something bold in your website,
+
+113
+07:28.970 --> 07:30.950
+you should probably be using the strong tag.
+
+114
+07:31.070 --> 07:33.140
+And whenever you want to make something italicize,
+
+115
+07:33.410 --> 07:35.570
+you should be using the emphasis tag.
+
+116
+07:36.470 --> 07:39.800
+So let's go ahead and make our paragraph,
+
+117
+07:40.130 --> 07:44.540
+this title, italicized or emphasized like
+
+118
+07:44.540 --> 07:46.220
+so. If you remember,
+
+119
+07:46.250 --> 07:50.780
+all we have to do is just to enclose it inside the em tag.
+
+120
+07:52.190 --> 07:55.220
+Now you can do that for the entire length of the text,
+
+121
+07:55.370 --> 07:59.630
+or you can simply apply it to just a section of the text. So for example,
+
+122
+07:59.630 --> 08:03.260
+if I wanted to make the part where it says the App Brewery bolded,
+
+123
+08:03.560 --> 08:07.190
+then I can simply add a strong tag and have the App
+
+124
+08:07.190 --> 08:11.780
+Brewery not including the full stop inside this strong tag. Now,
+
+125
+08:11.780 --> 08:14.690
+if I hit save and go ahead and refresh,
+
+126
+08:14.870 --> 08:19.870
+then you can see that the entire paragraph is emphasized and the App Brewery is
+
+127
+08:22.070 --> 08:25.550
+bolded. So we've done a little bit of formatting for our website.
+
+128
+08:26.090 --> 08:27.680
+Now let's move on to the next part.
+
+129
+08:27.920 --> 08:31.700
+We're going to add a little bio here and that again is going to be inside a
+
+130
+08:31.700 --> 08:36.050
+paragraph element, and it just tells anybody who's visiting our personal site
+
+131
+08:36.320 --> 08:39.770
+who we are and what we're all about. So once you're ready,
+
+132
+08:39.830 --> 08:43.850
+go ahead and figure out where you should add this and complete the challenge.
+
+133
+08:46.070 --> 08:50.030
+OK. So that wasn't so hard. All we have to do is just indent,
+
+134
+08:50.060 --> 08:51.590
+so we're in the right position,
+
+135
+08:51.590 --> 08:55.470
+we're inside the body tag. And we're going to create a new paragraph element.
+
+136
+08:55.740 --> 08:59.700
+So this is going to be on a new line from this paragraph.
+
+137
+08:59.760 --> 09:03.270
+They are going to be separate paragraphs and here I'm going to write
+
+138
+09:03.330 --> 09:07.830
+I am an iOS and web developer.
+
+139
+09:08.220 --> 09:11.340
+I love coffee
+
+140
+09:12.750 --> 09:16.410
+and brew my own beers.
+
+141
+09:16.740 --> 09:20.580
+Let's save and check it out here. All right. It looks pretty good
+
+142
+09:20.670 --> 09:24.000
+and we're getting pretty far already. So obviously you can put as much
+
+143
+09:24.120 --> 09:26.850
+or as little as you want here and design your website
+
+144
+09:26.850 --> 09:29.280
+however you want it to look. Now,
+
+145
+09:29.280 --> 09:32.070
+the next thing I want to add is this horizontal line.
+
+146
+09:32.430 --> 09:34.110
+And we've done that previously.
+
+147
+09:34.380 --> 09:39.120
+So you can go ahead and add that into your code file as a challenge.
+
+148
+09:39.410 --> 09:40.243
+<v 1>Go on.</v>
+
+149
+09:42.170 --> 09:44.570
+<v 0>All right. So do you remember how to do that? Well,</v>
+
+150
+09:44.600 --> 09:48.020
+all we need to do is we're still staying inside the body because we're creating
+
+151
+09:48.020 --> 09:49.550
+the content for our website.
+
+152
+09:50.030 --> 09:53.750
+And all we need to do is just to create a horizontal rule.
+
+153
+09:53.780 --> 09:57.410
+So I'm going to use my good friend autosuggest and I'm going to right hr and
+
+154
+09:57.410 --> 10:00.770
+hit enter to insert a new horizontal rule.
+
+155
+10:01.100 --> 10:04.520
+And now it's looking pretty similar to what we've got here. Now,
+
+156
+10:04.520 --> 10:09.520
+the last thing I want to add is a subtitle where I'm going to list all the books
+
+157
+10:09.980 --> 10:12.950
+and courses that I'm teaching. Go ahead
+
+158
+10:13.010 --> 10:14.990
+and add a level three
+
+159
+10:14.990 --> 10:19.990
+heading to your website underneath the horizontal rule and call it books and
+
+160
+10:20.690 --> 10:22.970
+teaching. Or if you don't have any books and teaching,
+
+161
+10:23.180 --> 10:27.560
+you can simply call it education and list all the schools that you've attended.
+
+162
+10:28.130 --> 10:28.963
+<v 1>Okay.</v>
+
+163
+10:32.600 --> 10:36.230
+<v 0>All right. Underneath the horizontal rule, I'm going to add an h3</v>
+
+164
+10:36.260 --> 10:37.430
+so a level three heading,
+
+165
+10:37.640 --> 10:41.510
+and this is going to be the books and teaching.
+
+166
+10:42.740 --> 10:43.070
+All right.
+
+167
+10:43.070 --> 10:47.180
+So we've already got most of our personal site coded up. In the next lesson,
+
+168
+10:47.210 --> 10:51.830
+we're going to be diving into HTML lists and how we can create these bullet
+
+169
+10:51.830 --> 10:55.970
+points as well as numbered points and add it  to our website.
+
+170
+10:56.360 --> 11:00.080
+So, all of that and more, I'll see you on the next lesson.

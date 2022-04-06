@@ -1,0 +1,633 @@
+WEBVTT
+
+0
+00:00.390 --> 00:00.810
+All right.
+
+1
+00:00.810 --> 00:05.810
+So let's talk about the anatomy of an HTML tag and break it down to its
+
+2
+00:06.060 --> 00:10.500
+component parts so that we can actually understand how they're structured and
+
+3
+00:10.500 --> 00:15.000
+how we can use them. So we've written HTML elements like so.
+
+4
+00:15.420 --> 00:17.760
+So here we have the words hello world
+
+5
+00:18.060 --> 00:23.060
+and they're in closed by an opening tag and a closing tag.
+
+6
+00:23.670 --> 00:28.670
+And in between those tags is the content that we want to apply that structure
+
+7
+00:28.980 --> 00:32.700
+to. So if you think bank to the days of marking down the manuscript,
+
+8
+00:32.970 --> 00:37.970
+it's exactly the same as putting down a squiggly line underneath certain words or
+
+9
+00:38.400 --> 00:42.480
+phrases and asking the publisher to make it bolded
+
+10
+00:42.690 --> 00:46.590
+to affect the structure of certain parts of the text. Now, in this case,
+
+11
+00:46.590 --> 00:49.380
+the publisher just happens to be our browser.
+
+12
+00:49.680 --> 00:52.980
+So these tags make requests to the browser
+
+13
+00:53.370 --> 00:58.370
+asking it to structure and display our plaintext in the way that the web
+
+14
+00:58.470 --> 01:00.240
+designer wanted it to be shown.
+
+15
+01:00.480 --> 01:05.480
+Now the other type of tag that we just saw are tags that don't have a closing
+
+16
+01:05.790 --> 01:08.820
+tag. They're expressed simply like so.
+
+17
+01:08.970 --> 01:13.970
+And these are called self-closing tags and we've seen that with the break tag
+
+18
+01:14.490 --> 01:17.820
+and there's a few more others that work like this also.
+
+19
+01:18.180 --> 01:23.180
+Now how do we find out if something requires a closing tag or is self-closing?
+
+20
+01:23.970 --> 01:27.120
+Well, this is where we head to the documentation again. So
+
+21
+01:28.140 --> 01:31.380
+if we have a look at the documentation for the heading elements,
+
+22
+01:31.680 --> 01:36.680
+you can see that there's this part in the table that says tag omission
+
+23
+01:37.080 --> 01:42.080
+and it says that both the starting and ending tags are mandatory so that you
+
+24
+01:43.350 --> 01:48.350
+can specify which portion of your text you want to apply this structure to.
+
+25
+01:50.340 --> 01:53.790
+Now, if we have a look at the br or the line break element,
+
+26
+01:54.180 --> 01:56.820
+you can see that under tag omission,
+
+27
+01:57.000 --> 02:02.000
+it says that it must have a start tag and must not have an end tag.
+
+28
+02:02.550 --> 02:07.350
+So this is how we find out how we write our tags. Now, while we're here,
+
+29
+02:07.410 --> 02:12.410
+I want to introduce you to another element called the horizontal rule or the hr
+
+30
+02:13.770 --> 02:14.603
+tag.
+
+31
+02:14.670 --> 02:19.650
+And this will allow us to create these horizontal lines above and below our
+
+32
+02:19.650 --> 02:24.480
+portion of text. So as you can see in the documentation under tag omission,
+
+33
+02:24.540 --> 02:27.750
+it also says that it must not have an end tag.
+
+34
+02:27.990 --> 02:30.870
+So this is also a self-closing tag.
+
+35
+02:32.190 --> 02:36.780
+Let's head back over to our pen so that we can add these two horizontal rules
+
+36
+02:36.840 --> 02:40.710
+above and below our text. So the first one is going to go here
+
+37
+02:43.320 --> 02:45.690
+and the last one is going to go here.
+
+38
+02:46.140 --> 02:51.140
+You can see that our webpage now has two horizontal lines above and below our
+
+39
+02:51.240 --> 02:53.280
+main portion of text. Now,
+
+40
+02:53.310 --> 02:56.250
+if we have a closer look at this website,
+
+41
+02:56.490 --> 03:01.490
+you can see that their horizontal rule is a little bit thicker than ours.
+
+42
+03:02.290 --> 03:05.940
+So how can we make ours look more like theirs?
+
+43
+03:06.480 --> 03:11.010
+Now, this is part where I show you a neat trick. On any webpage that you open in
+
+44
+03:11.010 --> 03:11.640
+Chrome
+
+45
+03:11.640 --> 03:16.640
+you can simply right click on the element that you're interested in and click
+
+46
+03:16.950 --> 03:21.950
+inspect in order to look at the HTML and CSS code that's being rendered in the
+
+47
+03:23.550 --> 03:28.320
+background by the browser. So you can see here, they've got an hr element,
+
+48
+03:28.410 --> 03:29.370
+horizontal rule,
+
+49
+03:29.820 --> 03:33.660
+but they've got also all of this going on afterwards.
+
+50
+03:33.990 --> 03:36.270
+What exactly is that?
+
+51
+03:36.900 --> 03:41.900
+Now we know that the first part of the tag is the HTML element and it's be or hr or
+
+52
+03:45.600 --> 03:47.430
+whatever it is that you want to use.
+
+53
+03:47.880 --> 03:51.300
+Now the second part inside the angle bracket or
+
+54
+03:51.320 --> 03:56.320
+inside our tag is new and this is called an HTML attribute and it basically
+
+55
+03:58.290 --> 04:03.290
+gives more information to the browser to specify modifications to that HTML
+
+56
+04:05.430 --> 04:09.570
+element. So in this case, we're saying that we want a horizontal rule,
+
+57
+04:09.810 --> 04:14.760
+but we want it in size three. Now, what does size three mean
+
+58
+04:14.910 --> 04:19.350
+and how do we know that we have these HTML attributes available to us?
+
+59
+04:19.800 --> 04:22.710
+You've guessed it. We're going back to the documentation.
+
+60
+04:23.580 --> 04:27.000
+Now I know I'm making a big deal about going to the documentation,
+
+61
+04:27.330 --> 04:31.080
+but it really, really is an important skill. Understanding
+
+62
+04:31.110 --> 04:33.870
+and being able to look up the documentation,
+
+63
+04:34.050 --> 04:39.050
+being familiar with the structure of it and where to look in order to find out
+
+64
+04:39.150 --> 04:41.940
+how to implement or do certain things.
+
+65
+04:43.140 --> 04:46.170
+If we have a look at our documentation for hr,
+
+66
+04:46.440 --> 04:49.110
+you can see that there's this section called attributes.
+
+67
+04:49.410 --> 04:54.410
+And that's what we spoke about just now. The attribute comes after the main HTML
+
+68
+04:55.530 --> 04:59.730
+element and is separated from the element by a single space.
+
+69
+05:00.120 --> 05:04.830
+In this case, the horizontal rule element has actually quite a few attributes,
+
+70
+05:05.160 --> 05:06.780
+including align
+
+71
+05:06.840 --> 05:11.840
+so you can specify whether if you want your horizontal line to align to the left
+
+72
+05:12.180 --> 05:14.370
+or align to the right or be centered,
+
+73
+05:14.520 --> 05:18.090
+you can specify the color of the horizontal rule,
+
+74
+05:18.150 --> 05:22.620
+you can set whether if you want the horizontal rule to have shading or not,
+
+75
+05:22.950 --> 05:27.900
+and you can also set the height in pixels of that horizontal rule,
+
+76
+05:28.140 --> 05:32.640
+which is what we saw earlier on over here. So in this case,
+
+77
+05:33.090 --> 05:38.090
+the reason why their horizontal rule looks different ours is because ours is by
+
+78
+05:38.490 --> 05:42.600
+default, only one pixel high or one pixel in size
+
+79
+05:42.930 --> 05:43.763
+whereas theirs,
+
+80
+05:43.770 --> 05:48.770
+if you inspect in the HTML, is three pixels in height and they've also specified
+
+81
+05:50.340 --> 05:54.180
+no shade i.e. no shading to the horizontal rule.
+
+82
+05:54.630 --> 05:59.210
+So if we want to make our website a seamless copy of what we see here,
+
+83
+05:59.540 --> 06:04.010
+then we also have to specify those attributes. So if you remember,
+
+84
+06:04.190 --> 06:08.810
+the horizontal rule is a self-closing tag. And so inside the tag,
+
+85
+06:08.840 --> 06:10.070
+we're going to make a space
+
+86
+06:10.310 --> 06:13.340
+and then we're going to specify the name of the attribute
+
+87
+06:13.640 --> 06:17.900
+which we know from the documentation to be called the size attribute,
+
+88
+06:18.020 --> 06:20.300
+and we're going to set it to equal three pixels.
+
+89
+06:20.600 --> 06:25.070
+And then we're going to specify that it is no shade i.e. no shading.
+
+90
+06:25.370 --> 06:28.100
+And we know all of this from the documentation.
+
+91
+06:28.610 --> 06:30.500
+So now once our code updates,
+
+92
+06:30.620 --> 06:35.120
+you can see that this brand new horizontal rule looks completely different from
+
+93
+06:35.120 --> 06:38.990
+what it was before and we can copy this over to the top as well
+
+94
+06:39.410 --> 06:44.410
+so that our horizontal rules look exactly the same as what we've got over here.
+
+95
+06:45.530 --> 06:50.150
+So now we've seen HTML elements that require an opening tag
+
+96
+06:50.180 --> 06:51.800
+as well as a closing tag.
+
+97
+06:52.070 --> 06:56.300
+We've also seen HTML elements that have a self-closing tag.
+
+98
+06:56.390 --> 06:57.140
+And finally,
+
+99
+06:57.140 --> 07:02.140
+we've seen that HTML elements can also have an attribute where you can specify
+
+100
+07:02.270 --> 07:06.170
+modifications to the default element. Now,
+
+101
+07:06.170 --> 07:11.170
+all we need is just to add one final tag called center to our HTML file
+
+102
+07:12.080 --> 07:16.310
+and we would have now faithfully copied what this website looks like.
+
+103
+07:16.610 --> 07:21.500
+So you can have a look through the HTML by, remember, right-clicking and
+
+104
+07:21.500 --> 07:23.180
+inspecting in Chrome.
+
+105
+07:23.450 --> 07:27.470
+And you can look through to see how they've structured the rest of the document
+
+106
+07:27.470 --> 07:32.390
+as well. Now, this is a good point to mention our first challenge.
+
+107
+07:33.020 --> 07:37.370
+So we've got this code pen now where we've been messing around with the HTML.
+
+108
+07:37.730 --> 07:41.570
+Now you can either save this anonymously or you can create a free account in
+
+109
+07:41.570 --> 07:44.900
+code pen in order to be able to access this later on.
+
+110
+07:45.110 --> 07:50.110
+But I want you to create a brand new pen and this pen is going to be our code
+
+111
+07:51.020 --> 07:55.610
+playbook. And you get to use this document as an interactive notebook
+
+112
+07:55.640 --> 07:58.670
+if you will and I want you to document here
+
+113
+07:58.820 --> 08:03.140
+all the new things that you've learned as we progress through the course.
+
+114
+08:03.860 --> 08:08.780
+For example, in this and the last lesson, we learned about the h1 tag.
+
+115
+08:08.870 --> 08:10.490
+So in our code play book,
+
+116
+08:10.550 --> 08:14.000
+the first thing that's going to go in is your h1 tag
+
+117
+08:14.330 --> 08:19.330
+and you can say that this is a level one heading created using the h1 tag 
+
+118
+08:23.810 --> 08:28.810
+and you go ahead and close it off. And you can look through the documentation to
+
+119
+08:28.970 --> 08:31.610
+perhaps copy some of these code snippets over,
+
+120
+08:31.850 --> 08:35.030
+but make sure that whenever you're copying pasting code,
+
+121
+08:35.300 --> 08:38.000
+that you understand what the code does.
+
+122
+08:38.300 --> 08:41.840
+There is nothing worse than copying and pasting code that breaks your website
+
+123
+08:42.080 --> 08:44.990
+because you didn't understand what you've put in there.
+
+124
+08:45.470 --> 08:49.730
+So we can go ahead and then modify each of these so that when we're creating our
+
+125
+08:49.730 --> 08:54.290
+own websites and we want to come back to our playbook and have it as a point of
+
+126
+08:54.290 --> 08:57.870
+reference, then we'll be able to see easily at a glance,
+
+127
+08:58.140 --> 09:01.890
+all of the elements that we've used and that we've learned about before.
+
+128
+09:02.040 --> 09:07.040
+So my challenge to you is to create your very own code playbook and to start
+
+129
+09:08.340 --> 09:12.600
+keeping notes on all the things that you're learning in this course. Now,
+
+130
+09:12.600 --> 09:17.160
+sometimes with certain elements, for example, the line break, you won't
+
+131
+09:17.160 --> 09:21.180
+be able to put any text inside the line break in the same way that we've
+
+132
+09:21.180 --> 09:23.400
+done so for the h1 tag.
+
+133
+09:23.820 --> 09:28.050
+This is a point where you can use a comment instead in your HTML file.
+
+134
+09:28.590 --> 09:30.660
+Comments are portions of text
+
+135
+09:30.750 --> 09:35.220
+which are marked out to be ignored by the browser.
+
+136
+09:36.150 --> 09:40.740
+And they're usually places where you write notes to yourself or notes to fellow
+
+137
+09:40.740 --> 09:44.700
+programmers who might be looking at your code. So in HTML,
+
+138
+09:44.700 --> 09:47.820
+we create a comment by using the angle bracket,
+
+139
+09:48.270 --> 09:50.970
+a exclamation Mark, two dashes,
+
+140
+09:51.780 --> 09:53.940
+and then to close off the comment,
+
+141
+09:54.030 --> 09:57.660
+we use another two dashes and a closing angle bracket.
+
+142
+09:58.260 --> 10:01.620
+And everything in between here is a comment.
+
+143
+10:02.130 --> 10:06.600
+You can see that usually it gets highlighted in a different color and none of it
+
+144
+10:06.600 --> 10:09.210
+gets interpreted into the webpage.
+
+145
+10:09.540 --> 10:14.040
+So this is where you can put sections for your notes. For example,
+
+146
+10:14.040 --> 10:15.690
+self-closing tags.
+
+147
+10:15.720 --> 10:20.400
+You can make it into several paragraphs just by putting the closing tag at the
+
+148
+10:20.400 --> 10:21.180
+bottom.
+
+149
+10:21.180 --> 10:25.830
+And you can write notes on the elements as we come across them and keep this for
+
+150
+10:25.830 --> 10:30.270
+your own reference. By the time when you're ready to create your own websites,
+
+151
+10:30.540 --> 10:35.130
+it will be a goldmine of a resource to jog your memory on all of the lessons
+
+152
+10:35.130 --> 10:37.680
+that you've learned. So in the next lesson,
+
+153
+10:37.710 --> 10:42.480
+we're going to be building our very first website and it's going to be really,
+
+154
+10:42.480 --> 10:46.200
+really awesome because we're going to be using a real text editor and we're
+
+155
+10:46.200 --> 10:49.260
+going to be putting that website live onto the internet.
+
+156
+10:49.590 --> 10:52.320
+So there's all of that and more yet to come.
+
+157
+10:52.590 --> 10:54.750
+So I we'll see you on the next lesson.

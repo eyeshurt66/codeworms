@@ -1,0 +1,241 @@
+WEBVTT
+
+0
+00:00.660 --> 00:06.390
+All right, so first things first. Before we do anything else, we first have to get set up and ready
+
+1
+00:06.390 --> 00:07.560
+for web development.
+
+2
+00:07.860 --> 00:14.010
+So I'm going to walk you through a couple of applications that we'll be using pretty much full-time during
+
+3
+00:14.010 --> 00:14.610
+this course.
+
+4
+00:15.150 --> 00:22.050
+There's two major tools that we'll rely on, and that is going to be the Chrome browser and the Atom
+
+5
+00:22.060 --> 00:22.860
+text editor.
+
+6
+00:23.130 --> 00:28.320
+And between these two tools, we're going to achieve a lot. Later on in the course when we're introducing
+
+7
+00:28.320 --> 00:34.260
+more advanced concepts such as using the command line or using a database, then we'll install other
+
+8
+00:34.260 --> 00:35.460
+things as we go along.
+
+9
+00:35.670 --> 00:40.530
+But to get started, the most important applications we need to install are just these two.
+
+10
+00:41.310 --> 00:47.370
+Now you might already have Chrome installed, but if you don't, then be sure to check out the Web Development
+
+11
+00:47.370 --> 00:51.960
+Course Resources list, which I'll link to in this current lesson.
+
+12
+00:52.260 --> 00:56.850
+And it's really, really important that you check over here because every single time I mention a
+
+13
+00:56.860 --> 01:01.860
+link or every single time I try to point you towards something, the link will show up over here and
+
+14
+01:01.860 --> 01:06.150
+you'll be able to click on it to save you all the trouble of having to type it all out.
+
+15
+01:07.050 --> 01:14.190
+Open up this page in your browser and just click on this link to go ahead and download and install Chrome.
+
+16
+01:14.820 --> 01:18.060
+And that should be pretty simple, and it will guide you through the process.
+
+17
+01:18.660 --> 01:21.090
+Now, if you're wondering, do I have to use Chrome?
+
+18
+01:21.100 --> 01:25.080
+What if I already have Firefox installed, or what if I want to use Safari?
+
+19
+01:25.380 --> 01:27.510
+Normally, I would say that's completely fine.
+
+20
+01:27.840 --> 01:32.520
+But in this case, because we're going to use some of the developer tools inside Chrome, and I want
+
+21
+01:32.520 --> 01:36.240
+you to be able to do it step by step along with me while watching the videos,
+
+22
+01:36.540 --> 01:39.840
+it's best in this case to just simply download and use Chrome.
+
+23
+01:40.080 --> 01:45.270
+So now that you've downloaded the browser you need, the next step is to install a code editor.
+
+24
+01:45.720 --> 01:53.460
+And out there, there are so many different code editors, for example, Atom or VSCode, Sublime, Brackets.
+
+25
+01:53.790 --> 02:00.120
+And if you think about it, all that you need to actually write code is just some form of text editor.
+
+26
+02:00.360 --> 02:04.680
+So you could, if you really wanted to, even use something like notepad.
+
+27
+02:05.160 --> 02:11.280
+But the downside of Notepad is it doesn't have all of the great features that some of these other specialized
+
+28
+02:11.280 --> 02:12.330
+code editors have.
+
+29
+02:12.780 --> 02:17.880
+So two of my favorites are Atom and VScode and I use both of them pretty regularly.
+
+30
+02:18.300 --> 02:20.910
+Now, in the course videos, you'll see me use Atom.
+
+31
+02:21.180 --> 02:26.700
+But if you have a strong preference towards any other code editor that you're already used to that you
+
+32
+02:26.700 --> 02:29.250
+want to use instead, then feel free to do that.
+
+33
+02:29.550 --> 02:34.920
+But if you are a complete beginner to programming, then I recommend we go ahead and install the Atom
+
+34
+02:34.920 --> 02:35.640
+text editor.
+
+35
+02:36.090 --> 02:39.210
+And it's completely free to download and install.
+
+36
+02:39.450 --> 02:45.990
+So if you just head over to atom.io or go through the Web Development Course resource list, then
+
+37
+02:45.990 --> 02:51.690
+you should land on this page. And it very cleverly figures out what system you have that you're running.
+
+38
+02:51.900 --> 02:57.150
+Now, if you're a Windows user and you head over to atom.io, you'll see that it automatically
+
+39
+02:57.150 --> 03:03.240
+detects that you are viewing this on a Windows computer and then you can just go ahead and again, click
+
+40
+03:03.240 --> 03:08.520
+that big yellow download button and you should end up with something that's called something like atom
+
+41
+03:08.820 --> 03:13.470
+setup.exe. And you'll be able to see this in your downloads folder.
+
+42
+03:14.490 --> 03:20.070
+So now if you just double click on that and it will automatically do everything it needs to install
+
+43
+03:20.070 --> 03:21.510
+Atom on your system.
+
+44
+03:22.230 --> 03:28.830
+So once you're done, it should open up a new Atom window like so and you would have successfully installed
+
+45
+03:28.830 --> 03:29.310
+Atom.
+
+46
+03:29.730 --> 03:35.490
+So now as a Windows user, you are done installing Chrome and Atom, and you can head over to the next
+
+47
+03:35.490 --> 03:42.270
+lesson where we install some packages to power up our Atom code editor. For a Mac user,
+
+48
+03:42.270 --> 03:45.090
+continue listening and I'm going to show you the same process
+
+49
+03:45.300 --> 03:50.070
+but on macOS. So all you have to do is just go ahead and click download.
+
+50
+03:51.120 --> 03:56.430
+And once download has completed, then you can simply head over to your downloads folder and double
+
+51
+03:56.430 --> 03:58.650
+click to unzip that package.
+
+52
+04:00.330 --> 04:02.710
+And now you will see Atom  show up.
+
+53
+04:02.730 --> 04:09.480
+The last thing you have to do is just to move this application into your applications folder. On the
+
+54
+04:09.480 --> 04:09.750
+Mac
+
+55
+04:09.750 --> 04:14.460
+it's just a matter of heading over to your Macintosh hard drive and then your applications folder and
+
+56
+04:14.460 --> 04:22.650
+then dragging in that atom application that you just downloaded in your downloads over into here. And
+
+57
+04:22.650 --> 04:25.410
+then you're all done and you're set up with Atom.
+
+58
+04:26.580 --> 04:31.710
+So now that you've got Chrome and Atom installed, head over to the next lesson and we're going to start
+
+59
+04:31.710 --> 04:37.830
+exploring Atom packages and see the ways that we can stop powering up our Atom code editor.

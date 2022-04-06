@@ -1,0 +1,645 @@
+WEBVTT
+
+0
+00:00.740 --> 00:08.330
+Now in the last lesson we looked at how we could change the display property using CSS in order to
+
+1
+00:08.330 --> 00:12.250
+change the way that our elements stacked against each other.
+
+2
+00:12.260 --> 00:17.610
+Now in this lesson we're going to explore CSS positioning in more detail.
+
+3
+00:17.690 --> 00:25.610
+But before we do so, the first thing we have to realize is that even without CSS, your HTML element
+
+4
+00:25.670 --> 00:33.020
+already has predefined rules for how it should be displayed on your web page even if you don't have
+
+5
+00:33.170 --> 00:34.410
+any CSS.
+
+6
+00:34.460 --> 00:41.300
+And we have to understand how things get positioned by default before we can go on to change it, to bend
+
+7
+00:41.300 --> 00:45.200
+it to our will, without getting confused and getting stuck.
+
+8
+00:45.200 --> 00:47.930
+So let's take a look at these rules.
+
+9
+00:48.050 --> 00:50.330
+So let's go through those rules quickly.
+
+10
+00:50.570 --> 00:54.590
+The first rule is that content is everything.
+
+11
+00:54.590 --> 01:01.860
+Now we know that inline elements only take up as much width and as much height as the content.
+
+12
+01:01.880 --> 01:07.280
+So if you have a span that contains a long word then it has a large width, if you have a span that contains
+
+13
+01:07.340 --> 01:13.820
+a short word then it has a short width. And with block elements, even though they take up 100 percent of
+
+14
+01:13.820 --> 01:18.290
+the width, the height is still determined by the content.
+
+15
+01:18.470 --> 01:26.510
+So if you have a really super large font for your h1 or for your paragraph, then that box model is going
+
+16
+01:26.510 --> 01:31.360
+to take up a lot more height than if it was a smaller font.
+
+17
+01:31.460 --> 01:38.720
+So your content is the first thing that determines how large things gets displayed and what the height
+
+18
+01:38.780 --> 01:40.250
+and the width will be.
+
+19
+01:40.280 --> 01:43.590
+And this is despite any CSS.
+
+20
+01:43.610 --> 01:50.520
+The next thing to remember is that the order of the elements on screen comes from your HTML code.
+
+21
+01:50.570 --> 01:55.940
+So in this case we have an h1, three paragraphs, then an image.
+
+22
+01:55.940 --> 02:03.350
+This is how we've written our code in our HTML file and this is how it gets rendered, in that order.
+
+23
+02:03.350 --> 02:10.970
+Now if we change the order and put the image at the top of our code file, then our web site is going to
+
+24
+02:10.970 --> 02:13.820
+display in a corresponding way.
+
+25
+02:13.940 --> 02:18.770
+So the default layout order is determined by your code.
+
+26
+02:18.770 --> 02:23.930
+The third thing we need to know is that children sit on top of parents.
+
+27
+02:23.960 --> 02:25.050
+What do I mean by that?
+
+28
+02:25.070 --> 02:29.210
+So here on the left I've got a div that's colored in red.
+
+29
+02:29.210 --> 02:38.210
+Now if inside this div I add an h1 with some text, then that h1 is going to be on top of the
+
+30
+02:38.210 --> 02:38.750
+div.
+
+31
+02:38.900 --> 02:43.780
+So it's more towards the viewer and away from the screen.
+
+32
+02:43.820 --> 02:47.950
+So this kind of introduces the concept of the Z index.
+
+33
+02:48.050 --> 02:53.000
+We know that on screen we have an X and a Y axis.
+
+34
+02:53.090 --> 03:00.470
+But there's also a Z axis, and that determines which element will be displayed on the other one, because
+
+35
+03:00.530 --> 03:07.010
+if in this case the div was in front of the h1, then we wouldn't see the h1 at all.
+
+36
+03:07.010 --> 03:15.160
+So by default our HTML elements that are children, they will sit on top of the parent element.
+
+37
+03:15.200 --> 03:23.540
+So if we modify this code even further, and we add a span nested inside that h1, then the word inside
+
+38
+03:23.540 --> 03:27.720
+the span is going to be on top of the h1.
+
+39
+03:27.740 --> 03:35.930
+So we have three elements here on screen so far, a div an h1 and a span, and going from the screen towards
+
+40
+03:35.930 --> 03:43.310
+the viewer, we first have the div, then the h1, then the span. From top to the bottom of the hierarchy,
+
+41
+03:43.630 --> 03:46.460
+it comes closer and closer towards the viewer.
+
+42
+03:46.580 --> 03:55.200
+So these three are the default rules for how things get rendered on screen just based on your HTML code.
+
+43
+03:55.460 --> 04:03.260
+Now you can also set a CSS property which is the position property in order to position elements on
+
+44
+04:03.260 --> 04:06.150
+screen the way that you want it to
+
+45
+04:06.350 --> 04:12.770
+instead of just going along with the default layout, and in most cases you're going to want to make changes
+
+46
+04:12.800 --> 04:14.230
+to the default layout.
+
+47
+04:14.330 --> 04:20.200
+So let's look at some of the ways in which we can change this position property.
+
+48
+04:20.240 --> 04:23.080
+Now these are the four that I'm going to talk about.
+
+49
+04:23.270 --> 04:32.080
+And the first one, the static position, we've actually already talked about it. All HTML elements are static
+
+50
+04:32.080 --> 04:41.350
+in their position by default, and static just means go along with the HTML rules and keep to the default
+
+51
+04:41.390 --> 04:48.380
+HTML flow, and that is what we see when we just have HTML without any CSS, or if we
+
+52
+04:48.380 --> 04:51.880
+don't change this position property at all.
+
+53
+04:51.890 --> 04:55.540
+Now the next one is called the relative positioning.
+
+54
+04:55.700 --> 05:04.190
+And what this allows us to do is to position the element that we select relative to how it would have
+
+55
+05:04.190 --> 05:07.220
+been positioned had it been static.
+
+56
+05:07.220 --> 05:16.010
+So in this case on the left we've got our Bacon Fansite, and this is just the normal HTML flow.
+
+57
+05:16.460 --> 05:21.560
+The image is being shown to the left and it's below all the other elements,
+
+58
+05:21.590 --> 05:27.160
+abiding by those three rules for HTML flow that we mentioned before.
+
+59
+05:27.440 --> 05:35.360
+Now if we select that image element and we change its position property to relative instead of static,
+
+60
+05:35.420 --> 05:43.760
+which is the default remember, and in addition to that we say it should be pushed 30 pixels from the
+
+61
+05:43.760 --> 05:47.300
+left of the previous position,
+
+62
+05:47.300 --> 05:50.920
+this is how our image will end up being positioned.
+
+63
+05:51.320 --> 05:59.270
+So whereas the left edge of our image used to be here and that would have been its natural position,
+
+64
+05:59.330 --> 06:01.920
+abiding by the HTML flow,
+
+65
+06:02.060 --> 06:10.940
+now we're saying, give that image 30 pixels of space between its left edge and where the left edge used
+
+66
+06:10.940 --> 06:12.050
+to be.
+
+67
+06:12.050 --> 06:15.240
+And there's four of these coordinate properties:
+
+68
+06:15.470 --> 06:18.340
+the top, the bottom, the left and the right.
+
+69
+06:18.440 --> 06:24.820
+And we can set values for them in order to determine how we want to move our element.
+
+70
+06:24.830 --> 06:30.490
+So let's say that we've got a image that is positioned using relative layer.
+
+71
+06:30.620 --> 06:34.830
+Then we set the top coordinate property to 20 pixels.
+
+72
+06:34.880 --> 06:42.380
+That means it'll get moved down by 20 pixels. And if we change the left property 20 pixels, then it'll
+
+73
+06:42.380 --> 06:44.610
+get pushed right 20 pixels.
+
+74
+06:44.780 --> 06:48.960
+If we change the right property 20 pixels, it'll get pushed left
+
+75
+06:49.130 --> 06:53.080
+20 pixels, and the bottom property as well.
+
+76
+06:53.090 --> 06:59.330
+Now there's two important things that you have to remember when you're dealing with relative positioning.
+
+77
+06:59.330 --> 07:05.920
+The first thing is that when you move an element that has a relative position,
+
+78
+07:05.950 --> 07:09.290
+say in this case we're pushing it down by 50 pixels,
+
+79
+07:09.290 --> 07:14.120
+it doesn't affect the position of anything else on screen.
+
+80
+07:14.120 --> 07:22.920
+It's as if the old position was kept and everything else just flows around it as if it was never moved.
+
+81
+07:22.970 --> 07:30.530
+It's almost like this element left the ghost of itself where it used to be in order for all the other
+
+82
+07:30.560 --> 07:33.620
+elements to keep their own positions.
+
+83
+07:33.620 --> 07:38.960
+Now the other thing to remember is that when we change the coordinate properties, for example in this
+
+84
+07:38.960 --> 07:47.550
+case we're saying make the top corner property for this relatively positioned image 50 pixels,
+
+85
+07:47.690 --> 07:54.890
+what that really means is that we're taking the top of where that image used to be and we're giving it
+
+86
+07:55.010 --> 08:00.120
+a 50 pixel margin from the top of our current image.
+
+87
+08:00.320 --> 08:07.730
+So if you think back to the box model when we spoke about margins, this is the best way of thinking about
+
+88
+08:07.730 --> 08:15.010
+these coordinates. Because very often students tend to ask, 'If it's top 50, why is it not going up by 50
+
+89
+08:15.020 --> 08:17.350
+and why is it instead going down,
+
+90
+08:17.850 --> 08:20.640
+and what is it top relative to?'.
+
+91
+08:20.720 --> 08:22.360
+So if you get confused
+
+92
+08:22.550 --> 08:24.640
+have a look back at this video.
+
+93
+08:25.010 --> 08:35.270
+So inside this code pen I've created three divs that are colored red, blue and yellow, and they each
+
+94
+08:35.270 --> 08:39.060
+have a height of 100 pixels and a width of 100 pixels,
+
+95
+08:39.080 --> 08:43.880
+so essentially three squares inside a body element.
+
+96
+08:43.910 --> 08:53.900
+I want to show you what changing the red div's position from static, which it currently is by default,
+
+97
+08:54.500 --> 09:02.360
+to relative does. Now by itself changing this position property does nothing.
+
+98
+09:02.360 --> 09:08.120
+It only starts doing something when you use one of the coordinate properties like left.
+
+99
+09:08.120 --> 09:15.980
+So let's push it 20 pixels from the left you can see that it just got nudged 20 pixels from the left
+
+100
+09:16.070 --> 09:17.770
+of where it used to be.
+
+101
+09:17.780 --> 09:24.030
+Now I can also move it all the way to the right by saying something like left 600 pixels.
+
+102
+09:24.230 --> 09:32.270
+So it's now got a margin between the left edge of where it used to be and the current left edge of 
+
+103
+09:32.450 --> 09:34.040
+600 pixels.
+
+104
+09:34.040 --> 09:42.240
+Now if I say right 200 pixels,, can you predict what will happen to my red square?
+
+105
+09:43.920 --> 09:46.870
+So let's take a look, see if you got it right.
+
+106
+09:47.400 --> 09:53.060
+So all of our red square has completely disappeared off the screen.
+
+107
+09:53.490 --> 09:54.830
+Now why is that?
+
+108
+09:54.870 --> 10:02.580
+Well, because the previous right edge was here, and to have a margin between the current right edge and
+
+109
+10:02.580 --> 10:11.100
+the previous right edge of 200 pixels pushes our red square all the way over to the left that you can't
+
+110
+10:11.100 --> 10:12.250
+see it anymore.
+
+111
+10:12.510 --> 10:18.900
+Now some people might have thought that by saying right 200 pixels, then it should be somewhere around
+
+112
+10:18.900 --> 10:23.310
+here, because this is the right edge of the screen.
+
+113
+10:23.340 --> 10:32.010
+But as we mentioned the relative positioning is relative to where the element would have been displayed
+
+114
+10:32.400 --> 10:36.150
+if it was just following the natural HTML flow.
+
+115
+10:36.990 --> 10:44.880
+So it would have been here and now there's a margin between its previous right edge and its current
+
+116
+10:44.880 --> 10:47.560
+right edge of 200 pixels.
+
+117
+10:47.640 --> 10:55.290
+But remember as we said that the relative positioning doesn't affect any other element on screen.
+
+118
+10:55.530 --> 11:05.700
+So if I said top 50 pixels it pushes it down by 50 pixels but it doesn't affect the layout of any other
+
+119
+11:05.730 --> 11:06.920
+element on screen.
+
+120
+11:06.930 --> 11:12.070
+It doesn't for example push this blue square downwards or any other element.
+
+121
+11:12.120 --> 11:18.390
+It's as if the ghost of the red square's past has stayed where it used to be,
+
+122
+11:18.390 --> 11:22.440
+and it's only this newer version that's being moved around.
+
+123
+11:22.560 --> 11:24.770
+So there's a lot of new concepts here.
+
+124
+11:24.870 --> 11:31.770
+And before we move on I just want to make sure that you're comfortable with this idea of relative positioning.
+
+125
+11:32.040 --> 11:40.800
+So as a challenge I want you to change the display property of the blue and the yellow squares so that
+
+126
+11:40.800 --> 11:46.170
+they will show up in a row where we've got the red square, the blue square and the yellow square,
+
+127
+11:46.350 --> 11:51.090
+and then I want you to move the red square to the right of the yellow square.
+
+128
+11:51.330 --> 11:54.210
+And this is what you should end up with.
+
+129
+11:54.210 --> 11:58.710
+Now don't worry too much about the gaps between the squares.
+
+130
+11:58.710 --> 12:02.020
+It's more important that you get the order right.
+
+131
+12:02.040 --> 12:07.860
+So they're all on the same line and it's blue, then yellow, then red, and you should be able to see most of
+
+132
+12:07.860 --> 12:12.800
+the square.
+
+133
+12:12.830 --> 12:13.190
+All right.
+
+134
+12:13.190 --> 12:15.260
+So did you manage to do it?
+
+135
+12:16.590 --> 12:25.140
+So the first thing that we needed to change was the display property of all three elements. So we're
+
+136
+12:25.140 --> 12:32.700
+going to change it to inline block so that we can still change its width but also have them show up 
+
+137
+12:32.700 --> 12:33.610
+inline.
+
+138
+12:33.870 --> 12:40.880
+So let's add that line of code to all three divs.
+
+139
+12:40.990 --> 12:43.310
+So now they're in the same line.
+
+140
+12:43.480 --> 12:48.180
+So I want to get rid of this top and make them line up properly.
+
+141
+12:48.430 --> 12:54.890
+But I now want to nudge the blue square to the position of the red square.
+
+142
+12:55.180 --> 13:02.420
+So I'm going to make its position relative to where it should be.
+
+143
+13:02.560 --> 13:14.970
+And I'm going to give it a right margin of 100 pixels and I'm going to do the same thing to our yellow square.
+
+144
+13:15.220 --> 13:22.270
+So I'm going to change its position to relative and also give it a right margin from its previous position
+
+145
+13:22.750 --> 13:26.300
+to 100 pixels and that nudges it left.
+
+146
+13:26.320 --> 13:35.950
+Now the final thing I have to doing is to move the red square to the right by 200 pixels. So I can change
+
+147
+13:35.950 --> 13:44.040
+its left margin to 200 pixels, and that moves the red square over to the right.
+
+148
+13:44.050 --> 13:50.940
+Now the reason why the spaces between our squares are inconsistent is because by making it an inline
+
+149
+13:50.950 --> 13:56.160
+block there's actually a little space that gets added in by the browser.
+
+150
+13:56.260 --> 14:04.420
+So we can see that if we get rid of all the position code there's just a slight smudge of a space between
+
+151
+14:04.450 --> 14:06.490
+each of the inline block elements.
+
+152
+14:06.490 --> 14:09.750
+And that's what's making our gap slightly inconsistent.
+
+153
+14:10.000 --> 14:15.000
+But the important thing is that you managed to get the order of the blocks correct.
+
+154
+14:15.100 --> 14:19.900
+So if you managed to get the squares to line up in this order then that means you've successfully completed
+
+155
+14:19.900 --> 14:23.550
+the challenge. In order to get the position more fine tuned,
+
+156
+14:23.560 --> 14:25.910
+we're going to look at different ways in the future.
+
+157
+14:25.990 --> 14:32.170
+Now in the next lesson I want to show you another way of positioning your elements by using absolute
+
+158
+14:32.200 --> 14:33.270
+positions.
+
+159
+14:33.320 --> 14:35.060
+So for all of that and more.
+
+160
+14:35.090 --> 14:36.280
+I'll see you on the next lesson.

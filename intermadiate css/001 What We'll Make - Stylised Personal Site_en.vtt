@@ -1,0 +1,245 @@
+WEBVTT
+
+0
+00:00.450 --> 00:08.130
+All right, so we've really come pretty far in our journey of creating and beautifying this CV website
+
+1
+00:08.130 --> 00:13.590
+that we have here, but we're no longer really aspiring to be computer science professors.
+
+2
+00:13.830 --> 00:16.620
+So we're going to have to take a slightly different path.
+
+3
+00:16.950 --> 00:21.000
+And instead, we want to be hired as web developers.
+
+4
+00:21.360 --> 00:24.810
+Unfortunately, we're never going to get hired with a website that looks like this.
+
+5
+00:25.110 --> 00:27.570
+So we have to aspire to greater heights.
+
+6
+00:27.960 --> 00:35.160
+And we want to create a website that looks and resembles more like a professional personal site with
+
+7
+00:35.160 --> 00:41.490
+a beautiful interface and a few brief notes about what you can do and how people can contact you.
+
+8
+00:41.670 --> 00:48.390
+So we're going to pay homage to one of the best personal sites on the internet, which is this website
+
+9
+00:48.390 --> 00:49.440
+by Sean Halpin.
+
+10
+00:49.440 --> 00:55.620
+And for the rest of this module, we're going to make a website that looks more similar to this and
+
+11
+00:55.620 --> 00:59.760
+less similar to our computer science professor's CV website.
+
+12
+00:59.970 --> 01:07.020
+So once you're ready, I have a challenge for you and that is to create a brand new project.
+
+13
+01:07.470 --> 01:14.220
+So that means you have to create a new folder called CSS - My Site, and you have to create an index.html
+
+14
+01:14.220 --> 01:16.350
+page inside that folder.
+
+15
+01:16.830 --> 01:21.810
+And then you're going to add all of that HTML boilerplate code that you will need for any website,
+
+16
+01:22.170 --> 01:24.930
+and you're going to give your website a title of your name.
+
+17
+01:24.930 --> 01:25.800
+So mine would be
+
+18
+01:26.040 --> 01:27.570
+Angela Yu for example.
+
+19
+01:28.890 --> 01:34.920
+And then you're going to create a CSS folder and a styles.css file, and then you're going to
+
+20
+01:34.920 --> 01:36.710
+link up your styles.css
+
+21
+01:36.710 --> 01:42.690
+file with your HTML file, and you're going to check to make sure that it works by giving your
+
+22
+01:42.690 --> 01:48.040
+website an ugly blue background color or whichever other ugly colors you can think of.
+
+23
+01:48.420 --> 01:49.740
+It's completely up to you.
+
+24
+01:50.070 --> 01:52.980
+So pause the video now and complete this challenge.
+
+25
+01:54.980 --> 02:01.430
+So inside, Atom, we're going to close off what we were previously working on, be that the CSS Bacon
+
+26
+02:01.430 --> 02:07.850
+Fansite or the HTML personal site. If you've got any of these open then just right-click and remove
+
+27
+02:07.850 --> 02:09.980
+it from the left hand pane.
+
+28
+02:10.550 --> 02:16.460
+Now you're going to go into whichever folder you've decided to store all of your web development projects
+
+29
+02:16.850 --> 02:22.400
+and you're going to right-click and create a new folder that is going to be called CSS -
+
+30
+02:22.580 --> 02:23.390
+My Site.
+
+31
+02:25.150 --> 02:31.660
+And you're going to go back to Atom, and you're going to add this to the left-hand pane by clicking
+
+32
+02:31.660 --> 02:33.070
+on Add Project Folder.
+
+33
+02:33.280 --> 02:37.840
+And the one that we're going to pick is that brand new folder that has nothing contained inside.
+
+34
+02:38.560 --> 02:38.880
+All right.
+
+35
+02:38.890 --> 02:44.530
+So here's our brand new project folder, and I'm going to go into it and create a new file.
+
+36
+02:44.900 --> 02:48.310
+And this is going to be our homepage or our index.html.
+
+37
+02:48.820 --> 02:56.590
+And inside this brand new HTML file, I'm going to add in the boilerplate code just by using auto-suggest.
+
+38
+02:57.010 --> 03:02.010
+And I'm going to give my website a title of my name which is Angela Yu,
+
+39
+03:02.080 --> 03:02.650
+that's me.
+
+40
+03:03.100 --> 03:11.490
+And now I'm going to create a new folder inside this project folder, and it's going to be called CSS.
+
+41
+03:11.890 --> 03:17.530
+And inside that CSS folder, I'm going to create a new styles.css file.
+
+42
+03:18.760 --> 03:25.060
+So now I have a stylesheet, and I'm going to link it up with my HTML using it as an external style
+
+43
+03:25.060 --> 03:25.330
+sheet.
+
+44
+03:25.330 --> 03:29.860
+So I'm going to insert a link that has a relationship of stylesheet.
+
+45
+03:30.340 --> 03:34.470
+Now you can also add a type of text/
+
+46
+03:34.700 --> 03:40.660
+css, but this is optional if you want, and it doesn't really matter if you have it there or not.
+
+47
+03:41.260 --> 03:46.660
+Now what does matter, though, is that you correctly point to where your styles.css exists.
+
+48
+03:47.320 --> 03:54.620
+So in our case, it exists inside a folder called CSS at the same hierarchical level as our index.html
+
+49
+03:55.120 --> 03:59.020
+which is the current file we're inside and then it's called styles.
+
+50
+03:59.020 --> 03:59.590
+css.
+
+51
+04:00.250 --> 04:06.220
+And finally, just to check that everything worked out correctly, let's go inside the body and let's
+
+52
+04:06.220 --> 04:13.990
+add a background color of, say, blue, which is going to be that pretty awful looking color.
+
+53
+04:14.440 --> 04:20.380
+But now we can check to make sure that everything worked by right-clicking on the index.html and
+
+54
+04:20.380 --> 04:27.280
+clicking on copy full path, then going into chrome and just pasting that into the browser bar.
+
+55
+04:27.670 --> 04:28.650
+And there we go.
+
+56
+04:28.660 --> 04:35.110
+This is our brand new, beautiful site that is just a blue background, but that means that everything
+
+57
+04:35.110 --> 04:39.880
+we've done so far has worked out, and you can see our title is showing up, up here as well.
+
+58
+04:40.150 --> 04:46.210
+And I'm going to get rid of this, and I'm going to close down this previous site we had back over here
+
+59
+04:46.210 --> 04:51.850
+and we're now going to focus on working on this new site that we're creating and we're going to try
+
+60
+04:51.850 --> 04:56.110
+and make it look similar to a professional web designer's personal site.

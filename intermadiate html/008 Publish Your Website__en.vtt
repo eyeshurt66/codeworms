@@ -1,0 +1,541 @@
+WEBVTT
+
+0
+00:00.870 --> 00:08.760
+Now that we've completed the HTML section and we have our completed website, but we can only access
+
+1
+00:08.760 --> 00:15.540
+it locally because when we open up our index.html, you can see that we're just opening a local file,
+
+2
+00:15.540 --> 00:15.810
+right?
+
+3
+00:16.170 --> 00:21.360
+In this case, this file is inside my users folder, inside my username, inside my desktop.
+
+4
+00:21.990 --> 00:28.470
+But that means nobody else can actually access this website, which makes it a bit pointless, right?
+
+5
+00:28.500 --> 00:33.480
+The whole point of a website is so that we can put it onto the internet, and everybody will be able
+
+6
+00:33.480 --> 00:35.820
+to see our personal site or our CV.
+
+7
+00:36.390 --> 00:37.820
+So how can we do this?
+
+8
+00:37.830 --> 00:41.520
+Well, in order to do that, we need to host our website somewhere.
+
+9
+00:42.780 --> 00:49.530
+Now, there's a whole bunch of hosting sites such as GoDaddy or Bluehost, but because we're learning
+
+10
+00:49.530 --> 00:52.120
+at the moment, we don't want to have to pay for this.
+
+11
+00:52.140 --> 00:54.630
+So there's also a free solution that
+
+12
+00:54.690 --> 01:01.440
+I'm going to show you. By the end of this lesson, you're going to have your personal CV up on the internet
+
+13
+01:01.830 --> 01:08.190
+proudly displayed somewhere and you'll be able to share a URL or a link to it so that anybody across the
+
+14
+01:08.190 --> 01:09.900
+web can be able to access it.
+
+15
+01:10.770 --> 01:15.870
+But first thing's first, we'll need to do a little bit of set-up. The service that we're going to use
+
+16
+01:15.870 --> 01:21.870
+is GitHub, and we're going to talk about GitHub in a lot of detail a little bit later on.
+
+17
+01:22.170 --> 01:27.630
+It's a really, really useful tool that is pretty much essential to a developer's workflow.
+
+18
+01:28.230 --> 01:33.570
+But for now, we're only going to use one of its features, which is hosting our website.
+
+19
+01:34.080 --> 01:39.780
+So first and foremost, if you don't have a GitHub account, then you'll need to set up a new one.
+
+20
+01:40.290 --> 01:43.080
+So I'm just going to set one up while we're at it.
+
+21
+01:44.170 --> 01:46.870
+And now it'll ask you to choose a plan.
+
+22
+01:46.900 --> 01:51.430
+Now we're going to choose the free plan and then we then click Continue.
+
+23
+01:52.300 --> 01:56.080
+Now I'm going to skip this questionnaire and just click on Skip the Step.
+
+24
+01:56.740 --> 02:03.100
+Now, once you have signed up to GitHub, it's really important that you go ahead and verify your email
+
+25
+02:03.100 --> 02:09.190
+address. So check your emails and see if you have something from GitHub and then click on that verify
+
+26
+02:09.190 --> 02:09.520
+link.
+
+27
+02:09.970 --> 02:15.550
+And once you've done that, you'll be able to add new repositories to GitHub. If you head over to the
+
+28
+02:15.550 --> 02:17.980
+upper right corner and just click on the Plus button,
+
+29
+02:18.550 --> 02:23.130
+and then we're going to create a new repository. This repository
+
+30
+02:23.140 --> 02:24.040
+I'm just going to call it CV
+
+31
+02:24.910 --> 02:29.470
+and this is going to be the name of my project and all that a repository
+
+32
+02:29.470 --> 02:35.620
+is is simply just a folder out there on the cloud that's going to store all of your project related
+
+33
+02:35.620 --> 02:36.010
+files.
+
+34
+02:36.460 --> 02:42.040
+And you'll be able to make changes to the files and update the files, and you'll be able to track all
+
+35
+02:42.040 --> 02:44.170
+of those changes that you've made in the past.
+
+36
+02:44.950 --> 02:47.380
+Now that we've given our repository a name,
+
+37
+02:47.560 --> 02:53.260
+then we're going to leave the description as empty and then we're going to keep public selected and
+
+38
+02:53.260 --> 02:54.160
+then down here
+
+39
+02:54.160 --> 02:59.770
+make sure that you check this box where we initialize this repository with a README.
+
+40
+03:00.220 --> 03:04.330
+And it's really, really important that you do this for the next few steps to work.
+
+41
+03:04.720 --> 03:09.340
+So now that we've done all of that, we're going to go ahead and click on Create Repository.
+
+42
+03:11.030 --> 03:16.490
+And this will take just a moment, and now you should see a page that looks like this, which means
+
+43
+03:16.490 --> 03:22.400
+that your repository has been created and the only file that's in your repository is just a README
+
+44
+03:22.400 --> 03:22.730
+file.
+
+45
+03:23.180 --> 03:28.650
+What we're going to do is we're going to go ahead and upload our files for our CV website.
+
+46
+03:29.150 --> 03:36.170
+So now if you bring up the folder which contains your CV website, so the place where you see your
+
+47
+03:36.170 --> 03:41.600
+index.html, your images folder and any other pages you have, you're going to select
+
+48
+03:41.600 --> 03:48.140
+all of these and you're going to drag it into this box here and that will upload and add all of them
+
+49
+03:48.140 --> 03:50.150
+to our online repository.
+
+50
+03:50.690 --> 03:55.100
+Once that's done, we're going to give this particular version a name.
+
+51
+03:55.430 --> 04:04.370
+So we'll say that in this version, we added our initial CV website files and then go ahead and click
+
+52
+04:04.370 --> 04:12.320
+to commit these changes. And that will upload all of those files that we dragged on, and we are now
+
+53
+04:12.320 --> 04:14.420
+ready to set up our GitHub page.
+
+54
+04:14.990 --> 04:21.680
+If you head over to the Settings tab here, you'll see that there is a section called Pages.
+
+55
+04:22.190 --> 04:29.960
+GitHub Pages is designed to host your personal organization or project pages from a GitHub repository.
+
+56
+04:30.140 --> 04:31.700
+So we already have the repository,
+
+57
+04:31.970 --> 04:34.100
+we now have to activate pages.
+
+58
+04:34.520 --> 04:36.050
+So it's currently disabled.
+
+59
+04:36.080 --> 04:38.010
+All we have to do to enable it
+
+60
+04:38.030 --> 04:41.450
+we just have to select a source where our files reside.
+
+61
+04:41.810 --> 04:46.720
+So if you click on this part where it says none, then select main as your branch.
+
+62
+04:47.760 --> 04:49.830
+And go ahead and click Save.
+
+63
+04:50.880 --> 04:57.450
+So now GitHub is going to do some behind the scenes stuff, and it's going to be publishing towards
+
+64
+04:57.450 --> 05:03.000
+a place which is going to be your username.github.io/your project name
+
+65
+05:03.300 --> 05:09.690
+so that will be your CV. And you can see this is a HTTPS website, so you'll be able to access the
+
+66
+05:09.700 --> 05:14.760
+site from anywhere across the world as long as you're connected to the internet.
+
+67
+05:15.420 --> 05:18.360
+Now, this publishing process takes a little while.
+
+68
+05:18.510 --> 05:24.000
+You'll see that it says your site is published at this address, and if you click on that address,
+
+69
+05:24.300 --> 05:27.420
+you should be able to see your website show up.
+
+70
+05:27.720 --> 05:33.210
+Now, if at this point what you see instead is a 404 then that just means that you have to be
+
+71
+05:33.210 --> 05:34.530
+a little bit more patient.
+
+72
+05:35.010 --> 05:41.070
+The GitHub servers are probably working overtime and come back in maybe half an hour and check that
+
+73
+05:41.070 --> 05:41.940
+link again.
+
+74
+05:42.450 --> 05:48.500
+But once you are done though, then your website should work exactly as it did locally,
+
+75
+05:48.900 --> 05:54.930
+but now you can go ahead and share this link with anybody you like across the world, and they can access
+
+76
+05:54.930 --> 06:01.890
+it because it's now hosted on the internet. So you can go ahead and go over to angelabauer.github
+
+77
+06:01.890 --> 06:08.070
+.io/cv and you too will be able to see this website that I just uploaded and I'm looking
+
+78
+06:08.070 --> 06:08.760
+at right now.
+
+79
+06:09.480 --> 06:15.660
+Now, if after half an hour and you click on this link and it still doesn't show your website or there
+
+80
+06:15.660 --> 06:21.180
+are some inconsistencies on it, then you might have to troubleshoot your setup because you might have
+
+81
+06:21.390 --> 06:22.470
+made a mistake somewhere.
+
+82
+06:23.040 --> 06:29.940
+Now, the first thing I want you to check is to go to the Code tab here and make sure that your file,
+
+83
+06:30.210 --> 06:32.610
+which is your home page, says,
+
+84
+06:33.500 --> 06:39.030
+is actually called index.html, and it should have a lowercase i
+
+85
+06:39.350 --> 06:42.290
+and it should be spelled exactly like this.
+
+86
+06:42.410 --> 06:48.800
+This is very important because GitHub is going to look for a file with this name in order to serve as
+
+87
+06:48.800 --> 06:49.670
+your home page.
+
+88
+06:50.720 --> 06:57.440
+So if you don't have that, then go into that file and click on this button and you can edit the name.
+
+89
+06:57.770 --> 07:04.130
+Now, make sure at the very end you create a message for this change and then click on commit changes.
+
+90
+07:04.610 --> 07:11.270
+Now, while we're here if you see this DOCTYPE html showing up at the top of your website, you
+
+91
+07:11.270 --> 07:14.900
+can also edit it here and simply delete that.
+
+92
+07:15.290 --> 07:20.330
+This is something that is useful for our editor, but not necessarily important if we want to publish
+
+93
+07:20.330 --> 07:20.960
+the website.
+
+94
+07:21.680 --> 07:26.150
+Now, another issue that people have is their images don't show up.
+
+95
+07:26.900 --> 07:30.230
+Now this could be because when you created the home page,
+
+96
+07:30.290 --> 07:37.580
+so if we look in index.html, the reference for your image, the source, you set it to something
+
+97
+07:37.580 --> 07:44.300
+local on your computer like C:drive/images, etc. But in this case, we actually have to make
+
+98
+07:44.300 --> 07:47.720
+this relative to the position of this file.
+
+99
+07:48.290 --> 07:54.740
+So you can see I'm referring to a folder called images that's on the same hierarchical level as this
+
+100
+07:54.740 --> 07:55.550
+current file.
+
+101
+07:55.820 --> 07:58.460
+And then inside that folder, I'm looking for an image
+
+102
+07:58.490 --> 08:05.480
+called angela.png. Make sure that there are no typos and make sure that you've got all your capitalizations,
+
+103
+08:05.480 --> 08:06.560
+,lowercase, uppercase?
+
+104
+08:06.920 --> 08:08.360
+exactly the same.
+
+105
+08:08.360 --> 08:12.800
+It matters a huge deal to the computer, even though, as humans, we might ignore that.
+
+106
+08:13.070 --> 08:17.140
+Now, the next thing I've seen students have an issue with is their links don't work.
+
+107
+08:17.150 --> 08:23.360
+So when they click on my hobbies or when they click on Contact Me, it doesn't link to the correct page.
+
+108
+08:23.720 --> 08:28.180
+Now again, this would be an issue with our hyperlinks. So you can see this
+
+109
+08:28.190 --> 08:36.290
+My hobbies links to a href that says hobbies.html, and this is the file that I want it to pull
+
+110
+08:36.290 --> 08:36.440
+up.
+
+111
+08:37.280 --> 08:44.030
+Now, if we go back to our file structure, you can see at the same level as index.html inside the same
+
+112
+08:44.030 --> 08:44.660
+directory,
+
+113
+08:44.960 --> 08:47.240
+there is a page called hobbies.html,
+
+114
+08:47.510 --> 08:54.410
+there is a page called contact-me.html, and these are spelled exactly the same as what we've
+
+115
+08:54.410 --> 08:54.920
+got here.
+
+116
+08:54.950 --> 09:00.470
+Now I'm stressing this because I've seen so many students fall down here just because maybe they capitalize
+
+117
+09:00.470 --> 09:04.400
+an h, or maybe they spell this file incorrectly
+
+118
+09:04.400 --> 09:10.670
+or maybe they spelled this file incorrectly, or maybe they created another folder in here and stored
+
+119
+09:10.670 --> 09:17.900
+these two files inside. The code has to be able to find out where these files are in order for it to
+
+120
+09:17.900 --> 09:18.290
+work.
+
+121
+09:18.620 --> 09:24.740
+Now, the best way to assure that your code actually works is to make sure that you've got the same
+
+122
+09:24.740 --> 09:25.460
+code as me
+
+123
+09:25.460 --> 09:28.340
+and you can check this if you go to this link.
+
+124
+09:29.210 --> 09:35.510
+And if you have the same code in your index.html and you have the same structure here with all the
+
+125
+09:35.510 --> 09:38.270
+same names, then it should definitely work.
+
+126
+09:38.660 --> 09:43.730
+Now, if you have any of these problems troubleshooting again, take a look in the Q&A section for this
+
+127
+09:43.790 --> 09:44.690
+current lesson
+
+128
+09:44.990 --> 09:50.840
+and in there you should see a featured question where I have added some of my troubleshooting tips for
+
+129
+09:50.840 --> 09:52.460
+uploading your website to GitHub.
+
+130
+09:53.090 --> 09:59.900
+So now it's time for you to go through this process and upload your CV and your website onto the World
+
+131
+09:59.900 --> 10:06.830
+Wide Web and be sure to share a link to your project in the Q&A of this lesson so that we can all admire
+
+132
+10:06.830 --> 10:09.320
+your hard work and what you have created.
+
+133
+10:09.950 --> 10:11.630
+So that's all for me for this lesson.
+
+134
+10:11.660 --> 10:12.890
+I'll see you on the next.

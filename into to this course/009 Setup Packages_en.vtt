@@ -1,0 +1,145 @@
+WEBVTT
+
+0
+00:00.270 --> 00:06.780
+So now that we've installed Atom, the next step is to power it up with packages. So you can see that
+
+1
+00:06.780 --> 00:13.230
+they have over 8000 packages, which are bunches of code that other programmers have written to make
+
+2
+00:13.230 --> 00:15.900
+your experience of using Atom better.
+
+3
+00:16.170 --> 00:21.380
+So what we're about to do is a bit like that 90s MTV show Pimp My Ride.
+
+4
+00:21.420 --> 00:26.880
+We're going to improve our code editor using these additional components and add-ons.
+
+5
+00:27.060 --> 00:30.000
+It's almost like upgrading the sound system to our car.
+
+6
+00:30.510 --> 00:36.450
+Now, the simplest thing for us to do when we want to install a package is to simply open up Atom
+
+7
+00:36.810 --> 00:43.290
+and in the welcome guide here, you should be able to see this "Install a Package" section, which we
+
+8
+00:43.290 --> 00:47.010
+can click on and then we can click on "Open installer"
+
+9
+00:47.280 --> 00:50.940
+and that will take us to the correct position in the Settings menu.
+
+10
+00:51.780 --> 00:57.090
+Now, if you're on Windows and you want to be able to navigate back to here, the easiest way is to
+
+11
+00:57.090 --> 01:00.090
+go to file and then go to settings.
+
+12
+01:00.420 --> 01:03.870
+And then you'll find the same panel and you can click on install.
+
+13
+01:04.500 --> 01:10.830
+And in order to install the packages, all we have to do is to type their name into the search bar,
+
+14
+01:11.130 --> 01:18.630
+and then it will search the entire library of packages and we're able to install, uninstall or change
+
+15
+01:18.630 --> 01:19.290
+its settings.
+
+16
+01:19.620 --> 01:24.900
+So again, if you head back over to the web development course resource list, you'll see that there is
+
+17
+01:24.900 --> 01:28.710
+a list of Atom packages that we want you to install.
+
+18
+01:29.110 --> 01:34.200
+And these are the ones which are recommended, and these are the ones which are optional.
+
+19
+01:35.010 --> 01:42.570
+And then if you search for each of these packages, for example, starting with atom-ternjs, then
+
+20
+01:42.570 --> 01:47.580
+you should be able to find and install these packages into your Atom code editor.
+
+21
+01:48.000 --> 01:54.090
+And if you have any problems at all during the installation process, take a look back at that Google
+
+22
+01:54.090 --> 01:57.930
+Drive document where we've got troubleshooting tips and advice as well.
+
+23
+01:59.490 --> 02:07.670
+So now, as a Windows user, you are done installing Atom, installing Chrome and also the Atom packages,
+
+24
+02:07.680 --> 02:11.730
+and you can safely skip the rest of the video and continue to the next lesson.
+
+25
+02:12.300 --> 02:19.590
+Now, if you are a Mac user, all you have to do is open up Atom and go to preferences and then go to
+
+26
+02:19.590 --> 02:20.340
+install.
+
+27
+02:20.670 --> 02:27.450
+And I want you to search for each of these and then just go ahead and install it. So you can simply just
+
+28
+02:27.450 --> 02:28.950
+copy and paste it into here
+
+29
+02:29.250 --> 02:34.590
+and you'll see the one that should match up exactly with the name that you see over here and then just
+
+30
+02:34.590 --> 02:36.450
+go ahead and click install.
+
+31
+02:37.110 --> 02:42.810
+Similarly, if you had any problems installing the packages, I recommend heading over to that Google
+
+32
+02:42.810 --> 02:48.300
+Drive doc that I linked to in the course resources and take a look through the troubleshooting steps
+
+33
+02:48.420 --> 02:51.630
+and see if they can help you to resolve any issues that you have.
+
+34
+02:52.050 --> 02:57.150
+And then once you're done, you've finished all the installation steps and we can get started by heading
+
+35
+02:57.150 --> 02:58.230
+over to the next lesson.

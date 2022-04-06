@@ -1,0 +1,209 @@
+WEBVTT
+
+0
+00:00.390 --> 00:06.300
+So the first difference that you'll notice between our site and their site is that even in the tab bar,
+
+1
+00:06.360 --> 00:13.140
+you can see that we've got this little new file icon here which is kind of devoid of any design,
+
+2
+00:13.530 --> 00:16.170
+but he's got this cute little icon over here.
+
+3
+00:16.290 --> 00:18.630
+So how do we get hold of one of those?
+
+4
+00:19.230 --> 00:23.160
+Well, this is called a favicon or a favorite icon.
+
+5
+00:23.700 --> 00:30.150
+And the reason it's called that is because back in the olden days when people were still using shock
+
+6
+00:30.150 --> 00:38.400
+horror Internet Explorer 5, the favicon or the favorite icon was an icon that would show
+
+7
+00:38.400 --> 00:43.170
+up in your browser bar if you were on a website that you had favorited.
+
+8
+00:44.130 --> 00:51.150
+And a  cool side effect of that is that if you were the web developer, you can see how many times did people
+
+9
+00:51.150 --> 00:55.290
+request to display your favicon
+
+10
+00:55.680 --> 01:01.740
+and that would give you an estimate of how many people had bookmarked or favorited your website.
+
+11
+01:01.950 --> 01:07.410
+But now that doesn't work anymore, because the browsers will try to display the favicon for all web
+
+12
+01:07.410 --> 01:09.780
+sites, whether if you favorited it or not.
+
+13
+01:10.320 --> 01:13.680
+But it's a nice little touch, and this is something that we want to implement.
+
+14
+01:14.160 --> 01:21.120
+Now, if you want to do this, just head over to favicon.cc and here you can create a brand new
+
+15
+01:21.120 --> 01:21.750
+favicon.
+
+16
+01:21.990 --> 01:29.160
+Now you can either import an image, maybe of yourself, and it will try to turn it into a very coarse
+
+17
+01:29.160 --> 01:29.730
+drawing,
+
+18
+01:30.060 --> 01:31.740
+or you can just simply draw it yourself.
+
+19
+01:31.800 --> 01:39.360
+So I'm just going to draw one myself, and I'm just going to draw a capital A as best as I can, which
+
+20
+01:39.360 --> 01:40.740
+is not that well.
+
+21
+01:47.420 --> 01:48.790
+All right, so here's my favicon.
+
+22
+01:49.190 --> 01:56.270
+And you can see that this is what it would look like when it's being used, so you can go ahead and
+
+23
+01:56.270 --> 01:59.330
+refine it however you want to make it look nice.
+
+24
+01:59.690 --> 02:02.840
+And this is where you really unleash your creative talents,
+
+25
+02:02.840 --> 02:07.460
+and because I don't have many, then this is what I'm going to go with.
+
+26
+02:07.640 --> 02:14.720
+So now we can download our favicon, which is in a special format for favicons which is the ico
+
+27
+02:14.720 --> 02:16.100
+or an icon format.
+
+28
+02:16.430 --> 02:22.760
+And then I'm going to pull up the folder where I've got my CSS - My Site that contains my index.html
+
+29
+02:22.770 --> 02:30.650
+and my CSS folders, and I'm just going to click and drag this newly downloaded favicon into
+
+30
+02:30.650 --> 02:31.520
+the same folder.
+
+31
+02:31.940 --> 02:36.170
+And now, if you head into Atom, you'll be able to see it in the Project Navigator as well.
+
+32
+02:36.740 --> 02:40.970
+And in order to incorporate it to our website, we're going to create a new link.
+
+33
+02:41.510 --> 02:43.280
+But this link has a different relationship.
+
+34
+02:43.280 --> 02:50.210
+It's not the stylesheet in this case, it's actually just the icon, and the icon is located at the
+
+35
+02:50.210 --> 02:53.960
+same hierarchical level as our index.html.
+
+36
+02:54.440 --> 02:59.530
+We just have to put its name down, so the file is called favicon.ico.
+
+37
+02:59.810 --> 03:07.100
+So now if we hit save and we go over to our browser and go to our site and hit refresh, then you'll
+
+38
+03:07.100 --> 03:13.280
+see that it now has a pretty little favicon that shows up, which is pretty neat right? Now
+
+39
+03:13.280 --> 03:19.220
+if after doing all of that, you still don't see your favicon, try changing the href of your
+
+40
+03:19.220 --> 03:21.860
+favicon link to this instead.
+
+41
+03:21.890 --> 03:27.740
+Add the "?v=2" because it might be that your browser has cached a previous version
+
+42
+03:28.040 --> 03:30.920
+or is just trying to create a default one that it's placed there.
+
+43
+03:31.250 --> 03:34.760
+So if you change this, it should allow your favicon to show up.
+
+44
+03:35.270 --> 03:41.300
+Now, if we take a look at Sean's site, you can see that it's got a whole bunch of distinct sections
+
+45
+03:41.300 --> 03:42.680
+which we can scroll through.
+
+46
+03:43.070 --> 03:45.740
+So how can we do this for our web site?
+
+47
+03:46.160 --> 03:51.230
+Certainly not by using anything that we've done so far because we haven't been able to do any sort of
+
+48
+03:51.230 --> 03:54.870
+positioning or layout with our previous CV website.
+
+49
+03:55.460 --> 04:01.310
+So in the next lesson, I'm going to show you how we can create these blocks inside our website that
+
+50
+04:01.310 --> 04:04.220
+we can style and make it look something like this.
+
+51
+04:04.520 --> 04:08.750
+So you'll have that to look forward to, and I'll see you on the next lesson.

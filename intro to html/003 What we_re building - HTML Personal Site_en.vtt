@@ -1,0 +1,197 @@
+WEBVTT
+
+0
+00:00.630 --> 00:02.100
+All right. So in this lesson,
+
+1
+00:02.100 --> 00:05.910
+we're going to be building our very first website. Now,
+
+2
+00:05.940 --> 00:08.430
+because we've only talked about HTML so far
+
+3
+00:08.670 --> 00:12.090
+so how to you structure websites using HTML elements
+
+4
+00:12.180 --> 00:15.780
+and we haven't yet gotten to the part where we've learned about styling using
+
+5
+00:15.780 --> 00:16.613
+CSS,
+
+6
+00:16.710 --> 00:20.190
+then we're kind of limited in terms of the kind of websites that we can make.
+
+7
+00:20.700 --> 00:25.200
+But fear not. Our websites are going to be right up there with the internet Titans,
+
+8
+00:25.380 --> 00:28.050
+but just way back in 1997.
+
+9
+00:28.320 --> 00:31.320
+So do you remember what Yahoo looked like when it first launched?
+
+10
+00:31.380 --> 00:34.860
+Or do you remember what Google looked like when it first came out? No?
+
+11
+00:34.860 --> 00:38.430
+You don't remember? Well, there is a great website that can show you exactly that.
+
+12
+00:38.670 --> 00:41.340
+And it's called the internet archive wayback machine,
+
+13
+00:41.700 --> 00:45.750
+and you can find it at web.archive.org. Now in here,
+
+14
+00:45.780 --> 00:48.780
+if you just enter the URL of a website that you are interested in,
+
+15
+00:49.050 --> 00:51.570
+say yahoo.com,
+
+16
+00:52.200 --> 00:56.970
+then it shows you what this website looks like all the way from 1996 to current
+
+17
+00:56.970 --> 00:58.650
+date, which is 2017.
+
+18
+00:58.950 --> 01:03.950
+Now let's have a look at what Yahoo looked like originally on the first day it
+
+19
+01:04.020 --> 01:08.490
+was crawled, so 17th of October 1996.
+
+20
+01:08.790 --> 01:11.190
+So let's go ahead and click on that snapshot.
+
+21
+01:11.940 --> 01:16.200
+And this is exactly what it looked like. So if we close off this frame,
+
+22
+01:16.560 --> 01:17.393
+you can see
+
+23
+01:17.700 --> 01:21.780
+it's almost like as if you've time traveled back to 1996
+
+24
+01:21.780 --> 01:25.710
+when Yahoo first launched and you were visiting this website for the first time.
+
+25
+01:26.280 --> 01:30.600
+Now, as you can see, most of this is just pure HTML.
+
+26
+01:30.990 --> 01:35.730
+It's a lot of structure and a lot of formatting, but it looks really ugly.
+
+27
+01:35.910 --> 01:39.030
+But it's okay because it's a great place to get started with.
+
+28
+01:39.390 --> 01:43.560
+This is the sort of website that we're going to be building by the end of this
+
+29
+01:43.560 --> 01:47.550
+module. Now I hear you say, Oh, but this looks terrible. Surely
+
+30
+01:47.550 --> 01:50.430
+nobody builds websites like this anymore. Well,
+
+31
+01:50.460 --> 01:54.750
+this is an interesting anecdote that you might not know. If you have a look at
+
+32
+01:54.750 --> 01:57.630
+some of the world's top computer science professors,
+
+33
+01:57.990 --> 02:01.140
+and you look at their personal pages that they've built,
+
+34
+02:01.260 --> 02:04.200
+they all look a little bit like this,
+
+35
+02:04.260 --> 02:08.220
+not so dissimilar from the websites in 1996.
+
+36
+02:08.520 --> 02:11.400
+So this is Thomas Cormen who's a serious algorithm guy,
+
+37
+02:11.610 --> 02:15.300
+and this is a website of Jon Kleinberg and another huge name computer science
+
+38
+02:15.300 --> 02:17.790
+professor. And of course the King himself,
+
+39
+02:17.820 --> 02:20.940
+Donald Knuth has a website that looks like this.
+
+40
+02:21.180 --> 02:24.060
+So if it's good enough for these computer science Titans,
+
+41
+02:24.330 --> 02:27.450
+then it's probably good enough also for our very first website.
+
+42
+02:28.020 --> 02:29.310
+By the end of this module,
+
+43
+02:29.310 --> 02:32.460
+we're going to build a website that looks much like this,
+
+44
+02:32.520 --> 02:36.510
+something that we can put up online to show what we've done, our CV,
+
+45
+02:36.750 --> 02:38.880
+as well as our hobbies and things that we like to do.
+
+46
+02:38.910 --> 02:43.380
+So you can use it as a personal site or somewhere to list your CV online.
+
+47
+02:43.740 --> 02:48.120
+I hope you're excited because I'm super excited. And once you're ready,
+
+48
+02:48.180 --> 02:51.510
+let's go ahead and create our very first website.

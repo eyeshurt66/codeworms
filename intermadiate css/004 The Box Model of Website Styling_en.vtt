@@ -1,0 +1,905 @@
+WEBVTT
+
+0
+00:00.710 --> 00:10.610
+Now, we've seen before that every single HTML element onscreen is just treated as a box by our CSS 
+
+1
+00:10.940 --> 00:16.970
+and by styling that box, by changing its height, its width, its margin, its padding,
+
+2
+00:17.300 --> 00:23.720
+that's how we can determine how our elements can be laid out and how it will show up onscreen.
+
+3
+00:24.140 --> 00:32.300
+So, for example, if we specified a CSS rule that targeted all the images on this I Love Bacon website
+
+4
+00:32.600 --> 00:35.570
+to say that it should have a width of 100 percent,
+
+5
+00:36.020 --> 00:42.860
+all that's going to do is it's going to change the width of that box to 100%
+
+6
+00:42.920 --> 00:51.230
+and in the process scales up our image so that it expands to fill the entire width of our screen.
+
+7
+00:51.680 --> 00:57.980
+And this concept in CSS is lovingly known as the box model. To explain this
+
+8
+00:58.010 --> 01:04.700
+let's take a simple div that we've given a background color to, and let's say that this div has a height
+
+9
+01:04.700 --> 01:08.630
+of 300 pixels and a width of 300 pixels to begin with.
+
+10
+01:08.780 --> 01:16.970
+Now, if I change the height to 600 pixels, then that div will expand vertically, pushing down any
+
+11
+01:16.970 --> 01:21.260
+other divs or any other content that's not inside this current container.
+
+12
+01:21.410 --> 01:27.710
+Now I can also do the same with the width and make it much wider so that anything that used to be on
+
+13
+01:27.710 --> 01:31.010
+the right of this current box would get pushed out of the way.
+
+14
+01:31.040 --> 01:36.290
+Now you've seen that we can specify these values either as static pixels,
+
+15
+01:36.470 --> 01:42.620
+so for example here, or we can use percentages, for example I can say that the width should be 100%
+
+16
+01:42.620 --> 01:47.030
+and that refers to 100% of the viewport.
+
+17
+01:47.540 --> 01:51.350
+Now, the viewport is just the screen that you're viewing the website on.
+
+18
+01:51.650 --> 01:57.680
+So that could be your laptop screen or your mobile screen or your iPad screen, but this will expand
+
+19
+01:57.680 --> 02:00.800
+to 100% of whatever that screen size may be.
+
+20
+02:01.100 --> 02:02.720
+Now here's where it gets interesting.
+
+21
+02:02.960 --> 02:09.830
+In addition to the width and the height of an element, you can also specify that it should have a border
+
+22
+02:09.890 --> 02:10.490
+or not.
+
+23
+02:11.060 --> 02:17.780
+Now, if you say that the border is going to be a solid border using CSS, then you will see a default
+
+24
+02:17.870 --> 02:21.020
+3px border show up around your element.
+
+25
+02:22.760 --> 02:28.610
+Now, remember that this border doesn't encroach on the size of your element, so if it's 300px
+
+26
+02:28.610 --> 02:34.100
+by 300px, that blue area is still going to be 300 by 300.
+
+27
+02:34.730 --> 02:41.750
+But you can expand the border size to say that the border width should be 50px all round,
+
+28
+02:41.990 --> 02:44.840
+so that's 50 pixels on every single side.
+
+29
+02:45.410 --> 02:53.210
+So now the width of this entire element is actually much wider because in addition to 300 pixels width
+
+30
+02:53.210 --> 02:54.540
+for the original element,
+
+31
+02:54.590 --> 02:55.910
+so that's the blue part,
+
+32
+02:56.300 --> 03:03.770
+we've now also got a 50px border on each side, and the entire thing now takes up 400px.
+
+33
+03:03.890 --> 03:11.690
+Now, instead of specifying a border for all four sides, you can override that border by saying
+
+34
+03:11.930 --> 03:16.340
+specifically that the border top should only have zero pixels.
+
+35
+03:17.030 --> 03:23.690
+Alternatively, you can use the circle shorthand, so it means that we're going around in a circle starting
+
+36
+03:23.690 --> 03:24.410
+from the top.
+
+37
+03:24.860 --> 03:31.340
+So the border width starting at the top is going to have 0px at the top, 10px at the right,
+
+38
+03:31.370 --> 03:35.120
+20px on the bottom and 30px on the left.
+
+39
+03:36.500 --> 03:44.630
+And as you go clockwise, you give your element dimensions that you specify for all four sides and there's
+
+40
+03:44.630 --> 03:48.950
+other variations around this theme as well, which you'll find in the documentation.
+
+41
+03:49.520 --> 03:51.590
+Now let's take this one step further.
+
+42
+03:52.040 --> 03:55.700
+Let's say that we had some content in our div or in our box.
+
+43
+03:56.360 --> 03:58.940
+Now, let's say that we had some text, for example.
+
+44
+04:00.720 --> 04:07.050
+The first thing that we remember is that even if our div or our box had no height and no width, it
+
+45
+04:07.050 --> 04:10.950
+will have the height and width in order to fit our content.
+
+46
+04:11.250 --> 04:14.160
+Now let's say that we didn't like the way that this looks.
+
+47
+04:14.370 --> 04:20.940
+We want to have a little bit of padding or a little bit of space between the text and the edge of the
+
+48
+04:20.940 --> 04:22.890
+element or where the border starts.
+
+49
+04:23.370 --> 04:26.520
+Well, then we can actually specify some padding.
+
+50
+04:27.150 --> 04:35.280
+And this says that there should be 20px of space on all four edges between the text and the edge
+
+51
+04:35.610 --> 04:36.600
+of the element.
+
+52
+04:36.990 --> 04:39.750
+So now our box is even bigger.
+
+53
+04:40.080 --> 04:44.160
+The padding actually increases the size of your box.
+
+54
+04:44.190 --> 04:52.860
+Now, the final dimension that we can add is the margin, and the margin is a buffer zone, if you will,
+
+55
+04:52.890 --> 04:57.000
+between the current element and any others that are on screen.
+
+56
+04:57.240 --> 05:02.910
+So say, if I had another element on the right, the margin gives our element a little bit of space
+
+57
+05:02.910 --> 05:06.180
+between each other outside of the border.
+
+58
+05:06.390 --> 05:12.900
+And now you can start to see how we can use the margin, the padding, the border, the width and the
+
+59
+05:12.900 --> 05:20.460
+height to start affecting the layout and the appearance of all of our HTML elements, which, as you
+
+60
+05:20.460 --> 05:23.670
+remember at the end of the day, are just boxes.
+
+61
+05:24.240 --> 05:32.160
+So that box model is shown every single time you inspect on an HTML element and you can see this little
+
+62
+05:32.160 --> 05:36.360
+diagram in the Chrome developer tools every single time you hit Inspect.
+
+63
+05:36.720 --> 05:44.000
+So, for example, if I select this div, then this is the current box model. It has no margin, no border,
+
+64
+05:44.020 --> 05:48.000
+no padding, but it has a width and a height of this amount.
+
+65
+05:48.540 --> 05:55.020
+Now, if I select the H1, then you can see that this actually has a margin at the bottom, which is
+
+66
+05:55.020 --> 06:00.840
+21.4, and that's what's pushing it away from this paragraph element.
+
+67
+06:01.380 --> 06:04.680
+But the paragraph element also itself has some values.
+
+68
+06:04.950 --> 06:09.300
+For example, a 16px margin at the top and the bottom.
+
+69
+06:09.300 --> 06:16.620
+And if I highlight this margin part on the box model, then you can see it show up highlighted in orange
+
+70
+06:16.800 --> 06:17.670
+on our website.
+
+71
+06:17.820 --> 06:24.240
+Now, it's pretty easy to edit these values using the box model inside Chrome developer tools, and
+
+72
+06:24.240 --> 06:28.800
+that allows you to quite easily visualise what each of these things are doing.
+
+73
+06:29.190 --> 06:34.350
+So, for example, say I wanted to give a little bit of padding to the content inside my div.
+
+74
+06:34.650 --> 06:42.060
+Then I could double-click on this padding here and I could say maybe 20px from the top and 20px
+
+75
+06:42.060 --> 06:43.020
+from the left.
+
+76
+06:43.320 --> 06:51.330
+And now you can see that my text, my content rather, is pushed out from the left, and from the top. Now
+
+77
+06:51.330 --> 06:55.230
+and it adds those rules over here in the styles.
+
+78
+06:55.650 --> 07:02.940
+Now, instead of doing that, I could also just say, let's give it a 20px padding all round, all
+
+79
+07:02.940 --> 07:10.140
+four sides. And you'll notice that the background colour is now in an area that's much bigger.
+
+80
+07:10.770 --> 07:15.780
+And by increasing the padding, we've actually increased the size of our element.
+
+81
+07:16.650 --> 07:20.340
+Now, that's not true for all of these different things.
+
+82
+07:20.610 --> 07:25.170
+For example, let's add a 20px margin all around our div.
+
+83
+07:25.680 --> 07:32.010
+Now, the parts that have the background colour represents our element, and the margin just takes it
+
+84
+07:32.010 --> 07:35.180
+away from all the other things around.
+
+85
+07:35.190 --> 07:38.010
+So in this case, we don't actually have much else around.
+
+86
+07:38.280 --> 07:42.600
+We've only got the top, the left and the right of the screen to push it away from.
+
+87
+07:43.140 --> 07:50.360
+But say, if we go back into Atom and as a challenge, I want you to add two more divs below this one
+
+88
+07:50.700 --> 07:54.840
+and I want you to give each of these three divs a class. So
+
+89
+07:54.840 --> 07:57.240
+the first one should be the top container,
+
+90
+07:57.360 --> 08:02.130
+the second one will be called the middle container and the last one will be called the bottom container.
+
+91
+08:02.190 --> 08:09.240
+And each of these two divs should be a square that has a height of 200 pixels and a width of 200 pixels
+
+92
+08:09.570 --> 08:14.670
+and give them each a different background colour so that we can differentiate them on our website.
+
+93
+08:14.760 --> 08:21.090
+And this is what you'll end up with if you complete the challenge: a red and blue div that are sitting
+
+94
+08:21.090 --> 08:26.460
+on top of each other and they are 200 pixels wide in width and in height.
+
+95
+08:27.120 --> 08:30.240
+So pause the video and try to complete the challenge.
+
+96
+08:31.930 --> 08:32.370
+All right.
+
+97
+08:32.410 --> 08:33.820
+So how did that go?
+
+98
+08:34.150 --> 08:39.130
+Well, just below our first div we're going to go ahead and create two more of them.
+
+99
+08:39.340 --> 08:42.760
+So that's the middle one and this is the bottom one.
+
+100
+08:43.060 --> 08:47.890
+We're going to change the class to give it a value so that we can differentiate between them.
+
+101
+08:48.400 --> 08:55.110
+Now, in this case, feel free to use ID or class, because if we're only going to have one top container,
+
+102
+08:55.120 --> 09:00.380
+one middle and one bottom container, we can actually give this an ID or a class.
+
+103
+09:00.400 --> 09:02.770
+It doesn't really matter all that much in this case.
+
+104
+09:03.100 --> 09:11.440
+So if we call the top one top-container, middle one middle-container and the bottom one,
+
+105
+09:12.610 --> 09:20.230
+bottom-container, now we have three different divs, and we can now style them inside our CSS separately.
+
+106
+09:21.460 --> 09:29.170
+So instead of styling all the divs, we're going to instead select the top container, and remember,
+
+107
+09:29.170 --> 09:33.880
+in order to pick out a class, we have to add a dot in front of that identifier.
+
+108
+09:34.900 --> 09:39.430
+So for the top container class, I'm just going to paste in that background color.
+
+109
+09:40.240 --> 09:50.380
+Next one is the middle container, and this one is going to have a background color of red. And the final
+
+110
+09:50.380 --> 09:52.390
+one is the bottom container
+
+111
+09:54.230 --> 09:58.400
+and this one's background color will be blue.
+
+112
+09:58.490 --> 09:58.910
+Shall we?
+
+113
+09:59.690 --> 10:00.480
+It's saved.
+
+114
+10:00.500 --> 10:07.250
+And as we said, these two containers, because they don't have any content, then that means they won't
+
+115
+10:07.250 --> 10:09.890
+have any dimensions unless we give it to them.
+
+116
+10:10.010 --> 10:19.070
+So let's say that the middle container should have a width of 200 pixels wide and a height of 200 pixels
+
+117
+10:19.070 --> 10:19.490
+as well.
+
+118
+10:19.520 --> 10:25.400
+So now it's a box, and I'm just going to copy and paste that over to the bottom container as well.
+
+119
+10:25.850 --> 10:31.940
+Now, if we hit save and we take a look, let's get rid of this, hit refresh.
+
+120
+10:32.360 --> 10:39.050
+Then you can see that we've got our top div over here, a red square and a blue square all showing up
+
+121
+10:39.050 --> 10:39.980
+on screen.
+
+122
+10:40.280 --> 10:46.460
+Now, if we right-click and pull up the Chrome developer tools once more, then you can see that we
+
+123
+10:46.460 --> 10:50.750
+can play around with all of these properties only using the Chrome developer tools.
+
+124
+10:51.380 --> 10:58.910
+So for example, if I select my top container and I change the height to say 200 pixels, making it
+
+125
+10:58.910 --> 11:04.910
+a little bit bigger and change its width also to 200 pixels, making it look a bit more like the other
+
+126
+11:04.910 --> 11:05.660
+two squares.
+
+127
+11:05.840 --> 11:12.500
+I can also add a bit of padding, so let's give it 20 pixels padding around all four edges.
+
+128
+11:12.950 --> 11:15.920
+And you can see that this hasn't changed the height or width.
+
+129
+11:16.040 --> 11:18.980
+The height and width are still 200 by 200,
+
+130
+11:19.340 --> 11:26.510
+but now it has 20 pixels of padding all around it making the entire element that has that background
+
+131
+11:26.510 --> 11:33.320
+color look a lot bigger than what it used to be because we've just added 40 pixels to the width and
+
+132
+11:33.320 --> 11:33.770
+the height.
+
+133
+11:34.100 --> 11:38.620
+Now what if we add a 10px solid border?
+
+134
+11:38.990 --> 11:45.200
+Then you can see that that border hasn't affected the size of the part that has a blue background color,
+
+135
+11:45.560 --> 11:48.800
+but it has made this whole element even larger.
+
+136
+11:49.070 --> 11:58.940
+And now our height is 200 plus 30 pixels each side, so it's actually 260 pixels height and 260 pixels
+
+137
+11:59.300 --> 11:59.930
+wide.
+
+138
+12:00.500 --> 12:03.020
+Now what if I add a little bit of margin to this?
+
+139
+12:03.110 --> 12:07.370
+Let's say we have a 10 pixel margin around all four sides.
+
+140
+12:07.520 --> 12:13.880
+Now, the margin doesn't affect the height or the width or any of the other previous values, and it
+
+141
+12:13.880 --> 12:18.230
+doesn't even change the part of the element that has the background color.
+
+142
+12:18.590 --> 12:24.980
+It just gives it a little bit of space away from the other elements, and it pushes them away so that
+
+143
+12:24.980 --> 12:28.940
+they're not sticking to this current container, this current div.
+
+144
+12:29.360 --> 12:38.120
+Now, in order to better understand this idea of the box model, here's a demo that shows it from a
+
+145
+12:38.120 --> 12:39.620
+3D point of view.
+
+146
+12:40.460 --> 12:48.320
+So as you see me, drag the perspective where you can actually see that box model as it turns to the
+
+147
+12:48.320 --> 12:54.740
+side and it shows you which parts are the padding, which parts will get filled with the background
+
+148
+12:54.740 --> 12:55.100
+image,
+
+149
+12:55.430 --> 13:01.220
+which parts will end up with the background color and which parts the content would go.
+
+150
+13:01.910 --> 13:07.940
+So this is a neat tool to just toggle around and just wrap your head around this idea of the box model
+
+151
+13:08.210 --> 13:15.200
+because it is a little bit weird that when you have padding, it only pads the content, but not things
+
+152
+13:15.200 --> 13:17.960
+like the background image or the background color.
+
+153
+13:18.590 --> 13:24.830
+So if you want, take a moment here, just pause a video, replay this part a few times and get your
+
+154
+13:24.830 --> 13:29.480
+head around this idea of the CSS box model and how it's formed.
+
+155
+13:29.930 --> 13:33.410
+Now, once you've done that, I've got a challenge for you.
+
+156
+13:33.740 --> 13:40.640
+I want you to use the Chrome developer tools, so don't edit the styles inside Atom, but instead just
+
+157
+13:40.640 --> 13:46.850
+make temporary changes to the website so that you can change the margins, the borders, the padding.
+
+158
+13:47.240 --> 13:52.880
+Now, the only thing that's not going to change is the height and width of these divs or these boxes,
+
+159
+13:53.330 --> 13:56.750
+but I want you to create a design that looks like this.
+
+160
+13:57.200 --> 14:04.100
+So you're going to have that first box right towards the edge of the top and the left of the web page,
+
+161
+14:04.490 --> 14:09.320
+then you're going to have the two other boxes that touch corner to corner.
+
+162
+14:09.680 --> 14:12.560
+And the second one is going to have a 20 pixel border,
+
+163
+14:13.100 --> 14:16.460
+and the third one is going to have a 10 pixel border.
+
+164
+14:16.880 --> 14:19.580
+And you can change the color to match the scheme as well.
+
+165
+14:19.970 --> 14:26.390
+But the main thing is that the corners must touch each other, and I want you to use a combination of
+
+166
+14:26.390 --> 14:32.480
+margins, padding, border, whatever it may be in order to achieve this design.
+
+167
+14:33.050 --> 14:35.750
+So pause the video now and give it a go.
+
+168
+14:38.640 --> 14:43.050
+All right, so what you might realize is that this involves a little bit of math.
+
+169
+14:43.530 --> 14:49.650
+So firstly, I'm going to switch my Chrome browser tool to make it go on the right side so I can look
+
+170
+14:49.650 --> 14:54.870
+at this while I'm editing my CSS code and look at the box at the same time.
+
+171
+14:55.410 --> 15:04.220
+So the first thing was that we wanted the top div to also be 200 pixels by 200 pixels. There we go.
+
+172
+15:04.250 --> 15:11.200
+We've got our square, so we now have three squares, but we need the first one to have a 10px border.
+
+173
+15:11.940 --> 15:13.830
+So border solid.
+
+174
+15:16.140 --> 15:20.880
+And let's give it 20px padding around all four edges.
+
+175
+15:20.970 --> 15:27.540
+All right, so onto the next part. Our middle box is red and it has a 20 pixel solid border.
+
+176
+15:27.870 --> 15:35.940
+So let's go ahead and select the middle container, and we're going to give it a border that is going
+
+177
+15:35.940 --> 15:40.020
+to be solid and 20px all around.
+
+178
+15:40.080 --> 15:46.800
+But now we have to make the second box touch with the first box edge to edge.
+
+179
+15:47.310 --> 15:51.060
+So this actually involves a little bit of calculating.
+
+180
+15:51.510 --> 15:53.580
+So if we go back to that first box,
+
+181
+15:54.850 --> 16:03.850
+we can see that it's width is calculated by all of these numbers, so it's 200px in terms of
+
+182
+16:03.850 --> 16:07.480
+the content, then 20px either side
+
+183
+16:07.660 --> 16:14.380
+so add 40 for the padding, then add another 20 for the border and the margin is zero.
+
+184
+16:14.680 --> 16:21.040
+So that's actually 200 plus 40 plus 20, which is 260.
+
+185
+16:21.370 --> 16:32.920
+So that means that if our second div had a left margin of two hundred and sixty pixels, then it will
+
+186
+16:32.920 --> 16:36.370
+touch edge to edge with that first box.
+
+187
+16:36.790 --> 16:42.160
+So if this challenge has baffled you up till now, then pause the video
+
+188
+16:42.160 --> 16:48.940
+now that you've seen this little hint and try to do the same thing for the last box, making sure that
+
+189
+16:48.940 --> 16:54.710
+you've implemented exactly what we wanted for the dimensions and the layout.
+
+190
+16:54.880 --> 16:57.610
+But if you want to follow along with me, that's also cool.
+
+191
+16:57.940 --> 17:00.730
+So first thing's first, this one is yellow,
+
+192
+17:00.760 --> 17:03.670
+ours is blue, doesn't really matter, but we can change it over.
+
+193
+17:03.670 --> 17:08.740
+So we're going to select our last div and we're going to change the background colour to yellow.
+
+194
+17:09.760 --> 17:12.940
+Or gold or whichever color you want.
+
+195
+17:13.510 --> 17:17.780
+And then we're going to give it a border of 10 pixels solid.
+
+196
+17:18.160 --> 17:24.370
+So we're going to say border, solid 10px all around.
+
+197
+17:24.880 --> 17:31.150
+And now we have to calculate how far we need to push this square in order to make it touch corner to
+
+198
+17:31.150 --> 17:31.630
+corner
+
+199
+17:31.810 --> 17:33.490
+with this red box.
+
+200
+17:33.850 --> 17:42.550
+So we remember that this was 260px wide, calculating adding all of these border
+
+201
+17:42.550 --> 17:44.440
+padding and widths together.
+
+202
+17:45.070 --> 17:48.580
+And this one has a content of 200px wide,
+
+203
+17:48.730 --> 17:53.590
+it has no padding, but it has a 20px border left and right.
+
+204
+17:53.890 --> 18:01.060
+So in total, that's 240 in width, so 240 + 260 is 500.
+
+205
+18:01.510 --> 18:10.270
+So if we select our last div and we give it a margin-left, so we can either type it out or we can select
+
+206
+18:10.270 --> 18:18.760
+it inside the box model, but if we make this one 500px margin-left, then you'll see that the
+
+207
+18:18.760 --> 18:25.090
+corners now all touch each other, and we have exactly the same design as we've got over here.
+
+208
+18:25.330 --> 18:26.470
+Now, how did that go?
+
+209
+18:26.830 --> 18:32.500
+If that was confusing at all, then make sure you play around more with the Chrome developer tools,
+
+210
+18:32.860 --> 18:40.780
+either through changing everything in the box model here or by adding in new style rules through the
+
+211
+18:40.780 --> 18:42.760
+CSS inside Chrome developer tools.
+
+212
+18:43.090 --> 18:49.450
+But make sure that you can get these things to be pushed left and right and top and bottom, and make
+
+213
+18:49.450 --> 18:51.730
+it look the way that you want it to.
+
+214
+18:52.390 --> 18:59.170
+Now, if you want the boxes to line up one after the other on the same horizontal plane, then that's
+
+215
+18:59.170 --> 19:00.550
+a little bit more difficult.
+
+216
+19:00.610 --> 19:03.220
+And we're going to come to that very, very shortly.
+
+217
+19:03.520 --> 19:05.800
+So don't beat yourself up if you can't do that.
+
+218
+19:06.100 --> 19:12.430
+But you should be able to move it top and bottom, and add the padding add the borders and make the content
+
+219
+19:12.670 --> 19:14.020
+look the way you want it to.
+
+220
+19:14.500 --> 19:18.400
+But once you're done, hit refresh and all of that work goes away.
+
+221
+19:18.670 --> 19:25.330
+But we're back to where we are and we can continue beautifying our website and giving it a proper modern
+
+222
+19:25.330 --> 19:25.780
+design.
+
+223
+19:26.140 --> 19:31.510
+Now, in the next lesson, we're going to talk about the CSS display property so that we can start
+
+224
+19:31.510 --> 19:35.650
+to understand how the positioning of elements work onscreen.
+
+225
+19:36.070 --> 19:39.070
+So for all of that and more, I'll see you on the next lesson.

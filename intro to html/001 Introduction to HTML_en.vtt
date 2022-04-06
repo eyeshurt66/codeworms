@@ -1,0 +1,661 @@
+WEBVTT
+
+0
+00:00.630 --> 00:05.610
+All right. So now let's tackle what exactly is HTML and how do we
+
+1
+00:05.630 --> 00:07.700
+use it to structure our websites.
+
+2
+00:08.300 --> 00:12.380
+So no matter what you use as your browser, it could be Chrome,
+
+3
+00:12.620 --> 00:15.350
+it could be Safari or Firefox.
+
+4
+00:15.710 --> 00:18.170
+They all have a single purpose
+
+5
+00:18.410 --> 00:22.610
+and that's to interpret your files, such as your HTML files,
+
+6
+00:22.880 --> 00:27.080
+CSS files, your JavaScript files into a website that should be displayed.
+
+7
+00:27.530 --> 00:30.290
+For example, we've got a little bit of HTML code here
+
+8
+00:30.620 --> 00:35.570
+that says that our website should have a title called hello and in the body,
+
+9
+00:35.780 --> 00:38.480
+there should be a heading that says hello world.
+
+10
+00:38.990 --> 00:42.560
+So if we pass that code into our browser,
+
+11
+00:42.950 --> 00:47.570
+it will open it up and display it like so with the title of the website
+
+12
+00:47.600 --> 00:51.320
+usually on the top bar and that H1 or that big heading
+
+13
+00:51.500 --> 00:56.270
+showing up in the body of our website. So before we dive deep into this,
+
+14
+00:56.270 --> 01:01.270
+it's really important to remember that HTML is the foundation of all websites.
+
+15
+01:02.630 --> 01:03.890
+So for example,
+
+16
+01:03.920 --> 01:08.870
+you won't see websites that are created using just a CSS file or just a
+
+17
+01:08.870 --> 01:13.820
+JavaScript file, but you can create websites using just an HTML file.
+
+18
+01:14.270 --> 01:18.800
+Now it might not look great. It will probably look like came from the nineties,
+
+19
+01:18.980 --> 01:19.850
+but it does enable
+
+20
+01:20.120 --> 01:25.120
+your website to display texts or various elements such as images or forms or
+
+21
+01:25.280 --> 01:29.090
+tables, depending on how you code up the HTML file.
+
+22
+01:29.330 --> 01:33.410
+So HTML stands for hypertext markup language
+
+23
+01:33.740 --> 01:37.070
+and the really important part here is the word markup
+
+24
+01:37.220 --> 01:39.920
+because there's many markup languages. For example,
+
+25
+01:40.010 --> 01:44.330
+you might have heard of things such as XML, extensible markup language,
+
+26
+01:44.450 --> 01:47.390
+or GML, generalized markup language.
+
+27
+01:47.690 --> 01:52.610
+And all of these languages share a common history. They're based off the markup
+
+28
+01:52.670 --> 01:57.670
+that used to be put into manuscripts where editors would mock up the manuscript
+
+29
+01:58.190 --> 02:03.190
+and either specify changes to the author or specify structure and layout to the
+
+30
+02:03.350 --> 02:04.850
+publishers. So for example,
+
+31
+02:04.850 --> 02:09.800
+you might have the squiggly line that shows the publishers that this part should
+
+32
+02:09.800 --> 02:11.300
+be printed in bold,
+
+33
+02:11.720 --> 02:16.720
+or this part should be printed in italics. And HTML works in much the same way.
+
+34
+02:18.050 --> 02:23.050
+You can specify the layout and structure of your website by using HTML tags.
+
+35
+02:25.280 --> 02:30.170
+So if you had it over to your browser and go to a website called codepen.io,
+
+36
+02:30.560 --> 02:34.790
+then we can have a look and have a play around with real-life HTML.
+
+37
+02:35.600 --> 02:37.130
+So you don't have to sign up,
+
+38
+02:37.400 --> 02:41.390
+just head over to codepen.io and then hit create new pen.
+
+39
+02:42.770 --> 02:46.340
+And then we're going to change the view to a format like this.
+
+40
+02:46.490 --> 02:48.890
+So this is the live version of our website,
+
+41
+02:49.430 --> 02:51.860
+and these are the places where we're going to put our code.
+
+42
+02:52.040 --> 02:55.790
+So as you can see codepen lets you put in HTML, CSS, and JavaScript,
+
+43
+02:56.060 --> 03:00.160
+which will together get interpreted and get shown on the left as your website.
+
+44
+03:00.490 --> 03:03.340
+Now, as we're only working with HTML at the moment,
+
+45
+03:03.520 --> 03:07.660
+I'm going to minimize the CSS and JavaScript sections
+
+46
+03:07.990 --> 03:11.740
+and I'm just going to work from the HTML, um, section.
+
+47
+03:12.490 --> 03:15.100
+Now we're going to need some text to work with
+
+48
+03:15.340 --> 03:18.520
+or to have something which we can give structure to.
+
+49
+03:19.240 --> 03:24.070
+If you head over to gutenberg.org/ebook/1661,
+
+50
+03:24.430 --> 03:28.480
+you get taken to the adventures of Sherlock Holmes by Arthur Conan Doyle.
+
+51
+03:28.720 --> 03:33.070
+So one of my favorite books of all time. If you have a look down here,
+
+52
+03:33.070 --> 03:36.580
+you can see that you can view the book as plain text,
+
+53
+03:37.090 --> 03:40.360
+or you can read this book online as HTML.
+
+54
+03:41.620 --> 03:44.410
+So this is what the plain text looks like.
+
+55
+03:44.710 --> 03:47.170
+It has all of the texts in the book,
+
+56
+03:47.410 --> 03:49.930
+but absolutely no structure.
+
+57
+03:50.470 --> 03:52.900
+But when we have a look at the HTML file,
+
+58
+03:53.080 --> 03:58.080
+you can see that it has laid out the book where a structure that is more human
+
+59
+03:58.690 --> 04:02.650
+readable, and this is what we're going to replicate using HTML.
+
+60
+04:03.070 --> 04:06.430
+So if you go ahead and just copy this part,
+
+61
+04:06.880 --> 04:09.430
+the adventures of Sherlock Holmes by sir Arthur Conan Doyle,
+
+62
+04:09.640 --> 04:13.450
+and you copy it and place it into your pen.
+
+63
+04:13.480 --> 04:16.930
+So in the HTML section here. Now,
+
+64
+04:17.050 --> 04:21.550
+you can see that all of this text gets put onto the screen with absolutely no
+
+65
+04:21.550 --> 04:25.900
+structure. And in order for this to start looking like this,
+
+66
+04:26.170 --> 04:28.570
+we're going to start adding a little bit of HTML.
+
+67
+04:28.900 --> 04:33.880
+So the first thing we can see is that this is the largest heading on the page.
+
+68
+04:34.360 --> 04:39.360
+So we can make our website look like that also by adding an h1 tag into our
+
+69
+04:41.560 --> 04:45.970
+HTML. So the tag starts with angular brackets and end with angular brackets
+
+70
+04:46.000 --> 04:50.980
+and in the middle is the type of element or the type of tag you want to use.
+
+71
+04:51.610 --> 04:51.940
+Now,
+
+72
+04:51.940 --> 04:56.860
+it's really important that when you open tags that you also close them because
+
+73
+04:56.890 --> 05:01.150
+as you can see here, I've got an open tag but I have yet to close it
+
+74
+05:01.450 --> 05:06.450
+and it thinks that the entire contents of my page should be made into the
+
+75
+05:07.480 --> 05:10.360
+largest heading possible. And that's not what I want.
+
+76
+05:10.390 --> 05:14.500
+I only wanted for this section, the adventures of Sherlock Holmes.
+
+77
+05:15.010 --> 05:18.220
+So in order to close the tag, it's the same angle bracket
+
+78
+05:18.460 --> 05:21.580
+but then I have to use a forward slash and then write h1.
+
+79
+05:22.660 --> 05:27.660
+So now only this part is an h1 or a large heading.
+
+80
+05:29.140 --> 05:31.120
+Now, if we have a look at the other parts,
+
+81
+05:31.180 --> 05:36.160
+I would say that this word by is a little bit smaller than the author name.
+
+82
+05:36.430 --> 05:41.140
+So let's structure this as a heading also, but let's make it a subtitle.
+
+83
+05:41.140 --> 05:45.100
+So let's make it a slightly smaller heading. And to do that,
+
+84
+05:45.130 --> 05:48.970
+we can simply wrap this text around an h2 tag.
+
+85
+05:49.300 --> 05:53.110
+And now we have Sir Arthur Conan Doyle as a heading,
+
+86
+05:53.380 --> 05:57.620
+but in a smaller size and shown with less important than the big title.
+
+87
+05:57.800 --> 06:01.160
+So no,w finally, we have this word by,
+
+88
+06:01.520 --> 06:04.760
+and I reckon that's one size smaller than this heading.
+
+89
+06:05.090 --> 06:09.260
+So let's go ahead and wrap this inside an h3.
+
+90
+06:10.610 --> 06:12.260
+I hope you're starting to get the gist.
+
+91
+06:12.620 --> 06:16.820
+The heading tags get smaller as the number goes up.
+
+92
+06:17.300 --> 06:20.870
+So for example, if I change this to an h4,
+
+93
+06:21.050 --> 06:24.860
+it gets even smaller, h5, smaller still,
+
+94
+06:25.400 --> 06:28.100
+and all the way until h6
+
+95
+06:28.370 --> 06:32.900
+which is the smallest font size for the heading element. Now,
+
+96
+06:32.900 --> 06:35.150
+if you keep going to h7,
+
+97
+06:35.480 --> 06:38.870
+you'll notice that it doesn't do anything anymore.
+
+98
+06:39.080 --> 06:42.080
+It doesn't change the heading size.
+
+99
+06:42.680 --> 06:47.330
+And that's because the heading elements only go from h1 to h6.
+
+100
+06:47.960 --> 06:50.810
+Now, how do I know that, I hear you ask?
+
+101
+06:51.050 --> 06:55.670
+So this is a good point in the course to introduce documentation.
+
+102
+06:56.030 --> 07:01.030
+And the reason why I'm talking about it so early on is because of how important
+
+103
+07:01.070 --> 07:04.310
+it is to your journey as a web developer.
+
+104
+07:04.700 --> 07:08.840
+So one of the key skills in becoming a great web developer, or in fact,
+
+105
+07:08.960 --> 07:13.960
+any sort of programmer is getting good at finding out how you can help yourself.
+
+106
+07:14.600 --> 07:17.660
+And a lot of that involves getting good at Googling.
+
+107
+07:17.900 --> 07:21.770
+How do you find the specific piece of information that's going to help you
+
+108
+07:21.770 --> 07:26.150
+achieve what it is that you want or help you understand what it is that you want
+
+109
+07:26.150 --> 07:28.070
+to know? So in this case,
+
+110
+07:28.280 --> 07:31.940
+we're talking about headings and we are using HTML,
+
+111
+07:32.480 --> 07:37.190
+and I'm going to add in the name of the documentation that I prefer to use,
+
+112
+07:37.190 --> 07:41.210
+which is MDN and it stands for the Mozilla developer network.
+
+113
+07:41.480 --> 07:46.010
+So the same people who made Firefox, for example. So if I go ahead and hit
+
+114
+07:46.100 --> 07:48.770
+enter, you see a whole bunch of results come up.
+
+115
+07:49.100 --> 07:52.970
+And the most relevant for us is the h1 to h6
+
+116
+07:53.210 --> 07:55.880
+and it talks about headings. So if we click on that,
+
+117
+07:56.000 --> 07:59.960
+you can learn more about the heading elements used in HTML
+
+118
+08:00.020 --> 08:04.550
+and they even have example code snippets that show you what it would look like
+
+119
+08:04.610 --> 08:09.530
+rendered in a browser. Now there's a couple of sources for documentation.
+
+120
+08:09.860 --> 08:14.260
+One is of course MDN, another one is called w3schools.
+
+121
+08:14.830 --> 08:19.390
+So let's see if we tried w3 schools with HTML and we're talking about
+
+122
+08:19.390 --> 08:23.420
+headings, right? Let's see what we get here. So HTML
+
+123
+08:23.470 --> 08:27.070
+headings is the first result that comes up. And similarly,
+
+124
+08:27.070 --> 08:30.340
+you've got the code examples, you've got the results,
+
+125
+08:30.640 --> 08:34.240
+and you've got a little bit of notes that tell you how you should be using your
+
+126
+08:34.240 --> 08:35.073
+headings.
+
+127
+08:35.230 --> 08:39.850
+Both of these places have a lot of really useful usage notes,
+
+128
+08:40.120 --> 08:43.660
+and it's worth reading through when you're first coming across a particular
+
+129
+08:43.660 --> 08:44.440
+element.
+
+130
+08:44.440 --> 08:48.880
+That way you'll have a good foundation of knowledge when you start to build and
+
+131
+08:48.880 --> 08:51.850
+create your own websites. So I want to show you one
+
+132
+08:51.880 --> 08:56.010
+last resource that I quite like using, which is called devdocs.io,
+
+133
+08:56.310 --> 09:01.080
+and this is basically a website that puts together a lot of the useful documentation
+
+134
+09:01.290 --> 09:03.900
+in a structure that I find to be quite handy.
+
+135
+09:04.260 --> 09:08.460
+So if we have a look inside the HTML 5 tab,
+
+136
+09:08.880 --> 09:13.680
+and we go into the elements, we can see that there's a total of 135 elements.
+
+137
+09:13.980 --> 09:18.420
+And if you scroll down, you can see that we've got h1 through to h6.
+
+138
+09:18.450 --> 09:20.880
+And if you click on any of these then it brings up
+
+139
+09:20.940 --> 09:22.860
+actually the MDN documentation
+
+140
+09:22.890 --> 09:26.070
+so you can see that it's similar to what we saw on MDN,
+
+141
+09:26.310 --> 09:30.480
+but it's just structured in a very simple way, and it's very easy to follow.
+
+142
+09:30.600 --> 09:33.120
+So that's definitely a website that's worth bookmarking.
+
+143
+09:33.510 --> 09:35.910
+So if we head back over to our HTML file,
+
+144
+09:36.030 --> 09:38.730
+we're going to change that back to an h3
+
+145
+09:38.760 --> 09:43.760
+which is an HTML tag that actually exists as opposed to something like h
+
+146
+09:43.860 --> 09:44.520
+9.
+
+147
+09:44.520 --> 09:48.780
+So the next thing that we need to do in order to better replicate this website
+
+148
+09:48.900 --> 09:53.900
+is to add some space between these lines. Now in a word processor
+
+149
+09:54.090 --> 09:56.040
+such as a Word or Google docs,
+
+150
+09:56.070 --> 10:00.120
+you'll be able to simply just hit enter a few times or hit return a few times
+
+151
+10:00.360 --> 10:05.070
+and get that spacing show up. Now, unfortunately, in HTML,
+
+152
+10:05.070 --> 10:07.050
+it doesn't quite work like that.
+
+153
+10:07.290 --> 10:11.430
+It's a little bit more complicated. In order to create that spacing,
+
+154
+10:11.520 --> 10:16.520
+we actually have to use an HTML element called a line break and it's written
+
+155
+10:16.890 --> 10:17.723
+like so.
+
+156
+10:17.910 --> 10:22.910
+And the interesting thing about this HTML element is that it doesn't require
+
+157
+10:23.520 --> 10:25.950
+both an open and a close tag.
+
+158
+10:26.250 --> 10:29.340
+So when we had the h1 through the h6 tags,
+
+159
+10:29.520 --> 10:33.990
+you can see that we started out by marking the text with an h1
+
+160
+10:34.050 --> 10:36.780
+and then we closed it off with a closing tag.
+
+161
+10:36.960 --> 10:40.260
+But the line break element works all by itself
+
+162
+10:40.290 --> 10:42.510
+and you can even put it inside, like
+
+163
+10:42.510 --> 10:46.620
+so, to make this part go onto a new line. Now,
+
+164
+10:46.620 --> 10:51.480
+this is a good time point to review the anatomy of HTML tags.

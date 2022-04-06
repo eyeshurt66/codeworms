@@ -1,0 +1,741 @@
+WEBVTT
+
+0
+00:00.870 --> 00:06.720
+All right, so now that we've got all of our content together, we can go ahead and style all of the
+
+1
+00:06.720 --> 00:09.000
+text that we've got on our website.
+
+2
+00:09.690 --> 00:15.510
+So in this lesson, I'm going to cover a number of font properties so that we can further style and
+
+3
+00:15.510 --> 00:17.790
+make our website look the way that we want it to.
+
+4
+00:18.300 --> 00:21.360
+So the first thing I'm going to talk about is the font size.
+
+5
+00:21.810 --> 00:30.360
+And to begin with, I want my H1 to be a lot bigger than my H2s and my H3s so that it really stands out
+
+6
+00:30.600 --> 00:33.390
+as the title of this front page.
+
+7
+00:33.930 --> 00:37.500
+So let's head over to Atom and implement that change.
+
+8
+00:37.800 --> 00:44.670
+So inside my H1, I'm going to tap into the font-size property and I'm going to set the font size to
+
+9
+00:44.670 --> 00:45.960
+90px.
+
+10
+00:46.260 --> 00:52.200
+So this is equivalent of selecting 90 in the dropdown menu when you're selecting a font size.
+
+11
+00:52.650 --> 01:00.720
+And now, if I hit refresh, then my title is going to get a lot bigger and it's going to fill most
+
+12
+01:00.720 --> 01:02.440
+of that top page.
+
+13
+01:02.700 --> 01:07.950
+Now, at this point, make sure that you're not zoomed in or zoomed out, and that your browser is at
+
+14
+01:08.010 --> 01:09.210
+100 percent zoom.
+
+15
+01:09.600 --> 01:16.290
+And you can check this by just going to zoom in or zoom zoom out and you can see whether if you're on
+
+16
+01:16.290 --> 01:18.870
+100 percent or 110 percent.
+
+17
+01:19.710 --> 01:24.600
+So we want it to be 100% so we can see what everybody else should see by default.
+
+18
+01:24.930 --> 01:29.520
+Now, currently, our font size is set to be 90 pixels.
+
+19
+01:30.000 --> 01:38.130
+So on certain browsers, if the user goes into preferences and they change their default font size for
+
+20
+01:38.130 --> 01:45.000
+their web page, for example, if they need super large text in order to see, then you'll notice that
+
+21
+01:45.000 --> 01:49.890
+font size does not change, even though the rest of the text does.
+
+22
+01:50.310 --> 01:58.090
+And this is because this is not a dynamic size, so in order to make it dynamic, there's two options.
+
+23
+01:58.110 --> 02:01.990
+So let's head back over here and go back to the medium size.
+
+24
+02:02.370 --> 02:09.360
+And if we go into Atom, then instead of using pixels instead, we can use something like a percentage.
+
+25
+02:09.660 --> 02:16.170
+So 100%t in terms of font size is actually a 16-pixel size.
+
+26
+02:17.010 --> 02:25.380
+And so that means if we want 90 pixels, so that means 90 divided by 16, and that would be equal to
+
+27
+02:25.380 --> 02:27.660
+562.5.
+
+28
+02:28.080 --> 02:36.690
+Then we would need 562.5% in order to get the equivalent of 90
+
+29
+02:36.690 --> 02:37.290
+pixels.
+
+30
+02:37.680 --> 02:45.090
+So if we hit save and we go back to our website and I hit refresh, you'll notice that absolutely nothing
+
+31
+02:45.090 --> 02:52.110
+happens because we're specifying exactly the same font size, but instead we're using a percentage this
+
+32
+02:52.110 --> 02:52.440
+time.
+
+33
+02:52.980 --> 03:00.690
+So that means that if we're going to say preferences and we change our font size to very small or very
+
+34
+03:00.690 --> 03:04.110
+large, then that font size will scale with it.
+
+35
+03:04.350 --> 03:10.530
+Now, the other way of specifying a dynamic font size is by using a unit called the em.
+
+36
+03:10.890 --> 03:17.220
+For example, if we head back on to our favorite website, techcrunch.com and we highlight this
+
+37
+03:17.220 --> 03:19.140
+title here and we inspect it,
+
+38
+03:19.560 --> 03:26.160
+then if you select this H2 here, you'll see that it's got the class called live title and its font
+
+39
+03:26.160 --> 03:32.460
+size is specified as 2em rather than however many pixels they want it to be.
+
+40
+03:32.910 --> 03:42.510
+Now we've seen em before inside our HTML and we used it as a tag in order to emphasize a particular
+
+41
+03:42.510 --> 03:48.030
+section of text, and that stylistically means that you'll make something italicized.
+
+42
+03:48.480 --> 03:56.670
+Now, in this case, this is actually a completely different em, and the em in this case is actually
+
+43
+03:56.670 --> 04:00.480
+the phonetic pronunciation of the letter M.
+
+44
+04:00.780 --> 04:10.170
+And the reason is because in typesetting in the olden days that em or the M rather is the width of
+
+45
+04:10.170 --> 04:12.030
+the capital letter M.
+
+46
+04:12.180 --> 04:19.770
+And so that means that when you say 1em, then you want the font size to be one times the width of
+
+47
+04:19.890 --> 04:21.270
+the capital letter M.
+
+48
+04:21.660 --> 04:26.220
+And if you want 2, then that's double the size of the M, et cetera, et cetera.
+
+49
+04:26.520 --> 04:29.040
+Now, in modern days, this is no longer true.
+
+50
+04:29.160 --> 04:36.050
+But what is true is that 1em is 16 pixels, as we've seen with our percentages.
+
+51
+04:36.060 --> 04:43.590
+So 16 pixels = 100% when you're talking about fonts and it's equal to 1em or 1
+
+52
+04:43.590 --> 04:44.040
+em.
+
+53
+04:44.700 --> 04:51.270
+And that means that you can achieve whatever size you want dynamically using either of these methods.
+
+54
+04:51.750 --> 04:59.180
+So for example, as we calculated before, 90 pixels is equal to 5.625em.
+
+55
+04:59.370 --> 04:59.820
+And so
+
+56
+04:59.940 --> 05:08.680
+that means that if we replace our font size with that number and we hit save and we go back to our site
+
+57
+05:08.680 --> 05:13.870
+and we hit refresh, then you'll see again, the font size does not change because they are all the
+
+58
+05:13.870 --> 05:14.310
+same.
+
+59
+05:14.320 --> 05:19.090
+It's just using different ways of specifying the same size.
+
+60
+05:19.780 --> 05:24.050
+So then the question you might have is why would you use one over the other?
+
+61
+05:24.070 --> 05:25.120
+What does it matter?
+
+62
+05:25.720 --> 05:32.200
+And if you look on different websites, for example, take uber.com and you know, if we inspect
+
+63
+05:32.200 --> 05:39.070
+on their title here, then you'll notice that their font size is specified in pixels, whereas on TechCrunc
+
+64
+05:39.070 --> 05:44.020
+it's specified in ems, and on other sites you might get percentages.
+
+65
+05:44.320 --> 05:49.750
+Now, as we mentioned before, if we change the font size, for example, say somebody with accessibility
+
+66
+05:49.750 --> 05:56.800
+issues to very large, then these static sized fonts do not change because it stays exactly the same
+
+67
+05:56.800 --> 05:57.160
+size.
+
+68
+05:57.610 --> 06:02.590
+Whereas the things that are dynamically sized, for example, things using em or percentages, they
+
+69
+06:02.590 --> 06:09.070
+do scale up so that users who have maybe visual impairments, et cetera, who might want to have a higher
+
+70
+06:09.070 --> 06:12.430
+font setting will be able to view the website more comfortably.
+
+71
+06:12.670 --> 06:17.470
+And that's quite important in terms of making your website accessible to everybody.
+
+72
+06:17.890 --> 06:22.810
+Now, the argument against that is some web designers say that people with visual impairment these days
+
+73
+06:22.840 --> 06:29.140
+are more likely to zoom in rather than changing their default font size, and they're more likely to
+
+74
+06:29.140 --> 06:33.010
+have a higher zoom in order to read all the text on page.
+
+75
+06:33.370 --> 06:40.540
+And with zoom, it doesn't actually matter whether if your text is statically or dynamically sized because
+
+76
+06:40.570 --> 06:45.790
+it will just scale up the website depending on what you're asking it to do.
+
+77
+06:46.210 --> 06:52.000
+So maybe that's not such an important distinction between statically and dynamically sized fonts any
+
+78
+06:52.000 --> 06:52.420
+more.
+
+79
+06:52.720 --> 06:58.150
+But there is one thing that is really important, and that's the fact that when you're using em
+
+80
+06:58.150 --> 07:02.320
+or when you're using percentages, that value is inherited.
+
+81
+07:02.680 --> 07:10.390
+So if I go into the body here and I specify a font size for everything inside the body, so that's everything
+
+82
+07:10.390 --> 07:13.120
+on my website to be say 2em,
+
+83
+07:14.080 --> 07:19.600
+and then in my H1, I leave my font size as the previous dynamic size.
+
+84
+07:19.960 --> 07:24.640
+I hit Save, and let's head back to our website and we refresh,
+
+85
+07:24.970 --> 07:30.070
+then you'll notice that our H1 has now become absolutely gigantic.
+
+86
+07:30.400 --> 07:39.340
+And that's because the font size gets inherited and added on top of whatever it got from its parent.
+
+87
+07:39.670 --> 07:47.410
+So the parent of the H1 is the body here because it's contained inside the body. And in the body
+
+88
+07:47.410 --> 07:52.000
+we said that font size should be 2em across the entire body of the website.
+
+89
+07:52.360 --> 07:56.260
+Now, when it gets to the h1, it's already got that 2em applied.
+
+90
+07:56.380 --> 08:04.330
+And then it adds that 5.625 on top of the 2em which is why we end up with something so gigantic.
+
+91
+08:04.600 --> 08:07.140
+And this is exactly the same with percentages.
+
+92
+08:07.150 --> 08:16.990
+So if I said, say, 200% in our font size and I change this to 562.5%,
+
+93
+08:17.170 --> 08:24.760
+then again, we still get this gigantic font size. But say, if I said, you know, the font size should
+
+94
+08:24.760 --> 08:29.650
+be 20 pixels and over here, it should be 90 pixels
+
+95
+08:29.650 --> 08:32.790
+and we go over here, we head back, and we refresh,
+
+96
+08:32.800 --> 08:37.090
+then you see that that font size is staying as 90 pixels.
+
+97
+08:37.390 --> 08:44.650
+It does not matter what its parent's font size was because these are static sizes. So that means it
+
+98
+08:44.650 --> 08:46.330
+can get a little bit dangerous.
+
+99
+08:46.690 --> 08:54.010
+For example, if you wanted all the text inside your body to be 200%, which remember is 2
+
+100
+08:54.010 --> 09:03.220
+times 16 pixels, which is 32 pixels, now that works fine until you get to a point and you forgot that
+
+101
+09:03.220 --> 09:03.940
+you did that
+
+102
+09:04.270 --> 09:11.290
+and over here, you ended up setting your 5.625%
+
+103
+09:11.590 --> 09:14.230
+and then all of a sudden, Oh, what?
+
+104
+09:14.230 --> 09:15.010
+What's going on?
+
+105
+09:15.010 --> 09:16.530
+Why does it look like this?
+
+106
+09:16.540 --> 09:21.400
+And you have to go and debug and try and figure out, where did it get this font size from?
+
+107
+09:21.430 --> 09:26.740
+So, for example, we can inspect in our Chrome developer tools and you see, OK, so it's got font
+
+108
+09:26.740 --> 09:29.110
+size 5.625, that's what I want.
+
+109
+09:29.500 --> 09:36.340
+But do I have any font sizes anywhere else and here in the body, even though it's crossed out, that
+
+110
+09:36.340 --> 09:38.230
+200% is still being applied?
+
+111
+09:38.740 --> 09:45.250
+So in order to avoid this, one of the things that we got in the latest version of CSS, which is the
+
+112
+09:45.250 --> 09:51.730
+version that we're using currently or the version I'm teaching you about, is CSS 3 and inside CSS
+
+113
+09:51.730 --> 09:52.210
+3
+
+114
+09:52.210 --> 09:59.710
+there is something called the rem and that refers to the root em. So that
+
+115
+09:59.770 --> 10:08.870
+means ignore all of the parent settings for the font size and just set it to this relative to the root.
+
+116
+10:09.250 --> 10:15.220
+So that means that it doesn't matter what we've done here or in its enclosing containers or parents.
+
+117
+10:15.580 --> 10:21.850
+It will be 5.625 times 16 pixels as long as we add the 'r' in front of the em.
+
+118
+10:22.660 --> 10:28.210
+So if we hit save and we head back over to our website hit refresh, then you can see that we still
+
+119
+10:28.210 --> 10:34.090
+get that size that we wanted, which is the 5.625rem.
+
+120
+10:34.330 --> 10:43.120
+So the beauty of the root em is that it does not get affected by upstream size changes, and it means
+
+121
+10:43.120 --> 10:47.560
+that it's easier to debug and it's less likely that something will go wrong.
+
+122
+10:48.010 --> 10:57.160
+So when sizing text, my personal recommendation to you is to use rem instead of em or percentages
+
+123
+10:57.160 --> 11:05.020
+or pixels, because that is the most adaptable and also the most reliable and least error-prone.
+
+124
+11:05.710 --> 11:13.000
+So now if we head back over to our site and refresh and also change our font size in our preferences
+
+125
+11:13.000 --> 11:15.490
+back to the medium that's recommended,
+
+126
+11:15.940 --> 11:22.570
+then you can see that we've got the exact size that we were looking for, which is the same as the 90
+
+127
+11:22.570 --> 11:24.400
+pixels that we specified
+
+128
+11:24.760 --> 11:28.960
+but this is done using rem rather than em or percentages.
+
+129
+11:29.380 --> 11:30.850
+Now here's a challenge for you.
+
+130
+11:31.210 --> 11:38.380
+We want to change the size of this part which says 'a programmer.' Now at the moment, 'a programmer' is
+
+131
+11:38.380 --> 11:40.180
+inside a paragraph tag.
+
+132
+11:40.510 --> 11:45.550
+Now we've got several other paragraph tags on this page, so we don't want to change the size of all
+
+133
+11:45.550 --> 11:45.880
+of them.
+
+134
+11:46.330 --> 11:53.950
+So first, I want you to change this element from the paragraph element into an h2 element, and
+
+135
+11:53.950 --> 12:02.290
+I want you as a challenge to set the font size of the h2 to be equivalent to 40px,
+
+136
+12:02.590 --> 12:05.110
+but I want you to do that using rem.
+
+137
+12:05.890 --> 12:09.500
+So pause the video, go ahead and see if you can figure it out.
+
+138
+12:09.730 --> 12:11.650
+So that's pretty easy to calculate.
+
+139
+12:11.920 --> 12:21.520
+So our target is 40px for the font size, and we know that 1em is 16px so we can simply
+
+140
+12:21.520 --> 12:26.500
+divide 40 by 16 and we end up with 2.5.
+
+141
+12:26.590 --> 12:29.630
+So it'll be 2.5rem
+
+142
+12:29.800 --> 12:36.640
+in order to achieve the equivalent of 40 pixels for the font size of our h2. So let's go over to Atom
+
+143
+12:36.640 --> 12:37.780
+and implement that.
+
+144
+12:38.110 --> 12:43.390
+So inside our H2, let's go ahead and set the font size to 2.5rem,
+
+145
+12:44.890 --> 12:47.080
+hit, save and refresh.
+
+146
+12:47.080 --> 12:54.160
+And voila, we've now got a much larger subtitle and heading by changing the font size.
+
+147
+12:54.610 --> 13:00.370
+So if that was confusing at all, make sure that you rewind and rewatch some of the parts when we spoke about
+
+148
+13:00.370 --> 13:03.280
+dynamic font sizing and how it all worked.
+
+149
+13:03.430 --> 13:07.970
+But now there's just one thing that I want to change about the layout of this website.
+
+150
+13:07.990 --> 13:13.690
+I would love for this h1 to have a little bit more padding from the top so that it gets pushed
+
+151
+13:13.690 --> 13:16.270
+down more towards the center of the page.
+
+152
+13:16.540 --> 13:23.650
+So we can do that by simply adding a 50px margin to the top of our h1 rather than having it as
+
+153
+13:23.650 --> 13:24.610
+0 pixels.
+
+154
+13:24.760 --> 13:29.650
+So let's go into Atom and change the margin-top to 50 pixels.
+
+155
+13:29.950 --> 13:36.610
+This is what we end up with. Now with margin-top and padding and all of those other things where we
+
+156
+13:36.610 --> 13:37.750
+specify a size,
+
+157
+13:38.050 --> 13:42.700
+you can also use the em, the rem or the percentage values.
+
+158
+13:42.910 --> 13:49.000
+But in this case, I actually prefer to stick to using pixels because it's more precise and it's much
+
+159
+13:49.000 --> 13:54.430
+easier to see what's going on when you inspect it in using the box model.
+
+160
+13:54.790 --> 13:58.930
+So that's just a personal preference and it's a stylistic choice of your own.
+
+161
+13:59.260 --> 14:06.550
+So if you want to use rem or em or percentages, that's absolutely fine as well.
+
+162
+14:06.550 --> 14:11.710
+And it works exactly the same way, as we mentioned with the font sizing.
+
+163
+14:11.890 --> 14:18.100
+So basically, as long as you insert a 50px l equivalent margin, then we should end up with something
+
+164
+14:18.100 --> 14:19.510
+that looks a little bit like this.
+
+165
+14:19.750 --> 14:25.780
+Now there's one more thing that I would like to change here after we've specified our font sizes, and that's
+
+166
+14:25.780 --> 14:30.280
+to have a little bit less space between the H1 and the H2 here.
+
+167
+14:30.280 --> 14:38.020
+Because at the moment, if I hit Inspect, you can see that the H1 has a significant amount of margin
+
+168
+14:38.800 --> 14:44.220
+before and after, and I would just like to get rid of that bottom margin.
+
+169
+14:44.320 --> 14:52.780
+So instead of specifying the margin-top, we can just specify a margin using the circle shorthand.
+
+170
+14:52.810 --> 14:56.740
+So we start off with the top, which is going to have 50px margin,
+
+171
+14:57.160 --> 14:59.530
+then we go to the right, which I'm going to keep as
+
+172
+14:59.820 --> 15:01.410
+auto, to keep it centered.
+
+173
+15:01.710 --> 15:04.170
+Then we get to the bottom, which I want to be zero.
+
+174
+15:04.590 --> 15:08.430
+And finally, we have the left, which I'm going to leave as auto as well.
+
+175
+15:08.970 --> 15:15.960
+Now if we hit save and we head back and closed down our Chrome developer tools and now we hit refresh,
+
+176
+15:16.230 --> 15:21.120
+you can see that we've got a little bit less space between the H1 and the H2, and it just looks a little
+
+177
+15:21.120 --> 15:22.380
+bit more put together.
+
+178
+15:22.410 --> 15:27.000
+Now these are all minor tweaks, and it's totally up to you if you want to implement them or not.
+
+179
+15:27.240 --> 15:30.910
+I'm just adjusting it to my eye. Now in the next lesson
+
+180
+15:30.930 --> 15:38.490
+I've got a number of challenges for you, and I want you to use the developer docs on MDN or on w3
+
+181
+15:38.490 --> 15:42.240
+schools in order to figure out what these properties are and how you should set them.
+
+182
+15:42.570 --> 15:48.480
+But you should be fully equipped in order to discover some of these other fonts related properties that
+
+183
+15:48.480 --> 15:49.350
+I want to talk about.
+
+184
+15:49.500 --> 15:52.670
+So head over to the next lesson and complete the challenge.

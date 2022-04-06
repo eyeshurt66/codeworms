@@ -1,0 +1,993 @@
+WEBVTT
+
+0
+00:00.630 --> 00:07.170
+So in the last lesson, we looked at how we're able to change the background color of the body of our
+
+1
+00:07.170 --> 00:15.390
+web page by simply injecting CSS code in the same line as our body HTML element.
+
+2
+00:16.080 --> 00:23.280
+Now in this lesson, we're going to look at how we can implement CSS code across the entire web page
+
+3
+00:23.460 --> 00:30.820
+so we won't have to copy and paste the style attribute each time we want to change a particular element.
+
+4
+00:32.220 --> 00:39.540
+So in order to do this, we're going to go into the head section of our HTML page and just below the
+
+5
+00:39.540 --> 00:40.230
+title
+
+6
+00:40.560 --> 00:46.260
+I'm going to add a style tag and I'm going to close it off as well.
+
+7
+00:47.640 --> 00:54.660
+Now, in between the style tag, I'm going to select the HTML element that I want to effect.
+
+8
+00:55.020 --> 00:58.620
+So let's first try this with our body element.
+
+9
+00:59.220 --> 01:05.940
+So in order to select an HTML tag, all you have to do is specify the name of the element you want to
+
+10
+01:05.940 --> 01:08.760
+change, which in this case is the body,
+
+11
+01:09.120 --> 01:16.040
+and then you're going to create a set of curly braces inside which you're going to write your CSS
+
+12
+01:16.050 --> 01:20.700
+code that will affect the style of the body element.
+
+13
+01:20.970 --> 01:24.180
+So let's hit, enter and give ourselves a bit more space.
+
+14
+01:24.580 --> 01:29.790
+And let's also indent this so that it's nested inside our style tag.
+
+15
+01:30.030 --> 01:38.790
+So here I can copy this line of code straight in like so.
+
+16
+01:39.600 --> 01:45.870
+So the essential elements of any CSS code that you're going to write is going to be something that
+
+17
+01:45.870 --> 01:47.430
+you want to affect,
+
+18
+01:47.760 --> 01:55.080
+so in this case, it's the body of the page that we want to change and then it's what you want to change
+
+19
+01:55.080 --> 01:55.770
+about it,
+
+20
+01:55.800 --> 02:00.240
+so in this case, it's the background color property that we want to effect.
+
+21
+02:00.690 --> 02:06.540
+And finally, what is the value that you're going to change it to, which in this case is that nice color
+
+22
+02:06.540 --> 02:07.620
+from a color palette.
+
+23
+02:08.220 --> 02:12.860
+So I want to go ahead and just change this to a more obvious color.
+
+24
+02:12.870 --> 02:18.120
+So back to that pretty ugly, blue looking color that we had before.
+
+25
+02:18.510 --> 02:27.390
+And I'm going to delete our inline CSS here and make it go back to just a simple body tag just so that
+
+26
+02:27.390 --> 02:31.050
+we can confirm that our code is in fact working.
+
+27
+02:31.620 --> 02:39.210
+So now if we hit save and we go back to our website and we hit refresh, you can see that that change
+
+28
+02:39.210 --> 02:40.080
+has worked.
+
+29
+02:40.320 --> 02:45.150
+So we know that our CSS code is functional and it is working. Now
+
+30
+02:45.150 --> 02:51.330
+sometimes when you're linking up access with your HTML file, you might have forgotten a closing tag
+
+31
+02:51.360 --> 02:53.880
+or you might have put it into the wrong place.
+
+32
+02:53.880 --> 02:58.200
+For example, you accidentally had it inside the body instead of the head section.
+
+33
+02:58.530 --> 03:04.320
+And there's all sorts of reasons why your CSS and your HTML might not be linked together.
+
+34
+03:04.320 --> 03:10.680
+So it's always a good idea just to change something really, really dramatic so that you can just confirm
+
+35
+03:10.920 --> 03:19.200
+that the entire style tag is working and it's affecting the appearance of your webpage.
+
+36
+03:20.640 --> 03:26.070
+So now let's change this back to that prettier color that we had,
+
+37
+03:26.610 --> 03:29.910
+and let's check to make sure that it's working.
+
+38
+03:30.330 --> 03:33.690
+And the next thing that we're going to change is what we mentioned before.
+
+39
+03:33.690 --> 03:40.620
+We want to change the style of something that occurs repeatedly in our code, which is the horizontal
+
+40
+03:40.620 --> 03:41.040
+rule.
+
+41
+03:41.520 --> 03:48.960
+Now, instead of having to write the style attribute inside each and every single one of these tags,
+
+42
+03:49.410 --> 03:57.090
+what I can do is I can simply select it here by saying, Let's change the style of all the horizontal
+
+43
+03:57.090 --> 04:01.080
+rules and the property of the horizontal rule that I want
+
+44
+04:01.080 --> 04:04.680
+to change is also it's background color.
+
+45
+04:05.220 --> 04:11.760
+I don't like this greyish thing that we've got here, and I wanted it to just be pure white.
+
+46
+04:12.120 --> 04:21.660
+So I want it's background color to be simply just white, a CSS color that we can have access to just
+
+47
+04:21.660 --> 04:23.490
+by writing the keyword white.
+
+48
+04:24.750 --> 04:25.110
+So,
+
+49
+04:26.230 --> 04:33.250
+if we hit save and we head over to our website, you'll notice that nothing changes when you refresh
+
+50
+04:33.250 --> 04:33.430
+it.
+
+51
+04:34.030 --> 04:36.880
+It hasn't changed in its appearance at all.
+
+52
+04:37.240 --> 04:39.580
+So why is that?
+
+53
+04:40.730 --> 04:49.670
+Well, it's really, really important to realize that no website is completely unstyled.
+
+54
+04:49.820 --> 04:50.840
+So what does that mean?
+
+55
+04:51.230 --> 04:56.480
+Even before we've added any CSS code to our index.html,
+
+56
+04:56.960 --> 05:02.420
+there is already some default CSS being applied by your browser.
+
+57
+05:03.290 --> 05:10.160
+Now you can find out what the default CSS looks like by again searching for it.
+
+58
+05:10.370 --> 05:16.260
+So let's search for browser default CSS and hit enter.
+
+59
+05:17.360 --> 05:23.750
+And you can see that the first thing that we get is actually from w3schools, so I'm pretty agnostic
+
+60
+05:23.750 --> 05:25.560
+towards which sources we use
+
+61
+05:25.580 --> 05:31.850
+as long as they're useful and Google's always pretty good at picking out which is the most used
+
+62
+05:32.150 --> 05:37.190
+or rather most useful links and put them at the top of your searches.
+
+63
+05:37.400 --> 05:44.150
+So if we look inside w3schools, you can see that all these elements have default
+
+64
+05:44.160 --> 05:48.110
+CSS values being applied by your browser.
+
+65
+05:48.350 --> 05:57.590
+Now, if we hit Command F to find the horizontal rule, then you can see all the default CSS that it
+
+66
+05:57.590 --> 05:58.190
+has.
+
+67
+05:58.790 --> 06:01.880
+Now let me just talk you through what all of this does.
+
+68
+06:02.630 --> 06:10.490
+Now, the first thing is that it sets a margin for our horizontal rule and then it sets the type or the
+
+69
+06:10.490 --> 06:14.540
+style of our border to something called inset.
+
+70
+06:15.050 --> 06:18.680
+And then it gives the border a width of one pixel.
+
+71
+06:19.250 --> 06:23.000
+So what is this border style inset?
+
+72
+06:23.330 --> 06:28.670
+Well, let's take a look at border-style CSS using MDN.
+
+73
+06:30.250 --> 06:35.600
+And you can see that there's a whole bunch of different keywords that you can use
+
+74
+06:35.980 --> 06:38.230
+that changes the border style.
+
+75
+06:38.380 --> 06:46.390
+Now you'll also find the default one which is the inset border style, and this displays a border
+
+76
+06:46.390 --> 06:50.650
+that makes the element look embedded and it,
+
+77
+06:50.920 --> 06:57.250
+and if you look really closely at our border, it's kind of got that effect, right?
+
+78
+06:57.430 --> 07:00.970
+Even though it's not that nice looking.
+
+79
+07:01.390 --> 07:06.400
+That happens to be the default style that's specified by our browser.
+
+80
+07:06.940 --> 07:10.300
+So let's change it to something that we want.
+
+81
+07:10.450 --> 07:13.900
+Well, we actually don't really want a border.
+
+82
+07:14.260 --> 07:20.170
+All we want is just to have a single line without a border that is white in color,
+
+83
+07:20.230 --> 07:20.620
+right?
+
+84
+07:20.980 --> 07:23.620
+So we can change the border style to none
+
+85
+07:24.010 --> 07:32.230
+and we can override the default browser value by specifying a new value for it using CSS.
+
+86
+07:32.800 --> 07:35.140
+So we're going to set border-style
+
+87
+07:36.900 --> 07:38.490
+to none.
+
+88
+07:39.210 --> 07:47.700
+And if we save something surprising is going to happen when you refresh your website, your horizontal
+
+89
+07:47.700 --> 07:49.560
+rules have disappeared.
+
+90
+07:50.010 --> 07:51.480
+Now why is that?
+
+91
+07:51.930 --> 07:59.370
+Well, one of the most important concepts in learning CSS is realizing that pretty much everything
+
+92
+07:59.370 --> 08:04.200
+that exists on the web page are essentially just boxes.
+
+93
+08:04.740 --> 08:07.290
+And I can make those boxes appear
+
+94
+08:07.320 --> 08:14.190
+by using this chrome plugin I've got, which is called Pesticide. Now in order to get hold of this Pesticide
+
+95
+08:14.190 --> 08:15.810
+for Chrome extension,
+
+96
+08:16.230 --> 08:22.500
+head over to the course resources and you'll see a link that takes you directly to this extension on
+
+97
+08:22.500 --> 08:23.460
+the Chrome web store.
+
+98
+08:24.000 --> 08:30.900
+And this is an extension that we've published and all you have to do to get it is just click add to
+
+99
+08:30.900 --> 08:33.120
+Chrome, add Extension
+
+100
+08:33.390 --> 08:38.340
+and then final step that you need to do is to go here in the top right corner,
+
+101
+08:38.370 --> 08:42.360
+click on the three dots and then go to your chrome settings.
+
+102
+08:42.990 --> 08:46.300
+And then here I want you to go into extensions,
+
+103
+08:46.680 --> 08:49.980
+find the Pesticide for chrome extension
+
+104
+08:50.380 --> 08:53.870
+and I want to you to go to details. Inside details
+
+105
+08:53.880 --> 08:59.250
+make sure that this part "Allow access to file URLs" is turned on.
+
+106
+08:59.880 --> 09:06.420
+This is going to allow you to develop your website locally and to allow you to use Pesticide on your
+
+107
+09:06.420 --> 09:07.440
+local web sites.
+
+108
+09:08.550 --> 09:15.750
+Now finally, if you want to pin the Pesticide extension so that it shows up up here, click on the
+
+109
+09:15.750 --> 09:18.510
+extensions and then go ahead and click PIN.
+
+110
+09:19.050 --> 09:21.750
+So that it shows up right here, and then you're ready to go.
+
+111
+09:22.350 --> 09:29.400
+Now, back in your web site, if you click on the Pesticide button, then it will highlight all the
+
+112
+09:29.400 --> 09:31.320
+boxes that we have on screen.
+
+113
+09:31.910 --> 09:35.040
+Now, the horizontal rule is no exception.
+
+114
+09:35.070 --> 09:44.970
+It's also just a rectangle, and that rectangle used to have a border specified by this border style,
+
+115
+09:45.240 --> 09:47.520
+and that border had a width.
+
+116
+09:47.850 --> 09:53.700
+So it was one pixel on the top, one pixel on the bottom, one pixel on the left and one pixel on the
+
+117
+09:53.700 --> 09:54.210
+right.
+
+118
+09:54.810 --> 10:02.780
+Now, by getting rid of that border, by setting border style to none, our rectangle now has no size.
+
+119
+10:02.790 --> 10:05.640
+It's literally zero pixels high.
+
+120
+10:05.940 --> 10:13.290
+So in order to change the situation, we need to change some of the CSS for the box to give it a
+
+121
+10:13.290 --> 10:14.070
+height.
+
+122
+10:14.700 --> 10:22.140
+So if you head over to devdocs.io and you search for height, the first one, the blue icon
+
+123
+10:22.140 --> 10:26.020
+here shows you that this is CSS related documentation.
+
+124
+10:26.070 --> 10:33.270
+And if you click on it, it takes you to this height CSS property and this specifies the height of an
+
+125
+10:33.270 --> 10:38.670
+element, and you can read that as this thing changes the height of your box.
+
+126
+10:38.820 --> 10:49.290
+So if we now give our horizontal rule a height, let's say 2px, and we hit save, once we hit refresh,
+
+127
+10:49.860 --> 10:53.580
+our box now has an actual dimension.
+
+128
+10:54.060 --> 10:55.740
+And you can see that here as well.
+
+129
+10:55.740 --> 11:02.310
+You can see that that tiny box now has a little bit of height associated with it, whereas previously
+
+130
+11:02.400 --> 11:07.920
+had zero pixels in height because only the border had a dimension to it.
+
+131
+11:08.490 --> 11:15.210
+Now that height property isn't unique to just the horizontal rule, and this is the really interesting
+
+132
+11:15.210 --> 11:16.410
+thing about CSS.
+
+133
+11:16.860 --> 11:24.420
+Now, once you realize that essentially everything in your web page is just a whole bunch of boxes and
+
+134
+11:24.420 --> 11:32.190
+the properties of these boxes can be affected by changing the CSS code, then you can pretty much apply
+
+135
+11:32.190 --> 11:37.260
+the same rules or the same changes to any of these boxes you choose.
+
+136
+11:37.920 --> 11:46.920
+So, for example, if I wanted to select my image HTML element, then I could write image and I can
+
+137
+11:46.920 --> 11:52.140
+change its height too to something less extreme, maybe something like 20 pixels.
+
+138
+11:52.560 --> 12:01.110
+And if I hit save and refresh, then you'll see that the box for my image has now become super tiny,
+
+139
+12:01.530 --> 12:04.920
+and it is now only 20 pixels high.
+
+140
+12:05.340 --> 12:11.490
+Now, some of you might have tried to change the height of the body, and you might have gotten stuck
+
+141
+12:11.490 --> 12:14.580
+and wondered, why did it not work for the body?
+
+142
+12:15.270 --> 12:24.300
+Well, it's down to the fact that the body has some default values that prevents our changing the height,
+
+143
+12:24.930 --> 12:31.050
+and we're going to look at some of those things like display block in later lessons in this module to
+
+144
+12:31.050 --> 12:32.700
+understand why that is.
+
+145
+12:33.360 --> 12:35.130
+But for now, let's get rid of
+
+146
+12:35.180 --> 12:43.250
+this style that we played to the image and let's hit save and let's see our website as it is. Now,
+
+147
+12:43.250 --> 12:50.540
+if you go into devdocs and you go to the CSS section, then you can look at all of these subsections
+
+148
+12:50.540 --> 12:54.380
+of how you can change the appearance of any element.
+
+149
+12:54.410 --> 13:01.100
+So one of the things that you can change in addition to the height is actually the width of your element.
+
+150
+13:01.490 --> 13:11.390
+So we can go and say the width of our horizontal rule should only ever be 100 pixels and we hit save
+
+151
+13:11.390 --> 13:12.740
+and we refresh.
+
+152
+13:13.130 --> 13:15.830
+Then you see that this is 100 pixels wide.
+
+153
+13:16.340 --> 13:23.360
+Now, sometimes you might want the width to change depending on whether if you're viewing your website
+
+154
+13:23.360 --> 13:28.700
+on a smartphone or whether if you're viewing on a browser or if somebody is viewing it, maybe on an
+
+155
+13:28.700 --> 13:29.600
+iPad.
+
+156
+13:30.110 --> 13:38.900
+So you might not want to specify a straight up hardcoded value, such as 100 pixels.
+
+157
+13:39.530 --> 13:49.220
+You can also specify a percentage, so you can say the width should be 30% of the entire width
+
+158
+13:49.400 --> 13:50.450
+of the webpage.
+
+159
+13:50.930 --> 13:56.230
+Now, when you hit refresh, you can see that that line is much wider
+
+160
+13:56.540 --> 14:03.770
+when our entire page is wider, and when our page gets narrower, it always remains 30% of the
+
+161
+14:03.770 --> 14:04.520
+entire width.
+
+162
+14:04.610 --> 14:07.820
+So that's another way that you can specify a size.
+
+163
+14:07.850 --> 14:15.440
+Now, as a challenge, I want you to use this page on MDN, the border style property, and looking
+
+164
+14:15.440 --> 14:18.680
+at all the different types of border styles
+
+165
+14:19.220 --> 14:28.340
+I want you to be able to make this line similar to what Sean has here, which is just a few grey dots,
+
+166
+14:28.430 --> 14:32.630
+maybe three or four, or maybe just 10 percent of the page.
+
+167
+14:33.380 --> 14:41.600
+So pause the video and see if you can change the CSS in order to make that line look like this.
+
+168
+14:46.950 --> 14:49.140
+All right, so how did that go?
+
+169
+14:49.350 --> 14:57.000
+Now, in order to make our horizontal rule look similar to this, we know that we can change the border
+
+170
+14:57.000 --> 14:57.660
+style.
+
+171
+14:58.200 --> 15:07.320
+And one of those styles is the dotted style. And MDN very helpfully has this interactive box where
+
+172
+15:07.320 --> 15:10.560
+we can change the properties of these borders.
+
+173
+15:11.520 --> 15:15.270
+So we already know that we can't have a border to be set to none.
+
+174
+15:15.420 --> 15:17.310
+We're going to need it to be dotted.
+
+175
+15:17.790 --> 15:21.420
+But if we simply change this border style to
+
+176
+15:22.930 --> 15:25.540
+dotted and hit save,
+
+177
+15:27.640 --> 15:30.070
+then you can see if I zoom in
+
+178
+15:31.540 --> 15:40.330
+that, yes, I have a border that's dotted around my horizontal rule, but this looks nothing like what
+
+179
+15:40.330 --> 15:41.560
+he's got over here.
+
+180
+15:42.160 --> 15:44.020
+So how can we change this?
+
+181
+15:44.260 --> 15:51.460
+Well, if we only want to have a single border, then we have to turn our height down to zero again.
+
+182
+15:51.850 --> 15:57.560
+So we have a box that's 0px high that only have a border.
+
+183
+15:57.700 --> 16:05.320
+So you can either change the height to zero pixels or delete it outright, and that will also make it
+
+184
+16:05.320 --> 16:06.370
+0px high.
+
+185
+16:06.820 --> 16:13.540
+Now, if I refresh, you can see that we've now got a horizontal rule that's zero pixels high
+
+186
+16:13.990 --> 16:16.540
+and we've got a border around it.
+
+187
+16:16.690 --> 16:24.340
+So if we have a look here, the syntax section, it says that when one value for border-style is specified,
+
+188
+16:24.730 --> 16:28.390
+then it applies the same style to all four sites.
+
+189
+16:28.660 --> 16:30.910
+And that's pretty much what we're getting here.
+
+190
+16:31.890 --> 16:35.130
+We're getting that dotted style across all four sides.
+
+191
+16:35.340 --> 16:37.770
+Now we specified two values,
+
+192
+16:38.160 --> 16:44.610
+then the first style is applied to the top and bottom borders, and the second to the left and right.
+
+193
+16:44.730 --> 16:49.290
+When three values are specified, then the first one applies to the top,
+
+194
+16:49.770 --> 16:51.610
+the second to the left and the right,
+
+195
+16:51.630 --> 16:53.250
+and the third to the bottom.
+
+196
+16:53.790 --> 16:57.780
+Or, you can also specify all four values of all four sides.
+
+197
+16:58.140 --> 17:07.770
+So knowing this, we can actually change our border style to dotted so that gets applied to the top
+
+198
+17:08.160 --> 17:08.610
+border,
+
+199
+17:08.820 --> 17:13.920
+and then we can specify none for the rest of the borders.
+
+200
+17:14.070 --> 17:17.850
+And if we hit save, we go back over here, we refresh,
+
+201
+17:18.210 --> 17:25.140
+you see that we now only have the top border showing. Now an alternative way that you might have worked
+
+202
+17:25.140 --> 17:28.980
+out is by simply changing the border top style.
+
+203
+17:29.430 --> 17:37.680
+So we could say that the entire border-style is none, but the border-top style is going to be dotted.
+
+204
+17:38.310 --> 17:46.890
+And if you hit save and you refresh, you can see that it's exactly the same effect because we're specifying
+
+205
+17:46.890 --> 17:55.140
+something that is more specific than this property, we're affecting only this particular thing.
+
+206
+17:55.680 --> 18:02.880
+And now our background color is redundant because our main box has no background because it has no height.
+
+207
+18:03.360 --> 18:08.550
+So we can get rid of that. Now in order to make this line look more like this line,
+
+208
+18:08.850 --> 18:11.580
+we have to change the size of the dots
+
+209
+18:11.910 --> 18:13.980
+and also the color of the dots.
+
+210
+18:14.520 --> 18:19.980
+And you can see that we can change the color by simply changing the border-color property. So we can
+
+211
+18:19.980 --> 18:24.030
+change it to gray, and we can also change the border width.
+
+212
+18:24.420 --> 18:30.540
+So if we say 20px, then the dots get a lot bigger, whereas 5px
+
+213
+18:31.860 --> 18:33.480
+you only get very tiny dots.
+
+214
+18:34.170 --> 18:38.460
+So let's go over here and add some more properties that we want to change.
+
+215
+18:39.890 --> 18:44.120
+So we're going to change the border color to grey.
+
+216
+18:45.310 --> 18:46.690
+And we're going to change the
+
+217
+18:47.870 --> 18:55.850
+border-height... and then we're going to change the border-width to let's try 20px. And
+
+218
+18:55.850 --> 18:58.790
+let's see what that now looks like.
+
+219
+18:59.030 --> 19:03.410
+Ooh, that's absolutely massive and our border is still black.
+
+220
+19:03.890 --> 19:08.930
+So what's going on here? Ahh... it's because we have a typo in the word grey.
+
+221
+19:09.200 --> 19:14.510
+And you can see that using our packages that we've installed in Atom when it's actually a valid color
+
+222
+19:14.510 --> 19:20.000
+code, it gets highlighted in a different color compared to something that doesn't exist.
+
+223
+19:21.340 --> 19:29.860
+So let's change that down to maybe let's try 10px, and that is now looking pretty similar to that
+
+224
+19:29.860 --> 19:30.370
+size,
+
+225
+19:30.850 --> 19:34.480
+maybe smaller, still, maybe 5px.
+
+226
+19:36.790 --> 19:37.180
+Yeah.
+
+227
+19:39.030 --> 19:45.180
+That looks pretty similar, and we can change it down to be a lot smaller in width as well.
+
+228
+19:45.780 --> 19:52.650
+So let's say maybe put the width as maybe 10% or even smaller, maybe 5%.
+
+229
+19:53.680 --> 19:55.210
+Yeah, that looks pretty decent.
+
+230
+19:55.390 --> 20:04.120
+So we've now more or less implemented what we see over here simply by changing the CSS style of our
+
+231
+20:04.120 --> 20:05.170
+horizontal rule.
+
+232
+20:05.290 --> 20:13.300
+Now there's still a bit of a problem, though, because we've changed our horizontal rule to look exactly
+
+233
+20:13.300 --> 20:14.670
+the way that we want it to.
+
+234
+20:15.040 --> 20:20.320
+And we, of course, want this to be consistent across our website, and we also want our background
+
+235
+20:20.320 --> 20:25.150
+color to carry over to all our other web pages on our website.
+
+236
+20:25.780 --> 20:34.900
+But if we look inside my hobbies or contact me, it still looks exactly the same way as it did before.
+
+237
+20:35.350 --> 20:42.370
+And we're going to have to copy this entire style section over to the contact me header, as well as
+
+238
+20:42.370 --> 20:43.370
+the hobbies header.
+
+239
+20:43.630 --> 20:51.010
+So that's kind of a lot of work, especially if you end up with a website with, you know, 200 pages,
+
+240
+20:51.400 --> 20:58.480
+then it's not a good idea to have to copy this over and change it in every single place.
+
+241
+20:58.810 --> 21:07.300
+This might be easier than using inline CSS, as we did in the last lesson, but it's still quite
+
+242
+21:07.300 --> 21:08.170
+repetitive.
+
+243
+21:08.500 --> 21:16.840
+What we really want is to have a single location where when we change the CSS styles in that one
+
+244
+21:16.840 --> 21:23.410
+location, then everything gets reflected across our website in all of the pages.
+
+245
+21:24.250 --> 21:31.030
+So that is what we're going to learn about in the next lesson where we look into how we can create external
+
+246
+21:31.030 --> 21:32.870
+CSS for our website.
+
+247
+21:32.920 --> 21:36.370
+So stay tuned and I will see you in the next lesson.

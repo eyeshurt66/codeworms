@@ -1,0 +1,453 @@
+WEBVTT
+
+0
+00:00.270 --> 00:01.950
+All right. So in the last lesson,
+
+1
+00:01.980 --> 00:06.980
+we looked at how to use HTML lists that were ordered as well as unordered. In
+
+2
+00:07.530 --> 00:08.040
+this lesson
+
+3
+00:08.040 --> 00:13.010
+I want to talk about the image element and how we can incorporate images into our
+
+4
+00:13.010 --> 00:16.520
+website. So the image tag is again,
+
+5
+00:16.610 --> 00:20.390
+a self closing tag, so it doesn't need to be closed.
+
+6
+00:20.660 --> 00:22.790
+But for the image element,
+
+7
+00:23.060 --> 00:26.270
+just providing an image tag isn't enough.
+
+8
+00:26.480 --> 00:31.480
+You also need to specify the source and that's the source of the image that will
+
+9
+00:32.210 --> 00:35.480
+be displayed. That can either be a URL
+
+10
+00:35.810 --> 00:37.700
+so it can fetch it from the internet,
+
+11
+00:38.210 --> 00:43.210
+or it can be a local image that's included in the same directory as your
+
+12
+00:44.000 --> 00:47.120
+website. So we're going to look at both types.
+
+13
+00:47.690 --> 00:52.400
+The first thing I'm going to do is I'm going to look for an image of myself
+
+14
+00:53.570 --> 00:56.030
+online and let's have a look and
+
+15
+00:56.030 --> 01:00.350
+see if there's any images that are actually me. Oh, there we go.
+
+16
+01:00.500 --> 01:01.610
+So I already found one.
+
+17
+01:02.060 --> 01:07.060
+So this comes from my Twitter and you can also probably go to your own Twitter or
+
+18
+01:08.450 --> 01:09.920
+your Facebook and you can right-
+
+19
+01:09.920 --> 01:14.630
+click on the image and simply copy the image address. Now,
+
+20
+01:14.660 --> 01:18.350
+if I paste it here, you can see the whole URL
+
+21
+01:18.410 --> 01:21.230
+of where that image is located. And if I hit enter,
+
+22
+01:21.620 --> 01:26.150
+my browser will fetch that image from that location. Now,
+
+23
+01:27.020 --> 01:30.830
+if I copy this image address or image source
+
+24
+01:31.280 --> 01:35.960
+and I add it to my website as a HTML element,
+
+25
+01:36.140 --> 01:41.090
+so just above my h1, so just above my name here,
+
+26
+01:41.420 --> 01:43.460
+I want my image to show up.
+
+27
+01:43.640 --> 01:47.180
+So I'm going to use the image tag and the source
+
+28
+01:47.240 --> 01:49.100
+I'm just going to paste in 
+
+29
+01:49.130 --> 01:52.970
+that URL that I got from earlier on. Now,
+
+30
+01:53.000 --> 01:58.000
+the next attribute here that comes up automatically is the alt or the
+
+31
+01:58.130 --> 02:01.760
+alternative text. And this is a case for say,
+
+32
+02:01.760 --> 02:06.760
+if a browser can't render the image then it will simply display an alternative
+
+33
+02:08.540 --> 02:12.650
+text to the user to describe what that image was about.
+
+34
+02:12.830 --> 02:17.830
+So I'll just put the alter text as Angela profile picture. Now,
+
+35
+02:19.760 --> 02:19.910
+if
+
+36
+02:19.910 --> 02:24.860
+you're interested in Search Engine Optimization and getting your website ranking
+
+37
+02:24.860 --> 02:26.120
+for certain key words,
+
+38
+02:26.360 --> 02:31.010
+this is something that Google looks at to try and figure out what your web page
+
+39
+02:31.010 --> 02:35.360
+is about. So if you're making a webpage that's about burrito
+
+40
+02:35.360 --> 02:36.193
+recipes
+
+41
+02:36.470 --> 02:41.450
+and you add an alt text  that says finished burrito product
+
+42
+02:41.510 --> 02:41.720
+image
+
+43
+02:41.720 --> 02:46.720
+image1, then it helps Google to index and figure out that maybe your webpage
+
+44
+02:47.270 --> 02:52.040
+is related when somebody is searching for burrito recipes. All right.
+
+45
+02:52.040 --> 02:55.730
+So let's hit you save and let's refresh and check it out.
+
+46
+02:56.120 --> 03:00.430
+And I've now incorporated my first image onto my personal website.
+
+47
+03:00.970 --> 03:05.860
+So you can either look around for an image of yourself on Facebook or Twitter or
+
+48
+03:05.860 --> 03:08.530
+anywhere that would host it. Alternatively,
+
+49
+03:08.590 --> 03:12.880
+if you can't find any images of yourself on the web,
+
+50
+03:12.970 --> 03:14.350
+which is probably a good thing,
+
+51
+03:14.770 --> 03:19.770
+you can also create an account on Photobucket and upload your own picture in
+
+52
+03:19.870 --> 03:21.340
+order to get a URL.
+
+53
+03:21.640 --> 03:26.640
+And after you do so, you can simply click on the image and right click to copy
+
+54
+03:27.340 --> 03:32.340
+the image address and paste it into your source between the quotation marks.
+
+55
+03:33.190 --> 03:35.890
+It will work exactly the same. There we go.
+
+56
+03:36.250 --> 03:40.390
+Angela is now a box of biscuits. Great. Now,
+
+57
+03:40.390 --> 03:44.740
+when my browser looks through this file to see how it should load it up and
+
+58
+03:44.740 --> 03:48.040
+display it, when it comes across this image tag
+
+59
+03:48.550 --> 03:53.550
+it has to go and ping the servers of Twitter to try and obtain this image.
+
+60
+03:55.600 --> 03:58.600
+And if it gets permission to download this image,
+
+61
+03:58.780 --> 04:02.680
+then it  will grab that image and display it over here.
+
+62
+04:02.830 --> 04:07.830
+So currently my image is hosted on Twitter servers and my browser has to
+
+63
+04:09.250 --> 04:13.870
+download it from there in order to display it inside my webpage.
+
+64
+04:14.530 --> 04:18.550
+Now, what if Twitter goes down? What if they die?
+
+65
+04:18.580 --> 04:22.390
+What if nobody wants to send tweets anymore? Well,
+
+66
+04:22.390 --> 04:27.390
+then their server's going to be shut down and my image will no longer be available
+
+67
+04:28.360 --> 04:29.193
+for download.
+
+68
+04:29.530 --> 04:34.450
+And you will instead end up with something that looks a little bit like this,
+
+69
+04:34.540 --> 04:36.610
+and you might've come across it in the past
+
+70
+04:36.610 --> 04:38.230
+when you've been loading up websites.
+
+71
+04:38.530 --> 04:43.530
+It means that the image is no longer available or is no longer hosted at the
+
+72
+04:44.380 --> 04:47.380
+address that's specified in the source.
+
+73
+04:47.830 --> 04:51.430
+So in order to remove our reliance on Twitter,
+
+74
+04:51.910 --> 04:56.110
+we can also put an image into our folder
+
+75
+04:56.200 --> 05:00.880
+HTML - Personal Site and refer to it inside our source.
+
+76
+05:01.570 --> 05:03.820
+So let's go ahead and do that. Now,
+
+77
+05:03.850 --> 05:07.750
+if I go onto my desktop inside web development, inside the folder
+
+78
+05:07.810 --> 05:09.430
+HTML - Personal Site,
+
+79
+05:09.850 --> 05:14.850
+I can drag and drop or paste an image of me into this folder.
+
+80
+05:15.490 --> 05:20.490
+And now my index.html and my picture called angela.png is in the same folder
+
+81
+05:23.320 --> 05:26.260
+and I can refer to it inside my code.
+
+82
+05:26.680 --> 05:31.300
+So instead of using a web address as the source of my image,
+
+83
+05:31.540 --> 05:36.540
+I can simply refer to the file name because they are at the same level.
+
+84
+05:36.670 --> 05:41.670
+So index.html and angela.png at the same hierarchical level,
+
+85
+05:42.340 --> 05:45.760
+they're both inside my site. Now,
+
+86
+05:45.790 --> 05:47.680
+if I had an images folder
+
+87
+05:50.080 --> 05:52.570
+and I put my image into there,
+
+88
+05:52.990 --> 05:56.500
+then I would have to add a path to get there.
+
+89
+05:56.860 --> 06:01.310
+So it would be something like this. Both ways work,
+
+90
+06:01.400 --> 06:03.470
+and you can do it either way you like.
+
+91
+06:03.860 --> 06:08.510
+And now if you hit save and you go to my site,
+
+92
+06:08.840 --> 06:11.450
+you'll notice this image change from square
+
+93
+06:11.510 --> 06:15.080
+which is what it got from Twitter, to circular
+
+94
+06:15.140 --> 06:19.700
+which is what it got from my local file. Now, in my case,
+
+95
+06:19.700 --> 06:23.060
+I cropped my image to a circle using Photoshop.
+
+96
+06:23.270 --> 06:26.210
+But if you wanted to create your own circular image,
+
+97
+06:26.300 --> 06:30.290
+you can use a tool like crop- circle.imageonline.co.
+
+98
+06:30.650 --> 06:35.000
+And here you'll be able to upload an image and crop the part of the image that
+
+99
+06:35.000 --> 06:39.590
+you're interested and get it as a circle and be able to download it
+
+100
+06:39.620 --> 06:42.320
+to use it in your website. And there we go.
+
+101
+06:42.650 --> 06:47.240
+We've managed to brighten up our homepage by adding an image of ourselves to the
+
+102
+06:47.240 --> 06:49.580
+top of it, using the image tag.
+
+103
+06:49.670 --> 06:54.670
+And we've started to look at these HTML attributes and you can see that every
+
+104
+06:55.250 --> 07:00.250
+single HTML element in the MDN reference also has a section on attributes.
+
+105
+07:01.280 --> 07:05.180
+And we're really only touching the surface here because there's other attributes
+
+106
+07:05.180 --> 07:09.590
+that you can add to the image element or most other elements that you decide to
+
+107
+07:09.590 --> 07:10.100
+use.
+
+108
+07:10.100 --> 07:14.120
+And we're going to be looking at these attributes as we come across them for
+
+109
+07:14.120 --> 07:17.450
+different HTML elements. Now, in the next lesson,
+
+110
+07:17.510 --> 07:22.310
+we're going to be looking at anchor tags and how we can start adding links into
+
+111
+07:22.310 --> 07:27.310
+our website and how we can create new pages that can be linked to from our
+
+112
+07:27.800 --> 07:31.880
+homepage. So for all of that and more, I'll see you on the next lesson.

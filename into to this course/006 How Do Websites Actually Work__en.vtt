@@ -1,0 +1,393 @@
+WEBVTT
+
+0
+00:00.450 --> 00:04.530
+Now that we've spoken about how the internet works, in this episode
+
+1
+00:04.560 --> 00:09.240
+I want to talk about how exactly do websites work. What exactly does HTML,
+
+2
+00:09.240 --> 00:14.130
+CSS and JavaScript do exactly? Now, in order to access a webpage,
+
+3
+00:14.160 --> 00:18.420
+we all know that you need a browser, right? And that can be Chrome,
+
+4
+00:18.480 --> 00:21.330
+Safari, Firefox, whatever is your favorite one.
+
+5
+00:21.570 --> 00:26.570
+These are all pieces of software that allow you to look up the IP address of
+
+6
+00:27.420 --> 00:32.420
+your website and be able to receive data that it can render into this beautiful
+
+7
+00:33.060 --> 00:34.950
+websites that we see. Now,
+
+8
+00:35.310 --> 00:40.100
+the data that you receive from the server usually consists of three types of
+
+9
+00:40.100 --> 00:43.400
+files; HTML, CSS, and JavaScript.
+
+10
+00:43.700 --> 00:48.080
+And it's very likely that you would have come across these types of files or
+
+11
+00:48.080 --> 00:49.340
+these words before,
+
+12
+00:49.610 --> 00:53.930
+because they're so common and there are so integral to how websites work.
+
+13
+00:53.960 --> 00:56.150
+But, what exactly do they do
+
+14
+00:56.210 --> 00:58.970
+and why are there so many different types of files?
+
+15
+00:59.300 --> 01:03.440
+Why can't we just have one file that's, you know, a website? Well,
+
+16
+01:03.710 --> 01:05.480
+they actually have very different jobs.
+
+17
+01:05.690 --> 01:10.690
+The HTML code file is responsible for the structure of your website.
+
+18
+01:11.030 --> 01:12.860
+So if a website was a house,
+
+19
+01:13.130 --> 01:18.020
+then the HTML would be the builder who would come in to build the walls or put
+
+20
+01:18.020 --> 01:22.670
+in a toilet. Basically they establish the structure of your house.
+
+21
+01:23.000 --> 01:27.410
+And when you write HTML code, you also build up the structure of your website.
+
+22
+01:27.620 --> 01:32.270
+So you could use HTML to add an image or button or text box,
+
+23
+01:32.540 --> 01:35.600
+whatever it is that you need in your website. Now,
+
+24
+01:35.630 --> 01:38.150
+the second type of file are CSS files,
+
+25
+01:38.360 --> 01:41.840
+and these files are responsible for styling your website.
+
+26
+01:42.530 --> 01:46.460
+If you were building a house, then this would be the painters and decorators.
+
+27
+01:46.670 --> 01:47.720
+They would be going around
+
+28
+01:47.720 --> 01:51.980
+painting the walls or adding stylistic flourishes to your place,
+
+29
+01:52.160 --> 01:55.850
+and generally making the place look the way that you want it to.
+
+30
+01:56.210 --> 02:00.950
+And that's exactly what CSS code does as well. When you incorporate CSS,
+
+31
+02:01.040 --> 02:04.820
+it allows you to specify how you want your website to look.
+
+32
+02:05.060 --> 02:09.380
+So you could say that, yes, I have a button that I got from my HTML,
+
+33
+02:09.620 --> 02:14.000
+but that button I want it to be red and I want the text to be white
+
+34
+02:14.090 --> 02:19.090
+and I want the font of the text to be an Arial. That is all done using CSS code.
+
+35
+02:19.910 --> 02:23.420
+Now the final component is the JavaScript code.
+
+36
+02:23.660 --> 02:28.430
+And this is the code that allows your website to actually do things or have
+
+37
+02:28.460 --> 02:30.890
+behavior. And if you were building a house,
+
+38
+02:30.920 --> 02:32.720
+you would have the electrician come in,
+
+39
+02:32.900 --> 02:36.860
+who would be able to connect the wires so that your light bulbs actually switch
+
+40
+02:36.860 --> 02:40.550
+on or somebody who comes in and does the plumbing so that your toilet can
+
+41
+02:40.550 --> 02:44.000
+actually flush. And the JavaScript code does exactly that.
+
+42
+02:44.390 --> 02:48.860
+It allows your website to actually do things and have behavior.
+
+43
+02:49.100 --> 02:51.920
+So if we take the Google website as an example again,
+
+44
+02:52.100 --> 02:54.980
+once we receive these files from Google server,
+
+45
+02:55.130 --> 02:58.850
+when our browser loads up the HTML files, we'll get to see the structure
+
+46
+02:59.500 --> 03:03.160
+of the website, namely, there's one image which has their logo,
+
+47
+03:03.400 --> 03:08.200
+there's two buttons, and there's a text box where we can enter our search. Now,
+
+48
+03:08.200 --> 03:10.240
+when we receive the CSS files,
+
+49
+03:10.630 --> 03:14.770
+then that will modify the appearance of all of those components.
+
+50
+03:15.010 --> 03:18.580
+We don't have any more buttons or any more images,
+
+51
+03:18.790 --> 03:23.410
+but the now look the way that Google wanted it to. And finally,
+
+52
+03:23.680 --> 03:25.900
+when we incorporate the JavaScript files,
+
+53
+03:26.140 --> 03:31.090
+then our website actually starts having behavior. It has functionality
+
+54
+03:31.330 --> 03:35.650
+and it's actually able to do something rather than just display some images and
+
+55
+03:35.650 --> 03:39.490
+texts to us. Now, with the knowledge that we've already acquired,
+
+56
+03:39.610 --> 03:43.150
+we can already start messing around with websites on the internet.
+
+57
+03:43.600 --> 03:46.510
+So open up Chrome and head over to techcrunch.com.
+
+58
+03:46.780 --> 03:48.340
+And if you're not familiar with it,
+
+59
+03:48.430 --> 03:52.390
+it's basically a technology news website where I get my latest tech news.
+
+60
+03:52.780 --> 03:53.920
+Once you're over here,
+
+61
+03:54.130 --> 03:59.130
+I want you to right-click on the title here and click on inspect.
+
+62
+04:01.660 --> 04:04.210
+Now this brings up the Chrome developer tools,
+
+63
+04:04.570 --> 04:07.930
+and we're going to be exploring this in a lot more detail,
+
+64
+04:08.290 --> 04:11.860
+but for now we're going to use it to do something really simple.
+
+65
+04:12.070 --> 04:15.970
+You can see that when I right-click on that heading and click inspect,
+
+66
+04:16.210 --> 04:21.210
+it automatically opens up the entire code file that was used to render this
+
+67
+04:21.760 --> 04:25.900
+website. So these are all of the elements that make up this website.
+
+68
+04:26.320 --> 04:28.420
+And when you click on inspect,
+
+69
+04:28.780 --> 04:33.700
+it will highlight to you the part of the code that corresponds to the thing that
+
+70
+04:33.700 --> 04:36.700
+you right clicked, right? In this case, it's this title.
+
+71
+04:37.390 --> 04:40.840
+And inside this title, you can see that there is a link,
+
+72
+04:41.230 --> 04:44.350
+which means that when you click on it, it'll go to another web page,
+
+73
+04:44.710 --> 04:49.510
+but it also got a bit of text. So right inside Chrome developer tools,
+
+74
+04:49.660 --> 04:53.620
+if you double click on the bit of text that corresponds to the title,
+
+75
+04:53.950 --> 04:55.180
+you can actually edit it.
+
+76
+04:56.110 --> 04:59.800
+So let's go ahead and change the front page of TechCrunch.
+
+77
+04:59.890 --> 05:01.030
+Let's say something like,
+
+78
+05:02.040 --> 05:02.873
+<v 1>uhm..</v>
+
+79
+05:04.500 --> 05:07.410
+<v 0>So this is a great way of pranking your friends,</v>
+
+80
+05:07.560 --> 05:12.540
+especially when they can see that you're on tech crunch.com and the title or any
+
+81
+05:12.540 --> 05:15.810
+of the texts on the website is what you want it to say.
+
+82
+05:15.990 --> 05:19.470
+And this is a great joke to play on friends who are maybe not quite as
+
+83
+05:19.470 --> 05:21.120
+technologically advanced as you,
+
+84
+05:21.300 --> 05:24.810
+because they haven't taken the course that you have. Now unfortunately,
+
+85
+05:24.840 --> 05:29.580
+when I hit refresh on this website, all of my good work is gone.
+
+86
+05:29.910 --> 05:34.910
+And the reason is because when I'm editing it here inside my browser,
+
+87
+05:35.730 --> 05:40.730
+I'm actually changing the local copy of this file that I got back from the
+
+88
+05:41.430 --> 05:44.340
+server. But when I click refresh,
+
+89
+05:44.430 --> 05:49.320
+then that makes a new request to the servers to load up a fresh copy of the
+
+90
+05:49.320 --> 05:53.400
+website. So of course, then it updates to the original content.
+
+91
+05:53.640 --> 05:57.530
+But in the coming lessons, we're going to be working with HTML, CSS,
+
+92
+05:57.740 --> 06:02.150
+and JavaScript so that you can create and host live on the internet,
+
+93
+06:02.360 --> 06:06.770
+your very own websites and through learning how to code and how to build
+
+94
+06:06.770 --> 06:07.580
+websites
+
+95
+06:07.580 --> 06:11.270
+you are going to be able to make websites that say anything that you want it to,
+
+96
+06:11.540 --> 06:15.520
+look the way that you want it to, and have the functionality that you need.
+
+97
+06:15.940 --> 06:19.210
+So for all of that and more, I'll see you in the next lesson.

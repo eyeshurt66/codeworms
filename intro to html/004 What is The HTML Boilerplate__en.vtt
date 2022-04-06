@@ -1,0 +1,1081 @@
+WEBVTT
+
+0
+00:00.240 --> 00:04.050
+Now once you're ready, go ahead and open up the Atom editor. Now,
+
+1
+00:04.110 --> 00:06.180
+if you haven't yet installed Atom,
+
+2
+00:06.480 --> 00:10.380
+this is a good point to go back and have a look at those videos on how to
+
+3
+00:10.380 --> 00:14.730
+install Atom for Mac or for Windows because from here on out,
+
+4
+00:14.940 --> 00:19.080
+we're going to be working with the Atom editor to create every single one of our
+
+5
+00:19.080 --> 00:20.670
+websites. So it's really,
+
+6
+00:20.670 --> 00:24.090
+really important that you have it set up with all the packages that we've
+
+7
+00:24.090 --> 00:26.760
+specified in those installation videos.
+
+8
+00:27.120 --> 00:29.190
+But once you've got it installed an open,
+
+9
+00:29.220 --> 00:32.460
+you should be looking at a screen like this. Now,
+
+10
+00:32.460 --> 00:35.370
+the first thing we're going to do is we're going to go to file and we're going
+
+11
+00:35.370 --> 00:38.760
+to open a new project folder to work out of.
+
+12
+00:38.970 --> 00:43.890
+So I want you to create a new folder either in your desktop or somewhere else
+
+13
+00:43.890 --> 00:46.790
+that you prefer and it's going to be called Web Development.
+
+14
+00:48.950 --> 00:52.820
+Go ahead and hit create, and then select that web development folder
+
+15
+00:52.910 --> 00:54.380
+and go ahead and click open.
+
+16
+00:54.800 --> 00:59.300
+And now you'll see your project folder show up in the sidebar over here
+
+17
+00:59.600 --> 01:03.260
+and you can toggle it closed by clicking on that arrow button over there.
+
+18
+01:03.830 --> 01:06.140
+So now that we've got our web development folder,
+
+19
+01:06.350 --> 01:08.840
+this is where we're going to store all of our projects.
+
+20
+01:09.230 --> 01:12.890
+The first project that we're gonna be creating is our personal website.
+
+21
+01:13.160 --> 01:17.090
+So go ahead and right-click on the web development folder
+
+22
+01:17.390 --> 01:21.680
+and we're going to create a new folder inside the web development folder,
+
+23
+01:22.070 --> 01:26.990
+and we're going to call our project HTML - Personal Site.
+
+24
+01:27.710 --> 01:32.030
+And now we're ready to create our very first HTML file inside this folder.
+
+25
+01:32.300 --> 01:37.280
+So again, right-click on this tab and we're going to create a new file.
+
+26
+01:37.550 --> 01:39.020
+Now, as you get used to Atom,
+
+27
+01:39.080 --> 01:42.830
+you are going to start to want to use some of their shortcuts. So for example,
+
+28
+01:42.830 --> 01:45.230
+instead of right-clicking and select a new file,
+
+29
+01:45.440 --> 01:50.440
+you can also just simply select the HTML personal site and hit A in order to do
+
+30
+01:51.260 --> 01:54.800
+the same thing. But in the beginning, as you're getting used to Atom,
+
+31
+01:55.040 --> 01:58.460
+I'm going to be using a lot of the mouse controls so that you can see what's
+
+32
+01:58.460 --> 01:59.570
+happening on the screen.
+
+33
+01:59.720 --> 02:03.530
+But feel free to start incorporating the shortcuts into your workflow
+
+34
+02:03.770 --> 02:05.120
+and as time goes on,
+
+35
+02:05.150 --> 02:08.300
+you'll find that they make life so much quicker and so much easier.
+
+36
+02:08.870 --> 02:13.520
+So now we're going to create our very first file and you can see the way that
+
+37
+02:13.520 --> 02:18.260
+the files are structured is that we're creating it inside this folder called
+
+38
+02:18.260 --> 02:21.350
+HTML - Personal Site and inside that folder,
+
+39
+02:21.380 --> 02:24.890
+is where our web page is going to be located.
+
+40
+02:25.160 --> 02:28.250
+Let's go ahead and create this homepage. And by convention,
+
+41
+02:28.280 --> 02:31.250
+we're going to name it, index.html
+
+42
+02:31.610 --> 02:35.540
+and that is usually the name that developers will give their homepage.
+
+43
+02:35.870 --> 02:39.260
+So go ahead and hit enter in order to create that file.
+
+44
+02:39.470 --> 02:41.510
+And if you open up this folder,
+
+45
+02:41.540 --> 02:45.860
+you can see that's exactly where it's located and it should open up on the right
+
+46
+02:45.860 --> 02:50.600
+hand or the main pane over here as well. Now in order to create any HTML website,
+
+47
+02:50.630 --> 02:55.010
+there's a little bit of boilerplate code that's associated. Now,
+
+48
+02:55.010 --> 02:56.600
+you're going to either write it all out,
+
+49
+02:57.050 --> 02:59.740
+or because we installed the Emmet plugin,
+
+50
+02:59.890 --> 03:03.670
+we can simply write HTML and then hit enter,
+
+51
+03:04.210 --> 03:08.740
+and it will insert all of that boilerplate code for us. Now,
+
+52
+03:08.770 --> 03:09.970
+if that didn't work for you,
+
+53
+03:09.970 --> 03:14.970
+you could also hit the tab key after writing HTML or typing an exclamation Mark
+
+54
+03:16.000 --> 03:18.160
+and then hitting the tab or the enter key.
+
+55
+03:18.490 --> 03:20.980
+Try some of these combinations that you see on screen
+
+56
+03:21.010 --> 03:22.240
+if it's not working for you.
+
+57
+03:22.870 --> 03:26.890
+And you're going to come to see and appreciate all of the powers of the Atom
+
+58
+03:26.890 --> 03:29.020
+plugins and how helpful they can be.
+
+59
+03:29.440 --> 03:34.440
+So now we mentioned that this is a standard HTML boilerplate code.
+
+60
+03:34.960 --> 03:38.020
+Now in Programming, we talk about boilerplates quite frequently,
+
+61
+03:38.140 --> 03:40.480
+and it's similar to having a code template,
+
+62
+03:40.750 --> 03:43.390
+something that you'll reuse for different projects.
+
+63
+03:43.540 --> 03:47.530
+And it comes from the days when the printing press would make these heavy iron
+
+64
+03:47.530 --> 03:50.710
+plates that would function as their printing template.
+
+65
+03:51.130 --> 03:54.610
+And because they looked very similar to the small metal plate that identified
+
+66
+03:54.610 --> 03:58.090
+the builder of a steam boiler they called it the boilerplate.
+
+67
+03:58.510 --> 04:00.310
+That's just where this word comes from.
+
+68
+04:00.610 --> 04:02.470
+But when we're talking about it in Programming,
+
+69
+04:02.650 --> 04:06.040
+we usually mean a co-template that you can reuse. Now,
+
+70
+04:06.070 --> 04:09.790
+even though we didn't have to do very much work in order to get all of this into
+
+71
+04:09.790 --> 04:13.930
+our file, it would still be a shame to lose it, right? So in Atom,
+
+72
+04:14.290 --> 04:18.250
+whenever you see a blue dot on the tab bar of your file,
+
+73
+04:18.550 --> 04:21.370
+that means that there's unsaved progress.
+
+74
+04:21.400 --> 04:24.670
+And in order to make it disappear and to keep your progress,
+
+75
+04:25.000 --> 04:30.000
+you can simply go to file and then click on save or use whatever shortcut that
+
+76
+04:30.430 --> 04:33.910
+shows up for you over here. It should be command + s on Mac,
+
+77
+04:34.150 --> 04:37.990
+and it should be control + on Windows. For those of you who are interested,
+
+78
+04:38.050 --> 04:42.010
+I've included a link to some of the most commonly used the Atom keyboard
+
+79
+04:42.010 --> 04:45.940
+shortcuts and includes the commands for both Mac, Windows and Linux,
+
+80
+04:45.970 --> 04:47.740
+for users on all three platforms.
+
+81
+04:47.950 --> 04:51.340
+So go and have a look over there and start learning and using some of these
+
+82
+04:51.340 --> 04:54.340
+shortcuts. And once you've saved your file on Atom
+
+83
+04:54.400 --> 04:56.290
+you'll see that little blue dot disappear,
+
+84
+04:56.590 --> 04:59.920
+and now you can be rest assured that all your progress has now been safely
+
+85
+04:59.920 --> 05:03.040
+saved. Now there's quite a lot of stuff on the screen.
+
+86
+05:03.310 --> 05:08.310
+So let's talk about this boilerplate line by line to understand what it all
+
+87
+05:08.920 --> 05:09.753
+does.
+
+88
+05:09.820 --> 05:14.590
+So the first line here is where we declare the document type.
+
+89
+05:14.920 --> 05:18.580
+And this tells the browser when it opens up this file,
+
+90
+05:18.910 --> 05:23.290
+what is the version of HTML that we're using. Now in this course,
+
+91
+05:23.350 --> 05:28.060
+we're working with the latest version of HTML, which is HTML 5.
+
+92
+05:28.480 --> 05:30.790
+Now in previous versions of HTML,
+
+93
+05:31.150 --> 05:35.980
+this doc type was incredibly convoluted. And in fact,
+
+94
+05:36.010 --> 05:38.680
+it can show you what some of them look like. So we can write
+
+95
+05:38.710 --> 05:42.520
+html:4t for example,
+
+96
+05:42.610 --> 05:46.570
+and then because we've installed emmet, if I hit tab, you can see
+
+97
+05:46.690 --> 05:51.370
+this is what the boilerplate code for a particular HTML 4 version would look
+
+98
+05:51.370 --> 05:55.330
+like. And you can see that doc type is a lot longer
+
+99
+05:55.540 --> 05:58.760
+and very often programmers won't be able to remember that
+
+100
+05:58.970 --> 06:03.260
+so they actually have to look it up somewhere. But since HTML 5,
+
+101
+06:03.530 --> 06:06.530
+the doctype declaration became a lot simpler
+
+102
+06:06.620 --> 06:10.190
+and now it's just exclamation !DOCTYPE html
+
+103
+06:10.340 --> 06:15.340
+and this tells the browser to render this file as an HTML 5 document.
+
+104
+06:16.100 --> 06:20.480
+And there's a few differences between how things will appear or how things will
+
+105
+06:20.480 --> 06:22.790
+be structured depending on whether
+
+106
+06:22.790 --> 06:26.300
+if the doctype was HTML5 or a previous version.
+
+107
+06:26.690 --> 06:28.760
+So that's the doc type.
+
+108
+06:29.300 --> 06:33.590
+Now we inserted all of this code using auto-complete from Emmet.
+
+109
+06:33.890 --> 06:37.520
+And if you want to look at all the other things that you can do with Emmet,
+
+110
+06:37.790 --> 06:42.680
+then you can go ahead and have a look at docs.emmet.io/cheat-sheet.
+
+111
+06:43.040 --> 06:46.460
+And here you can see what all of those abbreviations look like
+
+112
+06:46.580 --> 06:48.140
+and what is the result of it.
+
+113
+06:48.390 --> 06:51.170
+As you're developing into a professional web developer,
+
+114
+06:51.440 --> 06:55.640
+it's a great resource to have in order to save yourself a lot of time
+
+115
+06:55.790 --> 06:58.220
+when you get used to using these common shortcuts.
+
+116
+06:58.850 --> 07:02.240
+Now the next line in our code, it's an HTML tag.
+
+117
+07:02.630 --> 07:06.650
+And this tells the browser that everything in between the opening and closing
+
+118
+07:06.650 --> 07:11.540
+tags is going to be HTML code. And what does that code consist of?
+
+119
+07:11.570 --> 07:15.230
+Well, it consists of a head and a body.
+
+120
+07:15.740 --> 07:20.740
+Now the head is the part of the HTML file that holds information about the
+
+121
+07:20.990 --> 07:25.460
+webpage and it tells the browser how it should handle the page.
+
+122
+07:25.820 --> 07:27.050
+So for example,
+
+123
+07:27.380 --> 07:31.010
+we might have a title tag in here that tells the browser
+
+124
+07:31.250 --> 07:35.270
+what is the title of this particular document or this particular page.
+
+125
+07:35.600 --> 07:38.780
+So let's go ahead and give our website a title.
+
+126
+07:39.200 --> 07:41.420
+Let's call it whatever your name is.
+
+127
+07:41.420 --> 07:45.470
+So mine is Angela. Angela's personal site.
+
+128
+07:47.390 --> 07:50.780
+And now if we go ahead and hit save,
+
+129
+07:50.810 --> 07:53.390
+we can have a look at it inside our browser.
+
+130
+07:53.720 --> 07:57.320
+Now there's a couple of ways how you can open up the website that you are coding
+
+131
+07:57.320 --> 07:59.090
+up inside your browser. Now,
+
+132
+07:59.090 --> 08:04.090
+one of these ways is simply going into your Finder or your Explorer and finding
+
+133
+08:04.250 --> 08:06.290
+that index.html file,
+
+134
+08:06.380 --> 08:11.330
+and then double clicking on it and it should bring it up inside Chrome. Now,
+
+135
+08:11.330 --> 08:15.830
+the other way of opening up your website is if you right-
+
+136
+08:15.830 --> 08:18.770
+click on your file inside Atom
+
+137
+08:19.310 --> 08:22.130
+and you go to copy full path,
+
+138
+08:22.550 --> 08:27.550
+then it copies the entire directory path to the location of your website.
+
+139
+08:27.920 --> 08:32.360
+So if you just go ahead and paste it into the bar here and here with this file
+
+140
+08:32.360 --> 08:32.720
+path,
+
+141
+08:32.720 --> 08:37.720
+we're telling the browser how to find this file index.html on our computer.
+
+142
+08:38.630 --> 08:42.680
+So first we're telling it to go into a folder called users,
+
+143
+08:43.070 --> 08:47.510
+then we're telling it to go into a folder called angelayu. Then we're saying
+
+144
+08:47.510 --> 08:52.400
+go to desktop. And then inside desktop, we're going to web development.
+
+145
+08:52.730 --> 08:55.770
+And finally, we're going to HTML - Personal Site
+
+146
+08:56.070 --> 08:59.580
+and that is where we're going to find that index.html site.
+
+147
+09:00.030 --> 09:05.030
+Let's go ahead and hit enter on that file path in order to do exactly the same
+
+148
+09:05.430 --> 09:07.560
+as double clicking on this file,
+
+149
+09:07.800 --> 09:12.090
+which is opening up our website inside Chrome. Now,
+
+150
+09:12.090 --> 09:16.830
+if Chrome is not your default browser, then when you see the icon
+
+151
+09:16.830 --> 09:18.960
+it's not going to have the Chrome symbol here.
+
+152
+09:19.410 --> 09:22.500
+So you can change that by going into your settings,
+
+153
+09:23.940 --> 09:28.140
+then scrolling down to default browser in order to change it.
+
+154
+09:28.440 --> 09:30.360
+Now at the moment,
+
+155
+09:30.540 --> 09:34.080
+our website doesn't contain any content yet,
+
+156
+09:34.440 --> 09:38.100
+but it does have a title, which you can see here
+
+157
+09:38.280 --> 09:42.900
+and it says Angela's personal site, which is what we created over here.
+
+158
+09:43.440 --> 09:45.690
+Now inside the head section,
+
+159
+09:45.870 --> 09:48.780
+there's also this meta element.
+
+160
+09:49.200 --> 09:51.690
+Now there's quite a few different meta elements,
+
+161
+09:52.020 --> 09:55.740
+but this particular one is called character set.
+
+162
+09:55.950 --> 10:00.660
+And the one that we're setting it to is UTF-8. Now,
+
+163
+10:00.660 --> 10:02.190
+what does this line do?
+
+164
+10:02.520 --> 10:07.520
+The meta elements give extra metadata or associated data to your HTML document.
+
+165
+10:10.320 --> 10:13.950
+And in this case, we're telling the browser when it opens up this file
+
+166
+10:14.160 --> 10:16.290
+that all the text inside
+
+167
+10:16.380 --> 10:21.300
+our webpage is encoded using the UTF-8 encoding system.
+
+168
+10:21.570 --> 10:26.010
+So this is basically a list of all the available characters that we can use
+
+169
+10:26.070 --> 10:29.850
+inside our website for it to be rendered correctly. Now,
+
+170
+10:29.850 --> 10:33.780
+sometimes when you open up a webpage, especially in an outdated browser
+
+171
+10:33.810 --> 10:35.280
+like internet Explorer,
+
+172
+10:35.640 --> 10:39.330
+or an email that you got from a Bulgarian friend,
+
+173
+10:39.690 --> 10:43.590
+you might see some of the characters being jumbled up like this,
+
+174
+10:43.650 --> 10:45.780
+and this is called Mojibake.
+
+175
+10:46.350 --> 10:51.350
+And it's a Japanese word that stands for characters that are transformed.
+
+176
+10:52.440 --> 10:57.440
+And it occurs because your browser is trying to render the characters using the
+
+177
+10:58.200 --> 11:00.900
+wrong character set. So for example,
+
+178
+11:00.900 --> 11:05.190
+if we have a look at this Wikipedia page for Mojibake in Japanese,
+
+179
+11:05.550 --> 11:10.550
+you can see that currently my browser is set to render all the webpages as
+
+180
+11:10.920 --> 11:14.550
+Unicode, which is very similar to UTF-8.
+
+181
+11:14.880 --> 11:16.920
+And you can see that everything looks pretty legit.
+
+182
+11:16.980 --> 11:18.960
+It all looks more or less like Japanese.
+
+183
+11:19.410 --> 11:24.410
+But if I decide to change the encoding of my browser and for it to interpret all
+
+184
+11:25.320 --> 11:28.350
+of the websites as something else say Arabic,
+
+185
+11:28.650 --> 11:32.070
+then you can see that all of this webpage is now messed up.
+
+186
+11:32.370 --> 11:34.290
+This is not a valid word
+
+187
+11:34.560 --> 11:39.560
+and none of this has any meaning because it's encoded the website incorrectly.
+
+188
+11:40.110 --> 11:43.560
+So there's quite a few different types of encoding
+
+189
+11:43.890 --> 11:48.030
+and they are specialized for different languages because different languages
+
+190
+11:48.030 --> 11:50.310
+use different symbols. For example,
+
+191
+11:50.310 --> 11:54.100
+if you have a look at the Windows Greek symbol chart,
+
+192
+11:54.630 --> 11:58.560
+you can see that the symbol at position 224,
+
+193
+11:58.620 --> 12:02.640
+it looks like this, but if you have a look at the chart for Windows Arabic,
+
+194
+12:02.730 --> 12:07.110
+then 224 actually encodes a completely different character.
+
+195
+12:07.620 --> 12:12.620
+And that's why we get these messed up websites or strange looking emails when
+
+196
+12:12.810 --> 12:15.630
+it's interpreted using the wrong encoding.
+
+197
+12:15.840 --> 12:20.840
+Now UTF08 is the standard encoding that you should be using when working with
+
+198
+12:21.120 --> 12:22.260
+HTML 5.
+
+199
+12:22.380 --> 12:26.130
+And the reason for that is because it includes all of those
+
+200
+12:26.130 --> 12:28.860
+international symbols. And in fact,
+
+201
+12:29.010 --> 12:33.720
+every single symbol that is included in the Unicode character set.
+
+202
+12:34.050 --> 12:36.930
+So if you go to unicode-table.com,
+
+203
+12:37.200 --> 12:41.580
+then you can see a table of all of the Unicode characters.
+
+204
+12:42.060 --> 12:43.110
+And if you scroll down,
+
+205
+12:43.110 --> 12:47.340
+it's got this nice little animation that shows you as we change locations going
+
+206
+12:47.340 --> 12:48.173
+from Latin,
+
+207
+12:48.360 --> 12:53.360
+so most of the English speaking countries, to Greek and Coptic,
+
+208
+12:53.910 --> 12:58.290
+and then going to Armenian, Hebrew, Arabic, and all of the different languages.
+
+209
+12:58.860 --> 13:03.270
+The other thing about Unicode is that it also includes emojis.
+
+210
+13:03.630 --> 13:06.780
+For example, if you have a look at the emoji chart,
+
+211
+13:06.990 --> 13:09.900
+let's look for heart symbols for example,
+
+212
+13:10.500 --> 13:15.450
+then we've got all of these different emoji characters that we can also use on
+
+213
+13:15.450 --> 13:17.700
+our website that's encoded with UTF-8.
+
+214
+13:17.970 --> 13:19.500
+So let's go ahead and give that a try.
+
+215
+13:19.500 --> 13:24.500
+Let's find a nice looking heart smbol. We can right-click to copy it or hit
+
+216
+13:25.200 --> 13:26.790
+command C or control C,
+
+217
+13:27.390 --> 13:32.220
+and we can paste it to the front of our website title using control + V or command + V.
+
+218
+13:32.550 --> 13:37.550
+And now if I hit save and go back to my website and hit command or control + r to
+
+219
+13:40.200 --> 13:43.140
+refresh or click this refresh button here,
+
+220
+13:43.530 --> 13:46.920
+then you can see our title is updated with that emoji.
+
+221
+13:47.070 --> 13:51.390
+So everything that is Unicode can be encoded correctly using UTF-8
+
+222
+13:51.630 --> 13:55.800
+and it's something that you should just have as your boilerplate code for any
+
+223
+13:55.800 --> 13:58.530
+new website you create. This gives your website
+
+224
+13:58.530 --> 14:03.270
+the maximum chance of being rendered correctly on browsers that are from
+
+225
+14:03.270 --> 14:05.370
+international visitors. Now,
+
+226
+14:05.400 --> 14:09.240
+if you're interested in doing a bit of background reading and learning more
+
+227
+14:09.240 --> 14:11.100
+about Unicode and character sets,
+
+228
+14:11.400 --> 14:15.480
+then this is a really good piece that I highly recommend by Joel Spolsky.
+
+229
+14:15.600 --> 14:17.160
+It's a roughly 10 minute read,
+
+230
+14:17.580 --> 14:22.440
+and it talks a lot about these character sets and how they encode different
+
+231
+14:22.440 --> 14:26.910
+symbols and why you should be using something like Unicode or UTF-8 in your
+
+232
+14:26.910 --> 14:30.870
+websites in order to ensure maximum compatibility. And so it's a good read,
+
+233
+14:31.140 --> 14:35.460
+and I'll include a link to it in the resources for this lesson. Now,
+
+234
+14:35.460 --> 14:39.210
+aside from the character set attribute for the meta element,
+
+235
+14:39.270 --> 14:44.010
+there's also other attributes that you might see on different websites.
+
+236
+14:44.040 --> 14:48.390
+So some of the common ones include the description or things like keywords
+
+237
+14:48.660 --> 14:52.280
+about your website, who the author is as well as viewport.
+
+238
+14:52.760 --> 14:57.760
+And these meta-tags tell the browser how it should render or display the
+
+239
+14:58.610 --> 14:59.420
+webpage.
+
+240
+14:59.420 --> 15:04.420
+And also they give information to search engines about the content of the
+
+241
+15:04.790 --> 15:06.800
+website. So for example,
+
+242
+15:06.800 --> 15:10.580
+if we go to the Mozilla MDN web docs website,
+
+243
+15:10.610 --> 15:13.550
+the main page, developer.mozilla.org,
+
+244
+15:14.000 --> 15:18.260
+and we right click and we view page source,
+
+245
+15:18.590 --> 15:23.590
+then we get to see the entire HTML file that's used to render this particular
+
+246
+15:24.380 --> 15:24.980
+page.
+
+247
+15:24.980 --> 15:29.450
+So this is what our browser see's and does all the hard work of making it look
+
+248
+15:29.450 --> 15:32.510
+nice and pretty like this for us. So here,
+
+249
+15:32.540 --> 15:35.600
+if you go ahead and hit command + F or control + F on Windows,
+
+250
+15:35.840 --> 15:39.320
+you can search for the description attribute.
+
+251
+15:40.520 --> 15:44.780
+Now it's not this first one, but it is this third one
+
+252
+15:45.020 --> 15:46.790
+and it's this exact thing.
+
+253
+15:47.060 --> 15:51.440
+And the description says the Mozilla developer network MDN provides information
+
+254
+15:51.440 --> 15:55.790
+about open web technologies including HTML, CSS and APIs. Now,
+
+255
+15:55.820 --> 15:59.450
+if we go into Google and we searched for MDN,
+
+256
+16:00.110 --> 16:05.110
+you can see that the snippet of text that it shows about the main MDN website is
+
+257
+16:08.120 --> 16:10.910
+exactly the same as what we saw
+
+258
+16:10.940 --> 16:15.940
+just here in the description meta-tags and this is what search engines do.
+
+259
+16:17.720 --> 16:20.150
+They crawl the HTML of your website
+
+260
+16:20.540 --> 16:25.540
+and look for certain meta-tags in order to know what your website is about,
+
+261
+16:26.630 --> 16:30.230
+and also how to display it in their search index.
+
+262
+16:30.410 --> 16:33.770
+And there's a whole bunch of different attributes for the meta element
+
+263
+16:34.040 --> 16:38.960
+and you can have a read about it either on w3schools or what I recommend
+
+264
+16:38.960 --> 16:43.760
+usually is the MDN web docs. So if you have a look at meta over here,
+
+265
+16:44.060 --> 16:46.760
+then you can learn all about the different attributes,
+
+266
+16:46.790 --> 16:50.420
+how to use them and what they're good for. In the next lesson,
+
+267
+16:50.450 --> 16:53.210
+we're going to be tapping into our body section
+
+268
+16:53.300 --> 16:57.200
+and we're going to be creating the content for this personal site of ours.
+
+269
+16:57.470 --> 17:00.350
+So for all of that and more, I'll see you on the next lesson.

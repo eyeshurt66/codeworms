@@ -1,0 +1,1025 @@
+WEBVTT
+
+0
+00:00.990 --> 00:01.340
+All right.
+
+1
+00:01.350 --> 00:10.140
+So in the last lesson there was a pdf that you could download which showed the end result of our web
+
+2
+00:10.140 --> 00:13.720
+site and it shows how things would be laid out,
+
+3
+00:13.740 --> 00:20.790
+what is the rough spacing between each of the elements and how everything should look and feel.
+
+4
+00:20.820 --> 00:25.900
+Now I've also specified the hex codes for the colors that I'm using here.
+
+5
+00:26.040 --> 00:31.260
+And I also showed you how you can go about getting hold of this button code.
+
+6
+00:31.260 --> 00:35.340
+Now in this lesson I'm going to show you how I implemented this,
+
+7
+00:35.550 --> 00:40.220
+adding in the rest of the CSS code that we need to achieve this look.
+
+8
+00:40.350 --> 00:47.010
+Now it might just be that your code, based on what you estimated visually, is a little bit different from
+
+9
+00:47.010 --> 00:48.200
+what I'm going to type.
+
+10
+00:48.270 --> 00:50.490
+That's not a problem at all.
+
+11
+00:50.490 --> 00:58.440
+Now you can either follow along with what I'm doing in the solution or you can simply watch it just
+
+12
+00:58.440 --> 01:00.800
+to see if you got the broad strokes right.
+
+13
+01:00.810 --> 01:04.010
+For example how did you implement the horizontal rule,
+
+14
+01:04.060 --> 01:08.360
+or how do I get this bottom footer section to look like this?
+
+15
+01:08.430 --> 01:13.360
+Now it doesn't matter if your web site looks similar to mine or not.
+
+16
+01:13.380 --> 01:20.850
+In fact, I encourage you to personalize your web site, but I want you to be able to achieve the layouts
+
+17
+01:20.940 --> 01:22.500
+that I've specified.
+
+18
+01:22.530 --> 01:28.890
+So after you're able to look at a specification like this. Now, I admit this is a very rough spec and
+
+19
+01:28.890 --> 01:36.120
+I haven't given you the specific margins and paddings etc., but it's a great skill as a web designer
+
+20
+01:36.120 --> 01:44.250
+to be able to look at a sketched out layout or a mockup and to be able to implement that in code inside
+
+21
+01:44.260 --> 01:46.430
+your CSS and HTML.
+
+22
+01:46.560 --> 01:54.240
+So let's get going and feel free to follow along with me or just watch the solution video to see how
+
+23
+01:54.240 --> 01:56.280
+to do something that you couldn't figure out.
+
+24
+01:56.280 --> 02:02.130
+So the first thing I'm going to change is that I'm going to change the body text color to a slightly
+
+25
+02:02.610 --> 02:05.820
+off black, and that's the color I specified here,
+
+26
+02:05.830 --> 02:07.780
+40514E.
+
+27
+02:07.950 --> 02:12.830
+So let's head over to our body and let's add that font color here.
+
+28
+02:13.050 --> 02:15.690
+So that's going to be changing the color property.
+
+29
+02:15.900 --> 02:28.140
+And it is 40514E, and that's this sort of dark greyish color that we're going to implement for
+
+30
+02:28.140 --> 02:30.720
+the text inside our web site.
+
+31
+02:30.780 --> 02:35.940
+And that just makes it look a little bit more designed than previously but it's still highly readable.
+
+32
+02:35.940 --> 02:41.430
+So be careful about using really light greys when you're changing the body color because if there's
+
+33
+02:41.520 --> 02:47.130
+not enough contrast with the background color then it can make it really difficult, not just people with
+
+34
+02:47.130 --> 02:50.710
+visual impairment but even normal people would be a strain on their eyes.
+
+35
+02:50.760 --> 02:53.450
+So always go for something dark and high contrast.
+
+36
+02:53.610 --> 02:59.340
+Now the next thing that I want is to have a little bit more padding between the h2s and the text
+
+37
+02:59.340 --> 02:59.990
+below them.
+
+38
+02:59.990 --> 03:07.110
+So for example I want just a bit more space between the Hello and this bio, and also My Skills and the
+
+39
+03:07.110 --> 03:08.330
+skills section.
+
+40
+03:08.340 --> 03:18.920
+So let's head over to our h2 and add that padding-bottom, and I'm going to add only about 10 pixels
+
+41
+03:19.040 --> 03:20.230
+to achieve that.
+
+42
+03:20.390 --> 03:25.740
+So you can see the effect is really subtle but it helps to space things out a little bit.
+
+43
+03:25.760 --> 03:31.810
+Now the next thing I want is a bit of space between the middle section and the top section.
+
+44
+03:31.850 --> 03:38.810
+So I'm going to add again 100 pixels of padding to the top and 100 pixels to the bottom to space it
+
+45
+03:38.810 --> 03:41.920
+out between the middle, the top and the bottom containers.
+
+46
+03:42.080 --> 03:45.720
+But I don't want to add any further margin to the left and right, 
+
+47
+03:45.890 --> 03:52.370
+so I'm going to leave it as 0 so that it's stuck to the left and right sides of the viewport, which is
+
+48
+03:52.370 --> 03:53.550
+the screen.
+
+49
+03:54.230 --> 03:59.240
+So in order to do that I'm going to use the shorthand, where I say it's 100 pixels for the top
+
+50
+03:59.270 --> 04:02.860
+and bottom and 0 for the left and right.
+
+51
+04:02.870 --> 04:10.070
+So let's hit save and refresh and you see we've now got a good bit of space between the top and bottom containers.
+
+52
+04:10.070 --> 04:13.170
+And that looks a lot more natural than before.
+
+53
+04:13.190 --> 04:22.040
+Now the next thing I'm going to do is, I want to format this little bit of bio here so that it's less
+
+54
+04:22.130 --> 04:27.880
+in width, and you can have a few more lines rather than this long line that's quite hard to read.
+
+55
+04:28.190 --> 04:31.230
+And so I can do that by changing it’s width.
+
+56
+04:31.460 --> 04:39.660
+So if I go into my index.html, and I already have this class for that paragraph which is called 
+
+57
+04:39.670 --> 04:40.580
+intro.
+
+58
+04:40.730 --> 04:44.350
+You might have called it something else or you may or may not have this class.
+
+59
+04:44.390 --> 04:48.160
+Just check to see what you called this class over here.
+
+60
+04:48.440 --> 04:53.350
+And then we can target it inside our styles.css.
+
+61
+04:53.450 --> 04:56.090
+And I'm just going to put it below the pro class.
+
+62
+04:56.120 --> 04:57.990
+So it's called intro,
+
+63
+04:58.670 --> 05:05.780
+and I'm going to change its width to only 30 percent of its parent container, which is of course the middle
+
+64
+05:05.780 --> 05:06.340
+container.
+
+65
+05:06.350 --> 05:14.270
+So let's hit refresh and you can see it's now a lot less in width and it's now taking up three lines,
+
+66
+05:14.600 --> 05:18.740
+which is much easier to read rather than one long big line.
+
+67
+05:18.790 --> 05:25.730
+So, but the problem is now, it's left aligned and it's no longer in the center of our web page, and that's
+
+68
+05:25.730 --> 05:30.420
+because it's no longer edge to edge and we now have to set the margin to
+
+69
+05:30.470 --> 05:31.220
+auto
+
+70
+05:31.400 --> 05:36.250
+in order to get it to be centered in the web page, which is exactly what we want.
+
+71
+05:36.470 --> 05:42.830
+So I'm going to go ahead and add a margin property and just set it to auto on all four sides.
+
+72
+05:42.980 --> 05:48.630
+And now you can see it's perfectly centered and it looks a lot nicer than before.
+
+73
+05:48.660 --> 05:55.310
+So one of the things I added here was to make the line height double what it used to be and that spaces
+
+74
+05:55.310 --> 05:58.200
+out the text and makes it a lot easier to read.
+
+75
+05:58.220 --> 06:01.660
+Now I'd like to do that consistently across my web site,
+
+76
+06:01.670 --> 06:05.900
+so for the intro as well as the other parts of text.
+
+77
+06:05.960 --> 06:14.660
+So instead of having that line-height down in the skill-row section, I'm actually going to cut that
+
+78
+06:15.020 --> 06:19.280
+and add that to a paragraph level
+
+79
+06:19.920 --> 06:20.960
+CSS rule.
+
+80
+06:21.020 --> 06:28.010
+So I'm targeting all the paragraphs inside my web site and I'm changing all of their line-heights to double
+
+81
+06:28.070 --> 06:29.370
+the height that it used to be.
+
+82
+06:29.510 --> 06:33.620
+And this makes it a lot more spaced out and a lot easier to read.
+
+83
+06:33.680 --> 06:37.870
+Now finally I just want to adjust my clouds a little bit,
+
+84
+06:38.120 --> 06:41.990
+just based on what I prefer it to look.
+
+85
+06:42.170 --> 06:48.260
+So I'm going to change the top cloud to have 40 from the top rather than 300,
+
+86
+06:48.320 --> 06:53.180
+make it go up a little bit, and then I'm going to make the bottom cloud
+
+87
+06:53.240 --> 06:56.480
+only have a left of 250,
+
+88
+06:56.500 --> 06:58.470
+so make it go further to the left.
+
+89
+06:58.490 --> 06:58.750
+All right.
+
+90
+06:58.760 --> 07:02.660
+So that is pretty much the top sections done.
+
+91
+07:02.660 --> 07:07.490
+Now the next thing we need to look at is this horizontal rule and at the moment it's looking a little
+
+92
+07:07.490 --> 07:08.340
+bit ugly.
+
+93
+07:08.480 --> 07:14.960
+But as we did previously, we managed to get these little grey dots to show up as the horizontal rule
+
+94
+07:15.140 --> 07:16.880
+separating the sections instead.
+
+95
+07:16.940 --> 07:19.070
+And that's what we want to do here also.
+
+96
+07:19.310 --> 07:23.130
+So let's go ahead and target the horizontal rule.
+
+97
+07:23.660 --> 07:30.950
+So, remember, because it's an HTML element we're going to put it with the other HTML elements, and we're
+
+98
+07:30.950 --> 07:38.960
+going to first change the border so that it has a dotted style and I'm going to change the color to
+
+99
+07:39.350 --> 07:40.660
+a light grey,
+
+100
+07:40.660 --> 07:51.120
+so an EAF6F6, and I want it to be 6 pixels in width. So let's refresh that.
+
+101
+07:51.120 --> 08:00.930
+Now you can see that there's now two borders of one above and one below and enclosing a zero pixel height
+
+102
+08:01.080 --> 08:02.770
+horizontal rule.
+
+103
+08:02.760 --> 08:12.360
+So if we now go and set the border-bottom to none, then we can get rid of that bottom border to only
+
+104
+08:12.360 --> 08:17.520
+have a single line, which looks the way that we want it to.
+
+105
+08:17.520 --> 08:21.890
+So the next thing is to change its width and I want it to be a lot narrower than that.
+
+106
+08:21.900 --> 08:31.070
+In fact, I want it only to be about maybe 4 percent of the width, and it's important to use percent here so
+
+107
+08:31.070 --> 08:38.660
+that it scales when my web site scales, and finally I need to give it some margin, because at the
+
+108
+08:38.660 --> 08:41.070
+moment it's far too close to everything else.
+
+109
+08:41.210 --> 08:48.860
+So I want it to have 100 pixels of margin-top, 100 pixels margin-bottom, and I want it to be centered
+
+110
+08:49.070 --> 08:49.940
+in the middle.
+
+111
+08:49.940 --> 08:53.210
+So we're going to go for that good old margin property,
+
+112
+08:53.240 --> 08:59.150
+and we're going to say top and bottom should be 100 pixels, and left and right should be auto, so that
+
+113
+08:59.180 --> 09:05.010
+we keep this centered in the middle. And that is looking really really nice.
+
+114
+09:05.060 --> 09:09.950
+And I know it's a very very light color but it's fine because it doesn't need to be read, 
+
+115
+09:10.040 --> 09:13.430
+it’s just there to visually separate some of our section.
+
+116
+09:13.490 --> 09:19.220
+Now the next section that we get to is, of course, this Contact Me section, and the first thing I want
+
+117
+09:19.220 --> 09:26.180
+to do is similar to this intro or bio bit of text. I need to make this Contact Me message a little bit
+
+118
+09:26.180 --> 09:27.730
+less wide.
+
+119
+09:27.830 --> 09:36.320
+So let's target that and change its width. So, the contact message currently has a class called 
+
+120
+09:36.320 --> 09:37.270
+contact-message.
+
+121
+09:37.280 --> 09:42.720
+So let's go ahead and target that inside our CSS,
+
+122
+09:42.770 --> 09:52.380
+so .contact-message, and we're going to change its width. And I'm going to change it to just 40 percent
+
+123
+09:52.390 --> 10:00.610
+in this case, and that will make it go onto two lines but it will also make it go to the left.
+
+124
+10:00.640 --> 10:08.450
+So let's change the margin so that we have 40 pixels from the top and 40 pixels from the bottom,
+
+125
+10:08.680 --> 10:11.820
+but the left and right should be auto.
+
+126
+10:11.950 --> 10:19.190
+Now the shorthand way of specifying that is by using the three element circle rule, 
+
+127
+10:19.330 --> 10:27.290
+so that's 40 pixels from the top, auto for the left and right and 60 pixels for the bottom. Again,
+
+128
+10:27.310 --> 10:29.490
+if that confuses you at all,
+
+129
+10:29.500 --> 10:35.690
+make sure you take a look at the MDN Developer Docs for the margin property.
+
+130
+10:36.010 --> 10:39.790
+So hit save and we've now got more margin here than here, 
+
+131
+10:39.940 --> 10:43.900
+and it's also spaced so that it's automatically centered in the middle.
+
+132
+10:43.900 --> 10:49.330
+Now the final thing in this section is of course changing that Contact Me button from this horrible
+
+133
+10:49.360 --> 10:54.000
+ugly looking thing to something that looks a little bit more like a real button.
+
+134
+10:54.250 --> 11:01.480
+And as we mentioned in the challenge we're going to use the CSS Button Generator web site. So the text
+
+135
+11:01.540 --> 11:04.240
+I'm going to change to CONTACT ME, 
+
+136
+11:04.270 --> 11:05.290
+all caps,
+
+137
+11:05.290 --> 11:12.250
+the font-family we’ll leave as Arial for now, the font-color is just going to be white, and the font-size
+
+138
+11:12.250 --> 11:15.730
+we’re going to leave as 20 pixels as well.
+
+139
+11:15.730 --> 11:20.860
+Now we're not going to change anything in the box but we are going to change the border and specifically
+
+140
+11:20.860 --> 11:22.530
+that's the border radius.
+
+141
+11:22.600 --> 11:28.080
+I'm going to change it down to 8 so that it's a little bit more square looking rather than rounded.
+
+142
+11:28.390 --> 11:34.420
+And it's not going to have a border but it is going to have a gradient background and the starting color
+
+143
+11:34.420 --> 11:40.690
+for our gradient is going to be 11CDD4,
+
+144
+11:41.110 --> 11:47.010
+and the end color is going to be 11999E.
+
+145
+11:47.320 --> 11:56.590
+And for our hover or rollover state, we're going to start the gradient at 30E3CB, and we're going
+
+146
+11:56.590 --> 12:02.500
+to end at 2BC4AD.
+
+147
+12:02.510 --> 12:07.530
+All right so now you can see that when you hover over it it's a little bit lighter shade of green.
+
+148
+12:07.690 --> 12:09.750
+So that looks pretty nice to me.
+
+149
+12:09.880 --> 12:16.030
+And this is the automatically generated CSS code based on all of those options that we've selected.
+
+150
+12:16.180 --> 12:22.310
+And we can now just copy it wholesale and paste it into our CSS over here.
+
+151
+12:22.630 --> 12:33.010
+Now if you take a look at our anchor tag for our contact button, you can see it has a class of btn, and
+
+152
+12:33.010 --> 12:39.420
+that matches perfectly with the class that we get back from CSS Button Generator,
+
+153
+12:39.520 --> 12:42.940
+and that means that we will be able to target it without a problem.
+
+154
+12:42.940 --> 12:49.420
+Now the only thing that I want to change here is, I want to change the text so that it fits in with our
+
+155
+12:49.420 --> 12:52.460
+font-family that we've set for the entire web site.
+
+156
+12:52.540 --> 13:00.490
+I’m going to change the font-family from Arial to Montserrat. And now if we hit save and we go ahead and
+
+157
+13:00.490 --> 13:06.280
+refresh our page, you can see that we've got that beautiful button that we've implemented without
+
+158
+13:06.430 --> 13:07.990
+very much work at all.
+
+159
+13:07.990 --> 13:13.780
+All right. So now we're finally ready to tackle the bottom section which is basically our footer that
+
+160
+13:13.780 --> 13:15.610
+you'll see on most web pages.
+
+161
+13:15.730 --> 13:21.310
+Now the first thing that we want to do is, we want to change its background color so that we can see
+
+162
+13:21.310 --> 13:24.730
+the difference between the footer and the middle section.
+
+163
+13:24.730 --> 13:31.810
+So find the bottom-container, and let's go ahead and change its background color to the color that we've
+
+164
+13:31.810 --> 13:40.990
+been using for a while now which is 66BFBF, and let's hit save and refresh. You can see we've now got
+
+165
+13:41.290 --> 13:46.200
+this bottom section highlighted and separated from the rest of the content.
+
+166
+13:46.210 --> 13:52.190
+Now why is there this gap between the bottom of our page and the bottom of our footer?
+
+167
+13:52.480 --> 13:58.140
+Well, the reason, if you inspect, is that you can scroll it all the way up to the top,
+
+168
+13:58.330 --> 14:06.010
+and if you hover over that paragraph for the last copyright message you can see that it's got a pretty
+
+169
+14:06.010 --> 14:10.090
+large margin, 16 from the top and 16 from the bottom.
+
+170
+14:10.180 --> 14:16.610
+And remember that came automatically from the user agent stylesheet which comes from the browser.
+
+171
+14:16.660 --> 14:20.010
+And that's 1em top and 1em bottom.
+
+172
+14:20.020 --> 14:26.620
+So we have to either get rid of that padding or we can pad out our footer a little bit more and make
+
+173
+14:26.620 --> 14:33.020
+it a little bit taller so that it encompasses that padding for the paragraph tag.
+
+174
+14:33.190 --> 14:34.540
+I'll show you what I mean.
+
+175
+14:34.540 --> 14:43.720
+So if we go into our bottom-container and we change the padding to 50 pixels up top, 0 left and right,
+
+176
+14:43.990 --> 14:50.410
+and 20 pixels at the bottom, then that should be more than enough to cover the 16 pixels which is the
+
+177
+14:50.420 --> 14:54.710
+1em padding for our paragraph.
+
+178
+14:54.730 --> 15:01.450
+So if we hit refresh you'll see now our footer goes all the way down to the bottom and there is now
+
+179
+15:01.450 --> 15:07.490
+enough space for that padding to be included inside the footer rather than outside the footer.
+
+180
+15:07.660 --> 15:10.580
+So next let’s style our anchor tags.
+
+181
+15:10.630 --> 15:15.970
+Currently they're a little bit too squished up together and it's not looking very nice.
+
+182
+15:16.000 --> 15:23.440
+So let's go ahead and target them by targeting all of the anchor tags and lets first change the text
+
+183
+15:23.440 --> 15:32.690
+color to what we have in the rest of our document and the text color that I specified was 11999E.
+
+184
+15:32.890 --> 15:38.910
+And let's add the property, of course, and that's hit save and refresh.
+
+185
+15:38.980 --> 15:45.760
+You can see that we've now got a slightly lighter color than before but it's still relatively readable
+
+186
+15:45.760 --> 15:46.760
+against the background.
+
+187
+15:46.810 --> 15:52.900
+Now you can of course make that contrast more if you wish to but I usually think that the text in the
+
+188
+15:52.900 --> 15:53.590
+footer,
+
+189
+15:53.710 --> 15:58.600
+you don't want it to distract from the main message which is either Contact Me or whatever it is that
+
+190
+15:58.600 --> 16:00.240
+you want to highlight to people.
+
+191
+16:00.280 --> 16:02.880
+So I want to have that a little bit more muted.
+
+192
+16:02.980 --> 16:07.510
+Now let's make this text look a little bit more in line with the rest of our text.
+
+193
+16:07.570 --> 16:13.270
+You can see that the anchor text is actually styled in a different font from the rest of our text. So
+
+194
+16:13.420 --> 16:20.800
+we can change that to what we've got for the rest of our body, which is Montserrat, by just copying this
+
+195
+16:20.800 --> 16:24.650
+line over here, or, as you probably should to get more practice,
+
+196
+16:24.670 --> 16:25.720
+just type it up.
+
+197
+16:26.050 --> 16:27.360
+So let's update that.
+
+198
+16:27.430 --> 16:32.710
+And we've got something that fits in with the overall look and feel of our web site.
+
+199
+16:32.800 --> 16:38.200
+And now all we need to do is just space them apart a little bit so that they can be easily distinguished
+
+200
+16:38.260 --> 16:39.480
+from each other.
+
+201
+16:39.790 --> 16:45.790
+So to do that we're going to have to add a little bit of margin to it and I'm going to add a 10 pixel
+
+202
+16:45.790 --> 16:53.440
+top and bottom margin and a 20 pixel left and right margin to give it more space away from each other,
+
+203
+16:53.590 --> 16:58.340
+and this way we can click on each one individually without having them all mushed together.
+
+204
+16:58.630 --> 17:04.720
+Now the final thing I don't like about this look is that by default all anchor tags have an underline
+
+205
+17:05.020 --> 17:07.950
+that shows you that this is clickable.
+
+206
+17:07.950 --> 17:11.790
+Now I want to show that in a different way by changing the hover state.
+
+207
+17:11.830 --> 17:19.720
+So I want to get rid of this underline, and I can do that by changing the text-decoration which, remember,
+
+208
+17:19.720 --> 17:23.930
+the browser automatically makes it underlined for all anchor tags,
+
+209
+17:24.110 --> 17:26.530
+and I'm going to change it to none.
+
+210
+17:26.530 --> 17:27.860
+So now we update that.
+
+211
+17:28.000 --> 17:28.570
+That's gone.
+
+212
+17:28.600 --> 17:33.020
+And that looks a lot nicer and it doesn't look like a 90s web site anymore,
+
+213
+17:33.040 --> 17:33.480
+right?
+
+214
+17:33.670 --> 17:39.550
+So as we said we want to show that these links are clickable by making it have a different color
+
+215
+17:39.640 --> 17:46.900
+when I rollover it. So I can target that using the hover state of the anchor tag.
+
+216
+17:47.200 --> 17:52.250
+And if you remember that we spoke about these pseudo classes a few lessons ago.
+
+217
+17:52.450 --> 17:58.430
+And if you're confused about this at all then be sure to check out those previous lessons on the CSS
+
+218
+17:58.430 --> 17:59.810
+selectors.
+
+219
+17:59.920 --> 18:05.500
+So for the hover state, instead of having a fun color of 11999E,
+
+220
+18:05.650 --> 18:16.900
+we instead want to have a EAF6F6, and that will just be a little bit lighter so that when we hover over
+
+221
+18:16.900 --> 18:22.510
+it, it looks like it's definitely clickable and that gives the user enough clues as to what to do with
+
+222
+18:22.510 --> 18:23.210
+it.
+
+223
+18:23.230 --> 18:30.010
+Now the very very final thing that I'm going to format is the copyright here, and I'm going to change
+
+224
+18:30.010 --> 18:34.720
+its color to make it less assuming and also make it a little bit smaller.
+
+225
+18:34.990 --> 18:39.340
+So let's go ahead and see what we used for that copyright message.
+
+226
+18:39.390 --> 18:42.620
+We used the class copyright.
+
+227
+18:42.630 --> 18:47.560
+So let's go into our styles.css, find the part where we have the text,
+
+228
+18:47.560 --> 18:57.330
+and let's go ahead and select the copyright message and change its color to the same as we had for our
+
+229
+18:57.330 --> 19:06.780
+anchor tag rollover state which is EAF6F6, hit refresh, and see it's now this lovely light white color,
+
+230
+19:07.230 --> 19:09.870
+and then we're going to make it a lot smaller.
+
+231
+19:09.900 --> 19:18.480
+So we're going to change the font size to 0.75rem, so that's 75 percent of 16 pixels, and
+
+232
+19:18.570 --> 19:23.940
+it's now less important and it's taking up less space as well.
+
+233
+19:23.940 --> 19:28.260
+Now finally I want to give a little bit more padding from the top and the bottom.
+
+234
+19:28.260 --> 19:37.800
+So I'm going to change its padding to maybe 20 pixels top and bottom and zero pixels left and right so
+
+235
+19:37.800 --> 19:39.780
+that it goes all the way to the end.
+
+236
+19:39.780 --> 19:43.270
+And that way it's got a little bit more separation from the top.
+
+237
+19:43.500 --> 19:46.300
+And this looks a lot nicer than before.
+
+238
+19:46.590 --> 19:55.150
+So that's all the changes that I have to make in order to fully recreate our specification here.
+
+239
+19:55.170 --> 20:02.100
+Now if you had any problems such as implementing the buttons or changing the horizontal rules then be
+
+240
+20:02.100 --> 20:06.030
+sure to try and fix it using this solution.
+
+241
+20:06.030 --> 20:11.160
+Now at this stage if you're happy with everything that we've spoken about, feel free to go ahead and
+
+242
+20:11.160 --> 20:17.130
+completely change or personalize this web site, change the color schemes, change the layouts to whatever
+
+243
+20:17.130 --> 20:18.760
+it is that you prefer.
+
+244
+20:18.880 --> 20:27.750
+But this is the live web site, and the next step is of course make it hosted on GitHub so that your
+
+245
+20:27.750 --> 20:34.200
+personal site is live and you can share it with your friends and your family or show it to anybody who
+
+246
+20:34.200 --> 20:35.450
+might want to employ you.
+
+247
+20:35.520 --> 20:37.950
+So that's all for this section.
+
+248
+20:38.070 --> 20:46.380
+But in this module we learnt a lot about CSS and styling and positioning and layout, changing the text,
+
+249
+20:46.380 --> 20:53.670
+changing the colors, making text wrap around images, how to create hover states, and loads and loads more.
+
+250
+20:53.670 --> 21:00.960
+So if any of this is not apparent immediately it might be worth reviewing some of the more difficult
+
+251
+21:00.960 --> 21:01.630
+concepts,
+
+252
+21:01.740 --> 21:05.790
+for example the positioning and the difference between absolute and relative.
+
+253
+21:05.790 --> 21:12.600
+Or you could simply just go ahead and start creating a web design of your own fancy that you've designed,
+
+254
+21:12.870 --> 21:18.350
+pencil and paper, and try to solve those problems by doing. So,
+
+255
+21:18.360 --> 21:21.240
+that’s all from me in this lesson. I'll see you on the next lesson.
